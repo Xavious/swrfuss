@@ -1,0 +1,2264 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Throne City~
+Author       Trevor~
+Ranges       0 103 0 103
+Economy      0 6249579
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       700
+Keywords   human man~
+Short      a man~
+Long       A man walks down the road
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 5 0 87 9 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   byss~
+#ENDMOBILE
+
+#MOBILE
+Vnum       701
+Keywords   human man~
+Short      a man~
+Long       A man walks down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 2 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   byss~
+#ENDMOBILE
+
+#MOBILE
+Vnum       702
+Keywords   business man~
+Short      a business man~
+Long       A business man walks quickly by.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 7 0 82 5 0
+Stats2     1 10 70
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   byss~
+#ENDMOBILE
+
+#MOBILE
+Vnum       703
+Keywords   business woman~
+Short      a business woman~
+Long       A business woman walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 7 0 82 15 0
+Stats2     1 10 70
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   byss~
+#ENDMOBILE
+
+#MOBILE
+Vnum       704
+Keywords   human woman~
+Short      a woman~
+Long       A woman walks down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 5 0 87 6 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   byss~
+#ENDMOBILE
+
+#MOBILE
+Vnum       705
+Keywords   byss citizen~
+Short      a citizen~
+Long       A citizen minds his own business.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 8 0 80 12 0
+Stats2     1 10 80
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   byss~
+#ENDMOBILE
+
+#MOBILE
+Vnum       706
+Keywords   human citizen~
+Short      a citizen~
+Long       A citizen minds her own business.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 8 0 80 8 0
+Stats2     1 10 80
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   byss~
+#ENDMOBILE
+
+#MOBILE
+Vnum       799
+Keywords   human man~
+Short      a newly created human man~
+Long       Some god abandoned a newly created human man here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     700
+Keywords a wristwatch~
+Type     trash~
+Short    a a wristwatch~
+Long     A a wristwatch is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     799
+Keywords a pebble~
+Type     trash~
+Short    a a pebble~
+Long     A a pebble is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     700
+Name     Throne City Landing Pad~
+Sector   city~
+Flags    nomob can_land~
+Desc     You stand on the enormous landing pad of Throne city, there is an assortmen
+of Imperial craft here as well as pilots, technicians and an array of
+various ranked Imperial officers. As full as the landing pad is you
+imagine there's still enough room for an Imperial Star Destroyer, if you
+could land one here, that is. 
+~
+#EXIT
+Direction north~
+ToRoom    701
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     701
+Name     Throne City Checkpoint~
+Sector   city~
+Flags    indoors~
+Desc     You stand in a short metal corridor attatched to the landing pad. Officers
+come and go to the south and a very tough looking Imperial steps before
+you, looking you over for contraband.
+~
+#EXIT
+Direction north~
+ToRoom    702
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    700
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     702
+Name     Within Imperial City~
+Sector   city~
+Desc     You pass the security checkpoint and enter in the heart of the Empire. The
+darkside hangs on you like sweat and you can feel the darkside in everyone
+that passes by you. As you look around you see an assortmen of shops and
+stores, as well as the infamous Byss Bistro. Fixing your eyes on the
+center of the city you look up in amazed horror as the Emperors Citadel
+looms over all, disapearring into the sky, an ominous sight indeed.
+~
+#EXIT
+Direction north~
+ToRoom    753
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    752
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    701
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    703
+#ENDEXIT
+
+Reset M 0 702 50 702
+#ENDROOM
+
+#ROOM
+Vnum     703
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss. This part of the city contains mainly residences and small store and
+restaurants. Yet, the place as a cold evil, feel to it. The dark side of
+the force fills the air choking you with fear. In the center of the city
+the emporers citadel looms ominously over the city disapearing into the
+sky.
+~
+#EXIT
+Direction east~
+ToRoom    702
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    704
+#ENDEXIT
+
+Reset M 0 703 50 703
+#ENDROOM
+
+#ROOM
+Vnum     704
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    703
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    705
+#ENDEXIT
+
+Reset M 0 704 50 704
+#ENDROOM
+
+#ROOM
+Vnum     705
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    704
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    706
+#ENDEXIT
+
+Reset M 0 705 50 705
+#ENDROOM
+
+#ROOM
+Vnum     706
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    705
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    707
+#ENDEXIT
+
+Reset M 0 706 50 706
+#ENDROOM
+
+#ROOM
+Vnum     707
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. You walk along just inside of the great wall that surrounds
+throne city on Byss.  This part of the city contains mainly residences and
+small store and restaurants.  Yet, the place as a cold evil, feel to it.
+The dark side of the force fills the air choking you with fear. In the
+center of the city the emporers citadel looms ominously over the city
+disapearing into the sky. You walk along just inside of the great wall
+that surrounds throne city on Byss.  This part of the city contains mainly
+residences and small store and restaurants.  Yet, the place as a cold
+evil, feel to it. The dark side of the force fills the air choking you
+with fear. In the center of the city the emporers citadel looms ominously
+over the city disapearing into the sky. You walk along just inside of the
+great wall that surrounds throne city on Byss.  This part of the city
+contains mainly residences and small store and restaurants.  Yet, the
+place as a cold, evil feel to it. The dark side of the force fills the air
+choking you with fear. In the center of the city the emporers citadel
+looms ominously over the city disapearing into the sky.
+~
+#EXIT
+Direction east~
+ToRoom    706
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    708
+#ENDEXIT
+
+Reset M 0 701 50 707
+#ENDROOM
+
+#ROOM
+Vnum     708
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    707
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    709
+#ENDEXIT
+
+Reset M 0 702 50 708
+#ENDROOM
+
+#ROOM
+Vnum     709
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    708
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    710
+#ENDEXIT
+
+Reset M 0 703 50 709
+#ENDROOM
+
+#ROOM
+Vnum     710
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+w
+~
+#EXIT
+Direction east~
+ToRoom    709
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    711
+#ENDEXIT
+
+Reset M 0 704 50 710
+#ENDROOM
+
+#ROOM
+Vnum     711
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    710
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    712
+#ENDEXIT
+
+Reset M 0 705 50 711
+#ENDROOM
+
+#ROOM
+Vnum     712
+Name     Along the Western wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    713
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    711
+#ENDEXIT
+
+Reset M 0 706 50 712
+#ENDROOM
+
+#ROOM
+Vnum     713
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    714
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    712
+#ENDEXIT
+
+Reset M 0 701 50 713
+#ENDROOM
+
+#ROOM
+Vnum     714
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    715
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    713
+#ENDEXIT
+
+Reset M 0 702 50 714
+#ENDROOM
+
+#ROOM
+Vnum     715
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss. This part of the city contains mainly residences and small store and
+restaurants. Yet, the place as a cold evil, feel to it. The dark side of
+the force fills the air choking you with fear. In the center of the city
+the emporers citadel looms ominously over the city disapearing into the
+sky.
+~
+#EXIT
+Direction north~
+ToRoom    716
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    714
+#ENDEXIT
+
+Reset M 0 703 50 715
+#ENDROOM
+
+#ROOM
+Vnum     716
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    717
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    715
+#ENDEXIT
+
+Reset M 0 704 50 716
+#ENDROOM
+
+#ROOM
+Vnum     717
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    718
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    763
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    716
+#ENDEXIT
+
+Reset M 0 705 50 717
+#ENDROOM
+
+#ROOM
+Vnum     718
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    719
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    717
+#ENDEXIT
+
+Reset M 0 706 50 718
+#ENDROOM
+
+#ROOM
+Vnum     719
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold evil, feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    720
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    718
+#ENDEXIT
+
+Reset M 0 701 50 719
+#ENDROOM
+
+#ROOM
+Vnum     720
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss. This part of the city contains mainly residences and small store and
+restaurants. Yet, the place as a cold, evil feel to it. The dark side of
+the force fills the air choking you with fear. In the center of the city
+the emporers citadel looms ominously over the city disapearing into the
+sky.
+~
+#EXIT
+Direction north~
+ToRoom    721
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    719
+#ENDEXIT
+
+Reset M 0 702 50 720
+#ENDROOM
+
+#ROOM
+Vnum     721
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    722
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    720
+#ENDEXIT
+
+Reset M 0 703 50 721
+#ENDROOM
+
+#ROOM
+Vnum     722
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    723
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    721
+#ENDEXIT
+
+Reset M 0 701 50 722
+Reset M 0 704 50 722
+#ENDROOM
+
+#ROOM
+Vnum     723
+Name     Along the Western Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction east~
+ToRoom    724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    722
+#ENDEXIT
+
+Reset M 0 702 50 723
+#ENDROOM
+
+#ROOM
+Vnum     724
+Name     Along the Western Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    725
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    723
+#ENDEXIT
+
+Reset M 0 703 50 724
+#ENDROOM
+
+#ROOM
+Vnum     725
+Name     Along the Western Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    726
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    724
+#ENDEXIT
+
+Reset M 0 704 50 725
+#ENDROOM
+
+#ROOM
+Vnum     726
+Name     Along the Western Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    727
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    725
+#ENDEXIT
+
+Reset M 0 705 50 726
+#ENDROOM
+
+#ROOM
+Vnum     727
+Name     An Intersection ~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction north~
+ToRoom    793
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    728
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    773
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    726
+#ENDEXIT
+
+Reset M 0 706 50 727
+#ENDROOM
+
+#ROOM
+Vnum     728
+Name     Along the Eastern Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction east~
+ToRoom    729
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    727
+#ENDEXIT
+
+Reset M 0 701 50 728
+#ENDROOM
+
+#ROOM
+Vnum     729
+Name     Along the Eastern Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction east~
+ToRoom    730
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    728
+#ENDEXIT
+
+Reset M 0 702 50 729
+#ENDROOM
+
+#ROOM
+Vnum     730
+Name     Along the Eastern Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    731
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    729
+#ENDEXIT
+
+Reset M 0 703 50 730
+#ENDROOM
+
+#ROOM
+Vnum     731
+Name     Along the Eastern Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    732
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    730
+#ENDEXIT
+
+Reset M 0 704 50 731
+#ENDROOM
+
+#ROOM
+Vnum     732
+Name     Along the Eastern Wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction south~
+ToRoom    733
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    731
+#ENDEXIT
+
+Reset M 0 705 50 732
+#ENDROOM
+
+#ROOM
+Vnum     733
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction north~
+ToRoom    732
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    734
+#ENDEXIT
+
+Reset M 0 706 50 733
+#ENDROOM
+
+#ROOM
+Vnum     734
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction north~
+ToRoom    733
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    735
+#ENDEXIT
+
+Reset M 0 701 50 734
+#ENDROOM
+
+#ROOM
+Vnum     735
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction north~
+ToRoom    734
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    736
+#ENDEXIT
+
+Reset M 0 702 50 735
+#ENDROOM
+
+#ROOM
+Vnum     736
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    735
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    737
+#ENDEXIT
+
+Reset M 0 703 50 736
+#ENDROOM
+
+#ROOM
+Vnum     737
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction north~
+ToRoom    736
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    738
+#ENDEXIT
+
+Reset M 0 704 50 737
+#ENDROOM
+
+#ROOM
+Vnum     738
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    737
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    739
+#ENDEXIT
+
+Reset M 0 705 50 738
+#ENDROOM
+
+#ROOM
+Vnum     739
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    738
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    740
+#ENDEXIT
+
+Reset M 0 706 50 739
+#ENDROOM
+
+#ROOM
+Vnum     740
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    739
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    741
+#ENDEXIT
+
+Reset M 0 701 50 740
+#ENDROOM
+
+#ROOM
+Vnum     741
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    740
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    742
+#ENDEXIT
+
+Reset M 0 702 50 741
+#ENDROOM
+
+#ROOM
+Vnum     742
+Name     Imperial Alley~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear. In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction north~
+ToRoom    741
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    743
+#ENDEXIT
+
+Reset M 0 703 50 742
+#ENDROOM
+
+#ROOM
+Vnum     743
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss. This part of the city contains mainly residences and small store and
+restaurants. Yet, the place as a cold, evil feel to it. The dark side of
+the force fills the air choking you with fear. In the center of the city
+the emporers citadel looms ominously over the city disapearing into the
+sky.
+~
+#EXIT
+Direction east~
+ToRoom    742
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    744
+#ENDEXIT
+
+Reset M 0 704 50 743
+#ENDROOM
+
+#ROOM
+Vnum     744
+Name     Along Eastern wall~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    743
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    745
+#ENDEXIT
+
+Reset M 0 705 50 744
+#ENDROOM
+
+#ROOM
+Vnum     745
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    744
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    746
+#ENDEXIT
+
+Reset M 0 706 50 745
+#ENDROOM
+
+#ROOM
+Vnum     746
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    745
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    747
+#ENDEXIT
+
+Reset M 0 701 50 746
+#ENDROOM
+
+#ROOM
+Vnum     747
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    746
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    748
+#ENDEXIT
+
+Reset M 0 702 50 747
+#ENDROOM
+
+#ROOM
+Vnum     748
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    747
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    749
+#ENDEXIT
+
+Reset M 0 703 50 748
+#ENDROOM
+
+#ROOM
+Vnum     749
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    748
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    750
+#ENDEXIT
+
+Reset M 0 704 50 749
+#ENDROOM
+
+#ROOM
+Vnum     750
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky.
+~
+#EXIT
+Direction east~
+ToRoom    749
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    751
+#ENDEXIT
+
+Reset M 0 705 50 750
+#ENDROOM
+
+#ROOM
+Vnum     751
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction east~
+ToRoom    750
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    752
+#ENDEXIT
+
+Reset M 0 706 50 751
+#ENDROOM
+
+#ROOM
+Vnum     752
+Name     Along Eastern wall~
+Sector   city~
+Desc     You walk along just inside of the great wall that surrounds throne city on
+Byss.  This part of the city contains mainly residences and small store
+and restaurants.  Yet, the place as a cold, evil feel to it. The dark side
+of the force fills the air choking you with fear.  In the center of the
+city the emporers citadel looms ominously over the city disapearing into
+the sky. 
+~
+#EXIT
+Direction east~
+ToRoom    751
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    702
+#ENDEXIT
+
+Reset M 0 701 50 752
+#ENDROOM
+
+#ROOM
+Vnum     753
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    754
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    702
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     754
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    755
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    753
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     755
+Name     Citadel Way~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    756
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    754
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     756
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    757
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    755
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     757
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    758
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    756
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     758
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    759
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    757
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     759
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    760
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    758
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     760
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    761
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    759
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     761
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    762
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    760
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     762
+Name     Before the Emperors Citadel~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    761
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     763
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    764
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    717
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     764
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    765
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    763
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     765
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    766
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    764
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     766
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    767
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    765
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     767
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    768
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    766
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     768
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    769
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    767
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     769
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    770
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    768
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     770
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    771
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    769
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     771
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    772
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    770
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     772
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    771
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     773
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    727
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    774
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     774
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    773
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    775
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     775
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    774
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    776
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     776
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    775
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    777
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     777
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    776
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    778
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     778
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    777
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    779
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     779
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    778
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    780
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     780
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    779
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    781
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     781
+Name     Citadel Way~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    780
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    782
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     782
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    781
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     783
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    784
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     784
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    783
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    785
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     785
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    784
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    786
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     786
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    785
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    787
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     787
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    786
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    788
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     788
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    787
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    789
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     789
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    788
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    790
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     790
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    789
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    791
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     791
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    790
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    792
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     792
+Name     Tarkin Road~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    791
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     793
+Name     North Gate~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    794
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    727
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     794
+Name     Before Throne City~
+Sector   city~
+Desc     The small road you stand upon cuts through the barren byss desert. It
+begins in its north end at a small port town. In the South it ends at the
+walled throne city. The emporers citidel raises far above the city to the
+south dissapearing into the clouds. 
+~
+#EXIT
+Direction north~
+ToRoom    795
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    793
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     795
+Name     Road To Throne City~
+Sector   city~
+Desc     The small road you stand upon cuts through the barren byss desert. It
+begins in its north end at a small port town. In the South it ends at the
+walled throne city. The emporers citidel raises far above the city to the
+south dissapearing into the clouds.
+~
+#EXIT
+Direction north~
+ToRoom    796
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    794
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     796
+Name     Road To Throne City~
+Sector   city~
+Desc     The small road you stand upon cuts through the barren byss desert. It
+begins in its north end at a small port town. In the South it ends at the
+walled throne city. The emporers citidel raises far above the city to the
+south dissapearing into the clouds. 
+~
+#EXIT
+Direction north~
+ToRoom    797
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    795
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     797
+Name     Road To Throne City~
+Sector   city~
+Desc     The small road you stand upon cuts through the barren byss desert. It
+begins in its north end at a small port town. In the South it ends at the
+walled throne city. The emporers citidel raises far above the city to the
+south dissapearing into the clouds.
+~
+#EXIT
+Direction south~
+ToRoom    796
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    798
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     798
+Name     Road To Throne City~
+Sector   city~
+Desc     The small road you stand upon cuts through the barren byss desert. It
+begins in its north end at a small port town. In the South it ends at the
+walled throne city. The emporers citidel raises far above the city to the
+south dissapearing into the clouds. 
+~
+#EXIT
+Direction northwest~
+ToRoom    799
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    797
+#ENDEXIT
+
+Reset M 0 700 10 798
+#ENDROOM
+
+#ROOM
+Vnum     799
+Name     Before a Small Town~
+Sector   city~
+Flags    nomob~
+Desc     You stand on a roadway just outside of a small port town on byss. Far to
+the south lines the new seat of the empire: the rebuilt throne city and
+emporers citadel.
+~
+#EXIT
+Direction west~
+ToRoom    28210
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    798
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

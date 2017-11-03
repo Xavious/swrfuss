@@ -1,0 +1,7649 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Coruscant - The City Streets~
+Author       Durga~
+Ranges       0 0 0 103
+Economy      0 25410227
+#ENDAREADATA
+
+#MOBILE
+Vnum       300
+Keywords   bookend~
+Short      a newly created bookend~
+Long       Some god abandoned a newly created bookend here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       301
+Keywords   A young human man.~
+Short      a human~
+Long       A young man is walking by.
+~
+Desc       This young human man is in his early twenties. He is dressed in the latest
+fashions and is clean cut. He is probably a student at the university.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 10 0
+Stats2     2 10 100
+Stats3     1 4 0
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       302
+Keywords   waitress~
+Short      the waitress~
+Long       A waitress is waiting to take your order.
+~
+Desc       The waitress is an older human woman who doesn't look overly impressed with
+the thought of having to serve you. You imagine that she probably doesn't
+enjoy her job. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   mpechoat $n A waitress greets you as you enter and escorts you to a table.
+mpechoaround $n $n takes a seat at a table.
+mpforce $n sit
+say What can I get you?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       303
+Keywords   young human woman ym1~
+Short      a young woman~
+Long       A young woman walks by.
+~
+Desc       This young human woman is in her early twenties. She is very attractive and
+dressed in the latest fashions. She is probably a student at the
+university. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 12 0 70 12 0
+Stats2     2 10 120
+Stats3     1 4 0
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       304
+Keywords   businessman man human~
+Short      a business man~
+Long       A man in a suit walks quickly by.
+~
+Desc       There is nothing unusual about this guy at all. He is one of millions of
+middle aged business people found in the enormous governemnt city. Funny
+how they all seem to look the same.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 8 0 80 14 0
+Stats2     1 10 80
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       305
+Keywords   businesswomanman woman human~
+Short      a business woman~
+Long       A woman in a suit outfit walks quickly by.
+~
+Desc       There is nothing unusual about this woman at all. She is one of millions of
+middle aged business people found in the enormous governemnt city. Funny
+how they all seem to look the same.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 7 0 82 11 0
+Stats2     1 10 70
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       306
+Keywords   chadra-fan woman~
+Short      a Chadra-Fan~
+Long       A young Chadra-Fan woman is here.
+~
+Desc       Chadra-fan area race of small rodent like humanoids coming from the planet
+Chad. This one smiles at you as she walks by. 
+~
+Race       Chadra-Fan~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc noassist~
+Stats1     0 5 0 87 18 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     chadra-fan~
+Speaking   chadra-fan~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       307
+Keywords   verpine man~
+Short      a Verpine~
+Long       A young Verpine man is here.
+~
+Desc       The verpine are a very intelligent race of bipedal insectoids. The have
+large eyes short snouts and 2 antennea coming out of the sides of their
+heads. Their bodies are thin and stick like.
+~
+Race       Verpine~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc noassist~
+Stats1     0 5 0 90 19 0
+Stats2     0 0 0
+Stats3     1 4 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     verpine~
+Speaking   verpine~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       308
+Keywords   verpine woman~
+Short      a verpine woman~
+Long       Verpine woman is here.
+~
+Desc       The verpine are a very intelligent race of bipedal insectoids. The have
+large eyes short snouts and 2 antennea coming out of the sides of their
+heads. Their bodies are thin and stick like.
+~
+Race       Verpine~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc noassist~
+Stats1     0 5 0 87 9 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common verpine~
+Speaking   verpine~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       309
+Keywords   pawn broker~
+Short      the pawnbroker~
+Long       A pawnbroker will buy almost anything.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 20 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Immune     charm~
+VIPFlags   coruscant~
+ShopData   5 9 15 79 80 150 50 0 23
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 325
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       310
+Keywords   automated defence system~
+Short      an automatic defence laser~
+Long       An automated defence system is installed on the wall.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel deadly droid~
+Affected   invisible hide~
+Stats1     0 105 0 -162 0 0
+Stats2     21 10 1050
+Stats3     10 4 2
+Stats4     0 0 0 21 21
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       311
+Keywords   taurill~
+Short      a taurill~
+Long       Taurills are a Hutts best friend.. try calling him.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc secretive~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   here~
+Comlist   mpechoat $n A taurill hops up onto your chest.
+mpechoaround $n A taurill hops up onto $ns chest.
+mpoload 328
+give taurill $n
+mpforce $n wear taurill
+mpgoto 7
+say ok purge me
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       312
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       313
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       314
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       315
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       316
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       317
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       318
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       319
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       320
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       321
+Keywords   human citizen~
+Short      a human citizen~
+Long       A human citizen walks quickly down the street.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 10 0 75 10 0
+Stats2     2 10 20
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       322
+Keywords   begger child~
+Short      a begger~
+Long       A small child begs for money.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc practice~
+Stats1     0 2 0 95 0 0
+Stats2     0 10 20
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       323
+Keywords   gamorrean guard~
+Short      a gamorrean guard~
+Long       &G A big gamorrean guard is here watching the refinery entrance. &x
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     gamorrean~
+Speaking   gamorrean~
+#ENDMOBILE
+
+#MOBILE
+Vnum       324
+Keywords   hutt~
+Short      a Hutt~
+Long       A hutt is here looking over his profit reports.
+~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel practice prototype~
+Stats1     0 100 0 -150 400 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     hutt~
+Speaking   hutt~
+#MUDPROG
+Progtype  give_prog~
+Arglist   package~
+Comlist   if ovnuminv(7315) >= 1
+evil $n
+' ahhh most excellent , my supplies have arrived.
+mpwithdraw 2000
+give 2000 credits $n
+mpgain $n 4 2000
+else 
+' fool this isn't what i orderd
+endif
+mppurge package
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       325
+Keywords   Toodan~
+Short      Toodan~
+Long       A human tries to hide his face from you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc nocorpse prototype~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 329
+mpforce mobslave mpoload 10212
+mpforce mobslave drop all
+mppurge mobslave
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       326
+Keywords   Noktok~
+Short      NokTok~
+Long       A scrawny humanoid lurks in the shadows.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc nocorpse~
+Stats1     0 70 0 -75 0 0
+Stats2     14 10 700
+Stats3     7 4 2
+Stats4     0 0 0 14 14
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 329
+mpforce mobslave mpoload 10213
+mpforce mobslave drop all
+mppurge mobslave
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       327
+Keywords   Pleebo~
+Short      pleebo~
+Long       A dangerous looking rodian glares at you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common rodian~
+Speaking   common rodian~
+Resist     magic~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 329
+mpforce mobslave mpoload 10214
+mpforce mobslave drop all
+mppurge mobslave
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       328
+Keywords   Sleejat~
+Short      Sleejat~
+Long       &RA pair of red eyes stare at you from the shadows.
+~
+Race       Defel~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc deadly nocorpse~
+Affected   invisible sanctuary infrared protect sneak~
+Stats1     0 105 0 -162 0 0
+Stats2     21 10 1050
+Stats3     10 4 2
+Stats4     0 0 0 21 21
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common defel~
+Speaking   common defel~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 329
+mpforce mobslave mpoload 10216
+mpforce mobslave drop all
+mppurge mobslave
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       329
+Keywords   mobslave~
+Short      a mouse droid~
+Long       A mouse droid tries to avoid being crushed.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc secretive~
+Affected   detect_invis detect_hidden~
+Stats1     0 105 0 -162 0 0
+Stats2     21 10 1050
+Stats3     10 4 2
+Stats4     0 0 0 21 21
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       400
+Keywords   prostitute woman~
+Short      a prostitute~
+Long       A prostitute is giving you the time of your life.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc nokill~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   if rand(5)
+  french $r
+else
+  if rand(10)
+    grope $r
+  else
+    if rand(15)
+      lick $r
+    else
+      if rand(20)
+        moan
+      else
+        if rand(25)
+          swoon
+        else
+          if rand(30)
+            fondle prost
+          else
+            if rand(35)
+              pounce $r
+            else
+              kiss $r
+            endif
+          endif
+        endif
+      endif
+    endif
+  endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       401
+Keywords   young prostitute woman girl wp1~
+Short      a prostitute~
+Long       A young woman is wearing a very skimpy outfit.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   flirt $n
+Say 50 credits and I'll show you a really good time.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   50~
+Comlist   mpechoat $n A prostitute escorts you to a small brothel.
+mpechoaround $n $n leaves with a prostitute.
+mptransfer $n 462
+mpgoto 461
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       403
+Keywords   prostitute young man ~
+Short      a young man~
+Long       A young man is wearing only a g-string and a cutoff t-shirt.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc nokill~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   if rand(5)
+  french $r
+else
+  if rand(10)
+    grope $r
+  else
+    if rand(15)
+      lick $r
+    else
+      if rand(20)
+        moan
+      else
+        if rand(25)
+          swoon
+        else
+          if rand(30)
+            fondle prost
+          else
+            if rand(35)
+              pounce $r
+            else
+              kiss $r
+            endif
+          endif
+        endif
+      endif
+    endif
+  endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       404
+Keywords   male prostitute young man ymp~
+Short      a young man~
+Long       A young man is wearing only a g-string and a cutoff t-shirt.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   flirt $n
+Say 50 credits and I'll show you a really good time.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   50~
+Comlist   mpechoat $n A prostitute escorts you to a small brothel.
+mpechoaround $n $n leaves with a male prostitute.
+mptransfer $n 463
+mpgoto 461
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       405
+Keywords   granite slug~
+Short      a granite slug~
+Long       A granite slug edges its way across the rock.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_fido~
+Gender     neuter~
+Actflags   npc noassist~
+Stats1     0 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       406
+Keywords   Trandoshan Guard~
+Short      a Trandoshan guard~
+Long       A Trandoshan guard stands by the westernmost door.
+~
+Race       Trandoshan~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 75 0 -87 100 0
+Stats2     15 10 750
+Stats3     7 4 2
+Stats4     0 0 0 15 15
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     trandoshan~
+Speaking   trandoshan~
+#ENDMOBILE
+
+#MOBILE
+Vnum       407
+Keywords   rodian~
+Short      a Rodian~
+Long       A rodian looks up and down the street as if looking for somebody.
+~
+Desc       Rodians are well known throughout the galaxy as deadly bounty hunters. They
+are easily disdinguished by their tapered snouts, large eyes, green skin,
+crested heads and suction copped fingers.  
+~
+Race       Rodian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc practice~
+Stats1     0 20 0 50 100 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     rodian~
+Speaking   rodian~
+#ENDMOBILE
+
+#MOBILE
+Vnum       408
+Keywords   human police officer cop~
+Short      a human police officer~
+Long       A police officer patrolls the city streets.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_guardian~
+Specfun2    spec_police_attack~
+Gender     male~
+Actflags   npc practice~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       409
+Keywords   mon calamarian police officer cop~
+Short      a Mon Calamarian cop~
+Long       A police officer patrolls the city streets.
+~
+Race       Mon Calamari~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_guardian~
+Gender     male~
+Actflags   npc~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari~
+Speaking   common mon_calamari~
+VIPFlags   coruscant~
+#ENDMOBILE
+
+#MOBILE
+Vnum       410
+Keywords   old wookiee woman~
+Short      an old wookiee woman~
+Long       An old wookiee woman limps by.
+~
+Race       Wookiee~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 12 0 70 20 0
+Stats2     2 10 120
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     wookiee~
+Speaking   wookiee~
+#ENDMOBILE
+
+#MOBILE
+Vnum       411
+Keywords   junkie human~
+Short      a junkie~
+Long       A junkie wanders the streets in serch of a fix.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc wimpy~
+Stats1     0 20 0 50 20 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   78 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   30~
+Comlist   say Got any spice?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       412
+Keywords   Self Defence Trainer~
+Short      a self defence trainer~
+Long       A self defence trainer can give you a few lessons.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel train practice r28~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    9 9 9 20 18 9 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       413
+Keywords   target~
+Short      a target~
+Long       A target hangs on the wall here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc droid~
+Stats1     0 1 0 0 0 0
+Stats2     1 1 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 413
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       414
+Keywords   student sparring partner~
+Short      a student~
+Long       A fellow student wants to spar with you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel noassist nokill~
+Stats1     0 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       415
+Keywords   student sparring partner~
+Short      a student~
+Long       A fellow student wants to spar with you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel noassist nokill~
+Stats1     0 2 0 95 0 0
+Stats2     0 10 20
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       416
+Keywords   student sparring partner~
+Short      a student~
+Long       A fellow student wants to spar with you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel noassist nokill~
+Stats1     0 3 0 92 0 0
+Stats2     0 10 30
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       417
+Keywords   student sparring partner~
+Short      a student~
+Long       A fellow student wants to spar with you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel noassist nokill~
+Stats1     0 4 0 90 0 0
+Stats2     0 10 40
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       418
+Keywords   student sparring partner~
+Short      a student~
+Long       A fellow student wants to spar with you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel noassist nokill~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       419
+Keywords   training remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 419
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       420
+Keywords   training remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 2 0 95 0 0
+Stats2     0 10 20
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 420
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       421
+Keywords   training remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 3 0 92 0 0
+Stats2     0 10 30
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 421
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       422
+Keywords   training remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 4 0 90 0 0
+Stats2     0 10 40
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 422
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       423
+Keywords   training remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 423
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       424
+Keywords   shopkeeper~
+Short      a shopkeeper~
+Long       A shopkeeper is here ready to assist you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       499
+Keywords   bookend~
+Short      a newly created bookend~
+Long       Some god abandoned a newly created bookend here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     300
+Keywords bookend~
+Type     trash~
+Short    a newly created bookend~
+Long     Some god dropped a newly created bookend here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     301
+Keywords glass of water~
+Type     drinkcon~
+Short    a glass of water~
+Long     A glass of water is a good cheap drink.~
+Flags    inventory~
+WFlags   take~
+Values   2 2 0 0 0 0
+Stats    1 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     302
+Keywords fried nerf~
+Type     food~
+Short    some fried nerf~
+Long     Fried nerf is a delicay... strange that its here.~
+WFlags   take~
+Values   25 0 0 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     303
+Keywords poached hawk-bat eggs~
+Type     food~
+Short    poached hawk-bat eggs~
+Long     Some poached hawk-bat eggs are a bit chewy.~
+Flags    inventory~
+WFlags   take~
+Values   20 20 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     304
+Keywords spiced ryll coffee~
+Type     drinkcon~
+Short    a cup of spiced ryll coffee~
+Long     This coffee has a strong ryll aroma.~
+WFlags   take~
+Values   2 2 12 0 0 0
+Stats    1 3 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     305
+Keywords fruit salad~
+Type     food~
+Short    some fruit salad~
+Long     Some fruit salad is delicious.~
+WFlags   take~
+Values   10 0 0 0 0 0
+Stats    1 7 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     306
+Keywords sign~
+Type     furniture~
+Short    a sign~
+Long     A sign points to the southeast~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    sign~
+ExDesc       Menari Spaceport: 15 east, 15 south, 15 east, up 1 level, 15 east
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     307
+Keywords green blouse~
+Type     armor~
+Short    a light green blouse~
+Long     A green blouse was left here.~
+Flags    human_size~
+WFlags   take body~
+Values   0 2 0 0 0 0
+Stats    1 30 3 0 8
+Affect       -1 -1 1 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     308
+Keywords green skirt~
+Type     armor~
+Short    a light green skirt~
+Long     A green skirt was left here.~
+Flags    human_size~
+WFlags   take legs~
+Values   0 2 0 0 0 0
+Stats    1 30 3 0 8
+Affect       -1 -1 1 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     309
+Keywords brothel acounts files~
+Type     government~
+Short    some files~
+Long     The brothel accounts files contain all of their financial information.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     310
+Keywords keycard chain~
+Type     key~
+Short    a keycard on a chain~
+Long     A keycard is attached to a short chain.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     311
+Keywords padded shirt~
+Type     armor~
+Short    a padded shirt~
+Long     A padded shirt was left here~
+Flags    human_size~
+WFlags   take body~
+Values   0 6 0 0 0 0
+Stats    5 200 20 0 24
+#ENDOBJECT
+
+#OBJECT
+Vnum     312
+Keywords padded pants~
+Type     armor~
+Short    some padded pants~
+Long     Some padded pants were left here.~
+Flags    human_size~
+WFlags   take legs~
+Values   0 6 0 0 0 0
+Stats    5 300 30 0 24
+#ENDOBJECT
+
+#OBJECT
+Vnum     313
+Keywords perferated t-shirt~
+Type     armor~
+Short    a perferated t-shirt~
+Long     A perferated t-shirt was left here.~
+Flags    human_size~
+WFlags   take body~
+Values   0 0 0 0 0 0
+Stats    1 50 5 0 3
+Affect       -1 -1 2 18 0
+Affect       -1 -1 10 40 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     314
+Keywords blast shielded vest~
+Type     armor~
+Short    a blast shielded vest~
+Long     A blast shielded vest would make a nice christmas present.~
+Flags    human_size~
+WFlags   take body~
+Values   0 10 0 0 0 0
+Stats    10 800 80 0 96
+Affect       -1 -1 -10 32 0
+Affect       -1 -1 -10 35 0
+Affect       -1 -1 -10 52 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     315
+Keywords enhanced force pike~
+Type     weapon~
+Short    an enhanced force pike~
+Long     An enhanced force pike was dropped here.~
+WFlags   take wield~
+Values   0 9 4 11 1000 1000
+Stats    12 3600 360 0 0
+Affect       -1 -1 -2 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     316
+Keywords blastech persuader holdout blaster~
+Type     weapon~
+Short    a Blastech Persuader Holdout Blaster~
+Long     A holdout blaster might come in handy.~
+WFlags   take wield~
+Values   0 7 4 6 0 0
+Stats    4 2500 250 0 0
+Affect       -1 -1 -1 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     317
+Keywords vest~
+Type     armor~
+Short    a vest~
+Long     A vest was dropped here.~
+Flags    human_size~
+WFlags   take body~
+Values   0 4 0 0 0 0
+Stats    10 800 80 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     318
+Keywords short pants~
+Type     armor~
+Short    some short pants~
+Long     Some short pants were left here.~
+Flags    human_size~
+WFlags   take legs~
+Values   0 5 0 0 0 0
+Stats    5 300 30 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     319
+Keywords coruscant police moisture suit top~
+Type     armor~
+Short    a police uniform top~
+Long     Part of a police uniform is here.~
+Flags    large_size~
+WFlags   take body~
+Values   0 3 0 0 0 0
+Stats    1 0 0 0 48
+Affect       -1 -1 1 27 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     320
+Keywords coruscant police moisture suit pants~
+Type     armor~
+Short    a police uniform bottom~
+Long     Part of a police uniform is here.~
+Flags    large_size~
+WFlags   take legs~
+Values   0 3 0 0 0 0
+Stats    1 0 0 0 48
+Affect       -1 -1 1 27 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     321
+Keywords pointy high heals ~
+Type     armor~
+Short    some very pointy high healed shoes~
+Long     Don't get kicked by some very pointy high healed shoes.~
+Flags    human_size~
+WFlags   take feet~
+Values   0 1 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 20 47 0
+Affect       -1 -1 -20 14 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     322
+Keywords beads~
+Type     armor~
+Short    some beads~
+Long     Some beads would lookk nice in your hair.~
+WFlags   take neck body head legs arms waist~
+Values   0 0 0 0 0 0
+Stats    1 5 0 0 1
+Affect       -1 -1 1 18 0
+Affect       -1 -1 1 25 0
+Affect       -1 -1 1 2 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   if race($n) != wookiee
+mpechoat $n It just doesn't look right on you.
+mpechoaround $n $n Looks funny wearing wookiee beads.
+mpforce $n remove bowcaster 
+endif
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     323
+Keywords g-string~
+Type     armor~
+Short    a g-string~
+Long     Oooo... a g-string was left here.~
+Flags    human_size~
+WFlags   take waist~
+Values   0 0 0 0 0 0
+Stats    1 20 2 0 1
+Affect       -1 -1 2 25 0
+Affect       -1 -1 1 31 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     324
+Keywords eyepiece lens~
+Type     lens~
+Short    a lens~
+Long     An eyepiece lens from a baster scope could be possibly be useful.~
+Flags    hidden~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     325
+Keywords pawn shop account card~
+Type     government~
+Short    the pawn shop account card~
+Long     The pawn shop account card will bring much wealth.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     326
+Keywords medium grade unrefined ryll spice~
+Type     rawspice~
+Short    some unrefined ryll~
+Long     Some mid-grade unrefined ryll is here.~
+WFlags   take~
+Values   2 50 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     327
+Keywords low grade unrefined andris spice~
+Type     rawspice~
+Short    some unrefined andris~
+Long     Some unrefined andris looks to be of poor quality.~
+WFlags   take~
+Values   3 25 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     328
+Keywords taurill~
+Type     armor~
+Short    a tuarill~
+Long     A tuarill looks dead.~
+Flags    hutt_size~
+WFlags   take neck body waist hold~
+Values   0 3 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 1 19 0
+#MUDPROG
+Progtype  drop_prog~
+Arglist   100~
+Comlist   mppurge taurill
+mpmload 311
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     329
+Keywords macrobinoculars~
+Type     armor~
+Short    some macrobinoculars~
+Long     Where would the galaxy be without macrobinoculars.~
+WFlags   take eyes~
+Values   0 0 0 0 0 0
+Stats    1 400 40 0 0
+Affect       -1 -1 16777216 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     330
+Keywords staff~
+Type     weapon~
+Short    a staff~
+Long     A staff can be useful in a fight.~
+WFlags   take wield~
+Values   0 3 6 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     331
+Keywords a fashionable jacket~
+Type     armor~
+Short    a fashionable jacket~
+Long     A nice jacket was left in the dirt.~
+WFlags   take about~
+Values   0 4 0 0 0 0
+Stats    1 0 0 0 16
+#ENDOBJECT
+
+#OBJECT
+Vnum     332
+Keywords rags~
+Type     armor~
+Short    Some rags~
+Long     Some rags offer scant protection.~
+WFlags   take body~
+Values   0 3 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     333
+Keywords a spiked helmet~
+Type     armor~
+Short    a spiked helmet~
+Long     A spiked helmet was dropped here.~
+Flags    large_size~
+WFlags   take head~
+Values   0 5 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     334
+Keywords studded wristband~
+Type     armor~
+Short    a studded wristband~
+Long     A studded wristband was dropped here.~
+Flags    large_size~
+WFlags   take wrist~
+Values   0 4 0 0 0 0
+Stats    1 30 3 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     335
+Keywords leather arm brace~
+Type     armor~
+Short    a leather arm brace~
+Long     A leather arm brace was dropped here.~
+Flags    large_size~
+WFlags   take arms~
+Values   0 4 0 0 0 0
+Stats    1 40 4 0 8
+#ENDOBJECT
+
+#OBJECT
+Vnum     336
+Keywords large studded belt~
+Type     armor~
+Short    a large studded belt~
+Long     A large studded belt was dropped here.~
+Flags    large_size~
+WFlags   take waist~
+Values   0 5 0 0 0 0
+Stats    1 20 2 0 16
+#ENDOBJECT
+
+#OBJECT
+Vnum     337
+Keywords some big boots~
+Type     armor~
+Short    some big boots~
+Long     Some big boots were dropped here.~
+Flags    large_size~
+WFlags   take feet~
+Values   0 6 0 0 0 0
+Stats    1 100 10 0 64
+#ENDOBJECT
+
+#OBJECT
+Vnum     338
+Keywords a big leather skirt~
+Type     armor~
+Short    a big leather skirt~
+Long     A big leather skirt was dropped here.~
+Flags    large_size~
+WFlags   take legs~
+Values   0 6 0 0 0 0
+Stats    1 50 5 0 32
+#ENDOBJECT
+
+#OBJECT
+Vnum     339
+Keywords a large plasteel chest plate~
+Type     armor~
+Short    a plasteel chest plate~
+Long     A large plasteel chest plate was dropped here.~
+Flags    large_size~
+WFlags   take body~
+Values   0 10 0 0 0 0
+Stats    1 1000 100 0 64
+Affect       -1 -1 -10 35 0
+Affect       -1 -1 -20 48 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     340
+Keywords raw unrefined carsanum spice~
+Type     rawspice~
+Short    some unrefined carsanum~
+Long     A large amount of unrefined carsanum was foolishly left lying around.~
+WFlags   take~
+Values   1 100 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     341
+Keywords ryll spice~
+Type     spice~
+Short    a stim of ryll~
+Long     A stim of spice shouldn't be left lying around like that.~
+WFlags   take hold~
+Values   2 10 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     342
+Keywords force pike staff~
+Type     weapon~
+Short    a force pike~
+Long     A imperial guards force pike was left here.~
+WFlags   take wield~
+Values   0 5 6 11 1000 1000
+Stats    10 1500 150 0 0
+Affect       -1 -1 -1 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     400
+Keywords Doh~
+Type     trash~
+Short    Doh~
+Long     Doh~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     403
+Keywords Doh~
+Type     trash~
+Short    Doh~
+Long     Doh~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     499
+Keywords bookend~
+Type     trash~
+Short    a newly created bookend~
+Long     Some god dropped a newly created bookend here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     300
+Name     A Cheap Hotel~
+Sector   city~
+Flags    nomob indoors safe hotel~
+Desc     This old hotel looks to be relatively safe if not clean. The rates are
+cheap anyways. The walls are made of a synthetic wood material and the
+floor is covered in a dirty brown carpet. Behind an old fashioned desk is
+an assortmant of keycards sealed behind a more modern energy shield.  
+
+This would be a good place to rest for a while. You may quit and renter
+the game from here.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    420
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    301
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     301
+Name     Before Menari Spaceport~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.    
+~
+#EXIT
+Direction north~
+ToRoom    310
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    304
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    210
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    302
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    480
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    300
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10200
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10251
+#ENDEXIT
+
+Reset M 0 305 100 301
+Reset M 0 307 50 301
+Reset M 0 312 100 301
+  Reset E 1 331 1 12
+Reset M 0 322 50 301
+  Reset E 1 332 1 5
+Reset M 0 325 1 301
+  Reset E 1 56 1 16
+#ENDROOM
+
+#ROOM
+Vnum     302
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    311
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    301
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10219
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    303
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    416
+#ENDEXIT
+
+Reset M 0 304 100 302
+Reset M 0 305 100 302
+Reset M 0 306 50 302
+Reset M 0 307 50 302
+Reset M 0 312 100 302
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     303
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    312
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    302
+#ENDEXIT
+
+Reset M 0 304 100 303
+Reset M 0 312 100 303
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     304
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    309
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    305
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10201
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    301
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    418
+#ENDEXIT
+
+Reset M 0 312 100 304
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     305
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    308
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    304
+#ENDEXIT
+
+Reset M 0 301 50 305
+Reset M 0 305 100 305
+Reset M 0 408 200 305
+  Reset E 1 60 1 16
+Reset M 0 312 100 305
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     306
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    307
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    443
+#ENDEXIT
+
+Reset M 0 306 50 306
+Reset M 0 312 100 306
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     307
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    320
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    306
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    308
+#ENDEXIT
+
+Reset M 0 303 50 307
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 312 100 307
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     308
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    319
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    307
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    305
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    309
+#ENDEXIT
+
+Reset M 0 303 50 308
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 312 100 308
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     309
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    318
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    308
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    304
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    310
+#ENDEXIT
+
+Reset M 0 303 50 309
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 312 100 309
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     310
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    309
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    301
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    311
+#ENDEXIT
+
+Reset M 0 301 50 310
+Reset M 0 306 50 310
+Reset M 0 408 200 310
+  Reset E 1 60 1 16
+Reset M 0 313 100 310
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     311
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    316
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    310
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    302
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    312
+#ENDEXIT
+
+Reset M 0 313 100 311
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     312
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    315
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    311
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    303
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    313
+#ENDEXIT
+
+Reset M 0 304 100 312
+Reset M 0 313 100 312
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     313
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    314
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    312
+#ENDEXIT
+
+Reset M 0 304 100 313
+Reset M 0 313 100 313
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     314
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    327
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    315
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    313
+#ENDEXIT
+
+Reset M 0 305 100 314
+Reset M 0 306 50 314
+Reset M 0 313 100 314
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     315
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    326
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    312
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    314
+#ENDEXIT
+
+Reset M 0 301 50 315
+Reset M 0 305 100 315
+Reset M 0 408 200 315
+  Reset E 1 60 1 16
+Reset M 0 313 100 315
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     316
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    325
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    317
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    311
+#ENDEXIT
+
+Reset M 0 313 100 316
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     317
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    318
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    441
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    316
+#ENDEXIT
+
+Reset M 0 303 50 317
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 313 100 317
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     318
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    323
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    319
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    309
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    317
+#ENDEXIT
+
+Reset M 0 303 50 318
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 306 50 318
+Reset M 0 313 100 318
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     319
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    322
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    320
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    308
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    318
+#ENDEXIT
+
+Reset M 0 303 50 319
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 313 100 319
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     320
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    334
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    307
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    319
+#ENDEXIT
+
+Reset M 0 301 50 320
+Reset M 0 305 100 320
+Reset M 0 408 200 320
+  Reset E 1 60 1 16
+Reset M 0 313 100 320
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     321
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    342
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    340
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    341
+#ENDEXIT
+
+Reset M 0 305 100 321
+Reset M 0 314 100 321
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     322
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    333
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    319
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    323
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    410
+#ENDEXIT
+
+Reset M 0 304 100 322
+Reset M 0 306 50 322
+Reset M 0 314 100 322
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     323
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    332
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    322
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    318
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    324
+#ENDEXIT
+
+Reset M 0 304 100 323
+Reset M 0 306 50 323
+Reset M 0 314 100 323
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     324
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    323
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    325
+#ENDEXIT
+
+Reset M 0 304 100 324
+Reset M 0 305 100 324
+Reset M 0 314 100 324
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     325
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    330
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    324
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    316
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    326
+#ENDEXIT
+
+Reset M 0 301 50 325
+Reset M 0 408 200 325
+  Reset E 1 60 1 16
+Reset M 0 314 100 325
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     326
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    329
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    325
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    315
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    327
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    407
+#ENDEXIT
+
+Reset M 0 314 100 326
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     327
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    328
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    326
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    314
+#ENDEXIT
+
+Reset M 0 314 100 327
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     328
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    341
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    329
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    327
+#ENDEXIT
+
+Reset M 0 303 50 328
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 314 100 328
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     329
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    340
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    326
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    328
+#ENDEXIT
+
+Reset M 0 303 50 329
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 306 50 329
+Reset M 0 314 100 329
+  Reset E 1 331 1 12
+Reset M 0 315 100 329
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     330
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    339
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    331
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    325
+#ENDEXIT
+
+Reset M 0 301 50 330
+Reset M 0 305 100 330
+Reset M 0 408 200 330
+  Reset E 1 60 1 16
+Reset M 0 315 100 330
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     331
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    332
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    330
+#ENDEXIT
+
+Reset M 0 305 100 331
+Reset M 0 315 100 331
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     332
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    337
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    323
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    331
+#ENDEXIT
+
+Reset M 0 304 100 332
+Reset M 0 306 50 332
+Reset M 0 315 100 332
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     333
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    336
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    334
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    322
+#ENDEXIT
+
+Reset M 0 315 100 333
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     334
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    335
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    320
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    333
+#ENDEXIT
+
+Reset M 0 304 100 334
+Reset M 0 315 100 334
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     335
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    348
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    334
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    336
+#ENDEXIT
+
+Reset M 0 301 50 335
+Reset M 0 306 50 335
+Reset M 0 408 200 335
+  Reset E 1 60 1 16
+Reset M 0 315 100 335
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     336
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    335
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    333
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    337
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    404
+#ENDEXIT
+
+Reset M 0 315 100 336
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     337
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    346
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    336
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    332
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    338
+#ENDEXIT
+
+Reset M 0 315 100 337
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     338
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    337
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    339
+#ENDEXIT
+
+Reset M 0 303 50 338
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 306 50 338
+Reset M 0 315 100 338
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     339
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    342
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    338
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    330
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    340
+#ENDEXIT
+
+Reset M 0 303 50 339
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 315 100 339
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     340
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    321
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    339
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    329
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    435
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    401
+#ENDEXIT
+
+Reset M 0 301 50 340
+Reset M 0 306 50 340
+Reset M 0 408 200 340
+  Reset E 1 60 1 16
+Reset M 0 316 100 340
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     341
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    343
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    321
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    328
+#ENDEXIT
+
+Reset M 0 304 100 341
+Reset M 0 305 100 341
+Reset M 0 316 100 341
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     342
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    344
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    345
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    339
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    321
+#ENDEXIT
+
+Reset M 0 304 100 342
+Reset M 0 316 100 342
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     343
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    344
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    341
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    412
+#ENDEXIT
+
+Reset M 0 305 100 343
+Reset M 0 316 100 343
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     344
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction south~
+ToRoom    342
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    343
+#ENDEXIT
+
+Reset M 0 305 100 344
+Reset M 0 306 50 344
+Reset M 0 316 100 344
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     345
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    449
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    346
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    342
+#ENDEXIT
+
+Reset M 0 301 50 345
+Reset M 0 408 200 345
+  Reset E 1 60 1 16
+Reset M 0 316 100 345
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     346
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    347
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    337
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    345
+#ENDEXIT
+
+Reset M 0 316 100 346
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     347
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    348
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    346
+#ENDEXIT
+
+Reset M 0 303 50 347
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 306 50 347
+Reset M 0 316 100 347
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     348
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction south~
+ToRoom    335
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    347
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    414
+#ENDEXIT
+
+Reset M 0 303 50 348
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 316 100 348
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     349
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    351
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    350
+#ENDEXIT
+
+Reset M 0 303 50 349
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 306 50 349
+Reset M 0 308 50 349
+Reset M 0 316 100 349
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     350
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    352
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    349
+#ENDEXIT
+
+Reset M 0 301 50 350
+Reset M 0 306 50 350
+Reset M 0 307 50 350
+Reset M 0 308 50 350
+Reset M 0 408 200 350
+  Reset E 1 60 1 16
+Reset M 0 317 100 350
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     351
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    354
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10250
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    349
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    431
+#ENDEXIT
+
+Reset M 0 304 100 351
+Reset M 0 307 50 351
+Reset M 0 308 50 351
+Reset M 0 409 50 351
+  Reset E 1 320 1 7
+  Reset E 1 319 1 5
+  Reset E 1 60 1 16
+Reset M 0 317 100 351
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     352
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    355
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    353
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    350
+#ENDEXIT
+
+Reset M 0 304 100 352
+Reset M 0 307 50 352
+Reset M 0 308 50 352
+Reset M 0 317 100 352
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     353
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    357
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    352
+#ENDEXIT
+
+Reset M 0 304 100 353
+Reset M 0 306 50 353
+Reset M 0 307 50 353
+Reset M 0 308 50 353
+Reset M 0 317 100 353
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     354
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    360
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    355
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    351
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    406
+#ENDEXIT
+
+Reset M 0 305 100 354
+Reset M 0 307 50 354
+Reset M 0 308 50 354
+Reset M 0 317 100 354
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     355
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    361
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    356
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    352
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    354
+#ENDEXIT
+
+Reset M 0 307 50 355
+Reset M 0 308 50 355
+Reset M 0 408 200 355
+  Reset E 1 60 1 16
+Reset M 0 317 100 355
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     356
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    362
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    357
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    355
+#ENDEXIT
+
+Reset M 0 307 50 356
+Reset M 0 308 50 356
+Reset M 0 409 50 356
+  Reset E 1 320 1 7
+  Reset E 1 319 1 5
+  Reset E 1 60 1 16
+Reset M 0 317 100 356
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     357
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    363
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    358
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    353
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    356
+#ENDEXIT
+
+Reset M 0 303 50 357
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 306 50 357
+Reset M 0 307 50 357
+Reset M 0 308 50 357
+Reset M 0 317 100 357
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     358
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    364
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    359
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    357
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    409
+#ENDEXIT
+
+Reset M 0 303 50 358
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 307 50 358
+Reset M 0 308 50 358
+Reset M 0 317 100 358
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     359
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    365
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    358
+#ENDEXIT
+
+Reset M 0 303 50 359
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 307 50 359
+Reset M 0 308 50 359
+Reset M 0 317 100 359
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     360
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    366
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    354
+#ENDEXIT
+
+Reset M 0 306 50 360
+Reset M 0 307 50 360
+Reset M 0 308 50 360
+Reset M 0 408 200 360
+  Reset E 1 60 1 16
+Reset M 0 318 100 360
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     361
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    367
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    362
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    355
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5001
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    433
+#ENDEXIT
+
+Reset M 0 304 100 361
+Reset M 0 305 100 361
+Reset M 0 307 50 361
+Reset M 0 308 50 361
+Reset M 0 409 50 361
+  Reset E 1 320 1 7
+  Reset E 1 319 1 5
+  Reset E 1 60 1 16
+Reset M 0 318 100 361
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     362
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    368
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    363
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    356
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    361
+#ENDEXIT
+
+Reset M 0 304 100 362
+Reset M 0 307 50 362
+Reset M 0 308 50 362
+Reset M 0 318 100 362
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     363
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    369
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    364
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    357
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    362
+#ENDEXIT
+
+Reset M 0 304 100 363
+Reset M 0 306 50 363
+Reset M 0 307 50 363
+Reset M 0 308 50 363
+Reset M 0 318 100 363
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     364
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    370
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    365
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    358
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    363
+#ENDEXIT
+
+Reset M 0 305 100 364
+Reset M 0 307 50 364
+Reset M 0 308 50 364
+Reset M 0 318 100 364
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     365
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction south~
+ToRoom    359
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    364
+#ENDEXIT
+
+Reset M 0 307 50 365
+Reset M 0 308 50 365
+Reset M 0 408 200 365
+  Reset E 1 60 1 16
+Reset M 0 318 100 365
+  Reset E 1 331 1 12
+Reset M 0 327 1 365
+  Reset E 1 54 1 16
+#ENDROOM
+
+#ROOM
+Vnum     366
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    367
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    360
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    400
+#ENDEXIT
+
+Reset M 0 306 50 366
+Reset M 0 307 50 366
+Reset M 0 308 50 366
+Reset M 0 409 50 366
+  Reset E 1 320 1 7
+  Reset E 1 319 1 5
+  Reset E 1 60 1 16
+Reset M 0 318 100 366
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     367
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    368
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    361
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    366
+#ENDEXIT
+
+Reset M 0 318 100 367
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     368
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    369
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    362
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    367
+#ENDEXIT
+
+Reset M 0 301 50 368
+Reset M 0 307 50 368
+Reset M 0 308 50 368
+Reset M 0 318 100 368
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     369
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    370
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    363
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    368
+#ENDEXIT
+
+Reset M 0 303 50 369
+  Reset E 1 308 1 7
+  Reset E 1 307 1 5
+Reset M 0 305 100 369
+Reset M 0 306 50 369
+Reset M 0 307 50 369
+Reset M 0 308 50 369
+Reset M 0 318 100 369
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     370
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction south~
+ToRoom    364
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    369
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    403
+#ENDEXIT
+
+Reset M 0 304 100 370
+Reset M 0 307 50 370
+Reset M 0 308 50 370
+Reset M 0 408 200 370
+  Reset E 1 60 1 16
+Reset M 0 319 100 370
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     371
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    372
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    390
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    413
+#ENDEXIT
+
+Reset M 0 407 50 371
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 319 100 371
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     372
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction south~
+ToRoom    375
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    371
+#ENDEXIT
+
+Reset M 0 405 100 372
+Reset M 0 319 100 372
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     373
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    374
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    376
+#ENDEXIT
+
+Reset M 0 405 100 373
+Reset M 0 407 50 373
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 410 30 373
+  Reset E 1 322 1 6
+Reset M 0 410 30 373
+  Reset E 1 322 1 6
+Reset M 0 319 100 373
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     374
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction south~
+ToRoom    388
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    373
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    415
+#ENDEXIT
+
+Reset M 0 405 100 374
+Reset M 0 411 50 374
+Reset M 0 319 100 374
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     375
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    372
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    376
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    377
+#ENDEXIT
+
+Reset M 0 405 100 375
+Reset M 0 407 50 375
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 408 200 375
+  Reset E 1 60 1 16
+Reset M 0 319 100 375
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     376
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    373
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    375
+#ENDEXIT
+
+Reset M 0 405 100 376
+Reset M 0 319 100 376
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     377
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    375
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    397
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    379
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    390
+#ENDEXIT
+
+Reset M 0 405 100 377
+Reset M 0 407 50 377
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 410 30 377
+  Reset E 1 322 1 6
+Reset M 0 319 100 377
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     378
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    439
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    387
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    397
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    468
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    405
+#ENDEXIT
+
+Reset M 0 405 100 378
+Reset M 0 411 50 378
+Reset M 0 319 100 378
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     379
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    377
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    380
+#ENDEXIT
+
+Reset M 0 405 100 379
+Reset M 0 407 50 379
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 411 50 379
+Reset M 0 319 100 379
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     380
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    379
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    396
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    381
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    392
+#ENDEXIT
+
+Reset M 0 405 100 380
+Reset M 0 408 200 380
+  Reset E 1 60 1 16
+Reset M 0 320 100 380
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     381
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    380
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    382
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    395
+#ENDEXIT
+
+Reset M 0 405 100 381
+Reset M 0 407 50 381
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 320 100 381
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     382
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    383
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    394
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    381
+#ENDEXIT
+
+Reset M 0 405 100 382
+Reset M 0 320 100 382
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     383
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    389
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    398
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    382
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    396
+#ENDEXIT
+
+Reset M 0 405 100 383
+Reset M 0 407 50 383
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 410 30 383
+  Reset E 1 322 1 6
+Reset M 0 320 100 383
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     384
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    391
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    393
+#ENDEXIT
+
+Reset O 0 306 1 384
+Reset M 0 405 100 384
+Reset M 0 407 50 384
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 411 50 384
+Reset M 0 320 100 384
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     385
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    393
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    395
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    461
+#ENDEXIT
+
+Reset M 0 405 100 385
+Reset M 0 407 50 385
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 320 100 385
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     386
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    399
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    394
+#ENDEXIT
+
+Reset M 0 405 100 386
+Reset M 0 320 100 386
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     387
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    378
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    388
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    472
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    389
+#ENDEXIT
+
+Reset M 0 405 100 387
+Reset M 0 410 30 387
+  Reset E 1 322 1 6
+Reset M 0 320 100 387
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     388
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    374
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    399
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    387
+#ENDEXIT
+
+Reset M 0 405 100 388
+Reset M 0 407 50 388
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 411 50 388
+Reset M 0 320 100 388
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     389
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    387
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    383
+#ENDEXIT
+
+Reset M 0 405 100 389
+Reset M 0 411 50 389
+Reset M 0 320 100 389
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     390
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    371
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    377
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    391
+#ENDEXIT
+
+Reset M 0 405 100 390
+Reset M 0 408 200 390
+  Reset E 1 60 1 16
+Reset M 0 320 100 390
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     391
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    390
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    392
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    384
+#ENDEXIT
+
+Reset M 0 405 100 391
+Reset M 0 407 50 391
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 321 100 391
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     392
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    380
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    393
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    391
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    408
+#ENDEXIT
+
+Reset M 0 405 100 392
+Reset M 0 321 100 392
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     393
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    392
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    385
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    384
+#ENDEXIT
+
+Reset M 0 405 100 393
+Reset M 0 407 50 393
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 410 30 393
+  Reset E 1 322 1 6
+Reset M 0 321 100 393
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     394
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    382
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    386
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    395
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    419
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10211
+#ENDEXIT
+
+Reset M 0 405 100 394
+Reset M 0 411 50 394
+Reset M 0 321 100 394
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     395
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    381
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    394
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    385
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    417
+#ENDEXIT
+
+Reset M 0 405 100 395
+Reset M 0 407 50 395
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 408 200 395
+  Reset E 1 60 1 16
+Reset M 0 321 100 395
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     396
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    397
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    383
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    380
+#ENDEXIT
+
+Reset M 0 405 100 396
+Reset M 0 321 100 396
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     397
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    378
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    396
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    377
+#ENDEXIT
+
+Reset M 0 405 100 397
+Reset M 0 407 50 397
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 321 100 397
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     398
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction east~
+ToRoom    399
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9001
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    383
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    411
+#ENDEXIT
+
+Reset M 0 405 100 398
+Reset M 0 411 50 398
+Reset M 0 321 100 398
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     399
+Name     A City Street~
+Sector   city~
+Desc     You stand at a street corner in Government City (also known as Imperial
+City). The enormous city covers almost all of the planet Coruscant. The
+street is suspended high above the ground as is dwarfed on all sides by
+massive skyscrapers. Looking over the high railing at the edge of the road
+you can see other similar streets many stories bellow and several more up
+above. All around the city is bustling with activity.
+~
+#EXIT
+Direction north~
+ToRoom    388
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    386
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    398
+#ENDEXIT
+
+Reset M 0 405 100 399
+Reset M 0 407 50 399
+  Reset E 1 317 1 5
+  Reset E 1 318 1 7
+  Reset E 1 316 1 16
+Reset M 0 411 50 399
+Reset M 0 321 100 399
+  Reset E 1 331 1 12
+#ENDROOM
+
+#ROOM
+Vnum     400
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction down~
+ToRoom    401
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    366
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     401
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    400
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    402
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    340
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     402
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    401
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    421
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     403
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction down~
+ToRoom    404
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    370
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     404
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    403
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    405
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    336
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     405
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    404
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    423
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    378
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     406
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction down~
+ToRoom    407
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    354
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     407
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    406
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    408
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    326
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     408
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    407
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    425
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    392
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     409
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction down~
+ToRoom    410
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    358
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     410
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    409
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    411
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    322
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     411
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    410
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    427
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    398
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     412
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction down~
+ToRoom    413
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    343
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     413
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    412
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    371
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     414
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction down~
+ToRoom    415
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    348
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     415
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    414
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    374
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     416
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction down~
+ToRoom    417
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    302
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     417
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    416
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    395
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     418
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction down~
+ToRoom    419
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    304
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     419
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    418
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    429
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    394
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     420
+Name     Hotel Cafeteria~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     The hotel cafeteria isn't very fancy or even that clean, but the aroma of
+food coming from the kitchen smalls delicious. There are several tables
+scattered about the room. A few plants hang from the ceiling and some
+pretty tastless pictures line the walls. 
+~
+#EXIT
+Direction south~
+ToRoom    300
+#ENDEXIT
+
+Reset M 0 302 1 420
+  Reset G 1 301 1
+  Reset G 1 302 1
+  Reset G 1 303 1
+  Reset G 1 304 1
+  Reset G 1 305 1
+#ENDROOM
+
+#ROOM
+Vnum     421
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    402
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    422
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     422
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    421
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     423
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    405
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    424
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     424
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    423
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     425
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    408
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    426
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     426
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    425
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     427
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    411
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    428
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     428
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    427
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     429
+Name     A Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    419
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    430
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     430
+Name     A Turbolift~
+Sector   city~
+Flags    indoors~
+Desc     This is one of many turbolifts found throughout Imperial City (or
+Government City) on Coruscant. It runs up and down connecting several
+levels of streets. Most people travel only on the upper levels of the city
+and on most of these lifts the bottom levels have been disabled
+completely. 
+~
+#EXIT
+Direction up~
+ToRoom    429
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    460
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     431
+Name     Skydome Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This Transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction east~
+ToRoom    351
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    432
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     432
+Name     Ticket booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction east~
+ToRoom    431
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    216
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     433
+Name     Grand Towers Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction northeast~
+ToRoom    434
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    361
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     434
+Name     Ticket Booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction east~
+ToRoom    217
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    433
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     435
+Name     Grandis Mon Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction northeast~
+ToRoom    436
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    340
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     436
+Name     Ticket Booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction east~
+ToRoom    218
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    435
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     437
+Name     Palace Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction east~
+ToRoom    438
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    449
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     438
+Name     Ticket Booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction east~
+ToRoom    219
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    437
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     439
+Name     Museum Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction north~
+ToRoom    440
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    378
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     440
+Name     Ticket Booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction north~
+ToRoom    220
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    439
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     441
+Name     College Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction north~
+ToRoom    317
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    442
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     442
+Name     Ticket Booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction north~
+ToRoom    441
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    221
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     443
+Name     Zoo Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction east~
+ToRoom    306
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    444
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     444
+Name     Ticket Booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction east~
+ToRoom    443
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    222
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     445
+Name     Dometown Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction north~
+ToRoom    446
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    460
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     446
+Name     Ticket Booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction north~
+ToRoom    223
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    445
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     447
+Name     Plaza Transit Station~
+Sector   city~
+Flags    indoors~
+Desc     This transit station is one of many interconnected turbocar stations
+running through Government City. Its probably the easiest fasted and
+cheapest way to get around the enormous city and thus is a favoured means 
+of transportation. 
+~
+#EXIT
+Direction north~
+ToRoom    26020
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    448
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     448
+Name     Ticket Booth~
+Sector   city~
+Flags    indoors~
+Desc     For one small fee you can ride the turbocar transit system to almost
+anywhere throught Imperial City. The turnstile allows one person through
+at a time as they pay the droid on duty. The cost is 5 credits.
+~
+#EXIT
+Direction north~
+ToRoom    447
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    224
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     449
+Name     Government Road~
+Sector   city~
+Desc     You stand on government road which is located at the heart of Imperial City
+(or Government City) on Coruscant. The To the north of you looms the
+enormous imperial palace, which is now the governing seat of the New
+Republic. To your west lies the Senate Hall where all the leaders of the
+galaxy come together monthly and discuss issues of galactic importance.
+There is a ring of voting booths in the senate hall in which citizens may
+come and post their opinions to the governing bodies. 
+~
+#EXIT
+Direction north~
+ToRoom    450
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    437
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    345
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     450
+Name     Government Road~
+Sector   city~
+Desc     You stand on government road which is located at the heart of Imperial City
+(or Government City) on Coruscant. The To the north of you looms the
+enormous imperial palace, which is now the governing seat of the New
+Republic. To your west lies the Senate Hall where all the leaders of the
+galaxy come together monthly and discuss issues of galactic importance.
+There is a ring of voting booths in the senate hall in which citizens may
+come and post their opinions to the governing bodies. 
+~
+#EXIT
+Direction north~
+ToRoom    451
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    449
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     451
+Name     Government Road~
+Sector   city~
+Desc     You stand on government road which is located at the heart of Imperial City
+(or Government City) on Coruscant. The To the north of you looms the
+enormous imperial palace, which is now the governing seat of the New
+Republic. To your west lies the Senate Hall where all the leaders of the
+galaxy come together monthly and discuss issues of galactic importance.
+There is a ring of voting booths in the senate hall in which citizens may
+come and post their opinions to the governing bodies. 
+~
+#EXIT
+Direction south~
+ToRoom    450
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     460
+Name     Dometown~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    445
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    430
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     461
+Name     A Brothel~
+Sector   city~
+Flags    nomob indoors~
+Desc     The brothel seems once have been the lobby of an old hotel that has since
+been taken over by a less respected organization. The old furnishings that
+surround the room are torn and stained the walls are chipped and peeling
+in places and the carpets are extreemly dirty. Not the nicest place but
+most clients don't seem to mind.
+~
+#EXIT
+Direction north~
+ToRoom    467
+Flags     secret hidden~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    385
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    466
+Flags     secret hidden~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    464
+#ENDEXIT
+
+Reset M 0 404 50 461
+  Reset E 1 323 1 13
+Reset M 0 401 50 461
+  Reset E 1 321 1 8
+#ENDROOM
+
+#ROOM
+Vnum     462
+Name     A Bedroom~
+Sector   city~
+Flags    nomob indoors~
+Desc     This bedroom is plain and small. It is completely unfirnished except for a
+large bed that semms to be the focus of the room. The carpet is covered in
+stains as are the sheets. The wallpaper is peeling off in spots as well...
+but at this point, who cares. 
+~
+Reset M 0 400 1 462
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpechoat $n After a while you leave the bedroom.
+mpechoat $n You feel strong and refreshed.
+feel heal $n
+feel heal $n
+feel heal $n
+mptransfer $n 461
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     463
+Name     A Bedroom~
+Sector   city~
+Flags    nomob~
+Desc     This bedroom is plain and small. It is completely unfirnished except for a
+large bed that semms to be the focus of the room. The carpet is covered in
+stains as are the sheets. The wallpaper is peeling off in spots as well...
+but at this point, who cares.  
+~
+Reset M 0 403 1 463
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpechoat $n After a while you leave the bedroom.
+mpechoat $n You feel strong and refreshed.
+feel heal $n
+feel heal $n
+feel heal $n
+mptransfer $n 461
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     464
+Name     A Hallway~
+Sector   city~
+Flags    nomob~
+Desc     This hallway is a literal assault on your senses. Your eyes are filled with
+the sight of torn wallpaper, stains and small pieces of leftover wrappers.
+Your nose is filled with the smells of the sweat and other bodily
+secretions of 100 different species of creatures. Your ears are filled
+with the sounds of banging, squeeking, grunting, moaning, screaming, and
+the low hum of whispered thoughts.
+~
+#EXIT
+Direction north~
+ToRoom    464
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    461
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    464
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    465
+Key       310
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset M 0 406 1 464
+  Reset G 1 310 1
+  Reset E 1 315 1 16
+  Reset E 1 313 1 5
+  Reset E 1 312 1 7
+  Reset E 1 311 1 5
+  Reset E 1 314 1 5
+Reset D 0 464 0 2
+Reset D 0 464 2 2
+Reset D 0 464 3 2
+#ENDROOM
+
+#ROOM
+Vnum     465
+Name     An Office~
+Sector   city~
+Desc     The smells and sounds of the brothel fill this office, but it all seems
+more pleasant here in this nicely furnished office. A large wooden desk is
+the focus of the room. It is around the walls of the room are a few
+bookshelves and several filing cabinets. The chair to the desk is very
+large. The room is decorated with an intersting assortment of unusual
+sexual aids. Some of which you can't even begin to imagine what they could
+possibly be used for.
+~
+#EXIT
+Direction east~
+ToRoom    464
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset O 0 309 1 465
+Reset D 0 465 1 1
+#ENDROOM
+
+#ROOM
+Vnum     466
+Name     A Hidden Passage~
+Sector   city~
+Flags    nomob~
+Desc     This hallway is a literal assault on your senses. Your eyes are filled with
+the sight of torn wallpaper, stains and small pieces of leftover wrappers.
+Your nose is filled with the smells of the sweat and other bodily
+secretions of 100 different species of creatures. Your ears are filled
+with the sounds of banging, squeeking, grunting, moaning, screaming, and
+the low hum of whispered thoughts. 
+~
+#EXIT
+Direction north~
+ToRoom    461
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    463
+Flags     window~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     467
+Name     A Hidden Passage~
+Sector   city~
+Flags    nomob~
+Desc     This hallway is a literal assault on your senses. Your eyes are filled with
+the sight of torn wallpaper, stains and small pieces of leftover wrappers.
+Your nose is filled with the smells of the sweat and other bodily
+secretions of 100 different species of creatures. Your ears are filled
+with the sounds of banging, squeeking, grunting, moaning, screaming, and
+the low hum of whispered thoughts. 
+~
+#EXIT
+Direction south~
+ToRoom    461
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    462
+Flags     window~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     468
+Name     A Pawnshop~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     The pawn shap is cluttered with all kinds of devices for sale. He will buys
+all sorts of devices and especially weapons and armor at a fair price. The
+pervert also trades in rare pornography... some of it fetches a good
+profit on some worlds.
+~
+#EXIT
+Direction west~
+ToRoom    469
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    378
+#ENDEXIT
+
+Reset M 0 309 1 468
+Reset M 0 310 2 468
+Reset M 0 310 2 468
+#ENDROOM
+
+#ROOM
+Vnum     469
+Name     A Hallway~
+Sector   city~
+Flags    dark nomob indoors~
+Desc     The hallway is narrow and dimly lit. The walls are smuged with dark
+fingerprints and the floor is covered with dirt. A lightswitch on the wall
+is broken.
+~
+#EXIT
+Direction north~
+ToRoom    471
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    468
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    470
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     470
+Name     Back Storage Room~
+Sector   city~
+Flags    dark indoors~
+Desc     A small amount of light creeping in from the front of the shop reveales
+this room to be a store room. Most of the items here seem to be useless or
+in a state of disrepair. There are several boxes lying around as well as a
+couple crates of magazines. 
+
+If you search carefully you might find something useful.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    469
+#ENDEXIT
+
+Reset O 0 324 1 470
+#ENDROOM
+
+#ROOM
+Vnum     471
+Name     A Workshop~
+Sector   city~
+Flags    indoors factory~
+Desc     This room is dusty but relatively organized. There is a large table and
+many tools for working on small projects. There are several power outlets
+as well some with controlled output. It would be an excellent place to
+build some equipment. 
+~
+#EXIT
+Direction south~
+ToRoom    469
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     472
+Name     Refinery Entrance~
+Sector   city~
+Flags    nomob indoors~
+Desc     The smell of spice fills your nose as you enter the side of this old
+building. The floor is dirty and strewn with garbage as you move along you
+catch the sight of a few small creatures that quickly scurry out of
+sight.
+~
+#EXIT
+Direction north~
+ToRoom    387
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    473
+#ENDEXIT
+
+Reset M 0 323 1 472
+  Reset E 1 333 1 6
+  Reset E 1 334 1 14
+  Reset E 1 336 1 13
+  Reset E 1 337 1 8
+  Reset E 1 338 1 7
+  Reset E 1 339 1 5
+  Reset E 1 335 1 10
+  Reset E 1 342 1 16
+#ENDROOM
+
+#ROOM
+Vnum     473
+Name     Refinery Lobby~
+Sector   city~
+Flags    indoors~
+Desc     The lobby is a large room mostly empty room. There are a few chairs along
+one of the walls.  The stroong smell of spice overpowers the odour of
+garbage which is the biggest visual feature of the room. Whoever owns this
+place isn't big on houskeeping. 
+~
+#EXIT
+Direction north~
+ToRoom    472
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    475
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    474
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    476
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     474
+Name     A Dark Hallway~
+Sector   city~
+Flags    dark indoors~
+Desc     The hallway is cold and dark. Triple sets of dark thick curtains cover each
+of the exits making it almost impossible for light to pass between them.
+The smell of spice is incredibly strong making your eyes water. 
+~
+#EXIT
+Direction north~
+ToRoom    473
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    478
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    479
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    477
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     475
+Name     An Office~
+Sector   city~
+Flags    indoors~
+Desc     This large office is equipped with a large crecent shaped desk. There is
+also a large filing cabinet but no other furniture. The room is dirty and
+unkempt. The desk has a small computer terminal resting on it as well as a
+large glass bowl containing some black frog-like creatures. 
+~
+#EXIT
+Direction west~
+ToRoom    473
+#ENDEXIT
+
+Reset M 0 324 1 475
+#ENDROOM
+
+#ROOM
+Vnum     476
+Name     An Office~
+Sector   city~
+Flags    indoors~
+Desc     This office is slightly cleaner than what you've seen of the rest of the
+refinery... at least the floor is free of trash. The room is furnished
+with a large desk littered with datapads and disks. 
+~
+#EXIT
+Direction east~
+ToRoom    473
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     477
+Name     Refining Area~
+Sector   city~
+Flags    dark indoors refinery~
+Desc     This room is pitch black. 
+~
+#EXIT
+Direction east~
+ToRoom    474
+#ENDEXIT
+
+Reset O 0 10487 1 477
+#ENDROOM
+
+#ROOM
+Vnum     478
+Name     Refining Area~
+Sector   city~
+Flags    dark indoors refinery~
+Desc     This room is pitch black. 
+~
+#EXIT
+Direction west~
+ToRoom    474
+#ENDEXIT
+
+Reset O 0 341 1 478
+#ENDROOM
+
+#ROOM
+Vnum     479
+Name     A Cold Storage Room~
+Sector   city~
+Flags    dark indoors~
+Desc     This room is cold and dry. There are many crates and bags stacked on
+shelves or on the floor almost entirely filling the room. If you search
+here carefully you might find something usefull in one of the crates. 
+~
+#EXIT
+Direction north~
+ToRoom    474
+#ENDEXIT
+
+Reset O 0 326 1 479
+Reset O 0 327 1 479
+Reset O 0 340 1 479
+#ENDROOM
+
+#ROOM
+Vnum     480
+Name     Mountain School of Self Defence~
+Sector   city~
+Flags    nomob indoors~
+Desc     The Mountain School of Self Defence is a small school that teaches basic
+self defense techinques in both armed and unarmed combat situations. The
+entrance area is well lit. The floor is a bare polished white imitation
+stone tile. A rack of pamphlets rests against one wall and a desk is up
+against another. 
+~
+#EXIT
+Direction north~
+ToRoom    481
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    482
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    301
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     481
+Name     Coridor in the Self Defence School~
+Sector   city~
+Flags    indoors~
+Desc     The Mountain School of Self Defence is a small school that teaches basic
+self defense techinques in both armed and unarmed combat situations. The
+floor is a bare polished white imitation stone tile. There are several
+archaic weapons hung on the walls as decorations.  
+~
+#EXIT
+Direction north~
+ToRoom    485
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    498
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    480
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     482
+Name     Coridor in the Self Defence School~
+Sector   city~
+Flags    indoors~
+Desc     The Mountain School of Self Defence is a small school that teaches basic
+self defense techinques in both armed and unarmed combat situations. The
+floor is a bare polished white imitation stone tile. There are several
+archaic weapons hung on the walls as decorations. 
+~
+#EXIT
+Direction east~
+ToRoom    483
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    480
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     483
+Name     Coridor in the Self Defence School~
+Sector   city~
+Flags    indoors~
+Desc     The Mountain School of Self Defence is a small school that teaches basic
+self defense techinques in both armed and unarmed combat situations. The
+floor is a bare polished white imitation stone tile. There are several
+archaic weapons hung on the walls as decorations.  
+~
+#EXIT
+Direction north~
+ToRoom    493
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    484
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    482
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     484
+Name     Level 1 Sparring Room~
+Sector   city~
+Flags    indoors~
+Desc     The floor of this large room is covered in several large circular mats.
+Students use these rooms to spar with one another and practice their
+aquired skills. Around the  perimeter of the room stretches a long bench
+broken only by the room exits. There are several towel hooks above the
+bench as well as cubby holes underneath for storing shoes.
+~
+#EXIT
+Direction north~
+ToRoom    489
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    483
+#ENDEXIT
+
+Reset M 0 414 5 484
+Reset M 0 414 5 484
+Reset M 0 414 5 484
+Reset M 0 414 5 484
+Reset M 0 414 5 484
+#ENDROOM
+
+#ROOM
+Vnum     485
+Name     Coridor in the Self Defence School~
+Sector   city~
+Flags    indoors~
+Desc     The Mountain School of Self Defence is a small school that teaches basic
+self defense techinques in both armed and unarmed combat situations. The
+floor is a bare polished white imitation stone tile. There are several
+archaic weapons hung on the walls as decorations.  
+~
+#EXIT
+Direction north~
+ToRoom    486
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    488
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    481
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     486
+Name     Ranged Weapons Room~
+Sector   city~
+Flags    indoors~
+Desc     This room is used for practicing throwing as well as ranged weapons such as
+blasters. A target is hung to the east. To hit it, scan to the east and
+then use snipe or throw to hit it. (note snipe and throw are both skills
+that need to be practiced before you can use them)
+~
+#EXIT
+Direction east~
+ToRoom    487
+Flags     window~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    485
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     487
+Name     Target~
+Sector   city~
+Flags    nomob indoors~
+Reset M 0 413 1 487
+#ENDROOM
+
+#ROOM
+Vnum     488
+Name     Personal Instruction Room~
+Sector   city~
+Flags    indoors~
+Desc     This room is a large and mostly empty except for a few benches on the
+walls. The floor is firm but has a bit of give to it making falling
+slighly less painful. It is here that instructors teach individuals or
+small groups of people. 
+~
+#EXIT
+Direction west~
+ToRoom    485
+#ENDEXIT
+
+Reset M 0 412 1 488
+#ENDROOM
+
+#ROOM
+Vnum     489
+Name     Level 2 Sparring Room~
+Sector   city~
+Flags    indoors~
+Desc     The floor of this large room is covered in several large circular mats.
+Students use these rooms to spar with one another and practice their
+aquired skills. Around the  perimeter of the room stretches a long bench
+broken only by the room exits. There are several towel hooks above the
+bench as well as cubby holes underneath for storing shoes.
+~
+#EXIT
+Direction north~
+ToRoom    490
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    484
+#ENDEXIT
+
+Reset M 0 415 5 489
+Reset M 0 415 5 489
+Reset M 0 415 5 489
+Reset M 0 415 5 489
+Reset M 0 415 5 489
+#ENDROOM
+
+#ROOM
+Vnum     490
+Name     Level 3 Sparring Room~
+Sector   city~
+Flags    indoors~
+Desc     The floor of this large room is covered in several large circular mats.
+Students use these rooms to spar with one another and practice their
+aquired skills. Around the  perimeter of the room stretches a long bench
+broken only by the room exits. There are several towel hooks above the
+bench as well as cubby holes underneath for storing shoes.
+~
+#EXIT
+Direction north~
+ToRoom    491
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    489
+#ENDEXIT
+
+Reset M 0 416 5 490
+Reset M 0 416 5 490
+Reset M 0 416 5 490
+Reset M 0 416 5 490
+Reset M 0 416 5 490
+#ENDROOM
+
+#ROOM
+Vnum     491
+Name     Level 4 Sparring Room~
+Sector   city~
+Flags    indoors~
+Desc     The floor of this large room is covered in several large circular mats.
+Students use these rooms to spar with one another and practice their
+aquired skills. Around the  perimeter of the room stretches a long bench
+broken only by the room exits. There are several towel hooks above the
+bench as well as cubby holes underneath for storing shoes.
+~
+#EXIT
+Direction north~
+ToRoom    492
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    490
+#ENDEXIT
+
+Reset M 0 417 5 491
+Reset M 0 417 5 491
+Reset M 0 417 5 491
+Reset M 0 417 5 491
+Reset M 0 417 5 491
+#ENDROOM
+
+#ROOM
+Vnum     492
+Name     Level 5 Sparring Room~
+Sector   city~
+Flags    indoors~
+Desc     The floor of this large room is covered in several large circular mats.
+Students use these rooms to spar with one another and practice their
+aquired skills. Around the  perimeter of the room stretches a long bench
+broken only by the room exits. There are several towel hooks above the
+bench as well as cubby holes underneath for storing shoes.
+~
+#EXIT
+Direction south~
+ToRoom    491
+#ENDEXIT
+
+Reset M 0 418 5 492
+Reset M 0 418 5 492
+Reset M 0 418 5 492
+Reset M 0 418 5 492
+Reset M 0 418 5 492
+#ENDROOM
+
+#ROOM
+Vnum     493
+Name     Remote Training - Level 1~
+Sector   city~
+Flags    indoors~
+Desc     This room is large enough to move around and dodge quite freely. It is
+completely empty except for a droid recharge station. The floors and walls
+are covered in scuff marks. A sign advizes that only one student at a time
+use this room. 
+~
+#EXIT
+Direction north~
+ToRoom    494
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    483
+#ENDEXIT
+
+Reset M 0 419 1 493
+#ENDROOM
+
+#ROOM
+Vnum     494
+Name     Remote Training - Level 2~
+Sector   city~
+Flags    indoors~
+Desc     This room is large enough to move around and dodge quite freely. It is
+completely empty except for a droid recharge station. The floors and walls
+are covered in scuff marks. A sign advizes that only one student at a time
+use this room.  
+~
+#EXIT
+Direction north~
+ToRoom    495
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    493
+#ENDEXIT
+
+Reset M 0 420 1 494
+#ENDROOM
+
+#ROOM
+Vnum     495
+Name     Remote Training - Level 3~
+Sector   city~
+Flags    indoors~
+Desc     This room is large enough to move around and dodge quite freely. It is
+completely empty except for a droid recharge station. The floors and walls
+are covered in scuff marks. A sign advizes that only one student at a time
+use this room.  
+~
+#EXIT
+Direction north~
+ToRoom    496
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    494
+#ENDEXIT
+
+Reset M 0 421 1 495
+#ENDROOM
+
+#ROOM
+Vnum     496
+Name     Remote Training - Level 4~
+Sector   city~
+Flags    indoors~
+Desc     This room is large enough to move around and dodge quite freely. It is
+completely empty except for a droid recharge station. The floors and walls
+are covered in scuff marks. A sign advizes that only one student at a time
+use this room.  
+~
+#EXIT
+Direction north~
+ToRoom    497
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    495
+#ENDEXIT
+
+Reset M 0 422 1 496
+#ENDROOM
+
+#ROOM
+Vnum     497
+Name     Remote Training - Level 5~
+Sector   city~
+Flags    indoors~
+Desc     This room is large enough to move around and dodge quite freely. It is
+completely empty except for a droid recharge station. The floors and walls
+are covered in scuff marks. A sign advizes that only one student at a time
+use this room.  
+~
+#EXIT
+Direction south~
+ToRoom    496
+#ENDEXIT
+
+Reset M 0 423 1 497
+#ENDROOM
+
+#ROOM
+Vnum     498
+Name     School Shop~
+Sector   city~
+Flags    indoors~
+Desc     The school shop sells several martial arts related items. There are are a
+few weapons on display as well as several books and some martial arts
+clothing (similar to what the instructors as well as most students are
+wearing). 
+~
+#EXIT
+Direction west~
+ToRoom    481
+#ENDEXIT
+
+Reset M 0 424 1 498
+  Reset G 1 330 1
+  Reset G 1 10488 1
+  Reset G 1 10312 1
+  Reset G 1 59 1
+#ENDROOM
+
+#ROOM
+Vnum     499
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

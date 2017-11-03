@@ -1,0 +1,54 @@
+#SHIP
+Name         6031 - Sorosuub System Hopper~
+Filename     6031~
+Description  ~
+Owner        public~
+Pilot        ~
+Copilot      ~
+Class        0
+Tractorbeam  0
+Shipyard     32050
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       0
+Missiles     0
+Maxmissiles  0
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      31843
+Firstroom    6031
+Lastroom     6031
+Shield       0
+Maxshield    10
+Hull         100
+Maxhull      100
+Maxenergy    2000
+Hyperspeed   100
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       0
+Astro_array  0
+Realspeed    65
+Type         0
+Cockpit      6031
+Coseat       6031
+Pilotseat    6031
+Gunseat      6031
+Navseat      6031
+Engineroom   0
+Entrance     6031
+Shipstate    0
+Missilestate 0
+Energy       2000
+Manuever     35
+Home         Tatooine System~
+End
+
+#END

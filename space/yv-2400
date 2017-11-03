@@ -1,0 +1,54 @@
+#SHIP
+Name         YV-2400~
+Filename     yv-2400~
+Description  ~
+Owner        ~
+Pilot        ~
+Copilot      ~
+Class        1
+Tractorbeam  0
+Shipyard     31843
+Hanger       0
+Turret1      6494
+Turret2      6495
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       4
+Missiles     10
+Maxmissiles  10
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      31843
+Firstroom    6473
+Lastroom     6499
+Shield       0
+Maxshield    200
+Hull         1000
+Maxhull      1000
+Maxenergy    8000
+Hyperspeed   150
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       0
+Astro_array  0
+Realspeed    75
+Type         0
+Cockpit      6478
+Coseat       6480
+Pilotseat    6479
+Gunseat      6480
+Navseat      6479
+Engineroom   6487
+Entrance     6473
+Shipstate    0
+Missilestate 0
+Energy       8000
+Manuever     65
+Home         corperate~
+End
+
+#END

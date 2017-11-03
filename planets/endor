@@ -1,0 +1,10 @@
+#PLANET
+Name         Endor~
+Filename     endor~
+BaseValue    75000
+Flags        0
+Starsystem   Endor Starsystem~
+Area         endor~
+End
+
+#END

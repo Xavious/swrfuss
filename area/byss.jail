@@ -1,0 +1,98 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Byss Prison~
+Author       Durga~
+Ranges       0 0 0 0
+Economy      0 6250000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       9050
+Keywords   dude~
+Short      a newly created dude~
+Long       Some god abandoned a newly created dude here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9099
+Keywords   dude~
+Short      a newly created dude~
+Long       Some god abandoned a newly created dude here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     9050
+Keywords dud~
+Type     trash~
+Short    a dud~
+Long     A dud is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9051
+Keywords dud~
+Type     trash~
+Short    a dud~
+Long     A dud is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9099
+Keywords dud~
+Type     trash~
+Short    a dud~
+Long     A dud is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     9050
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     9099
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+Reset M 0 9099 1 9099
+#ENDROOM
+
+#ENDAREA

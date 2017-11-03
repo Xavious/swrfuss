@@ -1,0 +1,51 @@
+#SPACE
+Name         Tatooine System~
+Filename     tatooine.system~
+Planet1      Tatooine~
+Planet2      ~
+Planet3      ~
+Star1        Tatoo One~
+Star2        Tatoo Two~
+Location1a      Docking bay 92~
+Location1b      A Dusty Path~
+Location1c      ~
+Location2a       ~
+Location2b      ~
+Location2c      ~
+Location3a      ~
+Location3b      ~
+Location3c      ~
+Doc1a          31843
+Doc2a          0
+Doc3a          0
+Doc1b          0
+Doc2b          0
+Doc3b          0
+Doc1c          0
+Doc2c          0
+Doc3c          0
+P1x          2799
+P1y          -3279
+P1z          -4166
+P2x          0
+P2y          0
+P2z          0
+P3x          0
+P3y          0
+P3z          0
+S1x          0
+S1y          0
+S1z          0
+S2x          2000
+S2y          -3000
+S2z          -1000
+Gravitys1     200
+Gravitys2     200
+Gravityp1     100
+Gravityp2     0
+Gravityp3     0
+Xpos          -3311
+Ypos          6399
+End
+
+#END

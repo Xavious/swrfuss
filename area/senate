@@ -1,0 +1,1299 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         The Senate Hall~
+Author       Durga~
+Ranges       0 0 0 103
+Economy      0 31250000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       10100
+Keywords   A Senator~
+Short      a newly created A Senator~
+Long       Some god abandoned a newly created A Senator here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10101
+Keywords   senate guard~
+Short      the senate guard~
+Long       A guard watches the entrance to the senate hall.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if council($n)
+bow $n
+else
+say Sorry this area is for council members only.
+mpechoat $n The guard escorts you to the west.
+mpechoaround $n The guard escorts $n to the west.
+mptransfer $n 10118
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10102
+Keywords   checkpoint guard~
+Short      a checkpoint guard~
+Long       A guard checks for weapons.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_customs_weapons~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Please empty all bags...
+mpforce $n get all bag
+say .... and backpacks.
+mpforce $n get all back
+mpforce $n sit
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   rises~
+Comlist   mpat 10193 drop all
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   leaves~
+Comlist   mpat 10193 drop all
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10103
+Keywords   senate checkpoint guard~
+Short      a checkpoint guard~
+Long       A guard is asleep at his post.
+~
+Race       Human~
+Position   sleeping~
+DefPos     sleeping~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10104
+Keywords   foreign diplomat~
+Short      a diplomat~
+Long       A diplomat strolls down the hall.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc practice~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10199
+Keywords   A Senator~
+Short      a newly created A Senator~
+Long       Some god abandoned a newly created A Senator here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     10100
+Keywords The New Republic Terminal~
+Type     furniture~
+Short    The NR Terminal~
+Long     A New Republic Message Terminal is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10101
+Keywords council terminal~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10102
+Keywords corellia.board;bset correllia.board vnum 10102;bset corellia.board max 50;instaroom;folda senate~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10103
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10104
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10105
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10106
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10107
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10108
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10109
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10110
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10111
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10112
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10113
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10114
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10115
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10116
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10117
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10118
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10119
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10120
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10121
+Keywords ~
+Type     furniture~
+Short    a terminal~
+Long     This terminal is used for communicating with your council representatives.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10198
+Keywords the senate shuttle~
+Type     spacecraft~
+Short    a newly created the senate shuttle~
+Long     The senate shuttle flys back and forth from the senate hall.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10199
+Keywords The Imperial Terminal~
+Type     furniture~
+Short    The Imperial Terminal~
+Long     An Imperial Information Terminal is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     10100
+Name     Before The Senate Hall~
+Sector   city~
+Desc     You stand outside the enormous Senate Hall on Coruscant where council heads
+meet once a month to discuss issues of galactic importance. Included in
+the senate hall is a ring of opinion booths available for citizens to
+communicate with there senators. To the north the enourmous imperial
+palace towers over the surrounding area. 
+~
+#EXIT
+Direction east~
+ToRoom    450
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10101
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10101
+Name     Senate Hall Entrance~
+Sector   city~
+Flags    nomob indoors~
+Desc     The entrance to the senate hall consists of wide stone steps that lead up
+to the ancient building. Stone pillars flank the large double doors.
+Statuettes are carved around the eves.  Inside the doors is a small lobby.
+Beyond it to the east is the hall of opinions. 
+~
+#EXIT
+Direction east~
+ToRoom    10100
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10102
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10102
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques. 
+~
+#EXIT
+Direction north~
+ToRoom    10103
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10101
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10104
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10120
+#ENDEXIT
+
+Reset M 0 10104 2 10102
+Reset M 0 10104 2 10102
+#ENDROOM
+
+#ROOM
+Vnum     10103
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques. 
+~
+#EXIT
+Direction east~
+ToRoom    10108
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10102
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10105
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10104
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques. 
+~
+#EXIT
+Direction north~
+ToRoom    10102
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10107
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10105
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques. 
+~
+#EXIT
+Direction west~
+ToRoom    10109
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10103
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10106
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques. 
+~
+#EXIT
+Direction west~
+ToRoom    10115
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10104
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10107
+Name     Imperial Room of Opinions~
+Sector   city~
+Flags    safe silence~
+#EXIT
+Direction west~
+ToRoom    10104
+#ENDEXIT
+
+Reset O 0 10199 1 10107
+#ENDROOM
+
+#ROOM
+Vnum     10108
+Name     New Republic Room of Opinions~
+Sector   city~
+Flags    safe silence~
+#EXIT
+Direction west~
+ToRoom    10103
+#ENDEXIT
+
+Reset O 0 10100 1 10108
+#ENDROOM
+
+#ROOM
+Vnum     10109
+Name     The Main Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques. 
+~
+#EXIT
+Direction east~
+ToRoom    10105
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10110
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10110
+Name     The Main Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques. 
+~
+#EXIT
+Direction east~
+ToRoom    10109
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10111
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10111
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques.
+~
+#EXIT
+Direction south~
+ToRoom    10112
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10110
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10112
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques.
+~
+#EXIT
+Direction north~
+ToRoom    10111
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10118
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10113
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10116
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10113
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques. 
+~
+#EXIT
+Direction north~
+ToRoom    10112
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10114
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10114
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques.
+~
+#EXIT
+Direction east~
+ToRoom    10115
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10113
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10115
+Name     The Main Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway encircles the main floor of the senate. It si decorated
+in white and gold. The walls are adorned with historical photographs and
+plaques.
+~
+#EXIT
+Direction east~
+ToRoom    10106
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10114
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10116
+Name     Hallway to Senate Shuttle Bay~
+Sector   city~
+Flags    indoors~
+Desc     This hallway leads from the senate hall to a small shuttle bay. On the
+walls are various plaques and pictures telling the history of the senate
+and the senate hall.
+~
+#EXIT
+Direction east~
+ToRoom    10112
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10117
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10117
+Name     Hallway to Senate Shuttle Bay~
+Sector   city~
+Flags    indoors~
+Desc     This hallway leads from the senate hall to a small shuttle bay. On the
+walls are various plaques and pictures telling the history of the senate
+and the senate hall. 
+~
+#EXIT
+Direction east~
+ToRoom    10116
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10196
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10118
+Name     Bellow the Senate Chamber~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway is carpeted in white. It mus be increadibly hard to keep
+clean but whoever does it seems to be consistantly successful. The walls
+are covered in a speckled gold surface. A holographic sign reads senators
+only beyond this point.
+~
+#EXIT
+Direction east~
+ToRoom    10119
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10112
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10119
+Name     Stairs To the Senate Chamber~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway is carpeted in white. It mus be increadibly hard to keep
+clean but whoever does it seems to be consistantly successful. The walls
+are covered in a speckled gold surface. A holographic sign reads senators
+only beyond this point.
+~
+#EXIT
+Direction east~
+ToRoom    10120
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10118
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10121
+#ENDEXIT
+
+Reset M 0 10101 1 10119
+#ENDROOM
+
+#ROOM
+Vnum     10120
+Name     Bellow the Senate Chamber~
+Sector   city~
+Flags    indoors~
+Desc     This long hallway is carpeted in white. It mus be increadibly hard to keep
+clean but whoever does it seems to be consistantly successful. The walls
+are covered in a speckled gold surface. A holographic sign reads senators
+only beyond this point.
+~
+#EXIT
+Direction east~
+ToRoom    10102
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10119
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10121
+Name     The Senate~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction down~
+ToRoom    10119
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10122
+Name     Coruscant Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10123
+Name     Corellia Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10124
+Name     Mon Calamari Council of Quarrens~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10125
+Name     Mon Calamari Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10126
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10127
+Name     Duinduogwuin Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10128
+Name     Chad Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10129
+Name     Af'El Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10130
+Name     Trandosh Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10131
+Name     Endor Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10132
+Name     Roch Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10133
+Name     Honoghr Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10134
+Name     Kashyyyk Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10135
+Name     Nal Hutta Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10136
+Name     Tatooine Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10137
+Name     Ryloth Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10138
+Name     Rodia Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10139
+Name     Adari Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10140
+Name     Bonadan Council~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10141
+Name     Byss Council~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10142
+Name     Gamorr Council~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10143
+Name     too many~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10144
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10180
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10181
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10182
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10183
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10184
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10185
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10186
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10187
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10188
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10189
+Name     Spaceport Entrance~
+Sector   city~
+Flags    nomob~
+Desc     This small spaceport provides a pit stop for weary travellers on their way
+to the senate halls. More often than it not also provides a few quick
+drinks. 
+~
+#EXIT
+Direction south~
+ToRoom    10192
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10193
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10194
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10190
+Name     Outer System Landing Area~
+Sector   city~
+Desc     This landing area is used mostly by senators not wishing to have to enter
+the core of the corusant system or to have to drive through government
+city. A seperate shutle that lands to the west flys directly to the senate
+hall. 
+~
+#EXIT
+Direction west~
+ToRoom    10191
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10191
+Name     East Walkway~
+Sector   city~
+Desc     This walkway is surrounded in glass giving you a nice view of the cratered
+planetoid the station is situated on as well as the beautiful galactic
+starscape. 
+~
+#EXIT
+Direction east~
+ToRoom    10190
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10192
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10192
+Name     Entrance Checkpoint~
+Sector   city~
+Desc     As no wepons are allowed into the senate hall a guard is positioned here to
+search for and confiscate any that they find. They may be picked up on
+your way out of the area. (so long as somebody hasn't already beat you to
+it)
+~
+#EXIT
+Direction north~
+ToRoom    10189
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10194
+#ENDEXIT
+
+Reset M 0 10102 1 10192
+#ENDROOM
+
+#ROOM
+Vnum     10193
+Name     Exit Checkpoint~
+Sector   city~
+Desc     All confiscated weapons may be picked up here. Unfortunately however
+security on this end is rather lapse and more often than not people take
+home a few extra weapons than they came with or none at all.
+~
+#EXIT
+Direction east~
+ToRoom    10191
+#ENDEXIT
+
+Reset M 0 10103 1 10193
+#ENDROOM
+
+#ROOM
+Vnum     10194
+Name     West Walkway~
+Sector   city~
+Desc     This walkway is surrounded in glass giving you a nice view of the cratered
+planetoid the station is situated on as well as the beautiful galactic
+starscape.  
+~
+#EXIT
+Direction east~
+ToRoom    10193
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10195
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10195
+Name     Senate Shuttle Landing Pad - Outer System~
+Sector   city~
+Flags    nomob~
+Desc     The shuttle that flys to the senate hall on coruscant lands here. It is a
+quick flight so your wait shouldn't be long.
+~
+#EXIT
+Direction east~
+ToRoom    10194
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10196
+Name     Senate Shuttle Landing Pad - Senate Hall~
+Sector   city~
+Flags    nomob~
+Desc     This landing pad is used exclusively by a shuttle that travels to and from
+the outer limits of the system. As some senators feel uncomfortable
+bringing their ships in close to coruscant this gives them the opertunity
+to land further out and provides them with a direct route to the hall. It
+also saves them the trouble of having to walk through the streets of
+coruscant.
+~
+#EXIT
+Direction east~
+ToRoom    10117
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10197
+Name     YOU SHOULDN"T BE HERE :P~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10198
+Name     Senate Shuttle~
+Sector   city~
+Flags    nomob~
+Desc     This small shuttle first class shuttle is very comfortable. It is decorated
+in the traditional senatorial white.
+~
+#ENDROOM
+
+#ROOM
+Vnum     10199
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

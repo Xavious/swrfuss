@@ -1,0 +1,2200 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Some Hunter Spacecraft~
+Author       Bleeds~
+Ranges       0 0 0 103
+Economy      0 31268379
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6400
+Keywords   Weapons Dealer~
+Short      Weapons Dealer~
+Long       A shadey looking character is here.
+~
+Desc       Dressed in a conservitive suit and always looking around suspisiously. This
+character has got to be upto something.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   82 5 9 83 0 150 50 0 23
+#ENDMOBILE
+
+#OBJECT
+Vnum     6400
+Keywords Wrist comlink~
+Type     comlink~
+Short    wrist comlink~
+Long     A funny looking wristband lies here.~
+WFlags   take wrist~
+Values   0 0 0 0 0 0
+Stats    2 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6401
+Keywords sniper scope~
+Type     trash~
+Short    A sniper scope.~
+Long     A small scope is in the dirt here.~
+Flags    inventory~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    2 1000 100 0 0
+Affect       -1 -1 2 18 0
+Affect       -1 -1 1 19 0
+#EXDESC
+ExDescKey    sniper scope~
+ExDesc       This small scope looks as if it could improve your aim buy quite a bit
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6402
+Keywords synthetic rope~
+Type     trash~
+Short    a synthetic rope~
+Long     A synthetic rope is here.~
+Flags    inventory~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6400
+Name     Boarding Slave 1~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     You stand upon in the boarding hatch of on of the most famous
+ships of all time.  A bounty hunters Customized KDY Firespray
+built for speed and firepower.  As you enter you must pass through 
+a series of security detectors and camaras.
+~
+#EXIT
+Direction east~
+ToRoom    6401
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6401
+Name     Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Having passed through the various security checks you 
+finally stand in the hallway of slave 1.  This ships odd 
+design means things arn't normally where they should be.  
+A latter leads up into the bridge, to the north you see a 
+cargo hold and south of you looks like someones living area.
+A small hatch in the floor rumbles with the vibrations from 
+the engines.
+~
+#EXIT
+Direction north~
+ToRoom    6402
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6404
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6400
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6403
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6406
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6402
+Name     Cargo Hold~
+Sector   city~
+Flags    spacecraft~
+Desc     This ship has a fairly small cargo hold.  Most of the old 
+holds area has been taken over in the modifications of the
+engines and shields.  There is still room for about a 
+months worth of supplys for the ships single crew memeber.
+~
+#EXIT
+Direction south~
+ToRoom    6401
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6405
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6403
+Name     Bridge~
+Sector   city~
+Flags    spacecraft~
+Desc     The bridge of slave 1 is very cramped, however everything is within easy
+reach of the comfortable captains chair.  all systems may be monitored
+from this room including prisoner status and even the boading area. 
+Controls for various  modifications made on the ship are all located here.
+~
+#EXIT
+Direction down~
+ToRoom    6401
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6404
+Name     Crew Quarters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     Like most of the rest of the ship even the crew quaters
+have been taken over with ship modifications.  The area 
+that use to sleep 6 comfortably now holds room for 1 and 
+in a pinch sleep up to 4 people.
+~
+#EXIT
+Direction north~
+ToRoom    6401
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6405
+Name     Prisoner Hold~
+Sector   city~
+Flags    spacecraft~
+Desc     This modified cargo hold is used for the ships main cargo,
+bounties.  Force shielded and reinforced cages line the 
+walls.  Six seperate cages are in the room each with room
+for 1 person.
+~
+#EXIT
+Direction up~
+ToRoom    6402
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6406
+Name     Engine Room~
+Sector   city~
+Flags    spacecraft~
+Desc     In this room you can clearly see 2 of the largest modifications
+to this ship the old engine and generator have been replaced by
+the massive KES-F31 drive engine and XF-16 power generator.
+Giving this large ship the speed and agility of a y-wing.
+~
+#EXIT
+Direction up~
+ToRoom    6401
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6407
+Name     Boarding Bay~
+Sector   city~
+Flags    spacecraft~
+Desc     You stand in the turbolift of one of the greatest starships
+ever made a CR90 Corellian "Blockade Runner". This ship
+is known for its ability to be easily modified to fit its 
+current role in a campaign, anything from troop transport
+to front line fighter is in this ships awsome repetoir.
+~
+#EXIT
+Direction down~
+ToRoom    6408
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6408
+Name     TurboLift Level 1~
+Sector   city~
+Flags    spacecraft~
+Desc     Standing in the turbolift you see the that level 1 is mostly
+ship systems and work area's. The bridge as well as medical
+and other facility's are all located on level 1.
+~
+#EXIT
+Direction west~
+ToRoom    6410
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6407
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6409
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6409
+Name     Turbolift Level 2~
+Sector   city~
+Flags    spacecraft~
+Desc     Level 2 of the ship is made up of crew quaters as well as
+pasanger quaters and a travelers suite.  The escape pods are located
+on this level as well as cafateria.
+~
+#EXIT
+Direction west~
+ToRoom    6434
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6408
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6410
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+~
+#EXIT
+Direction north~
+ToRoom    6411
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6408
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6412
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6411
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+~
+#EXIT
+Direction east~
+ToRoom    6414
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6410
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6412
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+~
+#EXIT
+Direction north~
+ToRoom    6410
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6413
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6413
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+~
+#EXIT
+Direction west~
+ToRoom    6412
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6415
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6414
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+~
+#EXIT
+Direction west~
+ToRoom    6411
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6415
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6415
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+ To the west you see medical droid in the sick bay and to the 
+east is the bridge.
+~
+#EXIT
+Direction east~
+ToRoom    6416
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6433
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6414
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6413
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6416
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+North lies a meeting room , while south is the ships research 
+and medical bay.
+~
+#EXIT
+Direction north~
+ToRoom    6429
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6417
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6430
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6415
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6417
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+A small ladder leads to a hatch on the roof of this section of walkway.
+~
+#EXIT
+Direction east~
+ToRoom    6418
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6416
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6458
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6418
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so  
+it is bare metal walls and very little show, a metal walkway
+with emergancy lighting along it lead around this level.
+Noth lies most of the equipment that runs the ships shields and
+sensor array.  South is the equipment room for weapons and
+communication.
+~
+#EXIT
+Direction north~
+ToRoom    6427
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6419
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6428
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6417
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6419
+Name     Level 1 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The level one hallway is built for war not plesentry so   it is bare metal
+walls and very little show, a metal walkway with emergancy lighting along
+it lead around this level. Both to the north and south are emergency
+repair rooms. 
+~
+#EXIT
+Direction north~
+ToRoom    6425
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6420
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6426
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6418
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6420
+Name     Bridge~
+Sector   city~
+Flags    spacecraft~
+Desc     You stand on the bridge of this massive cruiser.  A giant viewing area is
+before you. This ships control are all within easy access on set up
+ideally for a large crew , but some modification have been mace so it may
+be handled by a smaller one.
+~
+#EXIT
+Direction west~
+ToRoom    6419
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6421
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6423
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6424
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6422
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6421
+Name     Gunners Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     Here is the ships weapons control, all weapons with the exception of the
+upper and lower turrent are fired from here. The targeting and tracking
+computer are both high end , making up what this ship lacks in forepower
+with incredible accuracy.
+~
+#EXIT
+Direction southwest~
+ToRoom    6420
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6422
+Name     Navigators Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     Navigatin equipment lines this area, a small chair with a 
+scrathpad on it's arm for quick calculations is situated ideally
+for easy access into the nav computer.
+~
+#EXIT
+Direction northeast~
+ToRoom    6420
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6423
+Name     Communications room~
+Sector   city~
+Flags    spacecraft~
+Desc     The heart of the ships comunication is located in this room,  
+not only does all inner ship communication go through here but all
+interstellar communication aswell.
+~
+#EXIT
+Direction southeast~
+ToRoom    6420
+#ENDEXIT
+
+Reset O 0 32201 1 6423
+#ENDROOM
+
+#ROOM
+Vnum     6424
+Name     Captains Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     A plush captains chair sits here, access to all systems is available for
+viewing so a captain is always aware of what is goin on  within his ship.
+~
+#EXIT
+Direction northwest~
+ToRoom    6420
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6425
+Name     Emergency Repair Room 1~
+Sector   city~
+Flags    spacecraft~
+Desc     Damage control is important to any warship. this ship has 2 emergancy
+control rooms both allow access to all systems for repair and 
+emergancy bypassing.
+~
+#EXIT
+Direction south~
+ToRoom    6419
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6426
+Name     Emergency Repair Room 2~
+Sector   city~
+Flags    spacecraft~
+Desc     Damage control is important to any warship. this ship has 2 emergancy
+control rooms both allow access to all systems for repair and 
+emergancy bypassing.
+~
+#EXIT
+Direction north~
+ToRoom    6419
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6427
+Name     Shields and Sensors~
+Sector   city~
+Flags    spacecraft~
+Desc     The rooms shield and sensor equipment is packed into this room 
+Manual repairs can be done from here as well as any modifications
+that must be made.
+~
+#EXIT
+Direction south~
+ToRoom    6418
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6428
+Name     Weapons and Communication~
+Sector   city~
+Flags    spacecraft~
+Desc     All the ships communication and weapons targeting computers are packed
+into this room. The walls of the room are extra thick and fire equipment
+is easily accessable. A small set of backup communication equipment
+sits in a sealed crate in case of the worst.
+~
+#EXIT
+Direction north~
+ToRoom    6418
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6429
+Name     Meeting Room~
+Sector   city~
+Flags    spacecraft~
+Desc     This is the officers meeting room, unlike most other rooms on this  floor
+this room is carpeted and the walls are coverd with pictures of  starships
+and famous battles.  In the center of the room is a large  table with a
+holo-projector and around it are a dozen large comfortable chairs.
+~
+#EXIT
+Direction south~
+ToRoom    6416
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6430
+Name     Medical and Science~
+Sector   city~
+Flags    spacecraft~
+Desc     The medical and science bay abourd this ship is large and designed for use
+during experiments or emergeny surgery. The walls are lined with vials of
+strange liquids and a giant freezer lines the back wall.
+~
+#EXIT
+Direction north~
+ToRoom    6416
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6431
+Name     Sickbay~
+Sector   city~
+Flags    spacecraft~
+Desc     Dominated by a large surgery table , you can see little in this room except
+equipment  It is here that they pull back beings from near death to life
+again.
+~
+#EXIT
+Direction south~
+ToRoom    6432
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6433
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6432
+Name     Sickbay~
+Sector   city~
+Flags    spacecraft~
+Desc     This room is almost silent except for the hum of drids as they watch over
+recovering paitents. the move about administering various drugs and 
+first-aid to recovering paitents. 
+~
+#EXIT
+Direction north~
+ToRoom    6431
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6433
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6433
+Name     Sickbay~
+Sector   city~
+Flags    spacecraft~
+Desc     The sickbay enterence is monitord by 2 small droids that check people in or
+out and send them to their designated beds.  They inform you that Surgery
+lies to the northest and recovery lies to the southwest.
+~
+#EXIT
+Direction east~
+ToRoom    6415
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6431
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6432
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6434
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+  of the crew and pasangers. the walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction north~
+ToRoom    6435
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6409
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6436
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6435
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction east~
+ToRoom    6437
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6434
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6436
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction north~
+ToRoom    6434
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6438
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6437
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction west~
+ToRoom    6435
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6439
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6438
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction west~
+ToRoom    6436
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6439
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6439
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship. West of you come sthe smell
+of food , and to the east are the doors to various quaters.
+~
+#EXIT
+Direction east~
+ToRoom    6440
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6444
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6437
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6438
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6440
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction north~
+ToRoom    6449
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6441
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6447
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6439
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6441
+Name     Level 2 Hallway~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction north~
+ToRoom    6450
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6442
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6460
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6440
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6442
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction east~
+ToRoom    6443
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6441
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6459
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6443
+Name     Level 2 Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Unlike the first level of the ship, the second is designed more for comfort
+of the crew and pasangers. The walls are coverd in a white noise
+repressing plastic and the floor is layerd with an eye pleasing tile. It
+almost seems as if you wern't even on a ship.
+~
+#EXIT
+Direction north~
+ToRoom    6451
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6452
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6448
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6442
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6444
+Name     Cafeteria~
+Sector   city~
+Flags    spacecraft~
+Desc     No matter what the time of day or night this room always seems to have
+people in it , crews that work on a 24 hour schedule need foor 24 hours a
+day.  Not know for its excuisit cusine, it is at least filling and most
+things can be cooked to order.
+~
+#EXIT
+Direction east~
+ToRoom    6439
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6445
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6446
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6445
+Name     Cafeteria~
+Sector   city~
+Flags    spacecraft~
+Desc     o matter what the time of day or night this room always seems to have
+people in it , crews that work on a 24 hour schedule need foor 24 hours a
+day.  Not know for its excuisit cusine, it is at least filling and most
+things can be cooked to order.
+~
+#EXIT
+Direction south~
+ToRoom    6446
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6444
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6446
+Name     Cafeteria~
+Sector   city~
+Flags    spacecraft~
+Desc     o matter what the time of day or night this room always seems to have
+people in it , crews that work on a 24 hour schedule need foor 24 hours a
+day.  Not know for its excuisit cusine, it is at least filling and most
+things can be cooked to order.
+~
+#EXIT
+Direction north~
+ToRoom    6445
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6444
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6447
+Name     Crew Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     The crew quarters are basically set up like an army barraks. Beds line both
+walls with a small chest located at the foot of each bed. The head is
+locate at the far end of the room and dosn't seem to be set up for any
+species or sex. 
+~
+#EXIT
+Direction north~
+ToRoom    6441
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6448
+Name     Passanger Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     The walls of this room are painted a mild blue. A large viewport is located
+on the south  wall allowing passengers to look out into space. A small
+wetbar and fridge are here for  the passengers convienince as well as a
+com to the kitchen.  
+~
+#EXIT
+Direction north~
+ToRoom    6443
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6449
+Name     Crew Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     the Crew quarters are basically set up like an army barraks. Beds line both
+walls with a small chest located at the foot of each bed. The head is
+locate at the far end of the room and dosn't seem to be set up for any
+species or sex. 
+~
+#EXIT
+Direction south~
+ToRoom    6440
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6450
+Name     Officers Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+#EXIT
+Direction south~
+ToRoom    6441
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6451
+Name     Captains Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     The foors in this room are lushly carpeted. A small desk is along the north
+wall and a well made bed sits below a viewport, offering a nice view of
+outside the ship. A small wetbar is located on the west wall
+~
+#EXIT
+Direction south~
+ToRoom    6443
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6452
+Name     Guest Suite~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     You stand in the enterance to a spacious guest suite. Originally designed
+to house the whole crew there is more than enough room in here for any
+number of guests. 
+~
+#EXIT
+Direction north~
+ToRoom    6453
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6456
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6454
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6443
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6453
+Name     Guest Suite~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     A private bath and jacuzi is located here , designed to fit a bein of any
+race or sex even as large as a hutt, So it could easily entertain many
+human sized guests. 
+~
+#EXIT
+Direction east~
+ToRoom    6457
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6452
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6454
+Name     Guest Suite~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     A massive bed is in this room , coverd in the finests cloths available and
+made up of an eyepleasing color for the current guest. this room van be
+easily modified to host any number of beins frm any race.
+~
+#EXIT
+Direction north~
+ToRoom    6452
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6455
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6455
+Name     Guest Suite~
+Sector   city~
+Flags    spacecraft~
+Desc     The games room is located here, various holo-games as well as older
+computer games are here for the guests entertainment, games may be brought
+on board easily to help suit the current guests pleasure.
+~
+#EXIT
+Direction north~
+ToRoom    6456
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6454
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6456
+Name     Guest Suite~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     This room is easily dominated by is massive viewport. The only better view
+on the ship is from the bridge, Comfortable chairs and couches line the
+area and a wetbar is located up near the viewport. Which closes with the
+push of a button for our guests pleasure.
+~
+#EXIT
+Direction north~
+ToRoom    6457
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6455
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6452
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6457
+Name     Guest Suite~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     The wardrobe is located here, a giant mahogany coverd wadrobe will easily
+house the clothing of even the most fasion concious guests.  the clothing
+of even the most fasion concious guests. A large make-up table is located
+in front of mirrors so the guest will be assured of his or here apperance
+at all times.
+~
+#EXIT
+Direction south~
+ToRoom    6456
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6453
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6458
+Name     Upper Turrent~
+Sector   city~
+Flags    spacecraft~
+Desc     This room is bare except for a small targeting computer and a pair of
+lasers. Designed for combat and not comfort you hope the stay in here
+isn't too long.
+~
+#EXIT
+Direction down~
+ToRoom    6417
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6459
+Name     Lower Turrent~
+Sector   city~
+Flags    spacecraft~
+Desc     This room is bare except for a small targeting computer and a pair of
+lasers. Designed for combat and not comfort you hope the stay in here
+isn't too long.
+~
+#EXIT
+Direction up~
+ToRoom    6442
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6460
+Name     Passenger Quarters~
+Sector   city~
+Flags    safe spacecraft~
+Desc     The walls of this room are painted a mild blue. A large viewport is located
+on the south  wall allowing passengers to look out into space. A small
+wetbar and fridge are here for  the passengers convienince as well as a
+com to the kitchen.  
+~
+#EXIT
+Direction north~
+ToRoom    6441
+#ENDEXIT
+
+Reset M 0 6400 1 6460
+  Reset G 1 6401 1
+  Reset G 1 6400 1
+  Reset G 1 53 1
+  Reset G 1 6402 1
+#ENDROOM
+
+#ROOM
+Vnum     6461
+Name     Hatchway~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction up~
+ToRoom    6462
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6462
+Name     Main Hallway~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction north~
+ToRoom    6463
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6464
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6461
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6463
+Name     Main Hallway~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction north~
+ToRoom    6465
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6471
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6462
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6470
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6464
+Name     Main Hallway~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction north~
+ToRoom    6462
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6472
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6467
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6468
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6466
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6465
+Name     Cockpit~
+Sector   city~
+Flags    spacecraft~
+Desc     The cockpit of this ship is a comfortable  2 seater although everything can
+easily be controlled by a single pilot. A modified YV-666 freighter this
+ship has more than enough power to run with the fighters, and enough
+shielding and weapons to fight with small cruisers.
+~
+#EXIT
+Direction south~
+ToRoom    6463
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6466
+Name     Engine Room~
+Sector   city~
+Flags    spacecraft~
+Desc     The powerhouse of this small freigheter is located here. powering both
+shields and Engines from this room make maintenance easy. The modified
+engine allows this ship extra speed beyoynd what a normal frieghter can
+handle.
+~
+#EXIT
+Direction up~
+ToRoom    6464
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6467
+Name     Crew Quarters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     A sparse living quarters is here.  Designed to be use when travlling on the
+hunt this ship has very little for creature comforts and is more bare bone
+to make you finish all that much sooner. 
+~
+#EXIT
+Direction north~
+ToRoom    6464
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6468
+Name     Pracitce Room~
+Sector   city~
+Flags    spacecraft~
+Desc     A small practice range is here , the walls have a Blaster absorbing
+material coating them and a small computer will pop up targets at random ,
+perfect training for the bounty hunter on the go. 
+~
+#EXIT
+Direction east~
+ToRoom    6464
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6469
+Name     Cargo Hold~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6470
+Name     Prisoner Room~
+Sector   city~
+Flags    spacecraft~
+Desc     The prisoner bays of the ship is set up for easy access at all times 
+camaras and sensor waths the prisoners who are in one of 4 force sealed
+cages. Once inside no one gets out until they are let out. 
+~
+#EXIT
+Direction east~
+ToRoom    6463
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6471
+Name     Prisoner Room~
+Sector   city~
+Flags    spacecraft~
+Desc     The prisoner bays of the ship is set up for easy access at all times 
+camaras and sensor waths the prisoners who are in one of 4 force sealed
+cages. Once inside no one gets out until they are let out.
+~
+#EXIT
+Direction west~
+ToRoom    6463
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6472
+Name     Training Room~
+Sector   city~
+Flags    spacecraft~
+Desc     Around this room is various training equipment, designed for helping to
+keep in top form or even help in the recovery of wounds, this is the ideal
+place to stay in shape. 
+~
+#EXIT
+Direction west~
+ToRoom    6464
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6473
+Name     Boarding Dock~
+Sector   city~
+Flags    spacecraft~
+Desc     You stand on the boarding platforn of the brand new CEC YT-2400 the
+improved version of the old stock freighter that the Millenium Falcon was
+made of. Shes a well designed ship with more emphasses put on speed and
+firepower. 
+~
+#EXIT
+Direction up~
+ToRoom    6499
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6474
+Name     Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The hallway is a simple grey metel with various emergency lighting
+around.
+It leads in a circular path around the ship.
+~
+#EXIT
+Direction west~
+ToRoom    6487
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6496
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6475
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6475
+Name     Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The hallway is a simple grey metel with various emergency lighting
+around.
+It leads in a circular path around the ship.
+~
+#EXIT
+Direction north~
+ToRoom    6490
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6476
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6474
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6476
+Name     Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The hallway is a simple grey metel with various emergency lighting
+around.
+It leads in a circular path around the ship.
+~
+#EXIT
+Direction north~
+ToRoom    6491
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6475
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6498
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6477
+Name     Hallway~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6478
+Name     Bridge~
+Sector   city~
+Flags    spacecraft~
+Desc     The bridge of the YV-2400 is almost identical to the older YV-1300  a
+canopied circular cockpit with seats for the pilot and co-pilot are
+situated just ahead all control are easily accessable , but set up for a
+crew of two for best preformance.
+~
+#EXIT
+Direction west~
+ToRoom    6493
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6479
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6480
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6479
+Name     Captains Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     It's from this chair that the flying is done, launch and landing as well as
+speed are controll easily from the captains chair. 
+~
+#EXIT
+Direction southwest~
+ToRoom    6478
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6480
+Name     Co-pilots Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     The co-pilots main responsibility is navigation. Located here is the ships
+navigation computers as well as the weapons computer and targeting
+computer. 
+~
+#EXIT
+Direction northwest~
+ToRoom    6478
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6481
+Name     Lounge~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6482
+Name     Cargro Hold~
+Sector   city~
+Flags    spacecraft~
+Desc     The massive cargo hold on this ship is ideal for all your travelling needs
+it will hold a tonne of equipment and supplies making this a great long
+range transport ship. 
+~
+#EXIT
+Direction north~
+ToRoom    6496
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6484
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6483
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6483
+Name     Cargro Hold~
+Sector   city~
+Flags    spacecraft~
+Desc     The massive cargo hold on this ship is ideal for all your travelling needs
+it will hold a tonne of equipment and supplies making this a great long
+range transport ship. 
+~
+#EXIT
+Direction north~
+ToRoom    6482
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6484
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6484
+Name     Cargro Hold~
+Sector   city~
+Flags    spacecraft~
+Desc     The massive cargo hold on this ship is ideal for all your travelling needs
+it will hold a tonne of equipment and supplies making this a great long
+range transport ship. 
+~
+#EXIT
+Direction south~
+ToRoom    6485
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6483
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6485
+Name     Cargro Hold~
+Sector   city~
+Flags    spacecraft~
+Desc     The massive cargo hold on this ship is ideal for all your travelling needs
+it will hold a tonne of equipment and supplies making this a great long
+range transport ship.
+~
+#EXIT
+Direction north~
+ToRoom    6484
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6486
+Name     Lounge~
+Sector   city~
+Flags    spacecraft~
+Desc     the lounge of this ship serves dual purpose, it is ment for the
+entertainment of guests as well as for meetings between the captain and
+crew or prospective employers. 
+~
+#EXIT
+Direction west~
+ToRoom    6498
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6494
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6495
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6487
+Name     Engine Room~
+Sector   city~
+Flags    spacecraft~
+Desc     The twin engines of this ship are stunning in their speed, making this ship
+  one of if not the fastest freighter in mass production today.  All
+components are easily accessable for quick repair on the fly. 
+~
+#EXIT
+Direction east~
+ToRoom    6474
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6488
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6488
+Name     Engine Room~
+Sector   city~
+Flags    spacecraft~
+Desc     The twin engines of this ship are stunning in their speed, making this ship
+  one of if not the fastest freighter in mass production today.  All
+components are easily accessable for quick repair on the fly. 
+~
+#EXIT
+Direction east~
+ToRoom    6487
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6489
+Name     Captains Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     The cpatains quarters on this frieghter are small compared to most , but
+what space he lost in quarters he made up in cargo space and that is after
+all the most important thing to most captains.
+~
+#EXIT
+Direction south~
+ToRoom    6490
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6490
+Name     Crew Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     A spare crew quarters is located here. Rows of bunks with foot lockers line
+the walls and a door on the noth wall leads into the captains quarters.
+~
+#EXIT
+Direction north~
+ToRoom    6489
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6475
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6491
+Name     Passenger Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     A large passenger area is here for the live cargo all freighters are force
+to carry sometimes. Even though it's not built for comfort it is more
+comfortable than the captains and crews quarters.
+~
+#EXIT
+Direction north~
+ToRoom    6492
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6476
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6492
+Name     Passenger Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     A large passenger area is here for the live cargo all freighters are force
+to carry sometimes. Even though it's not built for comfort it is more
+comfortable than the captains and crews quarters. 
+~
+#EXIT
+Direction south~
+ToRoom    6491
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6493
+Name     Bridge Hatch~
+Sector   city~
+Flags    spacecraft~
+Desc     A small hatchway leads from the main ship into the cockpit of the ship.
+this is one of the many changes made fron the old YV-1300 into this newer
+model. Micro-electronics has allowed for minaturizatin of controlls and
+systems  making this hallway an ideal like to all the ships systems.
+~
+#EXIT
+Direction east~
+ToRoom    6478
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6499
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6494
+Name     Top Turrent~
+Sector   city~
+Flags    spacecraft~
+Desc     This room is bare except for a small targeting computer and a pair of
+lasers. Designed for combat and not comfort you hope the stay in here
+isn't too long. 
+~
+#EXIT
+Direction down~
+ToRoom    6486
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6495
+Name     Bottom Turrent~
+Sector   city~
+Flags    spacecraft~
+Desc     This room is bare except for a small targeting computer and a pair of
+lasers. Designed for combat and not comfort you hope the stay in here
+isn't too long. 
+~
+#EXIT
+Direction up~
+ToRoom    6486
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6496
+Name     Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The hallway is a simple grey metel with various emergency lighting
+around.
+It leads in a circular path around the ship.
+~
+#EXIT
+Direction east~
+ToRoom    6499
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6482
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6474
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6497
+Name     Hallway~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction north~
+ToRoom    6498
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6498
+Name     Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The hallway is a simple grey metel with various emergency lighting
+around.
+It leads in a circular path around the ship.
+~
+#EXIT
+Direction east~
+ToRoom    6486
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6497
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6499
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6476
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6499
+Name     Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     The hallway is a simple grey metel with various emergency lighting around.
+It leads in a circular path around the ship.
+~
+#EXIT
+Direction east~
+ToRoom    6493
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6496
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6473
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6498
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

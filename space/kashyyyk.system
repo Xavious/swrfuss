@@ -1,0 +1,51 @@
+#SPACE
+Name         Kashyyyk System~
+Filename     kashyyyk.system~
+Planet1      Kashyyyk~
+Planet2      Dosha~
+Planet3      ~
+Star1        Kashyyyk's Sun~
+Star2        ~
+Location1a      Rwookrrorro Landing Pad~
+Location1b      ~
+Location1c      ~
+Location2a       ~
+Location2b      ~
+Location2c      ~
+Location3a      ~
+Location3b      ~
+Location3c      ~
+Doc1a          28613
+Doc2a          0
+Doc3a          0
+Doc1b          0
+Doc2b          0
+Doc3b          0
+Doc1c          0
+Doc2c          0
+Doc3c          0
+P1x          -8762
+P1y          -123
+P1z          -3702
+P2x          2377
+P2y          10986
+P2z          -9899
+P3x          0
+P3y          0
+P3z          0
+S1x          0
+S1y          0
+S1z          0
+S2x          0
+S2y          0
+S2z          0
+Gravitys1     200
+Gravitys2     0
+Gravityp1     100
+Gravityp2     100
+Gravityp3     0
+Xpos          -334
+Ypos          4977
+End
+
+#END

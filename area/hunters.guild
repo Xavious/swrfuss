@@ -1,0 +1,1124 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Hunters Guild~
+Author       Bleeds~
+Ranges       0 0 0 103
+Economy      0 25856975
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6600
+Keywords   guild registerer~
+Short      Registerer~
+Long       A young bounty hunter stands here taking your applications.
+~
+Desc       This bounty hunter is fairly young and doing his part to get into guild
+management. Offering to take care of the registraiton of new members.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 30 0 25 0 0
+Stats2     6 10 300
+Stats3     3 9 2
+Stats4     0 0 0 6 6
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common wookiee twilek rodian hutt mon_calamari noghri ewok ithorian gotal devaronian droid spiritual magical gamorrean god ancient jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+Speaking   common wookiee twilek rodian hutt mon_calamari noghri ewok ithorian gotal devaronian droid spiritual magical gamorrean god ancient jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   work~
+Comlist   ' your looking for work eh.
+peer $n
+' well you might have the makings of a hunter 
+' lets see what jobs we have available right now.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   jobs~
+Comlist   , gets a list from under the counter.
+' hmm right now we have the following contracts.
+, looks at list.
+' a disinegration contract for a small time smuggler.
+' Hmm got a bounty for some old guy thats been oggling girls on adari
+too.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   smuggler~
+Comlist   ' yup he's wanted dead by someone. 
+' payment is 2000 credits upon proof of disinigration
+smile $n
+' interested?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes~
+Comlist   ' great , just bring me back proof of disinegration to collect your
+bounty.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  give_prog~
+Arglist   smugglers ear~
+Comlist   if ovnuminv(6611) >= 1
+' ahh great, our employer will be happy
+smile $n
+mpgain $n 3 200
+mpwithdraw 2000
+give 2000 credits $n
+' our payment as agreed upon.
+else 
+' Bah this is useless
+sneer $n
+' i hope you do better in the future
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   old~
+Comlist   ' yeah some dirty old man been looking up the wrong skirt.
+snicker $n
+' but hes worth 5k , and that almost buys my time too
+smile $n 
+' need to bring back his "privates" as proof
+evil
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  give_prog~
+Arglist   privates~
+Comlist   if ovnuminv(7316) >= 1
+'ewww , either way here's yer cash'
+chuckle
+mpwithdraw 5000
+give 5000 credits $n
+mpgain $n 3 10000
+' you might make a good Bounty hunter after all.
+smile $n
+pat $n
+else 
+' bah can't even do a simple job
+frown $n
+' I hope you do better in the future
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6601
+Keywords   Record runner~
+Short      record runner~
+Long       A plebe is here running for records
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6602
+Keywords   receptionist~
+Short      receptionist~
+Long       A receptionist is here accepting your bounty's.
+~
+Desc       She looks as tough as nails but what do you expect she works here after
+all.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 90 0 -125 0 0
+Stats2     18 10 900
+Stats3     9 10 2
+Stats4     0 0 0 18 18
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6603
+Keywords   Salesman~
+Short      salesman~
+Long       A Salesman is here selling his latest wares.
+~
+Desc       As fast as new products become available to Bounty Hunters, this salesman
+somehow gets them. Of course they can be a little pricy. But that what you
+pay to get the best i guess. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   73 5 6 9 82 100 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6604
+Keywords   Smuggler~
+Short      Small time smuggler~
+Long       A wirey alien is standing here.
+~
+Desc       This alien is glancing around watching his back. Obviously he is wanted by
+someone for something , just if you could figure out by who and for what,
+~
+Race       Mon Calamari~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari~
+Speaking   mon_calamari~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   scream
+gasp
+' ya got me
+mpoload 6611
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#OBJECT
+Vnum     6600
+Keywords terminal board message~
+Type     furniture~
+Short    a terminal~
+Long     A galactic net message terminal is installed on the wall here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    terminal board message~
+ExDesc       A small computer terminal is installed on the wall for passengers to
+leave comments to the operators. To learn more about its usage type
+'HELP MESSAGE'.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6601
+Keywords guildmasters desk~
+Type     trash~
+Short    guildmasters desk~
+Long     A giant wooden desk.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    guildmasters desk~
+ExDesc       This desk is huge and made of the finest woods credits can find. Kept
+impecable by the guildmasters secratary you wonder if he even does any
+work.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6602
+Keywords guildmasters chair~
+Type     trash~
+Short    guildmasters  chair~
+Long     A giant managers chair.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    guildmasters chair~
+ExDesc       this chair is so cushy its digusting.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6603
+Keywords Guest chair~
+Type     trash~
+Short    guest chair~
+Long     A uncomfortable guests chair.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Guest chair~
+ExDesc       A chair four legs and a seat.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6604
+Keywords small table~
+Type     furniture~
+Short    small table~
+Long     A small table is here acting as a desk.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    100 0 0 0 0
+#EXDESC
+ExDescKey    small table~
+ExDesc       This table is coverd in paper work , It's obvious who is low man on the
+totem pole here.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6605
+Keywords Small Desk~
+Type     furniture~
+Short    small desk~
+Long     A small desk sits here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Small Desk~
+ExDesc       A small desk is here covered in paperwork , some of it looks like it might
+be important. 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    Paper~
+ExDesc       This paper says a single word: Labria : wonder what it means
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6606
+Keywords Managers chair~
+Type     furniture~
+Short    managers chair~
+Long     A small managers chair.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    100 0 0 0 0
+#EXDESC
+ExDescKey    Managers chair~
+ExDesc       This chair looks well used by the poor sole that has to sit on it.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6607
+Keywords thermal detonator~
+Type     grenade~
+Short    thermal detonator~
+Long     A small silver ball lies here.~
+Flags    contraband~
+WFlags   take hold~
+Values   500 1500 0 0 0 0
+Stats    1 25000 5 0 0
+#EXDESC
+ExDescKey    thermal detonator~
+ExDesc       once you arm this baby run for your life.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6608
+Keywords Riot gun~
+Type     weapon~
+Short    a Riot Gun.~
+Long     A riot gun is lying here~
+WFlags   take wield~
+Values   0 10 4 6 2000 2000
+Stats    15 3000 300 0 0
+Affect       -1 -1 1 18 0
+Affect       -1 -1 1 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6609
+Keywords advanced ammunition cell~
+Type     ammo~
+Short    an advanced ammunition cell~
+Long     An advanced ammunition cell was dropped here.~
+WFlags   take~
+Values   2000 0 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6610
+Keywords Bounty Hunters helmet~
+Type     armor~
+Short    Helmet~
+Long     A pale grey helmet lies here.~
+Flags    antithief antijedi anticitizen antipilot prototype~
+WFlags   take head~
+Values   0 9 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 60 42 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6611
+Keywords Smugglers ear~
+Type     trash~
+Short    smugglers ear~
+Long     A bloodied ear lies in the dust here.~
+WFlags   take hold~
+Values   10 0 0 0 0 0
+Stats    1 1 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6600
+Name     Security Door~
+Sector   city~
+Flags    nomob~
+Desc     A massive door stands here, small camaras and scanners stare down at all
+that fire laser 
+~
+#EXIT
+Direction north~
+ToRoom    6601
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    31881
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6601
+Name     Security Checkpoint~
+Sector   city~
+Flags    indoors remove_this_flag~
+Desc     Having passed through the doors you enter a small hallway that once again
+is covered in sensors and scanners. A slightly metallic voice asks you to
+show all weapons being carried and then proceed through the scanners.
+~
+#EXIT
+Direction north~
+ToRoom    6602
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6600
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6602
+Name     First Floor Hallway~
+Sector   city~
+Flags    indoors~
+Desc     Standing in the hallway after the security checkpoint , you notice there
+are alot of  savory beigns around, All them watch you intently waiting for
+you to make a descision on where to proceed.  A turbo lift lies directly
+ahead of you while to the west  is some sort of bar and to the east is a
+dor with a sign that reads "Bounty Placement Office"
+~
+#EXIT
+Direction north~
+ToRoom    6606
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6604
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6601
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6603
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6603
+Name     Bounty Hunter's Lounge~
+Sector   city~
+Desc     The Lounge is full of Bounty Hunters and their guests relaxing playing
+games and gennerally having a good time. A small bar is det into the north
+wall and tended by a droid.
+~
+#EXIT
+Direction east~
+ToRoom    6602
+#ENDEXIT
+
+Reset O 0 32201 1 6603
+#ENDROOM
+
+#ROOM
+Vnum     6604
+Name     Bounty Placement Office~
+Sector   city~
+Desc     It is in this office that all bounty's must be placed. A small line up of
+all races is here each with a personal grudge against someone.  Hope you
+brought enough credit to get you bounty noticed. 
+~
+#EXIT
+Direction west~
+ToRoom    6602
+#ENDEXIT
+
+Reset M 0 6602 1 6604
+#ENDROOM
+
+#ROOM
+Vnum     6606
+Name     Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is your common everday turbolift. I'm hoping thet you are familiar
+with them but for those few that are not try entering the number or name
+of the floor you  /3 /2 but for those few that are not try entering the
+number of the floor you you wish to be on. 
+~
+#EXIT
+Direction somewhere~
+ToRoom    6602
+Keywords  1st Floor~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6607
+Keywords  2nd Floor~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6610
+Keywords  3rd Floor~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6624
+Keywords  Labria~
+Flags     hidden auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6607
+Name     Quarter's Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     All the rooms along this hall are owned by various Hunters. being caught
+here and not being a hunter could be dangerous to your health
+~
+#EXIT
+Direction north~
+ToRoom    6608
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6622
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6606
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6621
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6608
+Name     Quarter's Hallway~
+Sector   city~
+Flags    nomob~
+Desc     All the rooms along this hall are owned by various Hunters. being caught
+here and not being a hunter could be dangerous to your health
+~
+#EXIT
+Direction north~
+ToRoom    6609
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6619
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6607
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6620
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6609
+Name     Quarter's Hallway~
+Sector   city~
+Flags    nomob~
+Desc     All the rooms along this hall are owned by various Hunters. being caught
+here and not being a hunter could be dangerous to your health
+~
+#EXIT
+Direction east~
+ToRoom    6617
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6608
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6618
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6610
+Name     Upper Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     The upper hall of this building is all offices, it is somewhere on this
+hall that all bounty hunters must register.  As well the offices of the
+leader,first and second are on this floor. 
+~
+#EXIT
+Direction north~
+ToRoom    6611
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6616
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6606
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6615
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6611
+Name     Upper Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     The upper hall of this building is all offices, it is somewhere on this
+hall that all bounty hunters must register.  As well the offices of the
+leader,first and second are on this floor. 
+~
+#EXIT
+Direction north~
+ToRoom    6612
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6614
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6610
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6613
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6612
+Name     Guild Leader's Office~
+Sector   city~
+Flags    nomob indoors~
+Desc     This luxerious office is dominated by a large oak desk. A plush carpet
+lines the floor and  a giant window behind the desk offers a wonderfull
+view of tatooine. teo chairs sit before the desk and it is obvious by
+there placement that they are intended for guest of the guildmaster.
+~
+#EXIT
+Direction south~
+ToRoom    6611
+#ENDEXIT
+
+Reset O 0 6601 1 6612
+Reset O 0 6602 1 6612
+Reset O 0 6603 3 6612
+#ENDROOM
+
+#ROOM
+Vnum     6613
+Name     Office of the First~
+Sector   city~
+Flags    nomob indoors~
+Desc     The office of the first is moderate in size, from the in and out box on his
+desk you see that he is always kept bust with day to day life of the
+guild.  A small interview chair sits to   one side of the desk so he may
+preform peliminary interviews for the guildmaster.
+~
+#EXIT
+Direction east~
+ToRoom    6611
+#ENDEXIT
+
+Reset O 0 6603 2 6613
+Reset O 0 6605 1 6613
+Reset O 0 6606 1 6613
+#ENDROOM
+
+#ROOM
+Vnum     6614
+Name     Office of the Second~
+Sector   city~
+Flags    nomob indoors~
+Desc     / l This somewhat cramped office is carpeted and has a small desk along the
+east wall. The desc is coverd in a pile of paper work that looks as if it
+hasn't been touched in months.  best to leave here before you disturb
+anything. 
+~
+#EXIT
+Direction west~
+ToRoom    6611
+#ENDEXIT
+
+Reset O 0 6603 2 6614
+#ENDROOM
+
+#ROOM
+Vnum     6615
+Name     Hall of Records~
+Sector   city~
+Flags    nomob indoors~
+Desc     this large room houses a complete listing of all the guilds curent and past
+hunters aswell as each of there acusitions. A young apprentice hunter is
+here running for each file that is requested as part of his training to
+undersand each hunters tecnique and abilties.
+~
+#EXIT
+Direction east~
+ToRoom    6610
+#ENDEXIT
+
+Reset M 0 6601 1 6615
+#ENDROOM
+
+#ROOM
+Vnum     6616
+Name     Registration Office~
+Sector   city~
+Flags    nomob indoors~
+Desc     All hunters must be registerd with the guild to not be registerd makes you
+an outlaw of the guild aswell as a common murderer. Anyone hunting
+outsides the guild will be hunted and punished unless it was done with one
+of the guild leaders approval. 
+~
+#EXIT
+Direction west~
+ToRoom    6610
+#ENDEXIT
+
+Reset M 0 6600 1 6616
+#ENDROOM
+
+#ROOM
+Vnum     6617
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home hotel~
+#EXIT
+Direction west~
+ToRoom    6609
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6618
+Name     &r Bleeds Domain &R &W~
+Sector   city~
+Flags    nomob indoors plr_home hotel~
+Desc     You stand in the home of Bleeds, hunter of the realm as well as enforcer of
+the laws , as small nest like bed is in the corner and various partially
+eaten diner lie about the room. 
+~
+#EXIT
+Direction east~
+ToRoom    6609
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    7399
+#ENDEXIT
+
+Reset O 0 32201 1 6618
+#ENDROOM
+
+#ROOM
+Vnum     6619
+Name     Wolvens Crack House~
+Sector   city~
+Flags    nomob indoors plr_home hotel~
+#EXIT
+Direction west~
+ToRoom    6608
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6620
+Name     &YVarssk's &Rplacid retreat&w~
+Sector   city~
+Flags    nomob plr_home hotel~
+#EXIT
+Direction east~
+ToRoom    6608
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6621
+Name     The Hunters Guild Storage Facility]~
+Sector   city~
+Flags    nomob indoors plr_home hotel~
+#EXIT
+Direction east~
+ToRoom    6607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6622
+Name     Stormie's Tatooine Residence~
+Sector   city~
+Flags    nomob indoors plr_home hotel~
+#EXIT
+Direction west~
+ToRoom    6607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6623
+Name     Secret Hallway~
+Sector   city~
+Flags    nomob~
+Desc     This hallway is know of only to the hunters guild members to tell anyone of
+this hall is to bring all the hunters down on your head. Remeber this and
+Hunt Well.
+~
+#EXIT
+Direction north~
+ToRoom    6624
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6623
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6624
+Name     Secret Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This hallway is know of only to the hunters guild members to tell anyone of
+this hall is to bring all the hunters down on your head. Remeber this and
+Hunt Well.
+~
+#EXIT
+Direction north~
+ToRoom    6625
+Keywords  door~
+Flags     isdoor closed secret~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6630
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6606
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6629
+#ENDEXIT
+
+Reset D 0 6624 0 1
+#ENDROOM
+
+#ROOM
+Vnum     6625
+Name     Secret Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This hallway is know of only to the hunters guild members to tell anyone of
+this hall is to bring all the hunters down on your head. Remeber this and
+Hunt Well.
+~
+#EXIT
+Direction north~
+ToRoom    6626
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6628
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6624
+Keywords  door~
+Flags     isdoor secret~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6627
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6626
+Name     Hall of Justice~
+Sector   city~
+Flags    nomob indoors~
+Desc     this is the last room you ever wish to be forced to enter. A large
+judicial bench siths on the north wall with 3 seats for each of the guild
+leaders, rows of chairs are alng either side of a path that leads to a
+small table in front of the bench. It is in this room that all crimes
+commited by and to bounty hunters are tried and sometimes even the justice
+carried out right here.
+~
+#EXIT
+Direction south~
+ToRoom    6625
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6627
+Name     Hall of Training~
+Sector   city~
+Flags    nomob indoors~
+Desc     A large hall is here for the training of all hunters in both skill level
+and physical attributes. Various machines line the walls and all traing is
+regulated by an expirienced hunter. 
+~
+#EXIT
+Direction east~
+ToRoom    6625
+#ENDEXIT
+
+Reset M 0 32050 1 6627
+  Reset E 1 32275 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6628
+Name     Hall of Practice~
+Sector   city~
+Flags    nomob indoors~
+Desc     A rather small room this is a target range. A computer  will pop up targets
+at various ranges and even simulate there fire back at you.
+~
+#EXIT
+Direction west~
+ToRoom    6625
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6629
+Name     Bounty Hunter Equipmet~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     Although nothing is for sale now , we hope in the future to possess hunter
+speacial equipment. 
+~
+#EXIT
+Direction east~
+ToRoom    6624
+#ENDEXIT
+
+Reset M 0 6603 1 6629
+  Reset G 1 6609 20
+  Reset G 1 6608 2
+  Reset G 1 6607 10
+#ENDROOM
+
+#ROOM
+Vnum     6630
+Name     Medical Office~
+Sector   city~
+Flags    nomob~
+Desc     In this room lie 2 bacta tanks ment for members of the guild that have been
+injured while on the hunt. to enter either tank simply type 1st bacta  or
+2nd bacta. 
+~
+#EXIT
+Direction west~
+ToRoom    6624
+Keywords  west~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6631
+Keywords  1st Bacta~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6632
+Keywords  2nd Bacta~
+Flags     auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6631
+Name     Bacta Tank~
+Sector   city~
+Flags    nomob indoors remove_this_flag~
+#EXIT
+Direction up~
+ToRoom    6630
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6632
+Name     Bacta Tank~
+Sector   city~
+Flags    nomob indoors remove_this_flag~
+#EXIT
+Direction up~
+ToRoom    6630
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6633
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

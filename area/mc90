@@ -1,0 +1,2719 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         MC90 Calamari Starcruiser~
+Author       Bleeds~
+Ranges       0 0 0 103
+Economy      0 31252130
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6700
+Keywords   Republic Pilot~
+Short      A New Republic Pilot.~
+Long       A New Republic Pilot.
+~
+Desc       A New Republic pilot sits here at the helm of this might MC-90 warship. If
+you wish to take over from him simpy toggle the auto-pilot switch and take
+command of the vessel. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     1000 80 0 -100 0 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 16 16
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6701
+Keywords   Republic Security Guard~
+Short      Security Guard~
+Long       Security Guard
+~
+Desc       Standing at his post in the checkpoint, this guard looks more than a little
+bored afterall who would be stupid enough to try to board and attack a
+capital ship. Maybe you. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     700 60 0 -50 0 0
+Stats2     12 10 600
+Stats3     6 10 2
+Stats4     0 0 0 9 9
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6702
+Keywords   republic gunner~
+Short      A New Republic Gunner~
+Long       A New Republic gunner is here.
+~
+Desc       A New Republic gunner sits here at the controls of the ships more than
+adiquate firing systems.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 40 0 0 0 0
+Stats2     8 10 400
+Stats3     4 4 2
+Stats4     0 0 0 3 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6703
+Keywords   republic Captain~
+Short      A New Republic captain~
+Long       A New Republic captain is resting here.
+~
+Desc       The new republic captain is here relaxing in his quarters.  He has little
+to worry about because of his secret "ACCESS" to the bridge deck hidden in
+this room. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 8 2
+Stats4     0 0 0 5 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6704
+Keywords   Medical Droid~
+Short      A Medical Droid~
+Long       A medical droid is here looking after paitents.
+~
+Desc       Designed for healing beings of all races this droid is very effective at
+healing your damage. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel immortal nokill~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6705
+Keywords   Republic Salesman~
+Short      Republic Salesman~
+Long       A New Republic salesman is here supplying the ship.
+~
+Desc       Dressed in a new republic Uniform this guy is who you need for all the NR
+supplies. He trys to Stock all the New NR equipment as it comes out so
+check back often.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6706
+Keywords   Smuggler~
+Short      Small time smuggler~
+Long       A wirey alien is standing here.
+~
+Desc       This alien is glancing around watching his back. Obviously he is wanted by
+someone for something , just if you could figure out by who and for what,
+~
+Race       Mon Calamari~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari~
+Speaking   mon_calamari~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   scream
+gasp
+'ya got me
+mpoload 6611
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6799
+Keywords   bookend~
+Short      a newly created bookend~
+Long       Some god abandoned a newly created bookend here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     6700
+Keywords targeting Computer~
+Type     trash~
+Short    A Targeting Computer~
+Long     A Targeting Computer~
+Values   0 0 0 0 0 0
+Stats    10000 0 0 0 0
+#EXDESC
+ExDescKey    targeting Computer~
+ExDesc       This small computer is tied into the dual lasers mounted in this turrent
+making firing on enimies ships alot more accurate and effective.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6701
+Keywords Navigation Computer~
+Type     trash~
+Short    Navigation Computer~
+Long     Navigation Computer~
+Values   0 0 0 0 0 0
+Stats    10000 0 0 0 0
+#EXDESC
+ExDescKey    Navigation Computer~
+ExDesc       Navigation Computer
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6702
+Keywords Oval Table~
+Type     trash~
+Short    Oval Table~
+Long     Oval Table~
+Values   0 0 0 0 0 0
+Stats    10000 0 0 0 0
+#EXDESC
+ExDescKey    Oval Table~
+ExDesc       It is at this table that most descisions of the New Republics war plans are
+made , be a good place to plant a bug. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6703
+Keywords Chair~
+Type     trash~
+Short    Chair~
+Long     Chair~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Chair~
+ExDesc       What you've never seen a chair before??
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6704
+Keywords pilots seat~
+Type     furniture~
+Short    A Pilots Seat.~
+Long     A pilots seat.~
+Values   0 0 0 0 0 0
+Stats    1000 0 0 0 0
+#EXDESC
+ExDescKey    pilots seat~
+ExDesc       The chair is made from a nice leather with a spiderweb type belt to hold
+you in through the worst of crashes. Better made than the older fighters
+seat which wern't desgned for hyperdrive , this seat is also comfortable.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6705
+Keywords synthetic rope~
+Type     armor~
+Short    Synthetic Rope~
+Long     A coil of very strong rope is here.~
+Flags    inventory~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    3 60 6 0 0
+Affect       -1 -1 30 52 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6706
+Keywords sniper scope~
+Type     trash~
+Short    a newly created sniper scope~
+Long     Some god dropped a newly created sniper scope here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6707
+Keywords advanced ammunition cell~
+Type     ammo~
+Short    an advanced ammunition cell~
+Long     An advanced ammunition cell was dropped here.~
+Flags    inventory~
+WFlags   take~
+Values   2000 0 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6708
+Keywords coin~
+Type     treasure~
+Short    a Race Coin~
+Long     A lost coin from ages ago is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 100000 10000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6788
+Keywords Z-100 Centurion z6788~
+Type     trash~
+Short    Z-100 Centurion z6788~
+Long     Z-100 Centurion z6788~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6789
+Keywords Z-100 Centurion z6789~
+Type     trash~
+Short    Z-100 Centurion z6789~
+Long     Z-100 Centurion z6789~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6790
+Keywords Z-100 Centurion z6790~
+Type     trash~
+Short    a newly created Z-100 Centurion z6790~
+Long     Z-100 Centurion z6790~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6791
+Keywords Z-100 Centurion z6791~
+Type     trash~
+Short    a newly created Z-100 Centurion z6791~
+Long     Z-100 Centurion z6791~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6792
+Keywords Z-100 Centurion z6792~
+Type     trash~
+Short    a newly created Z-100 Centurion z6792~
+Long     Z-100 Centurion z6792~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6793
+Keywords Z-100 Centurion z6793~
+Type     trash~
+Short    a newly created Z-100 Centurion z6793~
+Long     Z-100 Centurion z6793~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6794
+Keywords E-Wing Starfighter e6794~
+Type     trash~
+Short    a newly created E-Wing Starfighter e6794~
+Long     E-Wing Starfighter e6794~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6795
+Keywords E-Wing Starfighter e6795~
+Type     trash~
+Short    a newly created E-Wing Starfighter e6795~
+Long     E-Wing Starfighter e6795~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6796
+Keywords E-Wing Starfighter e6796~
+Type     trash~
+Short    a newly created E-Wing Starfighter e6796~
+Long     E-Wing Starfighter e6796~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6797
+Keywords E-Wing Starfighter e6797~
+Type     trash~
+Short    a newly created E-Wing Starfighter e6797~
+Long     E-Wing Starfighter e6797~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6798
+Keywords E-Wing Starfighter e6798~
+Type     trash~
+Short    a newly created E-Wing Starfighter e6798~
+Long     E-Wing Starfighter e6798~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6799
+Keywords Z-105 Harpoon 6799~
+Type     trash~
+Short    a newly created Z-105 Harpoon 6799~
+Long     Z-105 Harpoon Fighter-bomber z6799~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6700
+Name     Hatchway~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     You stand in the enterand hatchway of one of the new republics lagest
+fighting ships. The Mon calamarian MC-90, One  of the few ships that can
+go head to head with a SSD and Survive.
+~
+#EXIT
+Direction east~
+ToRoom    6701
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6701
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction north~
+ToRoom    6702
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6700
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6711
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6702
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction north~
+ToRoom    6703
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6701
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6737
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6703
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction north~
+ToRoom    6704
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6753
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6702
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6704
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction east~
+ToRoom    6783
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6703
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6782
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6705
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6705
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction southeast~
+ToRoom    6706
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6704
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6706
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area. 
+~
+#EXIT
+Direction east~
+ToRoom    6766
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6707
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6784
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6705
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6707
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction north~
+ToRoom    6706
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6785
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6708
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6763
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6708
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction north~
+ToRoom    6707
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6786
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6709
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6764
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6709
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction north~
+ToRoom    6708
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6787
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6710
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6762
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6710
+Name     Main Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction north~
+ToRoom    6709
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6765
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6711
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6711
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The main deck of this enormus ship is rather plain.  Ash grey walls and a
+steel grated floor are common sights. the main deck houses staff quarters,
+the engine room entrance as well as the detention area.
+~
+#EXIT
+Direction south~
+ToRoom    6748
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6710
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6701
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6712
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, runor has it however that it is esially modifyable to many
+different roles.
+~
+#EXIT
+Direction north~
+ToRoom    6713
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6721
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6713
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, runor has it however that it is esially modifyable to many
+different roles. 
+~
+#EXIT
+Direction north~
+ToRoom    6714
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6712
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6737
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6714
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles.
+~
+#EXIT
+Direction north~
+ToRoom    6715
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6777
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6713
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6715
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles.
+~
+#EXIT
+Direction south~
+ToRoom    6714
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6716
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6716
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles.
+~
+#EXIT
+Direction southeast~
+ToRoom    6717
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6715
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6717
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles.
+~
+#EXIT
+Direction south~
+ToRoom    6718
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6716
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6718
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles. 
+~
+#EXIT
+Direction north~
+ToRoom    6717
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6719
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6777
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6719
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles. 
+~
+#EXIT
+Direction north~
+ToRoom    6718
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6720
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6752
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6720
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles.
+~
+#EXIT
+Direction north~
+ToRoom    6719
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6721
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6721
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles.
+~
+#EXIT
+Direction northeast~
+ToRoom    6720
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6712
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6722
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction north~
+ToRoom    6723
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6731
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6723
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction north~
+ToRoom    6724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6722
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6737
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6724
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction north~
+ToRoom    6725
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6778
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6723
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6725
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.  The upper deck is brightly lit, sheer white wall come down to a
+polished white floor this level of the ship houses many important
+features, like acces to the bridge, the confernce rooms , medical bay and
+other important rooms.
+~
+#EXIT
+Direction south~
+ToRoom    6724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6726
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6726
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction southeast~
+ToRoom    6727
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6725
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6727
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction east~
+ToRoom    6776
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6728
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6726
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6728
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction north~
+ToRoom    6727
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6775
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6729
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6778
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6729
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction north~
+ToRoom    6728
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6774
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6730
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6751
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6730
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction north~
+ToRoom    6729
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6773
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6731
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6731
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms.
+~
+#EXIT
+Direction northeast~
+ToRoom    6730
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6722
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6732
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The main area of the bridge is crowed by various non-com personal.  All
+Main components if the ship are easily accessable from the main area of
+the bridge. A giant window looks out over the front of the ship and into
+space. 
+~
+#EXIT
+Direction north~
+ToRoom    6733
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6735
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6757
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6734
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6733
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The main area of the bridge is crowed by various non-com personal.  All
+Main components if the ship are easily accessable from the main area of
+the bridge. A giant window looks out over the front of the ship and into
+space.
+~
+#EXIT
+Direction east~
+ToRoom    6734
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6732
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6754
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6735
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6734
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The main area of the bridge is crowed by various non-com personal.  All
+Main components if the ship are easily accessable from the main area of
+the bridge. A giant window looks out over the front of the ship and into
+space.
+~
+#EXIT
+Direction east~
+ToRoom    6755
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6735
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6733
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6732
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6735
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The main area of the bridge is crowed by various non-com personal.  All
+Main components if the ship are easily accessable from the main area of
+the bridge. A giant window looks out over the front of the ship and into
+space. 
+~
+#EXIT
+Direction north~
+ToRoom    6734
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6756
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6738
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6732
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6733
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6736
+Name     Turbo Lift~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The engine room turbolift is nothing more than a bare platform and a
+hanging box with 3 buttons on it. Each button must be for a different
+level of the engines, only makes sense afterall. 
+~
+#EXIT
+Direction somewhere~
+ToRoom    6740
+Keywords  Lower Engine~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6743
+Keywords  Middle Engine~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6746
+Keywords  Upper Engine~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6748
+Keywords  Access~
+Flags     auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6737
+Name     Turbo Lift~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     this is one of many turbolifts abourd the MC-90.  This however is the main
+lift that connects the 3 main levels of the ship together.  Simply enter
+the deck you wish to goto. 
+~
+#EXIT
+Direction somewhere~
+ToRoom    6702
+Keywords  Main Deck~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6713
+Keywords  Lower Deck~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6723
+Keywords  Upper Deck~
+Flags     auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6738
+Name     Turbo Lift~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is a vital turbolift in the ship it leads from the upper deck to the
+bridge area. A security checkpoint is located on the upper deck to prevent
+Imperials from gaining acces to the bridge.
+~
+#EXIT
+Direction somewhere~
+ToRoom    6735
+Keywords  Bridge~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6751
+Keywords  Upper Deck~
+Flags     auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6739
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     All you see is engine. the whole area is a mass of conductors pipes wires
+and other stuff only the most expierinced engineer would reconize. lucky
+for you all you have to do if find the problem area's and fix them without
+knowing what your doing.
+~
+#EXIT
+Direction east~
+ToRoom    6740
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6740
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     All you see is engine. the whole area is a mass of conductors pipes wires
+and other stuff only the most expierinced engineer would reconize. lucky
+for you all you have to do if find the problem area's and fix them without
+knowing what your doing.
+~
+#EXIT
+Direction north~
+ToRoom    6736
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6741
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6739
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6741
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    6740
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6742
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     All you see is engine. the whole area is a mass of conductors pipes wires
+and other stuff only the most expierinced engineer would reconize. lucky
+for you all you have to do if find the problem area's and fix them without
+knowing what your doing.
+~
+#EXIT
+Direction east~
+ToRoom    6743
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6743
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     All you see is engine. the whole area is a mass of conductors pipes wires
+and other stuff only the most expierinced engineer would reconize. lucky
+for you all you have to do if find the problem area's and fix them without
+knowing what your doing.
+~
+#EXIT
+Direction north~
+ToRoom    6736
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6744
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6742
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6744
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     All you see is engine. the whole area is a mass of conductors pipes wires
+and other stuff only the most expierinced engineer would reconize. lucky
+for you all you have to do if find the problem area's and fix them without
+knowing what your doing.
+~
+#EXIT
+Direction west~
+ToRoom    6743
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6745
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     All you see is engine. the whole area is a mass of conductors pipes wires
+and other stuff only the most expierinced engineer would reconize. lucky
+for you all you have to do if find the problem area's and fix them without
+knowing what your doing.
+~
+#EXIT
+Direction east~
+ToRoom    6746
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6746
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     All you see is engine. the whole area is a mass of conductors pipes wires
+and other stuff only the most expierinced engineer would reconize. lucky
+for you all you have to do if find the problem area's and fix them without
+knowing what your doing. 
+~
+#EXIT
+Direction north~
+ToRoom    6736
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6747
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6745
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6747
+Name     Engine Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     All you see is engine. the whole area is a mass of conductors pipes wires
+and other stuff only the most expierinced engineer would reconize. lucky
+for you all you have to do if find the problem area's and fix them without
+knowing what your doing.
+~
+#EXIT
+Direction west~
+ToRoom    6746
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6748
+Name     Engine Access~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This tight hallway leads back into the powerhouses of the ship. three
+seperate levels of engines are needed to propel the ship and power it
+systems. 
+~
+#EXIT
+Direction north~
+ToRoom    6711
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6736
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6749
+Name     Hanger~
+Sector   city~
+Flags    spacecraft~
+Desc     This is the maintenance area of the hanger , various tools lay around
+partly assembled and dis-assembled starcraft.  Bet if there was a tool you
+needed it'd be lying around here somewhere.
+~
+#EXIT
+Direction north~
+ToRoom    6779
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6750
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6750
+Name     Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+Desc     The hanger on the MC-90 is huge. It looks as if it could house a dozen
+fighter squadrens. A couple New Republic security personal patrol the area
+looking for imperial raiders. 
+~
+#EXIT
+Direction north~
+ToRoom    6749
+#ENDEXIT
+
+Reset M 0 6701 3 6750
+#ENDROOM
+
+#ROOM
+Vnum     6751
+Name     Security Checkpoint~
+Sector   city~
+Flags    spacecraft~
+Desc     All security checkpoints about the MC-90 are manned by massive guards
+dressed in New Republic Uniforms. After checking all your credentials they
+allow you to pass through the checkpoint. 
+~
+#EXIT
+Direction east~
+ToRoom    6729
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6738
+#ENDEXIT
+
+Reset M 0 6701 10 6751
+#ENDROOM
+
+#ROOM
+Vnum     6752
+Name     Security Checkpoint~
+Sector   city~
+Flags    spacecraft~
+Desc     All security checkpoints about the MC-90 are manned by massive guards
+dressed in New Republic Uniforms. After checking all your credentials they
+allow you to pass through the checkpoint. 
+~
+#EXIT
+Direction north~
+ToRoom    6779
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6719
+#ENDEXIT
+
+Reset M 0 6701 3 6752
+#ENDROOM
+
+#ROOM
+Vnum     6753
+Name     Security Checkpoint~
+Sector   city~
+Flags    spacecraft~
+Desc     All security checkpoints about the MC-90 are manned by massive guards
+dressed in New Republic Uniforms. After checking all your credentials they
+allow you to pass through the checkpoint. 
+~
+#EXIT
+Direction east~
+ToRoom    6758
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6703
+#ENDEXIT
+
+Reset M 0 6701 10 6753
+  Reset E 1 32226 1 5
+  Reset E 1 32225 1 13
+  Reset E 1 32223 1 8
+  Reset E 1 32224 1 7
+  Reset E 1 32222 1 6
+  Reset E 1 55 1 16
+Reset M 0 6701 6 6753
+#ENDROOM
+
+#ROOM
+Vnum     6754
+Name     Pilots Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     The pilots chair of the MC-90 is large and easily reaches all the controls
+nessesary for piloting as well as monitors most other functions and
+controls.
+~
+#EXIT
+Direction east~
+ToRoom    6733
+#ENDEXIT
+
+Reset M 0 6700 1 6754
+#ENDROOM
+
+#ROOM
+Vnum     6755
+Name     Co-Pilots Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     The co-pilot is responsible for shield control as-well as assisting the
+pilot in whatever manuvers he puts the ship through. The chair is located
+in the middle of a mess of monitors and you wonder if sometimes he isn't
+doing more than the pilot
+~
+#EXIT
+Direction west~
+ToRoom    6734
+#ENDEXIT
+
+Reset M 0 6700 1 6755
+#ENDROOM
+
+#ROOM
+Vnum     6756
+Name     Navigators Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     Navigation is essential on a starcraft, one wrong number and you can jump
+into a midst  of a star or planet.  To help remidy this situation the ship
+contains a massive navigation computer that hold the last known position
+of most of the star systems planets and asteroids.
+~
+#EXIT
+Direction west~
+ToRoom    6735
+#ENDEXIT
+
+Reset O 0 6701 1 6756
+#ENDROOM
+
+#ROOM
+Vnum     6757
+Name     Gunners Chair~
+Sector   city~
+Flags    spacecraft~
+Desc     From this chair you control the ships massive firepower.  the MC-90 is the
+only ship current y in the New republics arsonal capable of taking on an
+Imperial Star Destroyer. 
+~
+#EXIT
+Direction east~
+ToRoom    6732
+#ENDEXIT
+
+Reset O 0 6700 1 6757
+Reset M 0 6702 1 6757
+#ENDROOM
+
+#ROOM
+Vnum     6758
+Name     Detention Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Blast proof walls and floors are standerd in this area , what is not
+standard however if the force-proof cells that are oof this hallway.
+perfect for storing that potentail dark jedi until his trial date.
+~
+#EXIT
+Direction east~
+ToRoom    6759
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6780
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6753
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6759
+Name     Detention~
+Sector   city~
+Flags    dark nomagic silence spacecraft~
+Desc     Once in this cell there is no way out save being let out , Sound proofed,
+blast proof and most of all force proof.  hope you have adiquate supplies
+to survive the wait.
+~
+#EXIT
+Direction west~
+ToRoom    6758
+Flags     isdoor locked pickproof nopassdoor bashproof~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6760
+Name     Detention~
+Sector   city~
+Flags    dark nomagic silence spacecraft~
+Desc     Once in this cell there is no way out save being let out , Sound proofed,
+blast proof and most of all force proof.  hope you have adiquate supplies
+to survive the wait.
+~
+#EXIT
+Direction north~
+ToRoom    6780
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6780
+Flags     isdoor locked pickproof nopassdoor bashproof~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6761
+Name     Detention~
+Sector   city~
+Flags    dark nomagic silence spacecraft~
+Desc     Once in this cell there is no way out save being let out , Sound proofed,
+blast proof and most of all force proof.  hope you have adiquate supplies
+to survive the wait. 
+~
+#EXIT
+Direction west~
+ToRoom    6781
+Flags     isdoor locked pickproof nopassdoor bashproof~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6762
+Name     Captains Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     The captains quarters are luxious and well kept.  It seems odd that the
+capatin seems to spend almost all his spare time in here yet in an
+emergancy ' he is always the first on the bridge.
+~
+#EXIT
+Direction east~
+ToRoom    6709
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6771
+Keywords  Access~
+Flags     hidden auto~
+#ENDEXIT
+
+Reset M 0 6703 1 6762
+#ENDROOM
+
+#ROOM
+Vnum     6763
+Name     Crew Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     These crew quarters are designed to house beings of varrious races sleeping
+them easily if not comfortably. the basic quraters are designjed for the
+minial crew, right from cooks up to junior pilots.
+~
+#EXIT
+Direction east~
+ToRoom    6707
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6764
+Name     Crew Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     These crew quarters are designed to house beings of varrious races sleeping
+them easily if not comfortably. the basic quraters are designjed for the
+minial crew, right from cooks up to junior pilots.
+~
+#EXIT
+Direction east~
+ToRoom    6708
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6765
+Name     Crew Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     These crew quarters are designed to house beings of varrious races sleeping
+them easily if not comfortably. the basic quraters are designjed for the
+minial crew, right from cooks up to junior pilots. 
+~
+#EXIT
+Direction east~
+ToRoom    6710
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6710
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6766
+Name     Crew Quaters~
+Sector   city~
+Flags    hotel spacecraft~
+Desc     These crew quarters are designed to house beings of varrious races sleeping
+them easily if not comfortably. the basic quraters are designjed for the
+minial crew, right from cooks up to junior pilots.
+~
+#EXIT
+Direction west~
+ToRoom    6706
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6767
+Name     Turrent~
+Sector   city~
+Flags    spacecraft~
+Desc     In this small cramped area all you have is a targeting computer , and the
+dual lasers mounted to a gunners chair. here's to hoping ya hit some of
+those fighters out there before they hit you.
+~
+#EXIT
+Direction up~
+ToRoom    6769
+#ENDEXIT
+
+Reset O 0 6700 1 6767
+#ENDROOM
+
+#ROOM
+Vnum     6768
+Name     Turrent~
+Sector   city~
+Flags    spacecraft~
+Desc     In this small cramped area all you have is a targeting computer , and the
+dual lasers mounted to a gunners chair. here's to hoping ya hit some of
+those fighters out there before they hit you.
+~
+#EXIT
+Direction down~
+ToRoom    6770
+#ENDEXIT
+
+Reset O 0 6700 1 6768
+#ENDROOM
+
+#ROOM
+Vnum     6769
+Name     Turrent Crawlway~
+Sector   city~
+Flags    spacecraft~
+Desc     This small crawlway leads into a tight turrent aboard the ship
+~
+#EXIT
+Direction up~
+ToRoom    6777
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6767
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6770
+Name     Turrent Crawlway~
+Sector   city~
+Flags    spacecraft~
+Desc     This small crawlway leads into a tight turrent aboard the ship
+~
+#EXIT
+Direction up~
+ToRoom    6768
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6778
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6771
+Name     Emergency Access~
+Sector   city~
+Flags    spacecraft~
+Desc     A single man crawlay with a ladder leads up here.
+~
+#EXIT
+Direction up~
+ToRoom    6772
+#ENDEXIT
+
+Reset O 0 6708 1 6771
+#ENDROOM
+
+#ROOM
+Vnum     6772
+Name     Emergency Access~
+Sector   city~
+Flags    spacecraft~
+Desc     A single man crawlay with a ladder leads up here.
+~
+#EXIT
+Direction up~
+ToRoom    6732
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6773
+Name     Medical Bay~
+Sector   city~
+Flags    spacecraft~
+Desc     Since the New Republic is lucky enough to be allied with the Jedi the
+decided just to have a few medical bays ' instead of the cumbersom bacta
+tanks. Looking around you see various injuries all being looked after by
+the proficient droids.
+~
+#EXIT
+Direction west~
+ToRoom    6730
+#ENDEXIT
+
+Reset M 0 6704 1 6773
+#ENDROOM
+
+#ROOM
+Vnum     6774
+Name     Comunications Room~
+Sector   city~
+Flags    spacecraft~
+Desc     The comunications room is a hub of and Capital class starcraft. Not only is
+it responsible for the comunications of the ship itself , it is also
+responsible for the comings and goins of smaller starcraft that land upon
+it.
+~
+#EXIT
+Direction west~
+ToRoom    6729
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6775
+Name     Weapons Storage~
+Sector   city~
+Flags    safe clanstoreroom spacecraft~
+Desc     Weapons storage is pretty self explanitary i hope. items left in this room
+will save over rebootand crasher i hope.
+~
+#EXIT
+Direction west~
+ToRoom    6728
+#ENDEXIT
+
+Reset M 0 6705 1 6775
+  Reset G 1 6707 10
+  Reset G 1 32226 10
+  Reset G 1 32223 10
+  Reset G 1 32227 10
+  Reset G 1 32222 10
+  Reset G 1 32228 10
+  Reset G 1 32224 10
+  Reset G 1 32225 10
+  Reset G 1 55 10
+#ENDROOM
+
+#ROOM
+Vnum     6776
+Name     Council Room~
+Sector   city~
+Flags    spacecraft~
+Desc     One of the most important rooms on the ship is the counil room, it is here
+that officers and captains get together to discuss war plans as well as
+other issues of imporance. The room is fairly bare except for a large oval
+table with a  holo-screen mounted in it's center and chairs all arounf the
+room.
+~
+#EXIT
+Direction west~
+ToRoom    6727
+#ENDEXIT
+
+Reset O 0 6702 1 6776
+Reset O 0 6703 3 6776
+Reset O 0 6703 3 6776
+#ENDROOM
+
+#ROOM
+Vnum     6777
+Name     Lower Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The lower decks apperance is much the same as all othere decks upon this
+ship.  Right now it is fairly empty holding only the enterance to the
+hanger, rumor has it however that it is esially modifyable to many
+different roles.  The floor along the north wall of this room has a small
+hatch in it. 
+~
+#EXIT
+Direction east~
+ToRoom    6718
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6714
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6769
+Keywords  Hatch~
+Flags     hidden auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6778
+Name     Upper Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The upper deck is brightly lit, sheer white wall come down to a polished
+white floor this level of the ship houses many important features, like
+acces to the bridge, the confernce rooms , medical bay and other important
+rooms. This room has a small ladder leading up the wall and to a  Hatch.
+~
+#EXIT
+Direction east~
+ToRoom    6728
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6724
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6770
+Keywords  Hatch~
+Flags     hidden auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6779
+Name     Turbolift~
+Sector   city~
+Flags    spacecraft~
+Desc     this small turbolift connects the lower deck with the hanger. All personal
+must pass  through a checkpoint once they reach the lower deck , best have
+your weapons stowed away safely. 
+~
+#EXIT
+Direction somewhere~
+ToRoom    6752
+Keywords  Lower Deck~
+Flags     auto~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    6749
+Keywords  Hanger Deck~
+Flags     auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6780
+Name     Detention Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Blast proof walls and floors are standerd in this area , what is not
+standard however if the force-proof cells that are oof this hallway.
+perfect for storing that potentail dark jedi until his trial date.
+~
+#EXIT
+Direction north~
+ToRoom    6758
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6760
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6781
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6781
+Name     Detention Hallway~
+Sector   city~
+Flags    spacecraft~
+Desc     Blast proof walls and floors are standerd in this area , what is not
+standard however if the force-proof cells that are oof this hallway.
+perfect for storing that potentail dark jedi until his trial date.
+~
+#EXIT
+Direction north~
+ToRoom    6780
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6761
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6782
+Name     Mon Calamari Quarters~
+Sector   city~
+Flags    spacecraft~
+Desc     These quarters have been designed by the origanal builders of the ship and
+now house the most capable enigeneers for the ship the Mon Calamari. as
+such it is acctually and underwater room with the water held by an
+interesting field at the door. 
+~
+#EXIT
+Direction east~
+ToRoom    6704
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6783
+Name     Mon Calamari Quarters~
+Sector   city~
+Flags    spacecraft~
+Desc     These quarters have been designed by the origanal builders of the ship and
+now house the most capable enigeneers for the ship the Mon Calamari. as
+such it is acctually and underwater room with the water held by an
+interesting field at the door. 
+~
+#EXIT
+Direction west~
+ToRoom    6704
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6784
+Name     Mon Calamari Quarters~
+Sector   city~
+Flags    spacecraft~
+Desc     These quarters have been designed by the origanal builders of the ship and
+now house the most capable enigeneers for the ship the Mon Calamari. as
+such it is acctually and underwater room with the water held by an
+interesting field at the door. 
+~
+#EXIT
+Direction east~
+ToRoom    6706
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6785
+Name     Crew Quarters~
+Sector   city~
+Flags    spacecraft~
+Desc     These crew quarters are designed to house beings of varrious races sleeping
+them easily if not comfortably. the basic quraters are designjed for the
+minial crew, right from cooks up to junior pilots.
+~
+#EXIT
+Direction west~
+ToRoom    6707
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6786
+Name     Crew Quarters~
+Sector   city~
+Flags    spacecraft~
+Desc     These crew quarters are designed to house beings of varrious races sleeping
+them easily if not comfortably. the basic quraters are designjed for the
+minial crew, right from cooks up to junior pilots.
+~
+#EXIT
+Direction west~
+ToRoom    6708
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6787
+Name     Officers Quarters~
+Sector   city~
+Flags    nomob hotel spacecraft~
+Desc     The officers quarters are somewhat roomier than general crew quarters. the
+room contain most of the plesentry that are needed for ' entertaining of
+guests as well as themeselves on lond hyperspace jumps and combat
+missions.
+~
+#EXIT
+Direction west~
+ToRoom    6709
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6788
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and . Incoms X-wings making it a
+versitile fighter.four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+Reset O 0 6700 1 6788
+Reset O 0 6704 1 6788
+#ENDROOM
+
+#ROOM
+Vnum     6789
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter.four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships.
+~
+Reset O 0 6704 1 6789
+Reset O 0 6700 1 6789
+#ENDROOM
+
+#ROOM
+Vnum     6790
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter.four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships.
+~
+Reset O 0 6704 1 6790
+Reset O 0 6700 1 6790
+#ENDROOM
+
+#ROOM
+Vnum     6791
+Name     cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter.four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships.
+~
+Reset O 0 6700 1 6791
+Reset O 0 6704 1 6791
+#ENDROOM
+
+#ROOM
+Vnum     6792
+Name     cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter.four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships.
+~
+Reset O 0 6704 1 6792
+Reset O 0 6700 1 6792
+#ENDROOM
+
+#ROOM
+Vnum     6793
+Name     cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter.four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships.
+~
+Reset O 0 6700 1 6793
+Reset O 0 6704 1 6793
+#ENDROOM
+
+#ROOM
+Vnum     6794
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     Designed by the same team that produced the X-Wing, the FreiTek E-Wing
+starfighter was introduced in New Republic service during the Admiral
+Thrawn campaign, five years after the Battle of Endor. Intended to fill
+the role of a convoy escort fighter, a post held by the A-Wing, the E-Wing
+rapidly became known as the next premier space superiority fighter for
+Republican pilots. Top-notch speed, excellent stability, and a potent,
+powerful punch in the form of sixteen torpedoes and three rapid-firing,
+lethal laser cannons.
+~
+Reset O 0 6704 1 6794
+Reset O 0 6700 1 6794
+#ENDROOM
+
+#ROOM
+Vnum     6795
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     Designed by the same team that produced the X-Wing, the FreiTek E-Wing
+starfighter was introduced in New Republic service during the Admiral
+Thrawn campaign, five years after the Battle of Endor. Intended to fill
+the role of a convoy escort fighter, a post held by the A-Wing, the E-Wing
+rapidly became known as the next premier space superiority fighter for
+Republican pilots. Top-notch speed, excellent stability, and a potent,
+powerful punch in the form of sixteen torpedoes and three rapid-firing,
+lethal laser cannons.
+~
+Reset O 0 6700 1 6795
+Reset O 0 6704 1 6795
+#ENDROOM
+
+#ROOM
+Vnum     6796
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     Designed by the same team that produced the X-Wing, the FreiTek E-Wing
+starfighter was introduced in New Republic service during the Admiral
+Thrawn campaign, five years after the Battle of Endor. Intended to fill
+the role of a convoy escort fighter, a post held by the A-Wing, the E-Wing
+rapidly became known as the next premier space superiority fighter for
+Republican pilots. Top-notch speed, excellent stability, and a potent,
+powerful punch in the form of sixteen torpedoes and three rapid-firing,
+lethal laser cannons.
+~
+Reset O 0 6704 1 6796
+Reset O 0 6700 1 6796
+#ENDROOM
+
+#ROOM
+Vnum     6797
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     Designed by the same team that produced the X-Wing, the FreiTek E-Wing
+starfighter was introduced in New Republic service during the Admiral
+Thrawn campaign, five years after the Battle of Endor. Intended to fill
+the role of a convoy escort fighter, a post held by the A-Wing, the E-Wing
+rapidly became known as the next premier space superiority fighter for
+Republican pilots. Top-notch speed, excellent stability, and a potent,
+powerful punch in the form of sixteen torpedoes and three rapid-firing,
+lethal laser cannons.
+~
+Reset O 0 6700 1 6797
+Reset O 0 6704 1 6797
+#ENDROOM
+
+#ROOM
+Vnum     6798
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     Designed by the same team that produced the X-Wing, the FreiTek E-Wing
+starfighter was introduced in New Republic service during the Admiral
+Thrawn campaign, five years after the Battle of Endor. Intended to fill
+the role of a convoy escort fighter, a post held by the A-Wing, the E-Wing
+rapidly became known as the next premier space superiority fighter for
+Republican pilots. Top-notch speed, excellent stability, and a potent,
+powerful punch in the form of sixteen torpedoes and three rapid-firing,
+lethal laser cannons.
+~
+Reset O 0 6704 1 6798
+Reset O 0 6700 1 6798
+#ENDROOM
+
+#ROOM
+Vnum     6799
+Name     Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     Outfitted admirably to serve as a multi-role platform for the Caspian
+Marines, the Z-105 Harpoon is only outclassed by the Slayn & Korpil B-Wing
+of the New Republic. Built around the premise of long range being a must,
+it has found a home as a fighter-bomber, strike craft, recon-scout,
+escort, assault craft, and a trainer. The incorporation of a HOWL, or High
+Ordinance Weapon Launcher, and the sensitivity and importance of its
+sensors and targetting systems necessitates the use of a Weapons and
+Systems Operator, or WSO.
+~
+Reset O 0 6700 1 6799
+Reset O 0 6704 1 6799
+#ENDROOM
+
+#ENDAREA

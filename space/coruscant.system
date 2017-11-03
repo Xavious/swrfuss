@@ -1,0 +1,51 @@
+#SPACE
+Name         Coruscant System~
+Filename     coruscant.system~
+Planet1      Coruscant~
+Planet2      Outpost Moon~
+Planet3      ~
+Star1        Coruscant Sun~
+Star2        ~
+Location1a      Menari Spaceport~
+Location1b      ~
+Location1c      ~
+Location2a       Outer System Landing Area~
+Location2b      ~
+Location2c      ~
+Location3a      ~
+Location3b      ~
+Location3c      ~
+Doc1a          203
+Doc2a          10190
+Doc3a          0
+Doc1b          0
+Doc2b          0
+Doc3b          0
+Doc1c          0
+Doc2c          0
+Doc3c          0
+P1x          -345
+P1y          -987
+P1z          1562
+P2x          902011
+P2y          -1003651
+P2z          1100331
+P3x          0
+P3y          0
+P3z          0
+S1x          0
+S1y          0
+S1z          0
+S2x          0
+S2y          0
+S2z          0
+Gravitys1     200
+Gravitys2     0
+Gravityp1     100
+Gravityp2     20
+Gravityp3     0
+Xpos          211
+Ypos          745
+End
+
+#END

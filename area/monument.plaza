@@ -1,0 +1,3004 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Coruscant - Monument Plaza~
+Author       Exar/Durga~
+Ranges       50 100 0 103
+Economy      0 31254867
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       26000
+Keywords   droid remote small floating~
+Short      a modified remote~
+Long       A droid is floating around here, monitoring you.
+~
+Desc       This is an older model remote that has been modified to act as a shop-
+keeper in this clothing store.  From time to time it *piffs* around the
+room, but it always keeps its central scanner on you.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 9 0 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       26001
+Keywords   plaza guard~
+Short      a plaza guard~
+Long       A plaza guard stands at her post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26002
+Keywords   plaza guard~
+Short      a plaza guard~
+Long       A plaza guard stands at his post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26003
+Keywords   plaza guard~
+Short      a plaza guard~
+Long       A plaza guard stands at his post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 80 0 -100 0 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 16 16
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26004
+Keywords   quarren store clerk~
+Short      quarren store clerk~
+Long       A quarren store clerk organizes her shop.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     quarren~
+Speaking   quarren~
+ShopData   74 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       26005
+Keywords   receptionist~
+Short      a receptionist~
+Long       A receptionist sits at her desk.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Immune     sleep charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26006
+Keywords   shopkeeper droid~
+Short      a shopkeeper droid~
+Long       A droid is here scanning your purchaces.
+~
+Desc       This droid is a very rudimentry humanoid shape. Its voice synthesyser is
+worn out and makes a slight hissing sound when it speaks.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel droid~
+Stats1     0 50 0 -25 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       26007
+Keywords   Hutt~
+Short      a Hutt~
+Long       A Hutt is here discussing business.
+~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 400 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common hutt~
+Speaking   hutt~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26008
+Keywords   adarian businessman~
+Short      an adarian businessman~
+Long       An adarian businessman is here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 30 0 25 200 0
+Stats2     6 10 300
+Stats3     3 4 2
+Stats4     0 0 0 6 6
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26009
+Keywords   Hutt~
+Short      a Hutt~
+Long       A Hutt is checking out plaza operations.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 60 0 -50 0 0
+Stats2     12 10 600
+Stats3     6 4 2
+Stats4     0 0 0 12 12
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common adarian~
+Speaking   adarian~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26010
+Keywords   executive~
+Short      an executive~
+Long       An executive is conducting business.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26011
+Keywords   bounty hunter twi'lek~
+Short      a bounty hunter~
+Long       A Twi'lek is dressed in battle armor.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 60 0 -50 0 0
+Stats2     12 10 600
+Stats3     6 4 2
+Stats4     0 0 0 12 12
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26012
+Keywords   plaza guard~
+Short      a plaza guard~
+Long       A plaza guard stands at his post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel prototype~
+Stats1     0 90 0 -125 0 0
+Stats2     18 10 900
+Stats3     9 4 2
+Stats4     0 0 0 18 18
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       26013
+Keywords   shopkeeper droid~
+Short      a shopkeeper droid~
+Long       A droid is here scanning your purchaces.
+~
+Desc       This droid is a very rudimentry humanoid shape. Its voice synthesyser is
+worn out and makes a slight hissing sound when it speaks.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel droid prototype~
+Stats1     0 50 0 -25 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       26099
+Keywords   dummy~
+Short      a newly created dummy~
+Long       Some god abandoned a newly created dummy here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     26000
+Keywords map-pad pad datapad blinking~
+Type     map~
+Short    a map-pad~
+Long     A datapad of some sort is blinking on the ground.~
+Values   0 0 0 0 0 0
+Stats    1 25 2 0 0
+#EXDESC
+ExDescKey    map-pad pad datapad blinking~
+ExDesc       O--O
+              |  |
+        O--O  O--O  O--O
+        |  |  |  |  |  |
+        O--O  O--O  O--O
+        |  |  |  |  |  |
+  O--O--O--O--O--O--O--O
+  |  |  |  |  |  |  |  |
+  O--O--O--O--O--O--O--O
+        |  |  |  |  |  |
+  O--O--O--O--O--O--O--O
+  |  |  |  |  |  |  |  |
+  O--O--O--O--O--O--O--O
+        |  |  |  |  |  |
+  O--O--O--O--O--O--O--O
+  |  |  |  |  |  |  |  |
+  O--O--O--O--O--O--O--O
+        |  |  |  |  |  |
+        O--O  O--O  O--O
+        |  |  |  |  |  |
+        O--O  O--O  O--O
+              |  |
+              O--O
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     26001
+Keywords shirt tee-shirt t-shirt~
+Type     armor~
+Short    a t-shirt~
+Long     A thin, white shirt is being trampled on the ground.~
+WFlags   take body~
+Values   0 2 0 0 0 0
+Stats    1 25 2 0 1
+#EXDESC
+ExDescKey    t-shirt shirt thin~
+ExDesc       This shirt has the words, "I saw Monument Plaza!" pasted on the front in
+bright letters.  Despite its stupidity, you recall having seen several
+sentients wearing in.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     26002
+Keywords cap hat plastic~
+Type     armor~
+Short    an adjustable cap~
+Long     A cap has been left here for the scavengers.~
+WFlags   take head~
+Values   0 2 0 0 0 0
+Stats    1 10 1 0 0
+Affect       -1 -1 1 25 0
+#EXDESC
+ExDescKey    cap adjustable~
+ExDesc       There is a picture of several statues on the front of the cap.  The rest
+is brown and shaped like the mountain peak in the center of the plaza.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     26003
+Keywords jacket plastic shiney~
+Type     armor~
+Short    a plastic jacket~
+Long     A pile of shiney plastic has been discarded here.~
+WFlags   take body~
+Values   0 5 0 0 0 0
+Stats    1 100 10 0 20
+#EXDESC
+ExDescKey    jacket plastic ugly shiney~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    jacket plastic ugly shiney~
+ExDesc       This jacket must be the most repulsive peice of clothing you have
+ever layed eyes on.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     26004
+Keywords leg sheath~
+Type     container~
+Short    a leg sheath~
+Long     A leg sheath... big deal.~
+WFlags   take legs~
+Values   15 0 0 0 0 0
+Stats    1 30 3 0 128
+#ENDOBJECT
+
+#OBJECT
+Vnum     26005
+Keywords superconductor~
+Type     superconductor~
+Short    a superconductor~
+Long     A superconductor is used in high energy devices.~
+Flags    hidden~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26006
+Keywords key~
+Type     key~
+Short    a key~
+Long     A key is hanging on the wall here.~
+Flags    hidden~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26007
+Keywords satin~
+Type     fabric~
+Short    some fine satin~
+Long     Some fine satin would make a nice shirt.~
+Flags    inventory~
+WFlags   take~
+Values   1 1 0 0 0 0
+Stats    1 40 4 0 2
+Affect       -1 -1 10 14 0
+Affect       -1 -1 10 36 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26008
+Keywords hard leather~
+Type     fabric~
+Short    some hard leather~
+Long     A piece of hard leather was left here.~
+WFlags   take~
+Values   6 6 0 0 0 0
+Stats    5 75 7 0 32
+#ENDOBJECT
+
+#OBJECT
+Vnum     26009
+Keywords tough canvas~
+Type     fabric~
+Short    some tough canvas~
+Long     Some tough canvas would make an excellent outermost garment.~
+WFlags   take~
+Values   4 4 0 0 0 0
+Stats    5 35 3 0 128
+#ENDOBJECT
+
+#OBJECT
+Vnum     26010
+Keywords chemestry set~
+Type     chemical~
+Short    a chemestry set~
+Long     A chemestry set might produce something useful.~
+WFlags   take~
+Values   50 0 0 0 0 0
+Stats    1 25 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26011
+Keywords sheet thin silver~
+Type     rare_metal~
+Short    a sheet of thin silver~
+Long     A sheet of thin silver is stashed away in a corner.~
+Flags    hidden~
+WFlags   take~
+Values   0 3 0 0 0 0
+Stats    2 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26012
+Keywords keycard~
+Type     trash~
+Short    a keycard~
+Long     A keycard was dropped here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26020
+Keywords small t-shirt~
+Type     armor~
+Short    a small t-shirt~
+Long     A small t-shirt is getting trampled.~
+Flags    small_size~
+WFlags   take body~
+Values   0 2 0 0 0 0
+Stats    1 20 2 0 2
+Affect       -1 -1 1 2 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26021
+Keywords medium t-shirt~
+Type     armor~
+Short    a medium t-shirt~
+Long     A medium t-shirt is getting trampled.~
+Flags    human_size~
+WFlags   take body~
+Values   0 2 0 0 0 0
+Stats    1 20 2 0 2
+Affect       -1 -1 1 2 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26022
+Keywords large t-shirt~
+Type     armor~
+Short    a large t-shirt~
+Long     A large t-shirt is getting trampled.~
+Flags    hutt_size~
+WFlags   take body~
+Values   0 2 0 0 0 0
+Stats    1 20 2 0 2
+Affect       -1 -1 1 2 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26023
+Keywords huge t-shirt~
+Type     armor~
+Short    a huge t-shirt~
+Long     A huge t-shirt is getting trampled.~
+Flags    hutt_size~
+WFlags   take body~
+Values   0 2 0 0 0 0
+Stats    1 20 2 0 2
+Affect       -1 -1 1 2 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26024
+Keywords a small sweater~
+Type     armor~
+Short    a small sweater~
+Long     A small sweater is getting stepped on~
+Flags    inventory small_size~
+WFlags   take body~
+Values   0 5 0 0 0 0
+Stats    1 50 5 0 32
+Affect       -1 -1 2 27 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26025
+Keywords a medium sweater~
+Type     armor~
+Short    a medium sweater~
+Long     A medium sweater is getting stepped on~
+Flags    inventory large_size human_size~
+WFlags   take body~
+Values   0 5 0 0 0 0
+Stats    1 50 5 0 32
+Affect       -1 -1 2 27 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26026
+Keywords a large sweater~
+Type     armor~
+Short    a large sweater~
+Long     A large sweater is getting stepped on~
+Flags    inventory large_size~
+WFlags   take body~
+Values   0 5 0 0 0 0
+Stats    1 50 5 0 32
+Affect       -1 -1 2 27 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26027
+Keywords a huge sweater~
+Type     armor~
+Short    a huge sweater~
+Long     A huge sweater is getting stepped on~
+Flags    hutt_size~
+WFlags   take body~
+Values   0 5 0 0 0 0
+Stats    1 50 5 0 32
+Affect       -1 -1 2 27 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26028
+Keywords small heavy vest~
+Type     armor~
+Short    a small heavy vest~
+Long     A small heavy vest is somewhat blast resistant.~
+Flags    small_size~
+WFlags   take body~
+Values   0 7 0 0 0 0
+Stats    1 100 10 0 64
+Affect       -1 -1 -10 14 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26029
+Keywords large heavy vest~
+Type     armor~
+Short    a large heavy vest~
+Long     A large heavy vest is somewhat blast resistant.~
+Flags    large_size~
+WFlags   take body~
+Values   0 7 0 0 0 0
+Stats    1 100 10 0 64
+Affect       -1 -1 -10 14 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26097
+Keywords a keycard~
+Type     trash~
+Short    a keycard~
+Long     A keycard was dropped here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26098
+Keywords The Plaza Deed~
+Type     government~
+Short    the plaza deed~
+Long     The Deed of the Plaza is yours to capture~
+Flags    hidden~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     26099
+Keywords dud~
+Type     trash~
+Short    a newly created dud~
+Long     Some god dropped a newly created dud here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     26000
+Name     The Center of Monument Plaza~
+Sector   city~
+Desc     The ground pushes in the center of the plaza showing the main feature
+of the plaza - bare bock. The plaza is built surrounding one of the
+peaks of one of the Menari Mountain Range. The surface of the
+mountain is exposed in several places but is most promenant here at
+the true peak. Throught the rest of the plaza are enormous statues,
+ost carved out of the rock. Around the perimeter are a multitude of
+small stores and shops.
+~
+#EXIT
+Direction north~
+ToRoom    26001
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26004
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26002
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26003
+#ENDEXIT
+
+Reset M 0 326 1 26000
+  Reset E 1 58 1 16
+#ENDROOM
+
+#ROOM
+Vnum     26001
+Name     Northern Side of Monument Plaza~
+Sector   city~
+Desc     An average sized statue in the plaza, although huge by any normal
+standards, is of a squat looking alien creature. It is hunched over
+slightly and stands with a cane. At the foot of the monument an
+inscription drones on about this creatures deads. Not exactly exciting bed
+time reading. 
+~
+#EXIT
+Direction north~
+ToRoom    26009
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26007
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26000
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26008
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26002
+Name     The Center of Monument Plaza~
+Sector   city~
+Desc     The ground pushes in the center of the plaza showing the main feature
+of the plaza - bare bock. The plaza is built surrounding one of the
+peaks of one of the Menari Mountain Range. The surface of the
+mountain is exposed in several places but is most promenant here at
+the true peak. Throught the rest of the plaza are enormous statues,
+ost carved out of the rock. Around the perimeter are a multitude of
+small stores and shops.
+~
+#EXIT
+Direction north~
+ToRoom    26000
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26006
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26010
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26005
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26003
+Name     The Center of Monument Plaza~
+Sector   city~
+Desc     The ground pushes in the center of the plaza showing the main feature
+of the plaza - bare bock. The plaza is built surrounding one of the
+peaks of one of the Menari Mountain Range. The surface of the
+mountain is exposed in several places but is most promenant here at
+the true peak. Throught the rest of the plaza are enormous statues,
+ost carved out of the rock. Around the perimeter are a multitude of
+small stores and shops.
+~
+#EXIT
+Direction north~
+ToRoom    26008
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26000
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26005
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26004
+Name     North of the Guard's Post~
+Sector   city~
+Desc     You stand before an enormous statue. It rises at least 50 stories above the
+peak of this mountain. The statue is of a human wearing a long stone robe
+and holding a lightsaber out in front of him. A guards post is to the
+south of here. A large rock juts out of the ground to the south west.
+~
+#EXIT
+Direction north~
+ToRoom    26007
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26017
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26006
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26000
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26005
+Name     The Center of Monument Plaza~
+Sector   city~
+Desc     The ground pushes in the center of the plaza showing the main feature
+of the plaza - bare bock. The plaza is built surrounding one of the
+peaks of one of the Menari Mountain Range. The surface of the
+mountain is exposed in several places but is most promenant here at
+the true peak. Throught the rest of the plaza are enormous statues,
+ost carved out of the rock. Around the perimeter are a multitude of
+small stores and shops.
+~
+#EXIT
+Direction north~
+ToRoom    26003
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26002
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26013
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26006
+Name     At the Guard's Post~
+Sector   city~
+Desc     The guards post is a flat platform raised slightly above the the main
+walkways. To the north is one of the larger statues in the plaza to the
+west the mountain juts out above the floor forming a high peak. 
+~
+#EXIT
+Direction north~
+ToRoom    26004
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26016
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26014
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26002
+#ENDEXIT
+
+Reset M 0 26001 2 26006
+#ENDROOM
+
+#ROOM
+Vnum     26007
+Name     Northern Side of Monument Plaza~
+Sector   city~
+Desc     You stand just north of one of the largest statues in the plaza. The air
+high up on the mountain is thin but clean and fresh. Refreshing compared
+to the heavy stale air found throughout the rest of the coruscant. 
+~
+#EXIT
+Direction north~
+ToRoom    26011
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26018
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26004
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26001
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26008
+Name     Northern Side of Monument Plaza~
+Sector   city~
+Desc     You stand in a northern area of monument plaza. All around the plaza is
+uroounded by shops selling all kinds of overpriced things. Throught the
+center of the plaza are enourmous monuments erected in the past. The
+largest monument in the plaza lies directly to the west of you. It appears
+alot newer than most of the statues here but seems to be poorly kept
+compared to the rest.
+~
+#EXIT
+Direction north~
+ToRoom    26012
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26001
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26003
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26028
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26009
+Name     Northern Side of Monument Plaza~
+Sector   city~
+Desc     You stand on the northetn end of monument plaza, the popular mall built
+high on a peek in the Menari Mountain range in the southern part of
+Coruscant. To the south are many large monuments depicting heroes (and
+villians) of the past. In the center of the plaza the peek of the mountain
+pushes up above the palace floor coming to a high peak. To the north a
+wide walkway leads to a lookout point on the mountain
+~
+#EXIT
+Direction north~
+ToRoom    26041
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26011
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26001
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26010
+Name     Southern Side of Monument Plaza~
+Sector   city~
+Desc     You stand in a southern part of Monument Plaza, one of Coruscants many
+tourist traps. The center of the squre is just to the north where the peak
+of a Menari Mountain pushes through the center of the plaza. Around the
+perimeter of the plaza are dozens of small shops. Scattered throughout the
+plaza are many enormous statues.
+~
+#EXIT
+Direction north~
+ToRoom    26002
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26014
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26022
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26011
+Name     Northern Side of Monument Plaza~
+Sector   city~
+Desc     You stand along the northern edge of monument plaza. To the south of you
+lie several monuments of astronomical size. To your north and around the
+perimiter of the plaza are many shops. You stand along the northern edge
+of monument plaza. To the south of you lie several monuments of
+astronomical size. To your north and around the perimiter of the plaza are
+many shops. A large rock extends high out of the center of the paza.
+~
+#EXIT
+Direction east~
+ToRoom    26019
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26007
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26012
+Name     Northern Side of Monument Plaza~
+Sector   city~
+Desc     You stand on the northetn end of monument plaza, the popular mall built
+high on a peek in the Menari Mountain range in the southern part of
+Coruscant. To the south are many large monuments depicting heroes (and
+villians) of the past. In the center of the plaza the peek of the mountain
+pushes up above the palace floor coming to a high peak. To the north a
+wide walkway leads to a lookout point on the mountain 
+~
+#EXIT
+Direction north~
+ToRoom    26040
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26009
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26008
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26013
+Name     Southern Side of Monument Plaza~
+Sector   city~
+Desc     You stand in a southern part of Monument Plaza, one of Coruscants many
+tourist traps. The center of the squre is just to the north where the peak
+of a Menari Mountain pushes through the center of the plaza. Around the
+perimeter of the plaza are dozens of small shops. Scattered throughout the
+plaza are many enormous statues.
+~
+#EXIT
+Direction north~
+ToRoom    26005
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26010
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26023
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26014
+Name     Southern Side of Monument Plaza~
+Sector   city~
+Desc     A small group of statues is here clustered together. A plaque on the bottom
+tells the story of the battle of Endor. The people depicted in this
+monument were responsible for destroying the second death star and ending
+the reign of the self proclaimed emp 
+~
+#EXIT
+Direction north~
+ToRoom    26006
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26015
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26021
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26015
+Name     Southeast Corner of Monument Plaza~
+Sector   city~
+Desc     Standing here, southeast of the center of the plaza, you can see most
+of the square.  Far to the northeast is an eatery: the sign is too small
+to read from here, though.  To your south is a mid-sized statue, and to
+the west are several more statues.
+~
+#EXIT
+Direction north~
+ToRoom    26016
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26075
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26020
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26014
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26016
+Name     East of the Guard's Post~
+Sector   city~
+Desc     Here, directly east of the guard post, you stand at the base of one of
+the smallest statues in the plaza.  It is one of an Old Republic Officer,
+dressed in full ceremonial garb, saluting the center of the square.  As
+usual there is a plaque at the bottom of the statue giving details about
+why this man deserved a place here.  The plaza continues north and south,
+and the guard post is to the west.
+~
+#EXIT
+Direction north~
+ToRoom    26017
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26076
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26015
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26006
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26017
+Name     Northeast of the Guard's Post~
+Sector   city~
+Desc     You are standing just to the northeast of a guard's post.  Apparently
+even here, in this great monument there is still a need for officials
+of the law.  There is a lesser statue to your north and south, and a
+rather large one to your west.
+~
+#EXIT
+Direction north~
+ToRoom    26018
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26077
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26016
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26004
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26018
+Name     Northeast Corner of Monument Plaza~
+Sector   city~
+Desc     You are standing at the eastern most edge of Monument Plaza, and slightly
+to the north of its center.  You are directly at the base of one of the
+lesser statues of the Plaza, but it still dwarfs you in comparison.  A
+plaque on its side gives details about the person's life and great
+acheivements, but it must have been written by a mark 2 power droid, because
+no seems to be able to stave off boredom for more than 3 or 4 lines.
+The Plaza continues to the north, south, and west.
+~
+#EXIT
+Direction north~
+ToRoom    26019
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26078
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26017
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26007
+#ENDEXIT
+
+#EXDESC
+ExDescKey    plaque~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     26019
+Name     Northeast Corner of Monument Plaza~
+Sector   city~
+Desc     You are standing in the most northerly section of Monument Plaza. A row of
+shops lie immediatly to your north and lead off westward. Several other
+citizens are here, admiring the square and the sheer beauty of the area. 
+Compared to much of the rest of Coruscant, this is a virtual paradise.  
+~
+#EXIT
+Direction north~
+ToRoom    26037
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26079
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26018
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26011
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26020
+Name     Southeast Corner of Monument Plaza~
+Sector   city~
+Desc     You are now standing in the more south easterly corner of Monument
+Plaza.  A mid-sized statue, meaning 30-40 stories, looms above you in
+testament to some ancient hero.  This particular statue is non-human,
+posessing four arms, six legs, and a head protruding from its underbelly.
+As usual there is a plaque at its base explaining its story.  The plaza
+extends before you to the north and the west.
+~
+#EXIT
+Direction north~
+ToRoom    26015
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26074
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    447
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26021
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26021
+Name     Southern Side of Monument Plaza~
+Sector   city~
+Desc     You stand in the southern part of monument plaza close to the easern
+corner. The plaza hotel is directly to the south of you. To the south east
+is an entrance to the turbocar system. Shops lie to your west and around
+the outside walls of the plaza. Many enormous monuments can be found
+throughout hte plaza to the north. 
+~
+#EXIT
+Direction north~
+ToRoom    26014
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26020
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26050
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26022
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26022
+Name     Southern Side of Monument Plaza~
+Sector   city~
+Desc     You stand upon the southern side of Monument Plaza in the Menari Mountain
+Range on Coruscant. This large mall is built around the tip of one of the
+peaks in the mountain range. Directly to the south is a row of shops which
+extends around the plaza. Throught the plaza are many enormous statues.
+Most depict Heroes of the old Republic although there are many newer ones
+built by the Empire in their short reign and by the newly reformed
+Republic. The turbocar system and and plaza hotel are to the further to
+the east. The offices are at the western corner.
+~
+#EXIT
+Direction north~
+ToRoom    26010
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26021
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26073
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26023
+Name     Southern Side of Monument Plaza~
+Sector   city~
+Desc     You stand upon the southern side of Monument Plaza in the Menari Mountain
+Range on Coruscant. This large mall is built around the tip of one of the
+peaks in the mountain range. Directly to the south is a row of shops which
+extends around the plaza. Throught the plaza are many enormous statues.
+Most depict Heroes of the old Republic although there are many newer ones
+built by the Empire in their short reign and by the newly reformed
+Republic. The turbocar system and and plaza hotel are to the further to
+the east. The offices are at the western corner.
+~
+#EXIT
+Direction north~
+ToRoom    26013
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26022
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26072
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26024
+Name     Southern Side of Monument Plaza~
+Sector   city~
+Desc     You stand upon the southern side of Monument Plaza in the Menari Mountain
+Range on Coruscant. This large mall is built around the tip of one of the
+peaks in the mountain range. Directly to the south is a row of shops which
+extends around the plaza. Throught the plaza are many enormous statues.
+Most depict Heroes of the old Republic although there are many newer ones
+built by the Empire in their short reign and by the newly reformed
+Republic. The turbocar system and and plaza hotel are to the further to
+the east. The offices are at the western corner.
+~
+#EXIT
+Direction north~
+ToRoom    26025
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26071
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26025
+Name     Southern Side of Monument Plaza~
+Sector   city~
+Desc     The statue hear is one of the larger statues in the plaza. It is a
+depiction of one of the greatest architects in the history of coruscant
+who designed several of the older buildings in the cities core. A few of
+wich still stand in their original form ( although most of them have been
+built over top of and are buried beneath several newer structures.
+~
+#EXIT
+Direction north~
+ToRoom    26026
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26013
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26024
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26031
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26026
+Name     West Side of Monument Plaza~
+Sector   city~
+Desc     You stand before an old statue that is one of the smaller ones. It depicts
+a woman scratching her chin and gazing up at the stars. You stand before
+an old statue that is one of the smaller ones. It depicts a woman
+scratching her chin and gazing up at the stars. The plaque tells the story
+of this womans many technological achievements which included an algorithm
+that enabled artificial inteligence units to run at almost 100th of their
+previous size.
+~
+#EXIT
+Direction north~
+ToRoom    26027
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26005
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26025
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26032
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26027
+Name     West Side of Monument Plaza~
+Sector   city~
+Desc     This raised platform is used as a second security post during peek tourist
+seasons. It was built manly in response to the defacing of Palpatines
+statue although it has had little effect to this end. Most guards simply
+turn their heads to such acts. 
+~
+#EXIT
+Direction north~
+ToRoom    26028
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26003
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26026
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26033
+#ENDEXIT
+
+Reset M 0 26002 2 26027
+#ENDROOM
+
+#ROOM
+Vnum     26028
+Name     Northern Side of Monument Plaza~
+Sector   city~
+Desc     The enormous statue before towers above all the others in the statue and is
+a true sign of the hubris the man it depicts once displayed. It is a
+monument to the late Senator Palpatine, the self proclaimed emporer who
+died 20 years ago in the battle of Endor. The statue was built during his
+reign here on Coruscant probably under his direct orders. The inscription
+is illegible underneath layers of nasty graffitti.
+~
+#EXIT
+Direction north~
+ToRoom    26029
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26027
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26029
+Name     Northern Side of Monument Plaza~
+Sector   city~
+Desc     You stand along the northernmost edge of monument plaza. To the north-west
+is the entrance to Chat's Fast Food Palace. Beyond that are various shops
+encircling the remainder of the plaza. Directly to the south of you is one
+of the largest monuments in the plaza. Others are scattered throughout the
+south and east of here. 
+~
+#EXIT
+Direction east~
+ToRoom    26012
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26030
+Name     Southwest Corner of Monument Plaza~
+Sector   city~
+Desc     You stand in the southeast corner of monument plaza, one of the nicer areas
+of coruscant located on top of one of the menari mountains. To the west is
+the entrance to the plaza offices. Far to the east is the plaza hotel and
+turbocar station. There is a monument here that depicts a verpine shaking
+hands with a mon calamarian. Throughout the plaza are dozens of other
+monuments, some towering stories high.
+~
+#EXIT
+Direction north~
+ToRoom    26031
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26024
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26080
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26057
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 26030 3 1
+#ENDROOM
+
+#ROOM
+Vnum     26031
+Name     Southwest Corner of Monument Plaza~
+Sector   city~
+Desc     You stand along the western edge of Monument Plaza, the large mall built
+around the peak of one of the Menari Mountains on Coruscant. Because of
+its location it is one of the nicer areas of coruscant. A freesh breeze
+and clean air are a refreshing change to the busy dirty streets. The
+preimiter of the plaza is line with shops while the center of the plaza is
+filled with enourmous monuments of old heroes. 
+~
+#EXIT
+Direction north~
+ToRoom    26032
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26025
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26030
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26066
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26032
+Name     West Side of Monument Plaza~
+Sector   city~
+Desc     You stand along the western edge of Monument Plaza, the large mall built
+around the peak of one of the Menari Mountains on Coruscant. Because of
+its location it is one of the nicer areas of coruscant. A freesh breeze
+and clean air are a refreshing change to the busy dirty streets. The
+preimiter of the plaza is line with shops while the center of the plaza is
+filled with enourmous monuments of old heroes.  
+~
+#EXIT
+Direction north~
+ToRoom    26033
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26026
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26031
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26067
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26033
+Name     West Side of Monument Plaza~
+Sector   city~
+Desc     You stand along the western edge of Monument Plaza, the large mall built
+around the peak of one of the Menari Mountains on Coruscant. Because of
+its location it is one of the nicer areas of coruscant. A freesh breeze
+and clean air are a refreshing change to the busy dirty streets. The
+preimiter of the plaza is line with shops while the center of the plaza is
+filled with enourmous monuments of old heroes.  
+~
+#EXIT
+Direction north~
+ToRoom    26034
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26027
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26032
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26068
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26034
+Name     Northwest Corner of Monument Plaza~
+Sector   city~
+Desc     You are walking along the Western end of monument plaza. Directly to your
+east is an enormous statue of a well known if not well liked hooded
+figure. Shops are all alogn the four sides of the plaza. To the far south
+east is the plaza hotel and transit station. 
+~
+#EXIT
+Direction north~
+ToRoom    26035
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26028
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26033
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26069
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26035
+Name     Northwest Corner of Monument Plaza~
+Sector   city~
+Desc     You stand in the northwest corner of Monument Plaza. It sports some of the
+largest statues in the Galaxy but the bigger attaction for the locals is
+the fact that its one of the few places in Coruscant you can actually
+touch bare rock in its natural state. A restaurant is to the north and
+many shops are to the west and south of here. 
+~
+#EXIT
+Direction north~
+ToRoom    26047
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26029
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26034
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26070
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26036
+Name     Inside a Souvenir Shop~
+Sector   city~
+Flags    indoors safe~
+Desc     You are standing in front of a rack of cheap clothing and clothing-
+related merchandise.  Most of the items are inexpensive T-Shirts
+plastered with ill-thought out slogans and repulsive logos.  A floating
+droid which seems to be a modified remote shoots around over your head
+making notes of all your purchases and charging you for them.  To the
+north is a library of some kind and to the east is an exit.
+~
+#EXIT
+Direction north~
+ToRoom    26038
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26037
+#ENDEXIT
+
+Reset M 0 26000 1 26036
+  Reset G 1 26002 1
+  Reset G 1 26003 1
+  Reset G 1 26001 1
+  Reset E 1 32275 1 16
+#ENDROOM
+
+#ROOM
+Vnum     26037
+Name     The Checkout Counter~
+Sector   city~
+Flags    indoors~
+Desc     The checkout counter is little more than a relic now, as people pay
+as they go nowadays.  Each part of this souvenir shop specializes in
+a different genre of gift.  To your immediate north are holo-images
+of the Plaza from different angles, to the northwest are datadisks
+containing stories about the statues that eternally dwell here.  To
+the west is a small clothing section, with T-shirts bearing logos
+such as "I saw Monument Plaza" and other equally unimaginative
+phrases.
+~
+#EXIT
+Direction north~
+ToRoom    26039
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26019
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26036
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26038
+Name     The Back of a Souvenir Shop~
+Sector   city~
+Flags    indoors~
+Desc     Here, in the small back corner of Heff's Souvenir shop, lies a largly
+unorganised, but amazingly unique, collection of datatapes.  Each
+tape , no more than two inches square, contains the sotry of one of the
+statues in the Plaza.  Few shoppers notice this trove of treasure, and
+fewer still stop to examine it.  There are tapes here from some of the
+great authors of all time, spanned the centuries, even the eons in some
+cases!  Surely the price charged here is but a fraction of the tapes'
+true value.  To your south is a T-shirt stand and to the east is the
+visuals section.
+~
+#EXIT
+Direction east~
+ToRoom    26039
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26036
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26039
+Name     The Back of a Souvenir Shop~
+Sector   city~
+Flags    indoors~
+Desc     Here, at the back of the shop, there are literally hundreds of images
+of the Plaza frozen in holocubes.  Every conceivable angle, along with
+a few utterly unconceivable, has been recorded and put on sale here.
+A vid-term on the wall flickers through what would seem to be a list of
+all the images captured here.  To your south is the checkout counter
+and to the west is a small collection of data tapes.
+~
+#EXIT
+Direction south~
+ToRoom    26037
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26040
+Name     Plaza Walkway~
+Sector   city~
+Desc     This walkway extends north from the plaza between two buildings. It ends at
+get ammo back ammo railing to the north past which you can see the glow of
+the city far bellow. To the south many statues tower over the main part of
+the plaza.
+~
+#EXIT
+Direction north~
+ToRoom    26045
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26041
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26041
+Name     Plaza Walkway~
+Sector   city~
+Desc     This walkway extends north from the plaza between two buildings. It ends at
+get ammo back ammo railing to the north past which you can see the glow of
+the city far bellow. To the south many statues tower over the main part of
+the plaza.
+~
+#EXIT
+Direction north~
+ToRoom    26044
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26009
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26040
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26042
+Name     Plaza Lookout~
+Sector   city~
+Desc     This has to be one of the most beautiful spots on Coruscant. The lookout is
+on the top of one of the Menari mountains. To the north and far bellow the
+lights of imperial city sretch from the base of the mountain as far as the
+eye can see. To the east and west many snow covered mounain peaks push up
+into the haze. The air is clean and fresh and the cool breeze is very
+refreshing.
+~
+#EXIT
+Direction east~
+ToRoom    26043
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26045
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26043
+Name     Plaza Lookout~
+Sector   city~
+Desc     This has to be one of the most beautiful spots on Coruscant. The lookout is
+on the top of one of the Menari mountains. To the north and far bellow the
+lights of imperial city sretch from the base of the mountain as far as the
+eye can see. To the east and west many snow covered mounain peaks push up
+into the haze. The air is clean and fresh and the cool breeze is very
+refreshing.
+~
+#EXIT
+Direction south~
+ToRoom    26044
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26042
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26044
+Name     Plaza Walkway~
+Sector   city~
+Desc     This walkway extends north from the plaza between two buildings. It ends at
+get ammo back ammo railing to the north past which you can see the glow of
+the city far bellow. To the south many statues tower over the main part of
+the plaza.
+~
+#EXIT
+Direction north~
+ToRoom    26043
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26041
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26045
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26045
+Name     Plaza Walkway~
+Sector   city~
+Desc     This walkway extends north from the plaza between two buildings. It ends at
+a railing to the north past which you can see the glow of the city far
+bellow. To the south many statues tower over the main part of the plaza.
+~
+#EXIT
+Direction north~
+ToRoom    26042
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26044
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26040
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26046
+Name     The Bar~
+Sector   city~
+Desc     There are five stools here, in front of bar.  Other patrons wander around,
+looking out the window from time to time and admiring the great statues of
+Monument Plaza.  The barkeep looks far more civilized than most you have seen,
+and serves up drinks with a smile.  A plethora of different drinks line
+the shelves behind him, suited for all tastes and all races.
+~
+#EXIT
+Direction north~
+ToRoom    26049
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26047
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26047
+Name     The Checkout Counter~
+Sector   city~
+Desc     You stand at the checkout counter to Chat's Fast Food Palace.  Chat
+himself is manning the credit-chip scanner, smiling and shaking hands all
+the while.  The line of people move forward as they slip their credit-chip
+past the scanner and quickly exit.  From their haste, you can guess the
+meal won't be the most memorable part of their visit here.
+~
+#EXIT
+Direction north~
+ToRoom    26048
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26046
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26048
+Name     At a Plastic Table~
+Sector   city~
+Desc     This portion of the Chat's fast food palace is dominated by a cheap
+plastic table.  In its center a holo-image of a human female asks for
+your order.  To the east you can see a similar scene, and to the south
+lies the checkout counter and Monument Plaza.
+~
+#EXIT
+Direction east~
+ToRoom    26049
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26047
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26049
+Name     At a Plastic Table~
+Sector   city~
+Desc     A large, cheap-looking plastic table dominates this part of the fast food
+restaurant. At its center a holo-image of a human waitress in a short skirt
+asks for your order, and then waits patiently with a smile.  You can see
+another similar table to west, and the view of Monument Plaza is only slightly
+spoiled by the dirty window through which you can see it to the south.
+~
+#EXIT
+Direction south~
+ToRoom    26046
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26048
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26050
+Name     Entrance to Plaza Hotel~
+Sector   city~
+Flags    nomob indoors~
+Desc     You stand in a wide hallway that stretches from the a set of double doors
+to the north to the lobby to the south The room is decorated with many
+paintings in protective casings and a plush green carpet. 
+~
+#EXIT
+Direction north~
+ToRoom    26021
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26051
+Name     Plaza Hotel Lobby~
+Sector   city~
+Flags    indoors~
+Desc     The hotel lobby is a large room decorated with a lush green carpet several
+paintings and a few musch smaller versions of the monuments located
+outside. There is large hotel desk on the west wall. An exit to west leads
+to a shop. 
+~
+#EXIT
+Direction north~
+ToRoom    26050
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    448
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26052
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26052
+Name     Turbolift Up~
+Sector   city~
+Flags    indoors~
+Desc     This small turbolift is nicely decorated with an emorald carpet and
+panneled walls. It rides quickly and swiftly to the next level and then
+pauses waiting for you to leave.
+~
+#EXIT
+Direction north~
+ToRoom    26053
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26053
+Name     Hotel Hallway~
+Sector   city~
+Flags    indoors~
+Desc     The hallway is decorated much like the rest of the hotel with green
+carpetting and paintings an holographs of the plaza and the monuments.
+~
+#EXIT
+Direction north~
+ToRoom    26055
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26054
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26054
+Name     Turbolift Down~
+Sector   city~
+Flags    indoors~
+Desc     This small turbolift is nicely decorated with an emorald carpet and
+panneled walls. It rides quickly and swiftly to the next level and then
+pauses waiting for you to leave. 
+~
+#EXIT
+Direction north~
+ToRoom    26051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26055
+Name     Hotel Hallway~
+Sector   city~
+Flags    indoors~
+Desc     The hallway is decorated much like the rest of the hotel with green
+carpetting and paintings an holographs of the plaza and the monuments.
+~
+#EXIT
+Direction north~
+ToRoom    26056
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26056
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26053
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26056
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset D 0 26055 0 2
+Reset D 0 26055 1 2
+Reset D 0 26055 3 2
+#ENDROOM
+
+#ROOM
+Vnum     26056
+Name     A Hotel Room~
+Sector   city~
+Flags    indoors safe hotel~
+#EXIT
+Direction west~
+ToRoom    26055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26057
+Name     Plaza Reception~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    26030
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26058
+#ENDEXIT
+
+Reset M 0 26003 2 26057
+Reset M 0 26005 1 26057
+  Reset E 1 26097 1 17
+Reset M 0 26003 2 26057
+Reset D 0 26057 1 0
+#ENDROOM
+
+#ROOM
+Vnum     26058
+Name     Stairs to the Offices~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    26057
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    26059
+#ENDEXIT
+
+Reset M 0 26009 1 26058
+  Reset E 1 328 1 17
+  Reset E 1 328 1 4
+  Reset E 1 328 1 3
+  Reset E 1 328 1 13
+  Reset E 1 328 1 5
+#ENDROOM
+
+#ROOM
+Vnum     26059
+Name     Top of the Stairs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction west~
+ToRoom    26060
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    26058
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26060
+Name     A Hallway~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    26065
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26059
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26064
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26061
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26061
+Name     A Hallway~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    26062
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    26060
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26063
+Key       26097
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset D 0 26061 2 2
+#ENDROOM
+
+#ROOM
+Vnum     26062
+Name     An Office~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    26061
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26063
+Name     File Room~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    26061
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset O 0 26098 1 26063
+Reset D 0 26063 0 1
+#ENDROOM
+
+#ROOM
+Vnum     26064
+Name     An Office~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    26060
+#ENDEXIT
+
+Reset M 0 26010 1 26064
+Reset M 0 26011 1 26064
+#ENDROOM
+
+#ROOM
+Vnum     26065
+Name     An Office~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    26060
+#ENDEXIT
+
+Reset M 0 26007 1 26065
+Reset M 0 26008 1 26065
+#ENDROOM
+
+#ROOM
+Vnum     26066
+Name     A Wine Shop~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place. 
+~
+#EXIT
+Direction east~
+ToRoom    26031
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26067
+Name     An Adult Only Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction east~
+ToRoom    26032
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26068
+Name     A Toy Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction east~
+ToRoom    26033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26069
+Name     A Crafts Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction east~
+ToRoom    26034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26070
+Name     A Pawn Shop~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction east~
+ToRoom    26035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26071
+Name     An Appliance Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place. 
+~
+#EXIT
+Direction north~
+ToRoom    26024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26072
+Name     A Computer Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction north~
+ToRoom    26023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26073
+Name     a Jewelry Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction north~
+ToRoom    26022
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    26083
+Key       26012
+Flags     isdoor closed locked~
+#ENDEXIT
+
+Reset M 0 26012 1 26073
+  Reset G 1 26012 1
+Reset D 0 26073 2 2
+#ENDROOM
+
+#ROOM
+Vnum     26074
+Name     A Clothing Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction west~
+ToRoom    26020
+#ENDEXIT
+
+Reset M 0 26013 1 26074
+  Reset G 1 26023 1
+  Reset G 1 26022 1
+  Reset G 1 26021 1
+  Reset G 1 26020 1
+  Reset G 1 26027 1
+  Reset G 1 26026 1
+  Reset G 1 26025 1
+  Reset G 1 26024 1
+  Reset G 1 26029 1
+  Reset G 1 26028 1
+#ENDROOM
+
+#ROOM
+Vnum     26075
+Name     A Fabric Shop~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place. 
+~
+#EXIT
+Direction west~
+ToRoom    26015
+#ENDEXIT
+
+Reset M 0 26004 1 26075
+  Reset G 1 26007 1
+  Reset G 1 26008 1
+  Reset G 1 26009 1
+#ENDROOM
+
+#ROOM
+Vnum     26076
+Name     An Electronics Shop~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place. 
+~
+#EXIT
+Direction east~
+ToRoom    26082
+Key       26006
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    26016
+#ENDEXIT
+
+Reset O 0 26006 1 26076
+Reset D 0 26076 1 2
+#ENDROOM
+
+#ROOM
+Vnum     26077
+Name     A Hobby Shop~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction west~
+ToRoom    26017
+#ENDEXIT
+
+Reset M 0 26006 1 26077
+  Reset G 1 26010 1
+#ENDROOM
+
+#ROOM
+Vnum     26078
+Name     A Book Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place. 
+~
+#EXIT
+Direction west~
+ToRoom    26018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26079
+Name     A Shoe Store~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction west~
+ToRoom    26019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26080
+Name     A Variety Store~
+Sector   city~
+Flags    nomob~
+Desc     This shop is like most of the shops here in the plaza: over decorated with
+tacky tourist stuff and overpriced. As soon as you walk in the door you
+are hounded by an attendant droid who "knows just what you need". The weak
+willed usually end up leaving with far less money and several things that
+they didn't want in the first place.
+~
+#EXIT
+Direction north~
+ToRoom    26030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     26081
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26082
+Name     Back Room~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    26076
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset O 0 26005 1 26082
+Reset D 0 26082 3 1
+#ENDROOM
+
+#ROOM
+Vnum     26083
+Name     The Back Room~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    26073
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset O 0 26011 1 26083
+Reset D 0 26083 0 1
+#ENDROOM
+
+#ROOM
+Vnum     26084
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26085
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26086
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26087
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26088
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26089
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26090
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26091
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26092
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26093
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26094
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26095
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26096
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26097
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26098
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     26099
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

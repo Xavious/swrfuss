@@ -1,0 +1,225 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Nal Hutta~
+Author       Ackbar~
+Ranges       0 0 0 0
+Economy      0 6250000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       21500
+Keywords   mobhead~
+Short      a newly created mobhead~
+Long       Leave this reset until you make a new one. If you don't have at least one bad things will happen.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       21799
+Keywords   mobtail~
+Short      a newly created mobtail~
+Long       Some god abandoned a newly created mobtail here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     21500
+Keywords board terminal~
+Type     trash~
+Short    Universe Construction Board~
+Long     Universe Construction Board rests on the wall here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     21501
+Keywords slot machine ~
+Type     lever~
+Short    A TK_9U Slot Machine~
+Long     &g A Tk_9U slot machine rest on the wall.~
+Flags    glow~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     21799
+Keywords bookend~
+Type     trash~
+Short    a bookend~
+Long     A bookend is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     21500
+Name     Begiing of zone Nal HUTTA~
+Sector   city~
+Flags    nomob~
+Desc     I will start building with this number ...Durga please separtae the world
+form this point!
+~
+Reset M 0 21500 1 21500
+#ENDROOM
+
+#ROOM
+Vnum     21501
+Name     A Landing Clearing~
+Sector   city~
+Desc     A clearing in the large terrestrial planet of Nal Hutta. There are some
+burn marks from transport vehicle exahust on the ground. From the tracks
+and burn circles you can tell this area recives alot of trafic. Looking up
+into the sky you can see the nearby moon, Nar Shada and what appears to be
+lights form the eciting citys of above. Looking up to the west you can see
+a red outline of a nearby gas cloud. There is a wide path heading toward
+the east and one to the west from here. 
+~
+#EXIT
+Direction east~
+ToRoom    21502
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     21502
+Name     Floating in a void~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    21503
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    21501
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     21503
+Name     Floating in a void~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    21502
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     21504
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21505
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21506
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21507
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21508
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21509
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21510
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21511
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21512
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21513
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21514
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     21515
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

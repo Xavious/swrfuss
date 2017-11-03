@@ -1,0 +1,805 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Coruscant Prison~
+Author       Durga~
+Ranges       0 0 0 0
+Economy      0 6250000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       9000
+Keywords   dude~
+Short      a newly created dude~
+Long       Some god abandoned a newly created dude here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9049
+Keywords   dude~
+Short      a newly created dude~
+Long       Some god abandoned a newly created dude here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     9000
+Keywords dud~
+Type     trash~
+Short    a dud~
+Long     A dud is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9001
+Keywords sink~
+Type     fountain~
+Short    a sink~
+Long     A sink is here.~
+Flags    prototype~
+Values   1000 1000 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9002
+Keywords mush~
+Type     food~
+Short    some mush~
+Long     Some day old mush is here for you to eat.~
+WFlags   take~
+Values   20 0 0 0 0 0
+Stats    2 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9049
+Keywords dud~
+Type     trash~
+Short    a dud~
+Long     A dud is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     9000
+Name     New Prisoner Processing~
+Sector   city~
+#EXIT
+Direction southeast~
+ToRoom    9018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9001
+Name     Coruscant Penitentiary~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    398
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9003
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9002
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9002
+Name     Prisoner Entrance~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction northeast~
+ToRoom    9001
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9004
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9003
+Name     Vistor Entrance~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction northwest~
+ToRoom    9001
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9017
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9004
+Name     Outside Checkpoint A~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction south~
+ToRoom    9005
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9002
+#ENDEXIT
+
+Reset D 0 9004 2 1
+#ENDROOM
+
+#ROOM
+Vnum     9005
+Name     Inside Checkpoint A~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9004
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9006
+#ENDEXIT
+
+Reset D 0 9005 0 2
+#ENDROOM
+
+#ROOM
+Vnum     9006
+Name     A Prison Corridor~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9005
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9009
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9007
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9007
+Name     Outside Check Point B~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9006
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9008
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9008
+Name     Inside Check Point B~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9007
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9000
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9009
+Name     Staff Check Point~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction west~
+ToRoom    9006
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9010
+Name     A Prison Corridor~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    9011
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9008
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9011
+Name     Outside Checkpoint C~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    9012
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9020
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9012
+Name     A Prison Corridor~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction west~
+ToRoom    9011
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9013
+Name     Viewing Room Checkpoint~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9014
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9014
+Name     Viewing Room~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9015
+Flags     window~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9015
+Name     Visiting Room~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9016
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9014
+Flags     window~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9016
+Name     Inside Visitors Checkpoint~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9017
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9017
+Name     Outside Visitors Checkpoint~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction south~
+ToRoom    9016
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9018
+Name     Strip Search~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    9019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9019
+Name     Prison Garments~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction northeast~
+ToRoom    9010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9020
+Name     Inside Checkpoint C~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9011
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9021
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9021
+Name     A Prison Corridor~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9020
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9030
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9022
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9022
+Name     A Prison Corridor~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9021
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9023
+Name     A Prison Corridor~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9022
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9024
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9024
+Name     CellBlock Checkpoint~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    9026
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9025
+Name     CellBlock Checkpoint~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    9023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9026
+Name     Cellblock A~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9029
+Keywords  Cell~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9027
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9027
+Name     Cellblock A~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    9028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9028
+Name     Cellblock A~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction west~
+ToRoom    9027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9029
+Name     A Cell~
+Sector   city~
+Flags    safe hotel prototype~
+Desc     You may safely quit and reenter the game from here.
+ 
+~
+#EXIT
+Direction south~
+ToRoom    9026
+Keywords  Cell~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9030
+Name     Outside the Dining Area~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9031
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9033
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9021
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9031
+Name     Prison Dining Room~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    9032
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9032
+Name     Food Line~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction south~
+ToRoom    9033
+Flags     window~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9031
+#ENDEXIT
+
+Reset O 0 9002 1 9032
+#ENDROOM
+
+#ROOM
+Vnum     9033
+Name     The Prison Kitchen~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    9032
+Flags     window~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9030
+#ENDEXIT
+
+Reset O 0 9001 1 9033
+#ENDROOM
+
+#ROOM
+Vnum     9034
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9035
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9036
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9037
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9038
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9039
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9040
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9041
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9042
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9043
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9044
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9045
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9046
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9047
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9048
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9049
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+Reset M 0 9049 1 9049
+#ENDROOM
+
+#ENDAREA

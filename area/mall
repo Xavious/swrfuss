@@ -1,0 +1,2344 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Space Mall~
+Author       Bleeds~
+Ranges       0 0 0 103
+Economy      0 464718
+ResetMsg     Janitor droids come by cleaning up the mess.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       7300
+Keywords   Pimply Clerk~
+Short      A pimply clerk~
+Long       A pimply clerk in a goofy uniform is here to take yer order.
+~
+Desc       Hello sir/madam may i take your order
+would you like our Mexi-fries with that
+would you like the universe sized
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       7301
+Keywords   Sexy Hutt~
+Short      A sexy Hutt~
+Long       A hutt in a flimsy pink neglige.
+~
+Desc       Dressed in nothing but a skimpy pink outfit your simply amased how any one
+but durga could find this even remotly sexy. but to each his own they say.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 10000 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  give_prog~
+Arglist   babydoll~
+Comlist   say oooo my favotite nighty, thanx you.
+kiss $n 
+lick $n
+mpwithdraw 100
+give 100 credit $n
+mppurge babydoll
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   100~
+Comlist   say Why thank you Little one
+kiss $n 
+mptransfer $n 7351
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7302
+Keywords   Slimy Clerk~
+Short      Slimy Clerk~
+Long       A greasy haired clerk is here to help you.
+~
+Desc       Dressed in old army fatigues and sprting 3 days of patch grow, this human
+looks as if he hasn't showerd in days.  But seen as how his shop sells 
+all kinds of weapons it's always busy. You notice every so oftem the clerk
+will let someone into the backroom with a big grin.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  rand_prog~
+Arglist   2 ~
+Comlist   say Got some better stuff in the back room 
+grin
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   backroom~
+Comlist   if level ($n) < 80
+say Sorry bub go toughen up a little.
+smile
+else
+say Sure the Heavy equipment room, go on in.
+mpechoat $n Your let into the backroom.
+mptransfer $n 7349
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7303
+Keywords   gamorrean bouncer~
+Short      A Gamorrean Bouncer~
+Long       The biggest gamorrean you have ever seen.
+~
+Desc       This has got to be the Biggest gamorrean ever, he is simply giant.  Muscles
+bulk where the shouldn't even exist. He snarls at you and adjusts the
+settings on his blaster. 
+~
+Race       Gamorrean~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_dark_jedi~
+Gender     neuter~
+Actflags   npc sentinel deadly guardian prototype~
+Affected   detect_invis detect_hidden~
+Stats1     0 102 0 -155 0 0
+Stats2     50 20 3000
+Stats3     10 4 150
+Stats4     0 0 5 20 20
+Attribs    25 10 10 25 25 10 10 0
+Saves      0 0 0 0 0
+Speaks     common gamorrean~
+Speaking   gamorrean~
+Resist     fire cold electricity energy~
+Immune     charm~
+Attacks    r8 backstab~
+Defenses   parry dodge disarm~
+#MUDPROG
+Progtype  rand_prog~
+Arglist   20~
+Comlist   say So ya want into the shop eh?
+say got my credit then?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes~
+Comlist   say hope ya brought enough credits to get passed me
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   shop~
+Comlist   say Ya the Contraband shop in back here.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   100000~
+Comlist   mpechoat $n The gamorrean takes your credits and lets you passed.
+mpechoaround $n $n is allowed passed the bouncer.
+mptransfer $n 7348
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   credit~
+Comlist   say Ya not cheap you know 500k to get in to see the shops
+evil
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   90~
+Comlist   mpechoat $n With the bouncers death you are allowd passed.
+mptransfer $n 7348
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   credits~
+Comlist   say ya 100k to get in 
+evil
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   kill~
+Comlist   cackle
+say bring it on little one.
+muh
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7304
+Keywords   Weapons dealer~
+Short      Weapons dealer~
+Long       A shading looking rodain is here selling illegal arms.
+~
+Desc       So ya made it passed the guard aye, well i git some stuff fer ya to see II
+carry only the finest in weapons , if i dont have it let me know waht yer
+looking for and i'll find it  
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       7305
+Keywords   Armor dealer~
+Short      Armor Dealer~
+Long       A small man is making some armor back here.
+~
+Desc       Heh , looking for good armor eh , well i'm your man , nothing but the
+finest in illegal armor here,   most of it's been modified to look like
+everyday clothes , but it'll still turn even the stongest blaster.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       7306
+Keywords   Bored Security Guard~
+Short      a bored security guard~
+Long       A guard in a dumb uniform is here collecting parking fees.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_police_fine~
+Specfun2    spec_customs_weapons~
+Gender     neuter~
+Actflags   npc sentinel~
+Affected   detect_invis detect_hidden~
+Stats1     0 99 0 -147 0 0
+Stats2     19 10 4000
+Stats3     9 4 2
+Stats4     0 0 0 19 19
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   99~
+Comlist   say Greeting's and welcome to the spaceport mall.
+say  A 5 credits tax is due to enter the mall.
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   5~
+Comlist   smile
+mptransfer $n 7302
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7307
+Keywords   Crazy mike~
+Short      Crazy Mike~
+Long       Crazy Mike is here to take your cash
+~
+Desc       Dressed in what is possibly the ugliest suit you have ever seen this human
+is trying to seel you any ship on his lot as your dream ship.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel immortal prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7308
+Keywords   child pickpocket~
+Short      A pickpocket.~
+Long       A young child is looking for his mother.
+~
+Desc       This young child is wandering around bumping into people looking for his
+mother or so it seems.
+~
+Race       Defel~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 30 0 25 0 0
+Stats2     6 10 300
+Stats3     3 4 2
+Stats4     0 0 0 6 6
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common defel~
+Speaking   defel~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7309
+Keywords   Hardware Salesman~
+Short      Hardware Salseman~
+Long       A chubby salesman stands here
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       7310
+Keywords   jedi salesman~
+Short      A small man~
+Long       A small man is here selling some equipment.
+~
+Desc       An oldwer faile jedi is here selling off his slightly used equipment at
+very resonable rates.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   corusca~
+Comlist   frown
+say I have on of the rarest crystals around but i'm not willing to sell it
+sorry.
+say i'm planing on using it for my own lightsaber some day.
+' however i might be willing to trade for it.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   trade ~
+Comlist   ' hmm a trade for my crystal 
+ponder
+' i did lose a rare coin my father gave me on my way to work 
+' if you could find that i would give you my crystal.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   coin~
+Comlist   nod $n 
+' i think i lost it on the MC-90 on my trip here
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  give_prog~
+Arglist   coin~
+Comlist   smile $n 
+' My fathers Coin .
+thank $n
+' sorry but due to inflation i must now charge for the gem
+' i'll give yoiu a good deal though.
+mpoload 7310
+mppurge coin
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7311
+Keywords   Repairman~
+Short      Repairman~
+Long       A human dreesed in coveralls and a checkerd shirt stands here.
+~
+Desc       This guy looks vagely like that 20th century toolmans helper Al Borlan.
+hopefully he is half as proficient at repairing items .
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+RepairData 15 5 9 150 1 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       7312
+Keywords   Ups Clerk~
+Short      UPS Clerk~
+Long       A tall skiny human in a funny brown uniform.
+~
+Desc       Dressed in the same uniform they wore in the 20th century these delivery
+people truely look like freaks. Thank all your gods that you don't need to
+where a uniform for contract work. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   40 ~
+Comlist   ' hey you looking for some work kid , we need some extra hands if ya are.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   work~
+Comlist   smile $n 
+' yeah we need some packages delievd Pronto.
+' Well pay you the delivery fee , which you collect from the reciever.
+smile $n 
+'Right now i have a few jobs that need to be done.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   jobs~
+Comlist   grin
+' right now we have the following jobs
+, gets a datapad off his desk.
+, looks at pad.
+' hmm a delivery to a Hutt on Coruscant. 
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hutt~
+Comlist   smile $n
+' Says here he's in the Undercity. 
+say the package is marked fragile so payment is good.
+smile $n 
+' just don't lose it .
+open closet
+say Its in the back room.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7313
+Keywords   Galactic Secratary~
+Short      Galactic Secratary~
+Long       A woman dressed in a micro-mini skirt and high heels
+~
+Desc       Looking up from doin her nails the secratary asks if you have an
+appointment with one  of the managers or were just comming buy to use the
+board.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   80~
+Comlist   smile $n
+' Greetings and welcome to the Galactic Improvement Offices.
+' How may we serve you today?
+eye $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   appointment~
+Comlist   nod $n
+' i see you have an appointment today.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes~
+Comlist   ' Ok then, Office doors have the pesons name on them
+unlock south 
+open south
+mpforce $n south
+close south
+lock south
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7314
+Keywords   peon~
+Short      a newly created peon~
+Long       Some god abandoned a newly created peon here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc secretive prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7315
+Keywords   visiting senator~
+Short      A short fat Man~
+Long       A short fat man in senators robes
+~
+Desc       This man is a visiting senator from an Imperial planet , rumor has it he is
+wanted by the coruscant police for war crimes and he is in need of escort
+to the government buildings  are you up to the job
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc immortal nocorpse prototype~
+Stats1     0 55 0 -37 0 0
+Stats2     11 10 550
+Stats3     5 4 2
+Stats4     0 0 0 11 11
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+VIPFlags   coruscant~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello hi~
+Comlist   ' Greeting's , are you here to escort me to the Government Center?
+smile $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   sure yes~
+Comlist   ' Excellent, i'm wanted by the police so we may run into some problems 
+evil 
+' i hope you are capable of protecting me
+' if your not simply tell me no thanks to the job.
+follow $n
+mpforce $n group visiting
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   thanks~
+Comlist   ' ahhh i see
+frown
+' well i hope one day you will be
+pat $n
+follow visiting
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7316
+Keywords   dirty old man~
+Short      Dirty old man ~
+Long       A man dressed in an old overcoat.
+~
+Desc       This guy looks alot like bleeds.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 70 0 -75 0 0
+Stats2     14 10 3000
+Stats3     7 4 2
+Stats4     0 0 3 14 14
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Attacks    r9~
+Defenses   dodge disarm~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   scream
+gasp
+' ya got me
+mpoload 7316
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#OBJECT
+Vnum     7300
+Keywords Taco~
+Type     food~
+Short    Taco~
+Long     A nice big juicy Taco.~
+Flags    inventory~
+WFlags   take hold~
+Values   15 15 0 0 0 0
+Stats    1 5 0 0 0
+#EXDESC
+ExDescKey    Taco~
+ExDesc       What are you looking at a taco for are you Loco?
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7301
+Keywords Mexi-Fries~
+Type     food~
+Short    Mexi-fries~
+Long     Someone droped an order of Mexi-fries.~
+Flags    inventory~
+Values   5 5 0 0 0 0
+Stats    1 5 0 0 0
+#EXDESC
+ExDescKey    Mexi-Fries~
+ExDesc       A nice steaming order of Mexi-fries waiting to be eaten
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7302
+Keywords Jolt Cola~
+Type     drinkcon~
+Short    Jolt Cola~
+Long     A bottle filled with ice cold god juice sits here.~
+Flags    hum inventory~
+WFlags   take hold~
+Values   10 10 0 0 0 0
+Stats    1 10 1 0 0
+#EXDESC
+ExDescKey    Jolt Cola~
+ExDesc       This is the Favorite drink of Zax , hence you shall love it and pass the
+sacred word of jolt to all.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7303
+Keywords Babydoll Armor~
+Type     trash~
+Short    A babydoll~
+Long     A giant pile of silk.~
+Flags    inventory~
+WFlags   take hold~
+Values   2 10 0 0 0 0
+Stats    1 2 0 0 0
+#EXDESC
+ExDescKey    Babydoll Armor~
+ExDesc       This has to be the largest babydoll you have ever seen, designed for a hutt
+or some otherlarge race. Chances are the owner would be happy to get this
+back.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7304
+Keywords Hand Flamer~
+Type     weapon~
+Short    A hand held flamer~
+Long     A small hand held flamer is sitting here~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   0 8 5 6 2000 2000
+Stats    6 6000 600 0 0
+Affect       -1 -1 2 18 0
+#EXDESC
+ExDescKey    Hand Flamer~
+ExDesc       A miricle of Modren technology is what this gun is, somehow one of the
+weapons manufacturers has come up with a hand flamer that runs of blaster
+ammo cells. What will they think of next. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7305
+Keywords Heavy repeating Blaster~
+Type     weapon~
+Short    Heavy Repeating Blaster~
+Long     A large deadly looking blaster is lying here~
+Flags    contraband~
+WFlags   take wield~
+Values   10 8 5 6 500 500
+Stats    16 8000 800 0 0
+Affect       -1 -1 3 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7306
+Keywords Mitary Blaster Vest~
+Type     armor~
+Short    Military Grade vest~
+Long     A sturdy looking vest is lying here~
+WFlags   take body~
+Values   10 1 0 0 0 0
+Stats    5 6000 600 0 56
+#EXDESC
+ExDescKey    Mitary Blaster Vest~
+ExDesc       This vest is made from the finest materials anyones military can buy ,
+unfortuanatly there order was delayed and thats probally how you came to
+be n posestion of this wondorus vest. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7307
+Keywords Jedi Gloves~
+Type     armor~
+Short    Jedi Gloves~
+Long     A fine pair of leather gloves~
+Flags    antithief antihunter anticitizen antipilot~
+WFlags   take hands~
+Values   10 5 0 0 0 0
+Stats    2 500 50 0 56
+Affect       -1 -1 10 48 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7308
+Keywords jedi cape~
+Type     armor~
+Short    Jedi Cape~
+Long     A bundle of finly woven cloth lies here.~
+Flags    antithief antihunter anticitizen antipilot~
+WFlags   take body~
+Values   10 7 0 0 0 0
+Stats    1 300 30 0 128
+Affect       -1 -1 5 36 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7309
+Keywords mall credit card~
+Type     government~
+Short    Mall Credit Card~
+Long     A small black card lies here. ~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7310
+Keywords lost crystal~
+Type     crystal~
+Short    rare gem~
+Long     A very rare crystal lies here.~
+Flags    inventory~
+WFlags   take hold~
+Values   5 0 0 0 0 0
+Stats    1 100000 100000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7311
+Keywords coin~
+Type     treasure~
+Short    a Race Coin~
+Long     A lost coin from ages ago is here.~
+Flags    inventory~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 100000 10000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7312
+Keywords Idea Board~
+Type     furniture~
+Short    &R Galactic Improvenemt Idea Board &W~
+Long     &R Galactic Improvenemt Idea Board &W~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    6000 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7313
+Keywords Nail file~
+Type     key~
+Short    a Nail file~
+Long     A Nail file is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7314
+Keywords generic key~
+Type     trash~
+Short    a generic key~
+Long     A generic key is here.~
+Flags    prototype~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7315
+Keywords package~
+Type     weapon~
+Short    A small package.~
+Long     This is a UPS Package addressed to a hut on Coruscant.~
+Flags    contraband~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 10000 1000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7316
+Keywords privates~
+Type     trash~
+Short    Privates of a dirty old man~
+Long     A private organ is lying in a pool of blood here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    privates~
+ExDesc       Your one sick individual.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#ROOM
+Vnum     7300
+Name     Mall Parking lot~
+Sector   city~
+Flags    nomob can_land can_fly~
+Desc     As you pull into this giant space port you see ships of all sizes and
+shapes around. All races are represented here and as such it is a weapon
+free zone, &C Please Stow all weapons safely &g before continuing into the
+mall
+~
+#EXIT
+Direction north~
+ToRoom    7301
+#ENDEXIT
+
+Reset O 0 7303 1 7300
+#ENDROOM
+
+#ROOM
+Vnum     7301
+Name     Toll Booth~
+Sector   city~
+Desc     Parking is not free at the mall. A bored security guard is here collecting
+5 credits for parking from everone , wether you were flying or not. After
+all the Spaceport must make some money.
+~
+#EXIT
+Direction south~
+ToRoom    7300
+#ENDEXIT
+
+Reset M 0 7306 1 7301
+  Reset E 1 320 1 7
+  Reset E 1 319 1 5
+  Reset E 1 6400 1 14
+  Reset E 1 60 1 16
+#ENDROOM
+
+#ROOM
+Vnum     7302
+Name     Walkway~
+Sector   city~
+Desc     All around you speakers blare stupid elevator music, slow mellow stuff,
+that would drive even the deaf nuts. However the mall is well lit and
+quite busy due to the fact it stocks just about everything imaginable. A
+small  path leads away to the north and under a giant neon sign that shows
+a decrepted old ship on it and flashes Crazy Mikes.
+~
+#EXIT
+Direction north~
+ToRoom    7345
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7303
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7397
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7301
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7303
+Name     Enterance to the Mall~
+Sector   city~
+Flags    indoors~
+Desc     The mall is simply huge, races of all kinds wander around window shopping
+and trying there best to look interested , after all the did pay to get in
+here. Most stores in the mall are one of a kind so if that certain thing
+your looking for isn't somewhere else it's probally here.
+~
+#EXIT
+Direction north~
+ToRoom    7304
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7302
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7304
+Name     Ground Floor~
+Sector   city~
+Flags    indoors~
+Desc     The ground floor of the mall is crowded, very crowded.  Members of each
+race shuffle, push, budge and weave their way through the crowds looking
+for that special shop that hold all they need.
+~
+#EXIT
+Direction north~
+ToRoom    7305
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7311
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7303
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7313
+#ENDEXIT
+
+Reset M 0 7308 1 7304
+#ENDROOM
+
+#ROOM
+Vnum     7305
+Name     Ground Floor~
+Sector   city~
+Flags    indoors~
+Desc     The ground floor of the mall is crowded, very crowded.  Members of each
+race shuffle, push, budge and weave their way through the crowds looking
+for that special shop that hold all they need.
+~
+#EXIT
+Direction north~
+ToRoom    7306
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7304
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7306
+Name     Ground Floor~
+Sector   city~
+Flags    indoors~
+Desc     The ground floor of the mall is crowded, very crowded.  Members of each
+race shuffle, push, budge and weave their way through the crowds looking
+for that special shop that hold all they need. 
+~
+#EXIT
+Direction north~
+ToRoom    7312
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7307
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7305
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7307
+Name     Ground Floor~
+Sector   city~
+Flags    indoors~
+Desc     The ground floor of the mall is crowded, very crowded.  Members of each
+race shuffle, push, budge and weave their way through the crowds looking
+for that special shop that hold all they need. 
+~
+#EXIT
+Direction south~
+ToRoom    7308
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7306
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7308
+Name     Ground Floor~
+Sector   city~
+Flags    indoors~
+Desc     The ground floor of the mall is crowded, very crowded.  Members of each
+race shuffle, push, budge and weave their way through the crowds looking
+for that special shop that hold all they need. 
+~
+#EXIT
+Direction north~
+ToRoom    7307
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7314
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7309
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7309
+Name     Ground Floor~
+Sector   city~
+Flags    indoors~
+Desc     The ground floor of the mall is crowded, very crowded.  Members of each
+race shuffle, push, budge and weave their way through the crowds looking
+for that special shop that hold all they need.
+~
+#EXIT
+Direction north~
+ToRoom    7308
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7310
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7310
+Name     Ground Floor~
+Sector   city~
+Flags    indoors~
+Desc     The ground floor of the mall is crowded, very crowded.  Members of each
+race shuffle, push, budge and weave their way through the crowds looking
+for that special shop that hold all they need.
+~
+#EXIT
+Direction north~
+ToRoom    7309
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7352
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7311
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7311
+Name     Ground Floor~
+Sector   city~
+Flags    indoors~
+Desc     The ground floor of the mall is crowded, very crowded.  Members of each
+race shuffle, push, budge and weave their way through the crowds looking
+for that special shop that hold all they need.
+~
+#EXIT
+Direction north~
+ToRoom    7339
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7310
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7304
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7312
+Name     Repair-it~
+Sector   city~
+Flags    nomob indoors~
+Desc     Having recentally opend the repair shops is fairly small , and not very
+busy. Because  of this and the malls high rent prices in the shop are
+slightly inflated, but well worth it. 
+~
+#EXIT
+Direction south~
+ToRoom    7306
+#ENDEXIT
+
+Reset M 0 7311 1 7312
+#ENDROOM
+
+#ROOM
+Vnum     7313
+Name     Taco Bar~
+Sector   city~
+Flags    nomob indoors~
+Desc     Welcome to the Taco Bar , Due to strict zoning regulations enforce around
+the galaxy the Taco Bars food may not be sold on any Planatary System,  It
+had something to do with that whole race being wiped out due to food
+poisoning , But they area however not de-regulated from space, so they
+opend up there on and only store here at the space mall
+~
+#EXIT
+Direction east~
+ToRoom    7304
+#ENDEXIT
+
+Reset M 0 7300 1 7313
+  Reset G 1 7302 10
+  Reset G 1 7301 10
+  Reset G 1 7300 10
+#ENDROOM
+
+#ROOM
+Vnum     7314
+Name     Pleasure Clothing~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     What would anymall be with out a fine lingerie shop.  Pleasure clothing is
+known throughout the galaxy for it's high quality clothing and its ability
+to fit that fine clothing to almost any species. So stop here and get
+something sexy for someone special
+~
+#EXIT
+Direction west~
+ToRoom    7308
+#ENDEXIT
+
+Reset M 0 7301 1 7314
+#ENDROOM
+
+#ROOM
+Vnum     7315
+Name     Cheap Weapons~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     Welcome to Cheap weapons , Almost every cheap blaster you can imagine is
+for sale here problem is 90% of them also don't work and fail regularly
+~
+#EXIT
+Direction west~
+ToRoom    7334
+#ENDEXIT
+
+Reset M 0 7302 1 7315
+  Reset G 1 55 3
+  Reset G 1 52 3
+  Reset G 1 51 3
+  Reset G 1 50 3
+#ENDROOM
+
+#ROOM
+Vnum     7316
+Name     Baggage~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    7321
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7317
+Name     Comm-Store~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction west~
+ToRoom    7323
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7318
+Name     Heavy weapons~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction east~
+ToRoom    7321
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7319
+Name     Hardware Store~
+Sector   city~
+Flags    nomob indoors safe~
+#EXIT
+Direction west~
+ToRoom    7325
+#ENDEXIT
+
+Reset M 0 7309 1 7319
+  Reset G 1 32280 1
+  Reset G 1 32210 1
+  Reset G 1 32281 1
+#ENDROOM
+
+#ROOM
+Vnum     7320
+Name     Second Floor~
+Sector   city~
+Flags    indoors~
+Desc     The second floor of the mall is slightly less busy than the first. The
+shops up here are mostly,  multi-purpose carrying a varity of stuff for
+the consumer, some which is quite useless. 
+~
+#EXIT
+Direction north~
+ToRoom    7321
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7327
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7321
+Name     Second Floor~
+Sector   city~
+Flags    indoors~
+Desc     The second floor of the mall is slightly less busy than the first. The
+shops up here are mostly,  multi-purpose carrying a varity of stuff for
+the consumer, some which is quite useless.
+~
+#EXIT
+Direction north~
+ToRoom    7322
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7320
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7318
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7322
+Name     Second Floor~
+Sector   city~
+Flags    indoors~
+Desc     The second floor of the mall is slightly less busy than the first. The
+shops up here are mostly,  multi-purpose carrying a varity of stuff for
+the consumer, some which is quite useless.
+~
+#EXIT
+Direction east~
+ToRoom    7323
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7323
+Name     Second Floor~
+Sector   city~
+Flags    indoors~
+Desc     The second floor of the mall is slightly less busy than the first. The
+shops up here are mostly,  multi-purpose carrying a varity of stuff for
+the consumer, some which is quite useless.
+~
+#EXIT
+Direction east~
+ToRoom    7317
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7324
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7322
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7324
+Name     Second Floor~
+Sector   city~
+Flags    indoors~
+Desc     The second floor of the mall is slightly less busy than the first. The
+shops up here are mostly,  multi-purpose carrying a varity of stuff for
+the consumer, some which is quite useless.
+~
+#EXIT
+Direction north~
+ToRoom    7323
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7325
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7325
+Name     Second Floor~
+Sector   city~
+Flags    indoors~
+Desc     The second floor of the mall is slightly less busy than the first. The
+shops up here are mostly,  multi-purpose carrying a varity of stuff for
+the consumer, some which is quite useless.
+~
+#EXIT
+Direction north~
+ToRoom    7324
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7319
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7326
+#ENDEXIT
+
+Reset M 0 7308 2 7325
+#ENDROOM
+
+#ROOM
+Vnum     7326
+Name     Second Floor~
+Sector   city~
+Flags    indoors~
+Desc     The second floor of the mall is slightly less busy than the first. The
+shops up here are mostly,  multi-purpose carrying a varity of stuff for
+the consumer, some which is quite useless.
+~
+#EXIT
+Direction north~
+ToRoom    7325
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7327
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7327
+Name     Second Floor~
+Sector   city~
+Flags    indoors~
+Desc     The second floor of the mall is slightly less busy than the first. The
+shops up here are mostly,  multi-purpose carrying a varity of stuff for
+the consumer, some which is quite useless. 
+~
+#EXIT
+Direction north~
+ToRoom    7340
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7326
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7341
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7320
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7328
+Name     Store~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7329
+Name     Store~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7330
+Name     Store~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7331
+Name     Third Floor~
+Sector   city~
+Flags    indoors~
+Desc     The top floor of the mall is almost deserted. All the shops up here deal in
+specialized equipment, so few people come up here except to get what they
+need, and the kids who come up to spit over the side of the walkway on
+those down below.
+~
+#EXIT
+Direction north~
+ToRoom    7332
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7338
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7332
+Name     Third Floor~
+Sector   city~
+Flags    indoors~
+Desc     The top floor of the mall is almost deserted. All the shops up here deal in
+specialized equipment, so few people come up here except to get what they
+need, and the kids who come up to spit over the side of the walkway on
+those down below. 
+~
+#EXIT
+Direction north~
+ToRoom    7333
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7331
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7333
+Name     Third Floor~
+Sector   city~
+Flags    indoors~
+Desc     The top floor of the mall is almost deserted. All the shops up here deal in
+specialized equipment, so few people come up here except to get what they
+need, and the kids who come up to spit over the side of the walkway on
+those down below.
+~
+#EXIT
+Direction east~
+ToRoom    7334
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7332
+#ENDEXIT
+
+Reset M 0 7308 3 7333
+#ENDROOM
+
+#ROOM
+Vnum     7334
+Name     Third Floor~
+Sector   city~
+Flags    indoors~
+Desc     The top floor of the mall is almost deserted. All the shops up here deal in
+specialized equipment, so few people come up here except to get what they
+need, and the kids who come up to spit over the side of the walkway on
+those down below.
+~
+#EXIT
+Direction east~
+ToRoom    7315
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7335
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7333
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7335
+Name     Third Floor~
+Sector   city~
+Flags    indoors~
+Desc     The top floor of the mall is almost deserted. All the shops up here deal in
+specialized equipment, so few people come up here except to get what they
+need, and the kids who come up to spit over the side of the walkway on
+those down below.
+~
+#EXIT
+Direction north~
+ToRoom    7334
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7336
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7336
+Name     Third Floor~
+Sector   city~
+Flags    indoors~
+Desc     The top floor of the mall is almost deserted. All the shops up here deal in
+specialized equipment, so few people come up here except to get what they
+need, and the kids who come up to spit over the side of the walkway on
+those down below. 
+~
+#EXIT
+Direction north~
+ToRoom    7335
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7337
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7337
+Name     Third Floor~
+Sector   city~
+Flags    indoors~
+Desc     The top floor of the mall is almost deserted. All the shops up here deal in
+specialized equipment, so few people come up here except to get what they
+need, and the kids who come up to spit over the side of the walkway on
+those down below.
+~
+#EXIT
+Direction north~
+ToRoom    7336
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7338
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7338
+Name     Third Floor~
+Sector   city~
+Flags    indoors~
+Desc     The top floor of the mall is almost deserted. All the shops up here deal in
+specialized equipment, so few people come up here except to get what they
+need, and the kids who come up to spit over the side of the walkway on
+those down below.
+~
+#EXIT
+Direction east~
+ToRoom    7337
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7342
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7331
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7339
+Name     Up Escalator~
+Sector   city~
+Flags    indoors~
+Desc     The up Escaltors are all very crowded in the mall , and seem to be very
+slow. A long line of people are acctually waiting to get on each escalator
+to see the next floor up. 
+~
+#EXIT
+Direction south~
+ToRoom    7311
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   90~
+Comlist   mpechoat $n You ride up the escalator.
+mptransfer $n 7327
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7340
+Name     Up Escalator~
+Sector   city~
+Flags    indoors~
+Desc     The up Escaltors are all very crowded in the mall , and seem to be very
+slow. A long line of people are acctually waiting to get on each escalator
+to see the next floor up.  
+~
+#EXIT
+Direction south~
+ToRoom    7327
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   90~
+Comlist   mpechoat $n You ride up the escalator.
+mptransfer $n 7338
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7341
+Name     Down Escalator~
+Sector   city~
+Flags    indoors~
+Desc     Even thoughthey are somewhat faster than there upward counterpart, the down
+escaltors are still slow. Plent of time to stand around and look.
+~
+#EXIT
+Direction north~
+ToRoom    7327
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   90~
+Comlist   mpechoat $n You ride down the escalator.
+mptransfer $n 7311
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7342
+Name     Down Escalator~
+Sector   city~
+Flags    nomob indoors~
+Desc     Even thoughthey are somewhat faster than there upward counterpart, the down
+escaltors are still slow. Plent of time to stand around and
+look.
+~
+#MUDPROG
+Progtype  rand_prog~
+Arglist   90~
+Comlist   mpechoat $n You ride down the escalator.
+mptransfer $n 7327
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7343
+Name     Contraband Armor~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    7348
+#ENDEXIT
+
+Reset M 0 7305 1 7343
+  Reset G 1 7306 1
+#ENDROOM
+
+#ROOM
+Vnum     7344
+Name     Contraband Weapons~
+Sector   city~
+Flags    indoors safe~
+Desc     Open crates are all over this room , some older some newer but all most
+likely here illegally. If there a new prototype weapon on the market it's
+almost sure to be found here. 
+~
+#EXIT
+Direction east~
+ToRoom    7348
+#ENDEXIT
+
+Reset M 0 7304 1 7344
+  Reset G 1 6607 1
+  Reset G 1 7304 1
+  Reset G 1 7305 1
+  Reset G 1 54 3
+#ENDROOM
+
+#ROOM
+Vnum     7345
+Name     Crazy Mike's Used Ships~
+Sector   city~
+Desc     Thankfully the buzz of the giant neon sign over your head almost drowns out
+the annoying music from the mall.   just ahead you see all different kinds
+of ships , in good shape right don to almost scrap metal parked on a giant
+landing pad.
+~
+#EXIT
+Direction north~
+ToRoom    7346
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7302
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7346
+Name     Crazy Mike's Used Ships~
+Sector   city~
+Desc     Passing through the ships you can see salesmen talking to various beings
+all over the pad  each trying his best to sell the ship of there dreams to
+the person thir talking to ,  every once in a while a saleman will take
+someone over to Crazy mikes office to finalize a deal
+~
+#EXIT
+Direction east~
+ToRoom    7347
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7345
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7347
+Name     Crazy Mike's Office~
+Sector   city~
+Desc     Welcome to Crazy Mikes Office , If a ships for sale and it can't be found
+here it aint worh buying is our motto.  about a dozen salesmen are here
+talking to people and sceaming them out of there credits, but a fine
+person such as yourself warrents Crazy Mikes personal attention.
+~
+#EXIT
+Direction west~
+ToRoom    7346
+#ENDEXIT
+
+Reset M 0 7307 1 7347
+#ENDROOM
+
+#ROOM
+Vnum     7348
+Name     Backroom of Cheap Weapons~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction east~
+ToRoom    7343
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7349
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7344
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7349
+Name     Backroom of Cheap Weapons~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    7315
+#ENDEXIT
+
+Reset M 0 7303 1 7349
+  Reset E 1 6608 1 16
+  Reset E 1 335 1 10
+  Reset E 1 338 1 5
+  Reset E 1 337 1 8
+  Reset E 1 336 1 13
+  Reset E 1 333 1 6
+  Reset E 1 6608 1 18
+#ENDROOM
+
+#ROOM
+Vnum     7350
+Name     MALL COMMAND ROOM~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7351
+Name     Jedi Clothing~
+Sector   city~
+Flags    safe prototype~
+Desc     This is a small dark backroom behind the infamous pleasure clothing. A
+small man stands here selling some unique equipment that only thoose that
+are force capable may use.
+~
+#EXIT
+Direction up~
+ToRoom    7314
+#ENDEXIT
+
+Reset M 0 7310 1 7351
+  Reset G 1 7308 1
+  Reset G 1 7307 1
+#ENDROOM
+
+#ROOM
+Vnum     7352
+Name     UPS~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     Welcome to the home office of Universal Package Service, known for there
+motto , if its fragile it might get there undamaged. This company has been
+around for forever it seems , chances are you can get an odd job here
+delivering a package to somewhere obscure.
+~
+#EXIT
+Direction east~
+ToRoom    7353
+Keywords  closet~
+Flags     isdoor closed secret~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7310
+#ENDEXIT
+
+Reset M 0 7312 1 7352
+  Reset G 1 7315 1
+Reset D 0 7352 1 1
+#ENDROOM
+
+#ROOM
+Vnum     7353
+Name     The Back Room~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction west~
+ToRoom    7352
+#ENDEXIT
+
+Reset O 0 7315 1 7353
+#ENDROOM
+
+#ROOM
+Vnum     7389
+Name     &R Bleeds Office &W~
+Sector   city~
+Flags    hotel prototype~
+Desc     Close the door when you leave
+~
+#EXIT
+Direction north~
+ToRoom    7390
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+Reset D 0 7389 0 1
+#ENDROOM
+
+#ROOM
+Vnum     7390
+Name     Office Hallway~
+Sector   city~
+Flags    prototype~
+Desc     The offices off the builders and creators of the realms are along this
+hallway each door has a nameplate attached to it.  Although we wouldn't
+siggest bothering them without an appointment.
+~
+#EXIT
+Direction north~
+ToRoom    7397
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7391
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7389
+Key       7314
+Flags     isdoor closed pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7394
+#ENDEXIT
+
+Reset D 0 7390 2 1
+#EXDESC
+ExDescKey    door ~
+ExDesc       &R Office of Bleeds Cygar &W
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   knocks~
+Comlist   mpmload 7314 
+mpoload 7314 
+mpforce peon get key
+mpforce peon unlock south
+mpforce peon open south
+mpforce $n south
+mpforce peon close south
+mpforce peon clock south
+mppurge peon
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7391
+Name     Office Hallway~
+Sector   city~
+Flags    prototype~
+Desc     The offices off the builders and creators of the realms are along this
+hallway each door has a nameplate attached to it.  Although we wouldn't
+siggest bothering them without an appointment.
+~
+#EXIT
+Direction east~
+ToRoom    7392
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7390
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7392
+Name     Office Hallway~
+Sector   city~
+Flags    prototype~
+Desc     The offices off the builders and creators of the realms are along this
+hallway each door has a nameplate attached to it.  Although we wouldn't
+siggest bothering them without an appointment.
+~
+#EXIT
+Direction east~
+ToRoom    7393
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7391
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7393
+Name     Office Hallway~
+Sector   city~
+Flags    prototype~
+Desc     The offices off the builders and creators of the realms are along this
+hallway each door has a nameplate attached to it.  Although we wouldn't
+siggest bothering them without an appointment.
+~
+#EXIT
+Direction west~
+ToRoom    7392
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7394
+Name     Office Hallway~
+Sector   city~
+Flags    prototype~
+Desc     The offices off the builders and creators of the realms are along this
+hallway each door has a nameplate attached to it.  Although we wouldn't
+siggest bothering them without an appointment.
+~
+#EXIT
+Direction east~
+ToRoom    7390
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7395
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7395
+Name     Office Hallway~
+Sector   city~
+Flags    prototype~
+Desc     The offices off the builders and creators of the realms are along this
+hallway each door has a nameplate attached to it.  Although we wouldn't
+siggest bothering them without an appointment.
+~
+#EXIT
+Direction east~
+ToRoom    7394
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7396
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7396
+Name     Office Hallway~
+Sector   city~
+Flags    prototype~
+Desc     The offices off the builders and creators of the realms are along this
+hallway each door has a nameplate attached to it.  Although we wouldn't
+siggest bothering them without an appointment.
+~
+#EXIT
+Direction east~
+ToRoom    7395
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7397
+Name     Large Office Enterance~
+Sector   city~
+Flags    prototype~
+Desc     This is the enterance to a largee office building, rumor has it that alot
+of the galactic administration works out of here. So tred lightly and try
+not to bloody the carpets.
+ A small sign is off the side of the path. 
+~
+#EXIT
+Direction north~
+ToRoom    7302
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7398
+#ENDEXIT
+
+#EXDESC
+ExDescKey    small~
+ExDesc       &C  ALL WEAPONS MUST BE STOWD SAFELY WHILE IN THE BUILDING 
+ROAMING SECURITY WILL TAKE THEM AWAY &W
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       &R ALL WEAPONS MUST BE STOWD SAFELY WHILE IN THE BUILDING ROAMING SECURITY
+WILL TAKE THEM AWAY &W
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7398
+Name     Galactic Improvement Office~
+Sector   city~
+Flags    nomob safe prototype~
+Desc     Welcome to the galactic improvement office, the walls are white and
+spotless and comfortable chairs line the area a comely secratary sits
+behind a desk keeping the appointment schedule going. Off in one corner is
+a small booth with a message terminal
+~
+#EXIT
+Direction north~
+ToRoom    7397
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7390
+Key       7313
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+Reset M 0 7313 1 7398
+  Reset G 1 7313 1
+Reset O 0 7312 1 7398
+Reset D 0 7398 2 2
+#ENDROOM
+
+#ROOM
+Vnum     7399
+Name     Bleeds's Terminal room~
+Sector   city~
+Flags    nomob private safe remove_this_flag prototype~
+#EXIT
+Direction up~
+ToRoom    6618
+#ENDEXIT
+
+Reset O 0 100 1 7399
+#ENDROOM
+
+#ENDAREA

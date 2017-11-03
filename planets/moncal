@@ -1,0 +1,11 @@
+#PLANET
+Name         Mon Calamari~
+Filename     moncal~
+BaseValue    350000
+Flags        0
+Starsystem   Mon Calamari System~
+Area         quarren.are~
+Area         mon_cal.are~
+End
+
+#END

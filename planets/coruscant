@@ -1,0 +1,17 @@
+#PLANET
+Name         coruscant~
+Filename     coruscant~
+BaseValue    500000
+Flags        1
+PopSupport   0.000000
+Starsystem   Coruscant System~
+GovernedBy   The New Republic~
+Area         coruscant_streets~
+Area         corus.pt2~
+Area         menari_spaceport~
+Area         monument.plaza~
+Area         senate~
+Area         corus.jail~
+End
+
+#END

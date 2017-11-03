@@ -1,0 +1,51 @@
+#SPACE
+Name         Mon Calamari System~
+Filename     moncalamari.system~
+Planet1      Mon Calamari~
+Planet2      ~
+Planet3      ~
+Star1        Calamari Sun~
+Star2        ~
+Location1a      East Docking Bay~
+Location1b      West Docking Bay~
+Location1c      South Docking Bay~
+Location2a       .~
+Location2b      ~
+Location2c      ~
+Location3a      .~
+Location3b      ~
+Location3c      ~
+Doc1a          21113
+Doc2a          0
+Doc3a          0
+Doc1b          21088
+Doc2b          0
+Doc3b          0
+Doc1c          21074
+Doc2c          0
+Doc3c          0
+P1x          -2709
+P1y          23
+P1z          10013
+P2x          0
+P2y          0
+P2z          0
+P3x          0
+P3y          0
+P3z          0
+S1x          0
+S1y          0
+S1z          0
+S2x          0
+S2y          0
+S2z          0
+Gravitys1     200
+Gravitys2     0
+Gravityp1     100
+Gravityp2     0
+Gravityp3     0
+Xpos          -103
+Ypos          2333
+End
+
+#END

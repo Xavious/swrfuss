@@ -1,0 +1,54 @@
+#SHIP
+Name         B-Wing bw06~
+Filename     bw06~
+Description  ~
+Owner        ~
+Pilot        ~
+Copilot      ~
+Class        0
+Tractorbeam  0
+Shipyard     21074
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       3
+Missiles     6
+Maxmissiles  6
+Rockets     0
+Maxrockets  0
+Torpedos     6
+Maxtorpedos  6
+Lastdoc      21074
+Firstroom    32169
+Lastroom     32169
+Shield       0
+Maxshield    100
+Hull         600
+Maxhull      600
+Maxenergy    3000
+Hyperspeed   90
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       50
+Astro_array  50
+Realspeed    90
+Type         1
+Cockpit      32169
+Coseat       32169
+Pilotseat    32169
+Gunseat      32169
+Navseat      32169
+Engineroom   0
+Entrance     32169
+Shipstate    0
+Missilestate 0
+Energy       3000
+Manuever     70
+Home         coruscant~
+End
+
+#END

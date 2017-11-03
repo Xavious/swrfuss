@@ -1,0 +1,312 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Landspeeders and Cloudcars etc~
+Author       Durga~
+Ranges       0 103 0 103
+Economy      0 130050000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       30000
+Keywords   dud~
+Short      a newly created dud~
+Long       Some god abandoned a newly created dud here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       30999
+Keywords   dud~
+Short      a newly created dud~
+Long       Some god abandoned a newly created dud here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     30000
+Keywords landspeeder 30000~
+Type     spacecraft~
+Short    a landspeeder~
+Long     Landspeeder (id# 30000) is hovering here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30001
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30002
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30003
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30004
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30005
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30006
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30007
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30008
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30009
+Keywords speeder~
+Type     spacecraft~
+Short    a landspeeder~
+Long     A small speeder.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     30999
+Keywords dud~
+Type     trash~
+Short    a newly created dud~
+Long     Some god dropped a newly created dud here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     30000
+Name     A Landspeeder~
+Sector   city~
+Flags    nomob indoors spacecraft~
+Stats    0 0 5
+Desc     This old SoroSuub landspeeder seats 4 people comfortably. Landspeeders
+empoy a repulsorlift engine allowing them to hover suspended about a meter
+off the ground. This affect continues even after they are shut down.
+Landspeeders are also referred to as floaters or skimmers.  
+ 
+Speeders can be driven with: DRIVE <DIR>
+~
+#ENDROOM
+
+#ROOM
+Vnum     30001
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it.
+~
+#ENDROOM
+
+#ROOM
+Vnum     30002
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     30003
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it.
+~
+#ENDROOM
+
+#ROOM
+Vnum     30004
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     30005
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it.
+~
+#ENDROOM
+
+#ROOM
+Vnum     30006
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it.
+~
+#ENDROOM
+
+#ROOM
+Vnum     30007
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it.
+~
+#ENDROOM
+
+#ROOM
+Vnum     30008
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it.
+~
+#ENDROOM
+
+#ROOM
+Vnum     30009
+Name     A Small Speeder~
+Sector   city~
+Flags    nomob prototype~
+Desc     This is a small Sorosuub speeder designed for quick travel throught busy
+city streets. It can only hold two people due to its small size. This
+speeder has been proframed with a small radar that allows it to move
+quickly down the street automaticly avoiding collisions and slowing down
+only at intersections. Use DRIVE <DIR> to use it.
+~
+#ENDROOM
+
+#ROOM
+Vnum     30999
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+Reset O 0 30999 1 30999
+#ENDROOM
+
+#ENDAREA

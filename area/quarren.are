@@ -1,0 +1,7220 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Quarren Mine City~
+Author       Ackbar~
+Ranges       0 0 0 103
+Economy      -1 999514284
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6800
+Keywords   krakanas~
+Short      sharklike krakanas~
+Long       A Krakanas, sharklike animal with twin pincer tentacles swims near.
+~
+Desc       This legandary and scary sea creature is the most feared aquatic member to
+Mon Calamari.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel aggressive~
+Stats1     -1 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 2 4 4
+Attribs    14 5 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6801
+Keywords   clear fish~
+Short      Clear bottom fish~
+Long       &Y A translucent, self-illuminated fish swims here.&x
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc wimpy~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Bodyparts  fins tail scales~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mppurge corpse
+mpoload 6822
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6802
+Keywords   &Y Yellow Starfish &x~
+Short      An eightlegged starfish~
+Long       &O An eightlegged yellow starfish crawls around here. &x
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6803
+Keywords   Sweegill~
+Short      a Sweegill fish~
+Long       &c A rainbowed &R colored &Y Sweegill &G fish &P swims &B here. &x
+~
+Desc       A rainbowed fish native to Mon waters. Considered a could meal to
+outsiders, although Mon Calamarians prefer a non seafood diet. 
+HMmmmmmm...strange. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Bodyparts  fins tail scales~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mppurge corpse
+mpoload 6822
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6804
+Keywords   Shela kitchen cook~
+Short      &R Shela the  kitchen cook. &x~
+Long       &R Shela the  kitchen cook prepares quick meals for the miners. &x
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 20 0 0 0 0
+Stats2     1 1 12998
+Stats3     10 5 10
+Stats4     0 0 0 0 0
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+ShopData   0 0 0 0 0 120 100 8 20
+#ENDMOBILE
+
+#MOBILE
+Vnum       6805
+Keywords   mine foreman Krauota~
+Short      The mine foreman Krauota~
+Long       The mine foreman Krauota paces here stressed due to mine demands.
+~
+Desc       Standing at his post in the checkpoint, this guard looks more than a little
+bored afterall who would be stupid enough to try to board and attack a
+capital ship. Maybe you. 
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel practice~
+Stats1     700 60 0 -50 0 0
+Stats2     12 10 1000
+Stats3     6 10 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   iritate.~
+Comlist   say Alright loser...not sure how you got in here...
+say but I'm calling security
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hi hello ~
+Comlist   say Look you here for a reason?
+say or just hear to iritate me.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   work job mine ~
+Comlist   Say  Well $n you want me to hold your hand?
+ say See you take a shovel out of the shed..
+say Stay with $n ...this is difficult.
+laugh
+say Then you get a ore carier..
+say then you go down the shaft and DIG!
+say Tuff huh?  
+laugh
+say Make sure you sell your minerals back.
+say the loading bay keeper will pay you.
+say Now get out !
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   fuck dick asshole jerk ~
+Comlist   say &R $n your about to get your tail whipped with that language.  Infact
+your fired!
+mpecho Your work agreement has been revoke, Please leave immediatly!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say &R What you need now! Can't you see I'm busy!!!!!!!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6806
+Keywords   ~
+Short      a Quarren~
+Long       A Quarren is daydreaming about the ocean.
+~
+Desc       The Quarren are more commonly know as squidheads throughout the galaxy
+due to the shape of their heads. The come from the ocean world of Mon
+Calamari.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc noassist~
+Stats1     0 8 0 88 0 0
+Stats2     0 0 0
+Stats3     1 4 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6807
+Keywords   Quarren miner~
+Short      A Quarren miner~
+Long       &w A Quarren miner works diligently to strip the mine.
+~
+Desc       The Quarren are more commonly know as squidheads throughout the galaxy
+due to the shape of their heads. The come from the ocean world of Mon
+Calamari.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 8 0 88 0 0
+Stats2     0 0 0
+Stats3     1 4 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello hi help hey can ~
+Comlist   say &R Can't you see I'm working?  Some of us work you know!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   15~
+Comlist   if ispc ($n)
+   mpecho The quarren miner stops working to stare at you.
+    mpecho Then decides to go back to work digging.
+else
+ endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6808
+Keywords   mine shop dealer~
+Short      The mine ore dealer~
+Long       The mine ore dealer, Ketson stands here ready to give you a bad deal!
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 20 0 0 0 0
+Stats2     1 1 12998
+Stats3     10 5 10
+Stats4     0 0 0 0 0
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+ShopData   0 8 0 0 0 120 90 8 12
+#ENDMOBILE
+
+#MOBILE
+Vnum       6809
+Keywords   quarren krusi clerk~
+Short      Krusi, A quarren clerk~
+Long       Krusi, A Quarren Security Clerk stands behind the counter waiting.
+~
+Desc       The Quarren are more commonly know as squidheads throughout the galaxy
+due to the shape of their heads. The come from the ocean world of Mon
+Calamari.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 11 0 72 0 0
+Stats2     2 10 110
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari quarren~
+Speaking   common quarren~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   visit see prisoner~
+Comlist   Say oh you need to see a prisoner ah? well ok ..
+unlock n
+open door
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   reporting duty~
+Comlist   Say About time $n
+mpoload 6821
+give key $n
+say try not to goto sleep this time....
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   chief~
+Comlist   say &R No chief! when that happen
+laugh
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   report crime~
+Comlist   Say Oh a crime on this planet..what else is new, here fill out 20 copies of
+say this form and then talk to the chief.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   job~
+Comlist   Say talk to ackbar pal ,,I don't hire.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hi hello ~
+Comlist   Say &R Ya need something pal?  Look can't you tell I'm busy twidling my
+say thumbs..
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6810
+Keywords   cook Borto~
+Short      &B Borto the Side order cook.~
+Long       &B Borto the Side order cook waits here paitently for a costomer.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+ShopData   0 0 0 0 0 120 110 12 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6811
+Keywords   tech torisk~
+Short      a newly created tech torisk~
+Long       Some god abandoned a newly created tech torisk here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6812
+Keywords   tech torisk inventor~
+Short      &c Torisk Inventor~
+Long       &c Torisk Inventor of high-tech weapons works hard here.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel scavenger~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+ShopData   0 0 0 0 0 120 90 22 8
+#ENDMOBILE
+
+#MOBILE
+Vnum       6813
+Keywords   cathia tailor~
+Short      &P Cathia the tailor~
+Long       &P Cathia the tailor sews diligently here.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+ShopData   0 0 0 0 0 120 90 5 13
+#ENDMOBILE
+
+#MOBILE
+Vnum       6814
+Keywords   jewler joyta~
+Short      &p Plantik the jewler~
+Long       &p Plantik the jewler sits behind the security bars waiting for a customer.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 20 0 0 0 0
+Stats2     1 1 12998
+Stats3     10 5 10
+Stats4     0 0 0 0 0
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   mon_calamari quarren~
+ShopData   0 0 0 0 0 120 90 7 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6815
+Keywords   resale elderly security~
+Short      An Elderly Security Weapon resaler~
+Long       An Elderly Security Weapon resaler waits here paintently.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+ShopData   0 5 0 0 0 100 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6816
+Keywords   librarian quarren~
+Short      A female Quarren librarian~
+Long       &p A female Quarren librarian retypes a new book.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   help how ~
+Comlist   Say just look at the computer terminal it will tell you what to do.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bitch fuck shit hoe~
+Comlist   say &b I can see your IQ matches the letters in those words.
+say so get out.
+mpforce $n n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello hi mam chick~
+Comlist   say &R Hey SHHHHhhhhhhh!   This is a library not your playpen $n!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6817
+Keywords   quarren man~
+Short      &R A Quarren citizen~
+Long       A Quarren citizen enjoys his day off.
+~
+Desc       The Quarren are more commonly know as squidheads throughout the galaxy
+due to the shape of their heads. The come from the ocean world of Mon
+Calamari.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc stayarea~
+Stats1     0 8 0 88 0 0
+Stats2     0 0 0
+Stats3     1 4 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6818
+Keywords   mining droid~
+Short      &c A LIN-V8K mining droid &x~
+Long       &c A LIN-V8K mining droid glides past here.
+~
+Desc       The binary load lifter is a big droid used mainly for lifting and
+moving large objects. Its very simple processing unit can only handle
+very simple commands as there is very little need for an intelligent
+droid laborer.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc scavenger stayarea noassist droid~
+Stats1     0 20 0 50 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6819
+Keywords   boss Hityii~
+Short      &R Mine boss, Krauota~
+Long       &R Mine boss, Krauota paces here due to stress.
+~
+Desc       Standing at his post in the checkpoint, this guard looks more than a little
+bored afterall who would be stupid enough to try to board and attack a
+capital ship. Maybe you. 
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel practice~
+Stats1     700 60 0 -50 0 0
+Stats2     12 10 1000
+Stats3     6 10 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   where location find~
+Comlist   Say Just goto the east entrance then once in water.
+Say go south until you reach the mine.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bye goodbye adios~
+Comlist   say &R Get out already!
+mpforce $n w
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes~
+Comlist   say &R Good because we have a job for you.  
+say &R Here take this..it will help you.
+mpoload 6834
+give shield $n
+say &R good luck and be careful my insurance is high enough.
+say oh ya tell the security voice box : Krebbex
+Say if you don't know what that is look it up at the library!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   job mine work~
+Comlist   Say &R Oh you want to work ah?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hi~
+Comlist   mpecho The mine boss stares at you..
+mpecho The mine boss presses the secretary's call button.
+say Dang it I don't have time for visitors!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6820
+Keywords   female sec secretary ~
+Short      &P A female Quarren Secretary~
+Long       &P A female Quarren Secretary stands here and twidles here thumbs.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 0 0
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   100 100~
+Comlist   Say Now that's more like it!!!
+mptransfer $n 6937
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   wink~
+Comlist   Say &R Something wrong with your eye?
+mpecho You see the Secretary eye your credits.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   good dick hard hoe bitch slut fuck ass~
+Comlist   Say &R i don't think that was what I'm refering to..
+wink
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   job work mine ~
+Comlist   Say &R Ah a job let me see....
+mpecho you see her barly glance a sheet of paper.
+Say &R well I'm sorry $n there are some jobs but....
+say &r most of my friends need a job and I'm not sure .
+say &R why I should give you the job.
+wink
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hi hello ~
+Comlist   mpecho The Secretary looks you up and down, then 
+mpecho returns back to doodling.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6821
+Keywords   Mayor~
+Short      &c Mayor of Domed City~
+Long       &c Mayor of Domed City stands here always ready to talk.
+~
+Desc       Standing at his post in the checkpoint, this guard looks more than a little
+bored afterall who would be stupid enough to try to board and attack a
+capital ship. Maybe you. 
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     700 60 0 -50 0 0
+Stats2     12 10 1000
+Stats3     6 10 2
+Stats4     0 0 0 0 0
+Attribs    10 20 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     mon_calamari quarren~
+Speaking   quarren~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   shit fuck help job dick ass work~
+Comlist   Say sorry I'm the wrong person to be saying that to.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   no~
+Comlist   Say ah well then your familiar with this town. 
+Say in that case what do you need?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes yep ~
+Comlist   Say ah well here take this ...
+say it's a map of our great city.
+mpecho You see the mayor reach in his desk and 
+mpecho pull out a holo map
+mpoload 6842
+give map $n
+Say have a good time.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hi hello ~
+Comlist   Say Hello $n , our Security said you were in town. 
+say Is this your first time here?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6822
+Keywords   remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6823
+Keywords   remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 2 0 95 0 0
+Stats2     0 10 20
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6824
+Keywords   remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 3 0 92 0 0
+Stats2     0 10 30
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6825
+Keywords   remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 4 0 90 0 0
+Stats2     0 10 40
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6826
+Keywords   remote~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6827
+Keywords   hotel clerk~
+Short      &G A hotel clerk ~
+Long       &G A hotel clerk stands here.
+~
+Desc       Standing at his post in the checkpoint, this guard looks more than a little
+bored afterall who would be stupid enough to try to board and attack a
+capital ship. Maybe you. 
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     700 60 0 -50 0 0
+Stats2     12 10 1000
+Stats3     6 10 2
+Stats4     0 0 0 0 0
+Attribs    10 20 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common quarren~
+Speaking   quarren~
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   35 100~
+Comlist   say Well have fun $n
+mptransfer $n 6910
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes room cost much~
+Comlist   Say your safe in the lobby, but if you want to goto the hot-tub room
+say you have to get me 35 credits!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello hi ~
+Comlist   Say Hello $n looking for a place to stay?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6828
+Keywords   police cop security~
+Short      &y A Quarren Security Officer~
+Long       &y A Quarren Security Officer patrol the streets.
+~
+Race       Mon Calamari~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_police_attack~
+Gender     male~
+Actflags   npc~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari~
+Speaking   mon_calamari~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6829
+Keywords   police security~
+Short      &y A Quarren Security Officer~
+Long       &y A Quarren Security Officer patrol the streets.
+~
+Race       Mon Calamari~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_police_attack~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 78 0 -95 0 0
+Stats2     15 10 780
+Stats3     7 4 2
+Stats4     0 0 0 15 15
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari quarren~
+Speaking   mon_calamari~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6830
+Keywords   Tired old seaman~
+Short      &b Tired old seaman~
+Long       &BTired old seaman rests here staring into the water.
+~
+Desc       Standing at his post in the checkpoint, this guard looks more than a little
+bored afterall who would be stupid enough to try to board and attack a
+capital ship. Maybe you. 
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     700 60 0 -50 0 0
+Stats2     12 10 1000
+Stats3     6 10 2
+Stats4     0 0 0 0 0
+Attribs    10 20 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari~
+Speaking   mon_calamari~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   no~
+Comlist   Say Ya well I enjoy just watching the sea to.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes~
+Comlist   Say Well you can always just swim on the top..
+say but then you can try your luck swimming to..
+say the Quarren mine city..
+stare $n
+say then again you look to weak to try that.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello hi sir ~
+Comlist   Say hello $n thinking about taking a swim?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6831
+Keywords   guard~
+Short      Security Guard~
+Long       Security Guard
+~
+Desc       Standing at his post in the checkpoint, this guard looks more than a little
+bored afterall who would be stupid enough to try to board and attack a
+capital ship. Maybe you. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     700 60 0 -50 0 0
+Stats2     12 10 600
+Stats3     6 10 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if race($n) != mon calamari
+   say Your not allowed down here!
+     mpforce $n n
+ else
+   say Welcome to our city Calamrian.
+   mptransfer $n 6943
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6832
+Keywords   Guard~
+Short      Quarren Guard~
+Long       Quarren Guard stands here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if race($n) != quarren
+  say Your not allowed down here!
+  mpforce $n w
+ else
+  Say Welcome Quarren to your city!
+    mptransfer $n 6943
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6833
+Keywords   clerk bank~
+Short      &G A Quarren First Bank of Mon bank clerk~
+Long       &G A Quarren First Bank of Mon bank clerk stands here counting the intake.
+~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 0 0
+Attribs    25 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari~
+Speaking   quarren~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   Say &c Hello, welcome to the first bank of Mon , 
+Say Here your money is safe with us.
+smile
+mpecho You are reasured of that fact as you feal a red
+mpecho laser beam scan you for your bio-info.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6834
+Keywords   wookiee male Tacebeca~
+Short      &z Tacebeca, Wookiee repair tech~
+Long       &z Tacebeca, Wookiee repair tech is waiting trial here.
+~
+Race       Wookiee~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc aggressive~
+Stats1     0 40 0 20 200 0
+Stats2     8 10 400
+Stats3     5 4 0
+Stats4     0 0 6 6 6
+Attribs    18 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     wookiee~
+Speaking   wookiee~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if race($n) != wookiee
+say I'll Kill you!!
+mpkill $n 
+else
+say Please help me back to my planet
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6838
+Keywords   ~
+Short      a remote~
+Long       A training remote hovers nearby.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel noassist droid~
+Stats1     0 4 0 90 0 0
+Stats2     0 10 40
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     6800
+Keywords Comlink Blaster~
+Type     trash~
+Short    a Comlink Blaster~
+Long     A Comlink Blaster is here.~
+WFlags   wrist~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6801
+Keywords &P large clam shell~
+Type     container~
+Short    &P A large clam shell~
+Long     &P A large shimering clam shell rests between the smaller browish clams.~
+Flags    glow noremove~
+Values   10 0 0 0 0 0
+Stats    2000 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6802
+Keywords Large Wooden Desk~
+Type     furniture~
+Short    A large wooden desk~
+Long     A large wooden desk lies prominently in the center of the room.~
+Values   0 0 0 0 0 0
+Stats    150 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6803
+Keywords crate~
+Type     furniture~
+Short    A wooden crate.~
+Long     A wooden crate used to bring in tools sits here.~
+Values   500 1 0 0 0 0
+Stats    200 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6804
+Keywords ~
+Type     trash~
+Short    Chair~
+Long     Chair~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Chair~
+ExDesc       What you've never seen a chair before??
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6805
+Keywords wooden chair~
+Type     trash~
+Short    A wooden chair~
+Long     A wooden chair sits here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Chair~
+ExDesc       What you've never seen a chair before??
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6806
+Keywords Ore Carrier~
+Type     spacecraft~
+Short    A Ore Carrier~
+Long     &B A X-56ty7 Ore Carrier sits here waiting for use.&x~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6808
+Keywords Hatch door~
+Type     trash~
+Short    a Hatch door~
+Long     A Hatch door is here.~
+Flags    hum~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6810
+Keywords Voice box~
+Type     circuit~
+Short    A Security Voice Box~
+Long     A Security Voice Box is attached to the wall.~
+Values   0 0 0 0 0 0
+Stats    200 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   krebbex~
+Comlist   Say Welcome Miner step this way...
+mptransfer all 6840
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   fuck asshole quarran mon ackbar ghett fish ~
+Comlist   mpecho &R That is the wrong password..Please be advised Security Has been
+mpecho Called!  Please stand back from the door!
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6811
+Keywords shoval ~
+Type     shovel~
+Short    a automated shoval~
+Long     &w A automated Shovel rests here waiting for use.~
+Flags    hum donation~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Automated Shovel~
+ExDesc       &W The automated shoval was designed to speed up the mining process. This
+unit is voice activated. To work it just say "shovel on" then type dig
+floor. 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    shoval ~
+ExDesc       &W The automated shoval was designed to speed up the mining process. This
+unit is voice activated. To work it just say "shovel on" then type dig
+floor. 
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   on~
+Comlist   mpecho You hear a loud click as the shoval vibrates back and forth, ready
+for
+use.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   off~
+Comlist   mpecho You hear a slow HMMMMmmmmmmmmm as th shoval comes to a complete
+mpecho stop!
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6812
+Keywords Hack pick~
+Type     shovel~
+Short    A hack pick~
+Long     A hack pick of some age sits here.~
+Flags    donation~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Automated Shovel~
+ExDesc       &W The automated shoval was designed to speed up the mining process. This
+unit is voice activated. To work it just say "shovel on" then type dig
+floor. 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    shoval ~
+ExDesc       &W The automated shoval was designed to speed up the mining process. This
+unit is voice activated. To work it just say "shovel on" then type dig
+floor. 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    Hack pick~
+ExDesc       Elderly pick tool used for mining.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6813
+Keywords rope~
+Type     armor~
+Short    A coil of Seaweed Rope~
+Long     A coil of very strong rope is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    3 60 6 0 0
+Affect       -1 -1 30 52 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6814
+Keywords &G Kelp salad~
+Type     food~
+Short    &G  A Kelp salad~
+Long     &G  A Kelp salad lies here ready to be eaten.~
+WFlags   take~
+Values   3 0 0 0 0 0
+Stats    1 18 1 0 0
+#EXDESC
+ExDescKey    &G Kelp salad~
+ExDesc       &G the salad is comprised of kelp and seaweed. A tasty treat for Quarren.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6815
+Keywords &B glass salt water~
+Type     drinkcon~
+Short    &B A glass of salt water.~
+Long     &B A glass of salt water looks mighty tasty.~
+Flags    inventory~
+WFlags   take~
+Values   2 2 0 0 0 0
+Stats    1 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6816
+Keywords Katasik metal~
+Type     treasure~
+Short    A chunk of Katasik metal~
+Long     A chunk of Katasik metal lies here.~
+Flags    hidden burried~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 40 4 0 0
+#EXDESC
+ExDescKey    Katasik metal~
+ExDesc       The katasik metal is used in most weapons, as it is highly durable and easy
+to minipulate.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6817
+Keywords coal rock~
+Type     treasure~
+Short    &W A lump of coal rock~
+Long     &W A lump of coal rock is laying here..~
+Flags    hidden burried~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 30 3 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6818
+Keywords Platiciki Metel~
+Type     treasure~
+Short    A chunck of Platiciki metal ~
+Long     A chunck of Platiciki metal lies here.~
+Flags    hidden burried~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6819
+Keywords bio scan bio-scan button~
+Type     button~
+Short    A bio-scan button sits here.~
+Long     A Security BioScan button is attached here.~
+Values   0 0 0 0 0 0
+Stats    200 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpechoat $n The lights go out in total darkness.
+mpecho you see a   Red scanner aray flash through the your body
+mpechoat $n starting from the bottom up to the top.
+mptransfer $n 6881
+mpforce $n pull button
+mpechoat $n Welcome $n you have passed all security checks!
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6820
+Keywords Archway~
+Type     trash~
+Short    &R Gateway to Heurkea~
+Long     A &R Gateway to Heurkea stands here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6821
+Keywords key~
+Type     key~
+Short    a key~
+Long     A silver key lays here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6822
+Keywords fish fillet~
+Type     food~
+Short    fillet of fish~
+Long     &b A fillet of fish lies here.~
+WFlags   take~
+Values   3 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    &G Kelp salad~
+ExDesc       &G the salad is comprised of kelp and seaweed. A tasty treat for Quarren.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6823
+Keywords soup~
+Type     food~
+Short    &G A bowl of Algee soup~
+Long     &G A bowl of Algee soup rests here.~
+WFlags   take~
+Values   3 0 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6824
+Keywords crunch~
+Type     food~
+Short    &Y A starfish crunch bar sits here.~
+Long     &Y A starfish crunch bar rests here.~
+WFlags   take~
+Values   3 0 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6825
+Keywords lamprey steaks~
+Type     food~
+Short    &g A well done lamprey steak~
+Long     &g A well done lamprey steak warms here.~
+WFlags   take~
+Values   3 0 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6826
+Keywords Wrist Com-blaster~
+Type     weapon~
+Short    &w XT-3000 Wrist Com-Blaster ~
+Long     &w XT-3000 Wrist Com-Blaster was left here.~
+WFlags   take wrist wield~
+Values   0 8 4 6 0 0
+Stats    10 3000 300 0 0
+Affect       -1 -1 1 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6827
+Keywords Coral knife~
+Type     weapon~
+Short    A high-tech Coral knife ~
+Long     A high-tech Coral knife was left here.~
+Flags    inventory large_size~
+WFlags   take wield~
+Values   0 0 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6828
+Keywords Automated spear~
+Type     weapon~
+Short    &p A automated spear~
+Long     &p A automated spear was left here.~
+Flags    large_size~
+WFlags   take wield~
+Values   0 6 7 9 0 0
+Stats    10 4100 410 0 0
+Affect       -1 -1 1 18 0
+Affect       -1 -1 1 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6829
+Keywords spear~
+Type     bolt~
+Short    &G A polished spear~
+Long     &G A polished spear was left here.~
+Flags    inventory~
+WFlags   take hold~
+Values   100 500 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6830
+Keywords platiki earing~
+Type     comlink~
+Short    A platiki metal earing~
+Long     &Y A platiki metal earing rests here.~
+WFlags   take ears~
+Values   0 0 0 0 0 0
+Stats    1 300 30 0 0
+Affect       -1 -1 1 3 0
+Affect       -1 -1 -2 17 0
+Affect       -1 -1 2 17 0
+Affect       -1 -1 0 3 0
+Affect       -1 -1 0 3 0
+Affect       -1 -1 0 3 0
+Affect       -1 -1 1 3 0
+Affect       -1 -1 0 3 0
+Affect       -1 -1 0 3 0
+Affect       -1 -1 -1 3 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6831
+Keywords Kelp shirt~
+Type     armor~
+Short    &g A Kelp shirt~
+Long     &g A Kelp shirt was left here.~
+Flags    bless large_size human_size~
+WFlags   take body about hold~
+Values   0 0 0 0 0 0
+Stats    2 2500 250 0 3
+Affect       -1 -1 2 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6832
+Keywords belt~
+Type     armor~
+Short    &p A lamprey skin belt~
+Long     &p A lamprey skin belt was left here.~
+Flags    large_size~
+WFlags   take waist~
+Values   2 2 0 0 0 0
+Stats    2 0 0 0 2
+Affect       -1 -1 1 5 0
+#EXDESC
+ExDescKey    belt leather~
+ExDesc       This belt is made of a fine leather, braided for strength. You can get
+it at the Darkhaven Academy.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6833
+Keywords vest~
+Type     armor~
+Short    &B A Security Officers's vest ~
+Long     &B A Security Officers's vest lays here.~
+Flags    large_size~
+WFlags   take body~
+Values   0 7 0 0 0 0
+Stats    1 100 10 0 64
+Affect       -1 -1 -10 14 0
+Affect       -1 -1 5 17 0
+Affect       -1 -1 15 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6834
+Keywords shield~
+Type     armor~
+Short    &b Quarren miner's Blast Shield~
+Long     &b Quarren miner's Blast Shield rests here.~
+Flags    large_size~
+WFlags   take head~
+Values   0 6 0 0 0 0
+Stats    1 0 0 0 1
+#ENDOBJECT
+
+#OBJECT
+Vnum     6835
+Keywords pants~
+Type     armor~
+Short    Quarren miner's pants~
+Long     Quarren miner's pants was left here.~
+Flags    large_size~
+WFlags   take legs~
+Values   0 5 0 0 0 0
+Stats    5 300 30 0 1
+#ENDOBJECT
+
+#OBJECT
+Vnum     6836
+Keywords leg guards~
+Type     armor~
+Short    Leg blast guards~
+Long     Leg blast guards were droped here.~
+Flags    large_size~
+WFlags   take legs~
+Values   5 5 0 0 0 0
+Stats    1 450 45 0 64
+Affect       -1 -1 4 37 0
+Affect       -1 -1 -4 37 0
+Affect       -1 -1 5 40 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6837
+Keywords sleeves~
+Type     armor~
+Short    Miner's protective sleeves~
+Long     Miner's protective sleeves were carelessly left here.~
+Flags    large_size~
+WFlags   take arms~
+Values   5 5 0 0 0 0
+Stats    3 20 2 0 1
+#ENDOBJECT
+
+#OBJECT
+Vnum     6838
+Keywords boots~
+Type     armor~
+Short    &B Quarren Miner's boots~
+Long     &B Quarren Miner's boots were left here.~
+Flags    large_size~
+WFlags   take feet~
+Values   0 8 0 0 0 0
+Stats    1 125 12 0 0
+Affect       -1 -1 -20 14 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6839
+Keywords earings~
+Type     armor~
+Short    &y A platiki metal earing~
+Long     &y A platiki metal earing was left here &x~
+Flags    large_size~
+WFlags   take ears~
+Values   0 6 0 0 0 0
+Stats    5 299 29 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6840
+Keywords wrist cuffs~
+Type     armor~
+Short    &R Miner's cuffs~
+Long     &R Miner's cuffs were left here.~
+Flags    large_size~
+WFlags   take wrist~
+Values   2 0 0 12 0 0
+Stats    1 499 49 0 0
+Affect       -1 -1 5 17 0
+#EXDESC
+ExDescKey    wrist cuffs~
+ExDesc       These metal cuffs are worn by most of the miner's to protect their wrist
+form blast debris , but normal citizens started wearing them as
+fashion.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6841
+Keywords ring~
+Type     crystal~
+Short    &P A coral ring~
+Long     &P A coral ring was dropped here.~
+Flags    large_size~
+WFlags   take finger~
+Values   0 0 0 0 0 0
+Stats    1 1000 100 0 0
+Affect       -1 -1 1 18 0
+Affect       -1 -1 1 19 0
+Affect       -1 -1 1 25 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6842
+Keywords map~
+Type     trash~
+Short    A data map of the city~
+Long     A data map of the city was left here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    map~
+ExDesc       Cells -   C|   B|   A |
+            -----------|
+                         |
+                         |  |Mayor
+            Security | --|--|--|Defense
+                         |
+            --|-----|----|----|------|---
+          /  A    J      W    EX      S   \
+          -----|----|------|-----|------|------
+            \                               /
+              ------|----|-----|-----|---|-- 
+                    B    M     Q     T   L
+ 
+Key A- armory    B- Bank     J- jewler    L - Library   M - Mine office
+Q - Quarren training     S- Seabird grill   T-Tavern  W-Weapons
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6850
+Keywords credits~
+Type     trash~
+Short    a creidts~
+Long     A creidts is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6851
+Keywords remote~
+Type     trash~
+Short    a remote~
+Long     A remote is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6852
+Keywords hot tub bath~
+Type     furniture~
+Short    &b A Hot-Tub~
+Long     &b A Hot-Tub sits in the middle of the room.~
+WFlags   take~
+Values   500 1 0 0 0 0
+Stats    300 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6899
+Keywords boots~
+Type     armor~
+Short    Large water boots~
+Long     Large water boots~
+WFlags   take feet~
+Values   0 8 0 0 0 0
+Stats    1 125 12 0 0
+Affect       -1 -1 -20 14 0
+Affect       -1 -1 30 17 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6800
+Name     &C Calamari Ocean - Top~
+Sector   water swim~
+Flags    nomob silence~
+Desc     &c You glance across the great Mon Calamari Ocean , seeing a vast body of
+water. The view looks peaceful dispite the creatures that lurk below. A
+soft breeze blows past your head , and even through the strong smell of
+salt-water you can swear you smell, Rich Mon food cooking. Of coarse it
+might be the seaweed being burned by the sun But considering most food
+here is made of seaweed, the smell makes you hungrier yet. Maybe you
+should wrap up your swim early and head back to town. You can see the
+metal ladder leading you back up to the dock in fornt.
+~
+#EXIT
+Direction north~
+ToRoom    6801
+Desc      Cargo Hold
+~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6906
+#ENDEXIT
+
+#EXDESC
+ExDescKey    water~
+ExDesc       The green seaweed infested water swirls around  you . It would most likely
+not be a good idea to drink this water.                                   
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6801
+Name     &C Calamari Ocean - Top~
+Sector   city~
+Flags    nomob~
+Desc     &c &CYou glance across the great Mon Calamari Ocean , seeing a vast body of
+water. The view looks peaceful dispite the creatures that lurk below. A
+soft breeze blows past your head , and even through the strong smell of
+salt-water you can swear you smell, Rich Mon food cooking. Of coarse it
+might be the seaweed being burned by the sun But considering most food
+here is made of seaweed, the smell makes you hungrier yet. Maybe you
+should wrap up your swim early and head back to town.
+~
+#EXIT
+Direction north~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6802
+Desc      Calamri Ocean - Top
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6800
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6806
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6802
+Name     &C Calamari Ocean - Top~
+Sector   water swim~
+Flags    nomob silence~
+Desc     &c &CYou glance across the great Mon Calamari Ocean , seeing a vast body of
+water. The view looks peaceful dispite the creatures that lurk below. A
+soft breeze blows past your head , and even through the strong smell of
+salt-water you can swear you smell, Rich Mon food cooking. Of coarse it
+might be the seaweed being burned by the sun But considering most food
+here is made of seaweed, the smell makes you hungrier yet. Maybe you
+should wrap up your swim early and head back to town.
+~
+#EXIT
+Direction north~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6804
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6801
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6803
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6804
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6803
+Name     &C Calamari Ocean - Top ~
+Sector   water swim~
+Flags    nomob silence~
+Desc     &c &CYou glance across the great Mon Calamari Ocean , seeing a vast body of
+water. The view looks peaceful dispite the creatures that lurk below. A
+soft breeze blows past your head , and even through the strong smell of
+salt-water you can swear you smell, Rich Mon food cooking. Of coarse it
+might be the seaweed being burned by the sun But considering most food
+here is made of seaweed, the smell makes you hungrier yet. Maybe you
+should wrap up your swim early and head back to town.
+~
+#EXIT
+Direction north~
+ToRoom    6803
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6803
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6803
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6803
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6803
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6803
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6803
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6804
+Name     &C Calamari Ocean - Top.~
+Sector   water swim~
+Flags    nomob silence~
+Desc     &c &CYou glance across the great Mon Calamari Ocean , seeing a vast body of
+water. The view looks peaceful dispite the creatures that lurk below. A
+soft breeze blows past your head , and even through the strong smell of
+salt-water you can swear you smell, Rich Mon food cooking. Of coarse it
+might be the seaweed being burned by the sun But considering most food
+here is made of seaweed, the smell makes you hungrier yet. Maybe you
+should wrap up your swim early and head back to town.
+~
+#EXIT
+Direction north~
+ToRoom    6804
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6804
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6804
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6804
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6804
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6804
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6804
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6805
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &c The murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+&c it is just a strong current. &w
+~
+#EXIT
+Direction north~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6814
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6806
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &CThe murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+it is just a strong current. 
+~
+#EXIT
+Direction north~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6801
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6806
+#ENDEXIT
+
+Reset M 0 6801 5 6806
+Reset M 0 6803 12 6806
+#ENDROOM
+
+#ROOM
+Vnum     6807
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &CThe murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+it is just a strong current.
+~
+#EXIT
+Direction north~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6803
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6807
+#ENDEXIT
+
+Reset M 0 6803 12 6807
+Reset M 0 6801 5 6807
+#ENDROOM
+
+#ROOM
+Vnum     6808
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &CThe murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+it is just a strong current.
+~
+#EXIT
+Direction north~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6816
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6808
+#ENDEXIT
+
+Reset M 0 6803 12 6808
+#ENDROOM
+
+#ROOM
+Vnum     6809
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &CThe murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+it is just a strong current.
+~
+#EXIT
+Direction north~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6807
+#ENDEXIT
+
+Reset M 0 6803 12 6809
+Reset M 0 6803 12 6809
+Reset M 0 6801 5 6809
+#ENDROOM
+
+#ROOM
+Vnum     6810
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &CThe murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+it is just a strong current.
+~
+#EXIT
+Direction north~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6810
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6811
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &CThe murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+it is just a strong current.
+~
+#EXIT
+Direction north~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6816
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6811
+#ENDEXIT
+
+Reset M 0 6803 12 6811
+#ENDROOM
+
+#ROOM
+Vnum     6812
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &CThe murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+it is just a strong current.
+~
+#EXIT
+Direction north~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6812
+#ENDEXIT
+
+Reset M 0 6801 5 6812
+#ENDROOM
+
+#ROOM
+Vnum     6813
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    silence~
+Desc     &c &CYou glance across the great Mon Calamari Ocean , seeing a vast body of
+water. The view looks peaceful dispite the creatures that lurk below. A
+soft breeze blows past your head , and even through the strong smell of
+salt-water you can swear you smell, Rich Mon food cooking. Of coarse it
+might be the seaweed being burned by the sun But considering most food
+here is made of seaweed, the smell makes you hungrier yet. Maybe you
+should wrap up your swim early and head back to town. &CThe murky waters
+of the Middle ocean are covered with small water born insects. Rotting
+leafy plant structures layout where the still primitive fish still reside.
+Movement through here is very difficult as you can see a swirling undertow
+below, that can move you to just about anywhere in the ocean. Below in the
+dark crevises you swear you can see movement or maybe &CThe murky waters
+of the Middle ocean are covered with small water born insects. Rotting
+leafy plant structures layout where the still primitive fish still reside.
+Movement through here is very difficult as you can see a swirling undertow
+below, that can move you to just about anywhere in the ocean. Below in the
+dark crevises you swear you can see movement or maybe it is just a strong
+current.
+~
+#EXIT
+Direction north~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6813
+#ENDEXIT
+
+Reset M 0 6803 12 6813
+#ENDROOM
+
+#ROOM
+Vnum     6814
+Name     &B Mon Calamari Ocean - Middle~
+Sector   underwater~
+Flags    nomob~
+Desc     &CThe murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still primitive
+fish still reside. Movement through here is very difficult as you can see
+a swirling undertow below, that can move you to just about anywhere in the
+ocean. Below in the dark crevises you swear you can see movement or maybe
+it is just a strong current.
+~
+#EXIT
+Direction north~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6806
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6814
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6815
+Name     &B Mon Calamari Ocean - Middle &w~
+Sector   underwater~
+Flags    silence~
+Desc     &c The murky waters of the Middle ocean are covered with small water born
+insects. Rotting leafy plant structures layout where the still
+still reside. Movement through here is very difficult as
+you can see a swirling undertow below, that can move you to just about
+anywhere in the ocean. Below in the dark crevises you swear you can see
+movement or maybe it is just a strong current.
+~
+#EXIT
+Direction north~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6815
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6816
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    silence~
+Desc     &c  &b You stand in the darkest part of the ocean, very few people other
+then Quarran have walked this land The ground surface is a coarsely edged
+rock surface, obviously from volcanic activity  ,although it apears to be
+quite old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it. &x
+~
+#EXIT
+Direction north~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6817
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6817
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6816
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6818
+#ENDEXIT
+
+Reset M 0 6801 5 6817
+#ENDROOM
+
+#ROOM
+Vnum     6818
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6827
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6819
+#ENDEXIT
+
+Reset M 0 6803 12 6818
+Reset M 0 6803 12 6818
+Reset M 0 6803 12 6818
+Reset M 0 6803 12 6818
+Reset M 0 6803 12 6818
+#ENDROOM
+
+#ROOM
+Vnum     6819
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6820
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6817
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6820
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6819
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6821
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6821
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6819
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6819
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6820
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6818
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6822
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &b You stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6821
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6819
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6823
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6821
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6821
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6819
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6821
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6821
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6824
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6820
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6824
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6825
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6822
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6825
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6824
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6826
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6826
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6824
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6824
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6825
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6824
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6836
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6827
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6818
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6828
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    dark~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6829
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6829
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6827
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6829
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6829
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6829
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6829
+#ENDEXIT
+
+Reset M 0 6802 3 6828
+#ENDROOM
+
+#ROOM
+Vnum     6829
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6830
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6828
+#ENDEXIT
+
+Reset M 0 6802 3 6829
+#ENDROOM
+
+#ROOM
+Vnum     6830
+Name     &O Clam Bed &w~
+Sector   ocean floor~
+Flags    silence~
+Desc     &O It appears you have found the hidden location of the rare &z Ultima
+Pearl &O This treasure is considered the greatest gem known to the galexy.
+The floor is covered with small clam shells laying one on top of each
+other to create a shell layered wall. In the middle is an extremly large
+shell that is unlike all the rest. This discovery will make you the envy
+of the Universe, ofcoarse if you take the pearl, you will be ^rwanted^x &O
+on Mon  Calamari
+~
+#EXIT
+Direction south~
+ToRoom    6829
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6812
+#ENDEXIT
+
+Reset M 0 6800 3 6830
+Reset M 0 6800 3 6830
+Reset M 0 6800 3 6830
+#EXDESC
+ExDescKey    floor~
+ExDesc       The floor is made of shells that scoop up toward the east to form a wall.
+The shells  are brown and dirty of ages of not being disturbed.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    large~
+ExDesc       This massive shell's color is much different from the rest being glossy
+pink the light from your artificial source reflects extremly well making
+visibility extremely easy. 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6831
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6837
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6834
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6832
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6834
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6834
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6832
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6831
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6834
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6833
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6834
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6834
+#ENDEXIT
+
+Reset M 0 6802 3 6832
+#ENDROOM
+
+#ROOM
+Vnum     6833
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6832
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6833
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6834
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6833
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6833
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6834
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction north~
+ToRoom    6833
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6833
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6835
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6833
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6833
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6835
+Name     &z Mine Enterence &w~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &w You stand before a Quarren mine enterence. The main hole is covered by a
+sythetic  clear dome. At one corner is a small one man hatch used for
+enterence. On the ground you can see scraps of metal and rock apparently
+dropped from a shipment boat heading up to the city of Akatamer. There is
+a large sign above the Enterance written in Quarran. But from the disign
+and colors you know the sign is not positive.
+~
+#EXIT
+Direction north~
+ToRoom    6834
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6839
+Desc      A well lubed air compression hatch is closed here.
+~
+Keywords  Hatch~
+#ENDEXIT
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       &R DaxbnabEW    KLis'sjkdjfu     ^R Suop  Suop Suop!!!!!^x
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    hatch~
+ExDesc       &x The hatch is manmade, cilinder door a Quarren apparently climbs into.
+You can see a security panel on the wall, with a voice code box.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    ground~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    ground metal ore~
+ExDesc       It is nothing more than scrap ore and metals of very little worth.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6836
+Name     &b Mon Calamari Ocean - Bottom~
+Sector   ocean floor~
+Flags    nomob silence~
+Desc     &bYou stand in the darkest part of the ocean, very few people other then
+Quarran have walked this land The ground surface is a coarsely edged rock
+surface, obviously from volcanic activity  ,although it apears to be quite
+old. The merky water temperature sends shivers down your spine and
+visibility is limited to around 10 ft in front of you. Very few things
+have the ability to withstand this enviroment. It seems strange to you
+that an entire race would prefer it.
+~
+#EXIT
+Direction west~
+ToRoom    6837
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6826
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6837
+Name     &R Domed Quarren City of Heurkea &w~
+Sector   city~
+Desc     &c Standing before you is one of the largest underwater cities on Mon
+Calamari  The dome shield hosts thousands of Quarren citizens who spend
+most of their life  underwater. Although the Quarren can breath Oxagen
+from water they do prefer a  change. So they contructed these massive
+domed cities to allow them to live underwater and still have the luxuries
+of above ground.   To the West is a workers enterence from a nerby Mine. 
+In every other direction is the &B Mon Calamarian Ocean. &w
+~
+#EXIT
+Direction north~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6836
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6831
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6880
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXDESC
+ExDescKey    dome~
+ExDesc       The Quarren developed this dome in order to allow them to have both
+luxuries, air and water.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    enterence~
+ExDesc       The enterence is a water pressured enterence and looks highly
+sophisticated.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6838
+Name     Security Post~
+Sector   underground~
+Desc     The security post is a large square box you entered disigned to do a
+bioscan of your entire body. Two miniture 5-tgy droids continue by
+anyalizing your fingerprints and retna lines. It is a cold damp machine
+that was created with no idea of luxuries. There is a red sign before you
+with directions. 
+~
+#EXIT
+Direction east~
+ToRoom    6880
+#ENDEXIT
+
+Reset O 0 6819 1 6838
+#EXDESC
+ExDescKey    sign~
+ExDesc       &R Please place both hands on the bio scanner
+walls.
+Please reset the strat button by pulling bio-scan
+Next push the bioscan button to move to next checkpoint
+ Thanks
+ 
+Quarren Security
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6839
+Name     Mine Enterance Door~
+Sector   underground~
+Flags    nomob~
+Desc     &c The interior of this enterence is loaded with hi-tech gadgets and
+devices. used to make sure the intended Quarran is authorized to enter.
+Precautionary measures do to the suspected allegince to the Empire. On the
+wall directly ahead is a voice activated code box. The floor has apparent
+dirt and soot , that most likely came from the mines.  There is a large
+sign written in two languages above the code box.
+~
+#EXIT
+Direction up~
+ToRoom    6835
+#ENDEXIT
+
+Reset O 0 6810 1 6839
+#EXDESC
+ExDescKey    code box voice~
+ExDesc       The device is used for enterence into the cave, It is a standard X-4t6
+model,
+that allows attmitence with use of the correct word!
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       &R   Tkishdiihsh, Jisaidsydy, jidudusjalpsdo!
+ 
+ 
+If you don't have clerance from the employer in town, DONOT ENTER!
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6840
+Name     Cave Enterence~
+Sector   underground~
+Flags    indoors~
+Desc     &c You enter the cave with a slight weasyness from the decompressure.
+Non-Quarren  creatures tend to have problems with the deep ocean pressure.
+The cave is a standard layout, with a Front office to the left. Some tools
+in the shed to the right. and up-ahead you can see the tail end of the ore
+carriers. The cave's humidity level is extremly high and smells damp and
+moldy. The brown carved out walls are jagged and unfinished, as if they
+were done by primitive tools. To the north is the mine shaft, just before
+it though is small gate, to make sure you donot fall down it , and to keep
+pesky ore haulers from buzzing around the office window.
+~
+#EXIT
+Direction north~
+ToRoom    6844
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6843
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6841
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6839
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6841
+Name     Mine Office~
+Sector   underground~
+Flags    nomob~
+Desc     &c You stand in the Main lobby of the mine shaft . The floor is
+constructed, of old Takisi plant timbers layed over one another. The walls
+are slightly decorated with pictures of the mine shafts and pinups of
+Quarran women. The room smells of some strong drink made from an exotic
+bean plant, a mainstay in long hour professions. To the south is the
+Foreman's office . Back East is the Cave Enterence.&x 
+~
+#EXIT
+Direction east~
+ToRoom    6840
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6842
+#ENDEXIT
+
+#EXDESC
+ExDescKey    pictures~
+ExDesc       |
+                          |
+                   --------
+                          |
+                          |------------------
+        ------------------|
+ 
+ 
+&R ^R Middle Coridor is unstable.........Priority Fix!^x
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6842
+Name     Large Wooden Desk~
+Sector   underground~
+Flags    indoors~
+Desc     &c The mine foreman's office is true Quarran decorating. Plant boards are
+stacked on the floor to allow easy movement, a man-made shower system is
+installed in the  ceiling to keep the room at an exact humidity level. 
+There is a large desk, a chair and various books attached to wall. A sign
+rests on the door, and you can tell by the foot marks on the floor this is
+a place of heavy trafic.
+~
+#EXIT
+Direction north~
+ToRoom    6841
+#ENDEXIT
+
+Reset M 0 6805 1 6842
+Reset O 0 6802 1 6842
+Reset O 0 6805 1 6842
+#EXDESC
+ExDescKey    floor ~
+ExDesc       The floor is made from the base of a Higjk ocean plant. Known for it's
+durability.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    shower~
+ExDesc       If you stare at this device long enough you will see water as it bounces of
+your eyelids.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    desk chair~
+ExDesc       This great wooden desk/chair set obiviously was imported from a different
+planet, as you have never seen this grain before.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    books~
+ExDesc       You glance over at the books and see old mine shaft lore and fables.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6843
+Name     Tool Shed~
+Sector   underground~
+Flags    nomob~
+Desc     &c The mine tool shed was made for easy access of the tools when a worker
+reports to duty. Originally, the foreman was having trouble with workers
+leaving thier tools in the mine or taking them home. So this beaten up,
+tool shed was built. The two main doors always remain open , exposing
+several shelves with tools placed on the rack.
+~
+#EXIT
+Direction west~
+ToRoom    6840
+#ENDEXIT
+
+Reset O 0 6811 1 6843
+Reset O 0 6811 1 6843
+Reset O 0 6812 1 6843
+Reset O 0 6812 1 6843
+Reset O 0 6813 1 6843
+Reset O 0 6813 1 6843
+#ENDROOM
+
+#ROOM
+Vnum     6844
+Name     Cave Corridor~
+Sector   underground~
+Desc     &c You stand before the mine shaft that goes straight down as far as you
+can imagine. There is a cut away walkway in a circular motion that allows
+workers to go down. Although most prefer to just ride the Ore hauler down.
+These machines ride the metal shaft through the center of the hole down to
+various levels and can drive to differnt mining locations. The floor is
+damp and covered in some kind of shimering metal that must have been mined
+recently. To the west is the Ore carrier shed.
+~
+#EXIT
+Direction north~
+ToRoom    6867
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6840
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6845
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6846
+#ENDEXIT
+
+Reset M 0 6818 6 6844
+#EXDESC
+ExDescKey    mine shaft~
+ExDesc       The shaft goes down to a point where you can only see blackness.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    metal~
+ExDesc       The shimmering metal is of no use to you considering it is in dust form.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6845
+Name     Ore Carrier Shed~
+Sector   underground~
+Desc     &c The ore carrier shed was sloped toghther in order to keep the sprinkler
+system from rusting out the machines. Tire tracks run from here to the ore
+shaft along the floor. There is a dim light reflecting from above and a
+large sign placed on top of the shed. There is also a note nailed to the
+main pole, that has cought your eye. 
+~
+#EXIT
+Direction east~
+ToRoom    6844
+#ENDEXIT
+
+Reset O 0 6806 1 6845
+#EXDESC
+ExDescKey    shed~
+ExDesc       A small Quarran made shed for practical use.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    tracks~
+ExDesc       You stare at the tracks already knowing what they are and think maybe I
+should be doing my job instead.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       &R Ore Carrier Shed &x
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    note~
+ExDesc       If you check one of these out , you are responsible for returning it back
+here. Failure to do so will result in loss of job and a pissed off
+Foreman...(you don't want that) If your unfamiliar with this machine ( I
+think you should stay off it) but enter it and drive it anyway... Just
+don't break it or your buying new...   Foreman assisatnt ,   Kaytow
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6846
+Name     Ore Shaft~
+Sector   underground~
+Desc     &c You stand in the middle of the main ore shaft. These massive corridors
+were created for easy access to  differnt areas of the mine. Along the
+sides are specially constructed walkways so that miners can travel around
+easier. In the center of the shaft is a large metal rod in which the Ore
+Carrier vehicles attach to to allow them to move around much faster and
+safer. The walls are clearly polished and smooth, you know this was done
+by highly sophisticated machinery.
+~
+#EXIT
+Direction up~
+ToRoom    6844
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6847
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6847
+Name     Ore Shaft~
+Sector   underground~
+Desc     &c You stand in the middle of the main ore shaft. These massive corridors
+were created for easy access to  differnt areas of the mine. Along the
+sides are specially constructed walkways so that miners can travel around
+easier. In the center of the shaft is a large metal rod in which the Ore
+Carrier vehicles attach to to allow them to move around much faster and
+safer. The walls are clearly polished and smooth, you know this was done
+by highly sophisticated machinery. To the west you can see the first
+branch off corridor.
+~
+#EXIT
+Direction west~
+ToRoom    6856
+Keywords  Level Corridor~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6846
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6848
+#ENDEXIT
+
+Reset M 0 6807 8 6847
+Reset M 0 6807 8 6847
+#ENDROOM
+
+#ROOM
+Vnum     6848
+Name     Ore Shaft~
+Sector   underground~
+Desc     &c You stand in the middle of the main ore shaft. These massive corridors
+were created for easy access to  differnt areas of the mine. Along the
+sides are specially constructed walkways so that miners can travel around
+easier. In the center of the shaft is a large metal rod in which the Ore
+Carrier vehicles attach to to allow them to move around much faster and
+safer. The walls are clearly polished and smooth, you know this was done
+by highly sophisticated machinery. To the north you can see the second
+branch off corridor.
+~
+#EXIT
+Direction north~
+ToRoom    6861
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6847
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6849
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6849
+Name     Ore Shaft~
+Sector   underground~
+Desc     &c You stand in the middle of the main ore shaft. These massive corridors
+were created for easy access to  differnt areas of the mine. Along the
+sides are specially constructed walkways so that miners can travel around
+easier. In the center of the shaft is a large metal rod in which the Ore
+Carrier vehicles attach to to allow them to move around much faster and
+safer. The walls are clearly polished and smooth, you know this was done
+by highly sophisticated machinery.
+~
+#EXIT
+Direction up~
+ToRoom    6848
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6850
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6850
+Name     Ore Shaft~
+Sector   underground~
+Desc     &c You stand in the middle of the main ore shaft. These massive corridors
+were created for easy access to  differnt areas of the mine. Along the
+sides are specially constructed walkways so that miners can travel around
+easier. In the center of the shaft is a large metal rod in which the Ore
+Carrier vehicles attach to to allow them to move around much faster and
+safer. The walls are clearly polished and smooth, you know this was done
+by highly sophisticated machinery. To the East you can see the third
+branch off corridor.
+~
+#EXIT
+Direction east~
+ToRoom    6851
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6849
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6851
+Name     Lower Level Corridor~
+Sector   underground~
+Desc     &c Standing in the lower Level corridor you can see why most of the
+oldtimers prefer not to work down here..The shaft is not carved out well
+and is extremly dry (something residents of here don't like alot) The
+ground is a lighter sandy color and you can see sparkles of silver metal
+coming through. It is this corridor that the the younger Quarren miners
+make their money as this is the metal most of the shipbuilders prefer. To
+the west you can see the main ore shaft.
+~
+#EXIT
+Direction east~
+ToRoom    6852
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6850
+#ENDEXIT
+
+Reset O 0 6818 1 6851
+#ENDROOM
+
+#ROOM
+Vnum     6852
+Name     Lower Level Corridor~
+Sector   underground~
+Desc     &c Standing in the lower Level corridor you can see why most of the
+oldtimers prefer not to work down here..The shaft is not carved out well
+and is extremly dry (something residents of here don't like alot) The
+ground is a lighter sandy color and you can see sparkles of silver metal
+coming through. It is this corridor that the the younger Quarren miners
+make their money as this is the metal most of the shipbuilders prefer.
+~
+#EXIT
+Direction north~
+ToRoom    6853
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6851
+#ENDEXIT
+
+Reset M 0 6818 8 6852
+Reset O 0 6818 1 6852
+#ENDROOM
+
+#ROOM
+Vnum     6853
+Name     Lower Level Corridor~
+Sector   underground~
+Desc     &c Standing in the lower Level corridor you can see why most of the
+oldtimers prefer not to work down here..The shaft is not carved out well
+and is extremly dry (something residents of here don't like alot) The
+ground is a lighter sandy color and you can see sparkles of silver metal
+coming through. It is this corridor that the the younger Quarren miners
+make their money as this is the metal most of the shipbuilders prefer.
+~
+#EXIT
+Direction east~
+ToRoom    6854
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6852
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6854
+Name     Lower Level Corridor~
+Sector   underground~
+Desc     &c Standing in the lower Level corridor you can see why most of the
+oldtimers prefer not to work down here..The shaft is not carved out well
+and is extremly dry (something residents of here don't like alot) The
+ground is a lighter sandy color and you can see sparkles of silver metal
+coming through. It is this corridor that the the younger Quarren miners
+make their money as this is the metal most of the shipbuilders prefer.
+~
+#EXIT
+Direction south~
+ToRoom    6855
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6853
+#ENDEXIT
+
+Reset O 0 6818 1 6854
+#ENDROOM
+
+#ROOM
+Vnum     6855
+Name     Lower Level Corridor~
+Sector   underground~
+Desc     &c Standing in the lower Level corridor you can see why most of the
+oldtimers prefer not to work down here..The shaft is not carved out well
+and is extremly dry (something residents of here don't like alot) The
+ground is a lighter sandy color and you can see sparkles of silver metal
+coming through. It is this corridor that the the younger Quarren miners
+make their money as this is the metal most of the shipbuilders prefer. To
+the west you see a boarded up turn in the corridor.
+~
+#EXIT
+Direction north~
+ToRoom    6854
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6870
+Flags     dig hidden~
+#ENDEXIT
+
+Reset M 0 6818 9 6855
+Reset O 0 6818 1 6855
+#EXDESC
+ExDescKey    boarded east~
+ExDesc       The boarded up corridor is covered in cob-webs, from an underground insect.
+from this and the residue you can figure out that noone has mined over
+there in some time. 
+There is a small white note draped across the boards.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    note~
+ExDesc       &w Stay Out ,  Unsafe area!
+ 
+&R Failure to follow these orders will result in imediate dismisal of
+job.
+ 
+^R These corridors have already taken several Quarren life !^x
+&w This is your last an only warning.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6856
+Name     Upper Level Corridor~
+Sector   underground~
+Desc     &c  You stand in the upper corridor mine. This shaft travels within the
+ground, and was used extensively for rock fuel mining in the early years
+of the mine. There are still a few old-time miners who swear to it's
+worth, but most of the newer guys prefer the lower mines. The shaft itself
+is a dark brown , and the edges are carved out like somone used a pick ax.
+This corridor is unlike the ones your used to, smooth and carved from
+machines. You can see the Main Ore shaft is to the East.
+~
+#EXIT
+Direction north~
+ToRoom    6857
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6847
+Keywords  Level Corridor~
+#ENDEXIT
+
+Reset M 0 6807 8 6856
+Reset M 0 6807 8 6856
+Reset O 0 6817 1 6856
+#ENDROOM
+
+#ROOM
+Vnum     6857
+Name     Upper Level Corridor~
+Sector   underground~
+Desc     &c You stand in the upper corridor mine. This shaft travels within the
+ground, and was used extensively for rock fuel mining in the early years
+of the mine. There are still a few old-time miners who swear to it's
+worth, but most of the newer guys prefer the lower mines. The shaft itself
+is a dark brown , and the edges are carved out like somone used a pick ax.
+This corridor is unlike the ones your used to, smooth and carved from
+machines.
+~
+#EXIT
+Direction south~
+ToRoom    6856
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6858
+#ENDEXIT
+
+Reset M 0 6807 8 6857
+Reset O 0 6817 1 6857
+#ENDROOM
+
+#ROOM
+Vnum     6858
+Name     Upper Level Corridor~
+Sector   underground~
+Desc     &c You stand in the upper corridor mine. This shaft travels within the
+ground, and was used extensively for rock fuel mining in the early years
+of the mine. There are still a few old-time miners who swear to it's
+worth, but most of the newer guys prefer the lower mines. The shaft itself
+is a dark brown , and the edges are carved out like somone used a pick ax.
+This corridor is unlike the ones your used to, smooth and carved from
+machines.
+~
+#EXIT
+Direction north~
+ToRoom    6859
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6857
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6859
+Name     Upper Level Corridor~
+Sector   underground~
+Desc     &c You stand in the upper corridor mine. This shaft travels within the
+ground, and was used extensively for rock fuel mining in the early years
+of the mine. There are still a few old-time miners who swear to it's
+worth, but most of the newer guys prefer the lower mines. The shaft itself
+is a dark brown , and the edges are carved out like somone used a pick ax.
+This corridor is unlike the ones your used to, smooth and carved from
+machines.
+~
+#EXIT
+Direction south~
+ToRoom    6858
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6860
+#ENDEXIT
+
+Reset M 0 6818 10 6859
+Reset O 0 6817 1 6859
+#ENDROOM
+
+#ROOM
+Vnum     6860
+Name     Upper Level Corridor~
+Sector   underground~
+Desc     &c You stand in the upper corridor mine. This shaft travels within the
+ground, and was used extensively for rock fuel mining in the early years
+of the mine. There are still a few old-time miners who swear to it's
+worth, but most of the newer guys prefer the lower mines. The shaft itself
+is a dark brown , and the edges are carved out like somone used a pick ax.
+This corridor is unlike the ones your used to, smooth and carved from
+machines.
+~
+#EXIT
+Direction east~
+ToRoom    6859
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6866
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6861
+Name     Middle Level Corridor~
+Sector   underground~
+Desc     &c The middle level corridor is nicely polished and you can tell most of
+the high ranking miners work thisone. Ease alone would make you want to
+work here, the money might not be as great but the danger is way down. The
+floor has well driven ore vehicle tracks and you can tell by the activity
+that has been going around, this is a very active shaft. Mostly likely you
+will find some fikler metals used for weapons and tools.
+~
+#EXIT
+Direction east~
+ToRoom    6862
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6848
+#ENDEXIT
+
+Reset M 0 6818 7 6861
+#ENDROOM
+
+#ROOM
+Vnum     6862
+Name     Middle Level Corridor~
+Sector   underground~
+Desc     &c The middle level corridor is nicely polished and you can tell most of
+the high ranking miners work thisone. Ease alone would make you want to
+work here, the money might not be as great but the danger is way down. The
+floor has well driven ore vehicle tracks and you can tell by the activity
+that has been going around, this is a very active shaft. Mostly likely you
+will find some fikler metals used for weapons and tools.
+~
+#EXIT
+Direction north~
+ToRoom    6863
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6861
+#ENDEXIT
+
+Reset O 0 6816 1 6862
+#ENDROOM
+
+#ROOM
+Vnum     6863
+Name     Middle Level Corridor~
+Sector   underground~
+Desc     &c The middle level corridor is nicely polished and you can tell most of
+the high ranking miners work thisone. Ease alone would make you want to
+work here, the money might not be as great but the danger is way down. The
+floor has well driven ore vehicle tracks and you can tell by the activity
+that has been going around, this is a very active shaft. Mostly likely you
+will find some fikler metals used for weapons and tools.
+~
+#EXIT
+Direction east~
+ToRoom    6864
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6862
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6864
+Name     Middle Level Corridor~
+Sector   underground~
+Desc     &c The middle level corridor is nicely polished and you can tell most of
+the high ranking miners work thisone. Ease alone would make you want to
+work here, the money might not be as great but the danger is way down. The
+floor has well driven ore vehicle tracks and you can tell by the activity
+that has been going around, this is a very active shaft. Mostly likely you
+will find some fikler metals used for weapons and tools.
+~
+#EXIT
+Direction east~
+ToRoom    6865
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6863
+#ENDEXIT
+
+Reset M 0 6807 8 6864
+Reset O 0 6816 1 6864
+#ENDROOM
+
+#ROOM
+Vnum     6865
+Name     Middle Level Corridor~
+Sector   underground~
+Desc     &c  The middle level corridor is nicely polished and you can tell most of
+the high ranking miners work thisone. Ease alone would make you want to
+work here, the money might not be as great but the danger is way down. The
+floor has well driven ore vehicle tracks and you can tell by the activity
+that has been going around, this is a very active shaft. Mostly likely you
+will find some fikler metals used for weapons and tools.
+~
+#EXIT
+Direction west~
+ToRoom    6864
+#ENDEXIT
+
+Reset O 0 6816 1 6865
+#ENDROOM
+
+#ROOM
+Vnum     6866
+Name     &R Break Shed &x~
+Sector   underground~
+Flags    indoors~
+Desc     &Y The break shed is a place for the Quarren to hang out and relax during
+thier ten minute breaks. The shed was created out of the wall and food and
+drink dispensors were brought in. The upper shaft was used to house the
+place, due to the inactivity the digging has provided. There are several
+creates on the ground to sit on although most miners just soon use the
+floor. 
+There is a sign posted of the hours, above the shed.
+~
+#EXIT
+Direction east~
+ToRoom    6860
+#ENDEXIT
+
+Reset M 0 6804 1 6866
+  Reset G 1 301 1
+  Reset G 1 10314 1
+  Reset G 1 31522 1
+  Reset G 1 6814 1
+  Reset G 1 6815 1
+Reset O 0 6803 1 6866
+#EXDESC
+ExDescKey    open ~
+ExDesc       The crate is open , there is no need to open it.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       I will be open from 8 am until 8 pm big fish ...Wink wink.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6867
+Name     Cargo Hall~
+Sector   city~
+Flags    safe~
+Desc     &c You stand in the Cargo Hall of the mine. To the north is a loading bay
+for the ore shippers so they can take the mine's riches to the surface.
+This room is just used for storage and so that the miners can get paid. 
+Everyone knows the man with the money. And after a hard days work, it is
+always nice to trade in your finds for credits. There is a small sign
+tacked to the wall here.
+~
+#EXIT
+Direction north~
+ToRoom    6868
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6844
+#ENDEXIT
+
+Reset M 0 6808 3 6867
+#EXDESC
+ExDescKey    sign~
+ExDesc       &R Welcome miners to Ketson's Ore purchasing!
+ 
+I will buy only between 8 a.m. and 12p.m.  sorry but i work for
+union.
+ 
+Hahahahahaha!
+ 
+Ketson
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6868
+Name     Ore Shippers Loading Bay~
+Sector   city~
+Desc     &c The loading Bay is a very active area of the mine. It is here trained
+drivers, truck the mined ores and treasure to the surface. On the main
+wall you can see the extremly large hide belts feeding the ore into the
+cargo area through a sealed hatchway. The floor has remains of ore droped,
+but nothing of worth. The activity in this room is extreme so it's not
+recommended that you stay long. Somthing is liable to drop on your head.
+~
+#EXIT
+Direction south~
+ToRoom    6867
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6869
+Name     Ore Carrier Interior~
+Sector   city~
+Flags    nomob~
+Desc     The interior of the ore miner is quite spacious. The above area is a clear
+holobubble, so you can see where your driving and that you don't run some
+poor miner over. The floor board has two pedals , one for fuel the second
+for brake. They are currently extremely dirty from the last guy who used
+it.  The chair is made for a quarren , A straight water moisturizing back
+that goes through the length of the vehicle. Directly behind the back is a
+large bin so you can place your digs in here for movement purposes.
+To drive just type Drive then the direction ...
+EX drive E         (will take you east)
+~
+#ENDROOM
+
+#ROOM
+Vnum     6870
+Name     Dark Cave Corridor~
+Sector   underground~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    6855
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6871
+Name     Down the dark Corridor~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6872
+Name     &w Down the dark Corridor~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6876
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6878
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6879
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6880
+Name     Miner's Enterence~
+Sector   city~
+Flags    nomob~
+Desc     &B Standing in front of the miner enterence security post. you realize the
+seriousness the quarren take thier job. The room is layedout with sveral
+flatback chairs for the tired Miners to rest on. Uphead you see a
+bio-scanner disigned to make sure you are who you say you are. The walls
+are well decorated and have a smooth polished look. The Quarren use alot
+of coral and natural rocks to sculp thier underground city.
+~
+#EXIT
+Direction east~
+ToRoom    6837
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6838
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6881
+Name     &R Gateway to Heurkea ~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    6880
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6882
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6883
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6884
+#ENDEXIT
+
+Reset M 0 6818 5 6881
+Reset O 0 6820 1 6881
+#EXDESC
+ExDescKey    gateway~
+ExDesc       It is a large rock made archway to welcome visitors to the city.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6882
+Name     East Coral St~
+Sector   underground~
+Flags    indoors~
+Desc     The domed city of Heurkea is divided into three main streets. Each having
+distinct and differnt purposes. It was designed for easy access and so
+that security could patrol and maintain order. One of the best Security
+features of Heurkea is that threr are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white. To the west you smell barbecue and ale.
+~
+#EXIT
+Direction east~
+ToRoom    6881
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    21055
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6886
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6883
+Name     East Lamprey St~
+Sector   city~
+Flags    indoors~
+Desc     The domed city of Heurkea is divided into three main streets. Each having
+distinct and differnt purposes. It was designed for easy access and so
+that security could patrol and maintain order. One of the best Security
+features of Heurkea is that threr are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white.
+~
+#EXIT
+Direction northwest~
+ToRoom    6885
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6881
+#ENDEXIT
+
+Reset M 0 6829 2 6883
+#ENDROOM
+
+#ROOM
+Vnum     6884
+Name     East Kelp St~
+Sector   underground~
+Flags    indoors~
+Desc     &w The domed city of Heurkea is divided into three main streets. Each
+having distinct and differnt purposes. It was designed for easy access and
+so that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white. You can see a large building of importance to the
+southwest.
+~
+#EXIT
+Direction northeast~
+ToRoom    6881
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6887
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6885
+Name     East Lamprey St~
+Sector   underground~
+Flags    indoors~
+Desc     &w The domed city of Heurkea is divided into three main streets. Each
+having distinct and differnt purposes. It was designed for easy access and
+so that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white.  Lining the walls of the street are small shacks the
+miners use for domicles.
+~
+#EXIT
+Direction north~
+ToRoom    6939
+Keywords  door~
+Flags     closed locked~
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6890
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6883
+#ENDEXIT
+
+Reset M 0 6818 4 6885
+#ENDROOM
+
+#ROOM
+Vnum     6886
+Name     Sea Bird &w Bar and Grill &x~
+Sector   underground~
+Flags    indoors~
+Desc     Standing on Coral st. You see the everyday rituals of the citizens(mostly
+miners). From stoping by to get a quick meal or a faster weapon. City life
+underwater seems to go on forever. Of coarse there isn't a sun rise or set
+so time has very little relevince. Most of the people wake up and go
+whenever they feel like it, Unfortunately so do the shop owners.  Infront
+of you is a small stand for purchasing food or drink. There is a large
+sign above the stand and a smaller note tacked to the edge of the wall.
+~
+#EXIT
+Direction east~
+ToRoom    6882
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6889
+#ENDEXIT
+
+Reset M 0 6810 1 6886
+  Reset G 1 6814 1
+  Reset G 1 6815 1
+  Reset G 1 301 1
+  Reset G 1 6823 1
+  Reset G 1 6824 1
+  Reset G 1 6825 1
+Reset M 0 6817 1 6886
+#EXDESC
+ExDescKey    stand~
+ExDesc       The stand is decorated by dried out &G seaweed &w draped along the edge. 
+There is three chairs placed in front of the stand for customers to rest
+while they eat.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    sign ~
+ExDesc       &B SEA BIRD  &Y BAR AND GRILL
+&w Where you can get the best food this side of the ocean.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    note~
+ExDesc       Sorry open only form 12:00p.m. until 11:00 p.m.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    cost ~
+ExDesc       Cost - 12,000 credits and Good taste buds!
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6887
+Name     Quarren Library~
+Sector   underground~
+Flags    indoors~
+Desc     Standing on Lamprey St. You see the everyday rituals of the
+citizens(mostly;miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the
+building owners. There is a large building before you constructed from a
+dark grey rock. This building is of great importance to the Quarren as
+they have spent many hours carving into the rock extravegant sculptures.
+There is a large Sign on top of the building and a smaller posting on the
+door.
+~
+#EXIT
+Direction south~
+ToRoom    6917
+Keywords  door~
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6884
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6888
+#ENDEXIT
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       You want to buy a Library?  
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6888
+Name     &R Seabed Tavern~
+Sector   underground~
+Flags    nomob indoors~
+Desc     &g Standing on Lamprey St.. You see the everyday rituals of the
+citizens(mostly miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the shop
+owners.  In front of you is a large well decorated house used for a quick
+overnite stay for wandering visitors.
+~
+#EXIT
+Direction north~
+ToRoom    6889
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6909
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6893
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6887
+#ENDEXIT
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - 100,000 credits and a freindly face!
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6889
+Name     Expiremental Wares~
+Sector   city~
+Flags    indoors~
+Desc     &O Standing on Coral st. You see the everyday rituals of the
+citizens(mostly miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the shop
+owners.  A high-tech building stands here with a small window for
+conversation. The buildings walls are constructed of a rare metal found in
+the Quarren underwater mines. It is here that the legendary inventor
+Torisk creates some of his famous and not so famous, weapons.
+There is a large sign and a small note fixed to the stand.
+~
+#EXIT
+Direction east~
+ToRoom    6886
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6888
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6892
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6890
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6888
+#ENDEXIT
+
+Reset M 0 6812 1 6889
+  Reset G 1 6826 1
+  Reset G 1 6827 1
+  Reset G 1 6828 1
+  Reset G 1 6829 1
+#EXDESC
+ExDescKey    sign~
+ExDesc       &z Expiremental Wares
+We are not responible for any malfunctions as all weapons are in the
+development
+stage.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    note~
+ExDesc       Store is open at 10:00 P.m. until 8:00 a.m.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - 68,000 credits Wis -13
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6890
+Name     East Lamprey St~
+Sector   underground~
+Flags    indoors~
+Desc     &w The domed city of Heurkea is divided into three main streets. Each
+having distinct and differnt purposes. It was designed for easy access and
+so that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white. Lining the walls of the street are small shacks the
+miners use for domicles.
+~
+#EXIT
+Direction north~
+ToRoom    6938
+Flags     closed locked~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6891
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6885
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6889
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6891
+Name     &Y Public Offices~
+Sector   underground~
+Flags    indoors~
+Desc     The domed city of Heurkea is divided into three main streets. Each having
+distinct and differnt purposes. It was designed for easy access and so
+that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white. Lining the walls of the street are small shacks the
+miners use for domicles. To the North is a large white structure with
+statues of great Quarren fighters framing the main steps.
+~
+#EXIT
+Direction north~
+ToRoom    6925
+Keywords  door~
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6890
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6892
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6894
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6892
+Name     &g Serpant Wares~
+Sector   underground~
+Desc     Standing on Coral st. You see the everyday rituals of the citizens(mostly
+miners). From stoping by to get a quick meal or a faster weapon. City life
+underwater seems to go on forever. Of coarse there isn't a sun rise or set
+so time has very little relevince. Most of the people wake up and go
+whenever they feel like it, Unfortunately so do the shop owners. In front
+of you is a small clothing tent that can be uplifted and moved at a
+moments notice. The creator and tailor Cathia works very hard to cloth
+most of the miners. There is a large sign and a small note fixed to the
+tent.
+~
+#EXIT
+Direction north~
+ToRoom    6891
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6889
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6893
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6895
+#ENDEXIT
+
+Reset M 0 6813 1 6892
+  Reset G 1 6831 1
+  Reset G 1 6832 1
+  Reset G 1 6833 1
+  Reset G 1 6835 1
+  Reset G 1 6836 1
+  Reset G 1 6837 1
+Reset M 0 6828 2 6892
+#EXDESC
+ExDescKey    sign~
+ExDesc       &G SERPANT WARES
+Where you will always get the best clothing deal.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    tent~
+ExDesc       It is a large tent that can be taken down instantly.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    note~
+ExDesc       Store hours are from 5 a.m. until 1 p.m.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - 50,000 credits Cha - 15
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6893
+Name     &G Quarren Training Facility~
+Sector   underground~
+Flags    indoors~
+Desc     Standing on Lamprey St.. You see the everyday rituals of the
+citizens(mostly miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the shop
+owners.   The main building to the south is well guarded by some of the
+largest Quarren you have ever seen. It is said that it is there that
+Security forces train individual quarren on weapon and battle tricks.
+~
+#EXIT
+Direction north~
+ToRoom    6892
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6888
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6911
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6896
+#ENDEXIT
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - Not for Sale
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6894
+Name     West Lamprey St.~
+Sector   underground~
+Flags    indoors~
+Desc     &w The domed city of Heurkea is divided into three main streets. Each
+having distinct and differnt purposes. It was designed for easy access and
+so that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white. Lining the walls of the street are small shacks the
+miners use for domicles.
+~
+#EXIT
+Direction north~
+ToRoom    6940
+Keywords  door~
+Flags     closed locked~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6891
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6895
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6897
+#ENDEXIT
+
+Reset M 0 6829 3 6894
+#ENDROOM
+
+#ROOM
+Vnum     6895
+Name     &P Mother of Pearl Jewlery~
+Sector   underground~
+Flags    indoors~
+Desc     Standing on Coral st. You see the everyday rituals of the
+citizens(mostly;miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the shop
+owners. There is a well guarded building with huge windows here. In the
+glass windows you can see various gems and pearls from the Mon Cal ocean
+and odd planets. There is a small speaker by the window where you can talk
+and see Plantik inside. There is large sign hanging above and a small
+letter tacked to the wall.
+~
+#EXIT
+Direction north~
+ToRoom    6894
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6892
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6896
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6898
+#ENDEXIT
+
+Reset M 0 6814 1 6895
+  Reset G 1 6839 1
+  Reset G 1 6840 1
+  Reset G 1 6841 1
+  Reset G 1 6840 1
+  Reset G 1 6840 1
+Reset M 0 6818 2 6895
+#EXDESC
+ExDescKey    sign~
+ExDesc       &p Mother of Pearl Jewlery 
+The greatest selection of fine jewlery in the ocean.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    letter~
+ExDesc       Shop window is open between 7a.m. and 11 p.m.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - 84,000 credits and CHA - 17
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6896
+Name     &B Mine main office~
+Sector   underground~
+Flags    indoors~
+Desc     Standing on Lamprey St.. You see the everyday rituals of the
+citizens(mostly miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the shop
+owners.   The small office space to the south is the main mine branch. It
+is not well decorated in fact is rather plain. In the window is a bright
+red sign.
+~
+#EXIT
+Direction north~
+ToRoom    6895
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6893
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6936
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6899
+#ENDEXIT
+
+Reset M 0 6818 1 6896
+Reset M 0 6817 7 6896
+#EXDESC
+ExDescKey    sign~
+ExDesc       &R Help Wanted :  Apply within!
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - Not for Sale
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6897
+Name     West Lamprey St.~
+Sector   underground~
+Flags    indoors~
+Desc     &w The domed city of Heurkea is divided into three main streets. Each
+having distinct and differnt purposes. It was designed for easy access and
+so that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white. Lining the walls of the street are small shacks the
+miners use for domicles.
+~
+#EXIT
+Direction north~
+ToRoom    6941
+Flags     closed locked~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6898
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6894
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6900
+#ENDEXIT
+
+Reset M 0 6829 1 6897
+#ENDROOM
+
+#ROOM
+Vnum     6898
+Name     Quarren Security Armory~
+Sector   underground~
+Flags    indoors safe~
+Desc     &z Standing on Coral st. You see the everyday rituals of the
+citizens(mostly;miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the shop
+owners.  The open tent in front of you is a resale shop for old Security
+weapons. While most of the inventory is generic stuff you never know what
+he might have in. There is large sign hanging above and a small letter
+tacked to the wall.
+~
+#EXIT
+Direction north~
+ToRoom    6897
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6895
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6899
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6902
+#ENDEXIT
+
+Reset M 0 6815 1 6898
+Reset M 0 6817 4 6898
+#EXDESC
+ExDescKey    sign~
+ExDesc       &z Quarren Security Armory
+We buy and sell all weapons.
+Dealing mostly with older models.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - 29,000 credits and Str - 16
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6899
+Name     &G Quarren First of Mon Bank~
+Sector   underground~
+Flags    indoors~
+Desc     Standing on Lamprey St.. You see the everyday rituals of the
+citizens(mostly miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the shop
+owners.   To the south is the First of Mon Bank, the prefered bank of most
+underwater individuals.
+~
+#EXIT
+Direction north~
+ToRoom    6896
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6896
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6918
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6901
+#ENDEXIT
+
+Reset M 0 6828 4 6899
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - 500,000 credits INT - 17
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6900
+Name     West Lamprey St~
+Sector   underground~
+Flags    nomob indoors~
+Desc     &w The domed city of Heurkea is divided into three main streets. Each
+having distinct and differnt purposes. It was designed for easy access and
+so that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white.
+~
+#EXIT
+Direction northeast~
+ToRoom    6897
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6903
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6901
+Name     West Kelp St.~
+Sector   underground~
+Flags    indoors~
+Desc     Standing on Lamprey St.. You see the everyday rituals of the
+citizens(mostly miners). From stoping by to get a quick meal or a faster
+weapon. City life underwater seems to go on forever. Of coarse there isn't
+a sun rise or set so time has very little relevince. Most of the people
+wake up and go whenever they feel like it, Unfortunately so do the shop
+owners.   
+~
+#EXIT
+Direction west~
+ToRoom    6945
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6903
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6899
+#ENDEXIT
+
+Reset M 0 6829 4 6901
+#ENDROOM
+
+#ROOM
+Vnum     6902
+Name     West Coral St.~
+Sector   underground~
+Flags    indoors~
+Desc     &w The domed city of Heurkea is divided into three main streets. Each
+having distinct and differnt purposes. It was designed for easy access and
+so that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white.
+~
+#EXIT
+Direction east~
+ToRoom    6898
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6903
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6903
+Name     West Entrance to City~
+Sector   underground~
+Flags    indoors~
+Desc     The domed city of Heurkea is divided into three main streets. Each having
+distinct and differnt purposes. It was designed for easy access and so
+that security could patrol and maintain order. One of the best Security
+features of Heurkea is that there are only three roads to hide on and they
+all lead to only to exits The streets are made out of the old molten rock
+ocean floor that used to be here covered with water. They have managed to
+adapt a plant that uses very little to grow down here although the leaves
+are a pale white.
+~
+#EXIT
+Direction east~
+ToRoom    6902
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6935
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6900
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6901
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6904
+Name     &B Quarren City Platform~
+Sector   city~
+Desc     You stand on a large platform surrounded by extremely rough waters. The
+platform is well hidden and to this day is not locatable from the air.
+Only this specific taxi knows of it's wearabouts. The platform floor is a
+rough dark rock almost like dried magma. In front of you is a small
+turbo-lift heading straight down. It would be best for you to enter it
+before the wind picks up and the waves start kncking over the platform.
+~
+#EXIT
+Direction down~
+ToRoom    6935
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6905
+Name     &R Tunnel system~
+Sector   city~
+Desc     &w  &W This small branch off of the road leads to two underground tunnels
+marked Mon Calamrian to the south. While the tunnel to the east is marked
+Quarren There is extreme measures taken to make sure only those two races
+would have access to the service entrance to the city. The floor is dark
+and covered with soot from miners who have a few days off on vaction.
+~
+#EXIT
+Direction east~
+ToRoom    6947
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6942
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    21016
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6906
+Name     End of Dock~
+Sector   field~
+Desc     &c  You stand on the end of an extremly old dock. The wooden fibers were
+from a rare underwater tree of very little color. It's pale white timbers
+creak as you shift your weight form side to side. On the sides of the dock
+you can see the dark blue ocean's waves and ocasionally you swear to see a
+rainbow colored fish swim by. The sky is a pale green and staring into one
+of the two suns you can see the black shadow of a indigenice bird. At the
+end of the dock you can see a shiny metal bar laying across.
+~
+#EXIT
+Direction east~
+ToRoom    6907
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6800
+#ENDEXIT
+
+Reset M 0 6830 1 6906
+#EXDESC
+ExDescKey    bar shiny metal~
+ExDesc       This metal bar is connected to a ladder that allows you to climb down into
+the water.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6907
+Name     Middle of Dock~
+Sector   city~
+Desc     &c You stand on the middle of an extremly old dock. The wooden fibers were
+from a rare underwater tree of very little color. It's pale white
+timbers;creak as you shift your weight form side to side. On the sides of
+the dock;you can see the dark blue ocean's waves and ocasionally you swear
+to see a rainbow colored fish swim by. The sky is a pale green and staring
+into one of the two suns you can see the black shadow of a indigenice bird
+To the west you can see the end of the dock , while to the east is the
+begining.
+~
+#EXIT
+Direction east~
+ToRoom    6908
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6906
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6908
+Name     Front of Dock~
+Sector   field~
+Flags    nomob~
+Desc     &c You stand on the beginning of an extremly old dock. The wooden fibers
+were from a rare underwater tree of very little color. It's pale white
+timbers;creak as you shift your weight form side to side. On the sides of
+the dock;you can see the dark blue ocean's waves and ocasionally you swear
+to see a rainbow colored fish swim by. The sky is a pale green and staring
+into one of the two suns you can see the black shadow of a indigenice bird
+To the east is the land and city of Akatamer
+~
+#EXIT
+Direction east~
+ToRoom    21081
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6907
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6909
+Name     Lobby~
+Sector   underground~
+Flags    nomob indoors nomagic safe hotel~
+Desc     Here a weary traveller can seek a good rest in comfort without fear of 
+theft or, worse yet, murder.  A long counter stretches across much of the
+room, and for a few credits the hotel keeper will gladly rent you one of
+his rooms.  Drunken laughter emerges from behind the room's doors.  To the
+south beyond a door barred by the hotel keeper are the rooms. ;You may
+safely quit here.
+~
+#EXIT
+Direction north~
+ToRoom    6888
+#ENDEXIT
+
+Reset M 0 6827 1 6909
+  Reset G 1 3 1
+  Reset G 1 3 1
+Reset M 0 6828 3 6909
+#ENDROOM
+
+#ROOM
+Vnum     6910
+Name     Hot-Tub~
+Sector   underground~
+Flags    nomob indoors nomagic safe~
+Desc     &c This former mariage suite is now known for its sociol atmosphere. The
+owner of the hotel added a large Hot-Tub (a fovorite past time for
+Quarren's). This additon and the removal of all the beds and dressors have
+allowed this place to become a brathal of sorts. The Walls are decorated
+with ocean lanscape pictures and soft sounds the ocean can be heard of the
+radio system. The lighting is very low and all communication devices are
+being scrabled in this room. 
+~
+#EXIT
+Direction west~
+ToRoom    6909
+#ENDEXIT
+
+Reset O 0 6852 1 6910
+#ENDROOM
+
+#ROOM
+Vnum     6911
+Name     &G Facility Main Hall~
+Sector   underground~
+Flags    nomob indoors~
+Desc     &w This extremly large building is the Security Officers Training facility.
+For a small fee you can enter the remote area and practice your skills. 
+Although they are allowed to kick you out at anytime. The walls are
+decorated with pictures of Victory's against the Empire! And of famous
+Quarren citizens, There is one large statue in the middle of the room that
+seems to have scraches and blaster marks through it, as if people were
+practicing on it. To the south is the remote room . To the East is the
+elderly Security trainer.
+~
+#EXIT
+Direction north~
+ToRoom    6893
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6916
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6912
+#ENDEXIT
+
+#EXDESC
+ExDescKey    statue~
+ExDesc       The large statue is of the great &Y ^R Admiral Ackbar &x ^x it is no
+wonder, the Quarren citizens fire randomly at the statue, as they resent
+having the MOn Cal's control them. Including making them add this statue
+to thier Security Office.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6912
+Name     &G Facility Training  Remote 1~
+Sector   underground~
+Flags    bank~
+Desc     &R This room is extremly large area that alows you to move around and dodge
+quite freely. It is mostly empty except for a remote launcher. The floors
+and walls are made up of carved out black gravel rock are covered in scuff
+marks. A sign warns that only one student may  use this room at a time.
+There is also a small Security camera used to analiyze your  skills. The
+Quarren are very cautious about who they train. And are curious why they
+want to be tougher.
+~
+#EXIT
+Direction north~
+ToRoom    6911
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6913
+#ENDEXIT
+
+Reset M 0 6822 1 6912
+#ENDROOM
+
+#ROOM
+Vnum     6913
+Name     &G Facility Training  Remote 2~
+Sector   underground~
+Flags    indoors bank~
+Desc     &c This room is extremly large area that alows you to move around and dodge
+quite freely. It is mostly empty except for a remote launcher. The floors
+and walls are made up of carved out black gravel rock are covered in scuff
+marks. A sign warns that only one student may  use this room at a time.
+There is also a small Security camera used to analiyze your  skills. The
+Quarren are very cautious about who they train. And are curious why they
+want to be tougher.
+~
+#EXIT
+Direction north~
+ToRoom    6912
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6914
+#ENDEXIT
+
+Reset M 0 6823 1 6913
+#ENDROOM
+
+#ROOM
+Vnum     6914
+Name     &G Facility Training  Remote 3~
+Sector   underground~
+Flags    indoors bank~
+Desc     &Y This room is extremly large area that alows you to move around and dodge
+quite freely. It is mostly empty except for a remote launcher. The floors
+and walls are made up of carved out black gravel rock are covered in scuff
+marks. A sign warns that only one student may  use this room at a time.
+There is also a small Security camera used to analiyze your  skills. The
+Quarren are very cautious about who they train. And are curious why they
+want to be tougher.
+~
+#EXIT
+Direction north~
+ToRoom    6915
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6913
+#ENDEXIT
+
+Reset M 0 6824 1 6914
+#ENDROOM
+
+#ROOM
+Vnum     6915
+Name     &G Facility Training  Remote 4~
+Sector   underground~
+Flags    indoors bank~
+Desc     &P This room is extremly large area that alows you to move around and dodge
+quite freely. It is mostly empty except for a remote launcher. The floors
+and walls are made up of carved out black gravel rock are covered in scuff
+marks. A sign warns that only one student may  use this room at a time.
+There is also a small Security camera used to analiyze your  skills. The
+Quarren are very cautious about who they train. And are curious why they
+want to be tougher.
+~
+#EXIT
+Direction east~
+ToRoom    6946
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6914
+#ENDEXIT
+
+Reset M 0 6825 1 6915
+#ENDROOM
+
+#ROOM
+Vnum     6916
+Name     &G Facility Security Training~
+Sector   underground~
+Flags    indoors~
+Desc     &c Entering the main Security Officer's training room you feel a sense of
+wonder. This individual was known for killing three kraknasas in one
+sitting. His ability to detect criminals in the town was legendary until
+he decided to retire. This space is covered with honerary metals ,
+buttons, and awards. Even the real hero's would feel awe when it comes
+down to him. The floor is one large spongee material. While the walls are
+more of a plaster like surface.
+~
+#EXIT
+Direction west~
+ToRoom    6911
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6917
+Name     Library Interior~
+Sector   underground~
+Flags    indoors safe~
+Desc     The interior of the library is covered with hand stiched seaweed rugs
+inported from the Coral city accross the ocean. In the center of the room
+is a large Krebbex focilized bone. These large creatures once ran wild on
+the planet and the ocean. The circular room was once covered with
+holo-books from old folk lore to how-to's until a fire broke out and all
+but burned most of the holo-books. The new librarian has the unfortunate
+task of retyping them. There is a small computer terminal in the center of
+the room.
+~
+#EXIT
+Direction north~
+ToRoom    6887
+Keywords  door~
+#ENDEXIT
+
+Reset M 0 6816 1 6917
+#EXDESC
+ExDescKey    computer terminal~
+ExDesc       This computer terminal allows you to see the current holo-books that
+survied.
+ 
+Type look list :   to see available reading
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    list~
+ExDesc       To read the holo-book type look (name of book).
+.
+The Miner's Handbook
+;  The legendary Krebbex
+;  The shining Ultima-Pearl
+;  Our Bivalve Freinds
+;  Mon Calamrian History
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    krebbex~
+ExDesc       Although scientists swear the extinction of the krebbex was long ago. A few
+Quarren swear to it's exisitence. These  extinct ten-legged crustaceans
+once lived in the great Mon ocean. But according to one witness, Witho
+Tokio just recently when she was staring out of the north dome edge she
+saw it in the merky waters above. City officials stated there was anything
+that big in the ocean the sensors would have picked it up a long time ago.
+ But Witho is not alone, over 28 diffrent sitings have come up in the past
+year. And several Quarren miners have not returned and are listed as
+missing(with no explination). A few Quarren residents fear the worst and
+have refused to leave the city. Although most think of it as a cute story.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    history3~
+ExDesc       Ackbar was later rescued from slavery by an Alliance force and named
+Admiral of the Rebel fleet. Six years after the Battle of Endor, the
+reborn Emperor used his World Devastators to attack Calamari's
+southern;territorial zone, destroying most of the city of Kee-Piru. The
+port city;of Hikahi was also;damaged, harming the planet's
+starship-building capability. One year after that, Leia Organa Solo
+visited Admiral Ackbar at his home in the seatree forest in an attempt to
+bring him out of his self-imposed exile. A subsequent attack by Admiral
+Daala's Star Destroyers resulted in the destruction of Reef Home City.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    history2~
+ExDesc       The Mon Calamari had already constructed enormous starships and begun
+traveling space when their planet was discovered by the Empire. The
+Imperials planned to enslave Calamari and, after meeting with resistance
+from its natives, destroyed three of its floating cities. A Quarren,
+Seggor Tels, is believed to have deliberately lowered Calamari's
+defenses;to allow the Empire's attack this has heightened tensions between
+the Mon Calamari and the Quarren ever since. After the Empire showed its
+true colors, Calamarian starships were converted into warships and the
+shipbuilding docks in orbit around Calamari and its single moon became an
+important resource for the Alliance. Many Calamarians were taken as slaves
+by the Empire including the famous Ackbar, who was forced to be the
+personal servant of Grand Moff Tarkin.  To see the next page type look
+history3 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    history ~
+ExDesc       Calamari (sometimes called Mons Calamari) is a tectonically stable world
+almost entirely covered with water, and is home to both the peaceful Mon
+Calamari and the cautious Quarren-- over 27 billion inhabitants in all.
+The surface of the planet is covered with small marshy islands and
+enormous floating cities that house both species, with the Quarren
+inhabiting the lowest, darkest levels. These attractive constructions
+include Reef Home, Coral Depths, Kee-Piru, Coral City, and Foamwander
+City. The architecture and design of the Mon Calamari have organic
+appearances, with rounded edges and irregular surfaces that show their
+love for the natural beauty of their world. Raw ores used in construction
+are mined by the Quarren (who can breathe both air and;water) from domed
+cities on the ocean floor. To see the next page type look history2
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    shining ~
+ExDesc       The Ultima-Pearl is the greatest treasure Mon Calmarians have to offer.
+Only three have ever surfaced from the cold dark ocean. According to the
+legend by the bi-valve mollusks, there is only one place the Ultima-Pearl
+will be created. Fearing that the prize would be piliged from the ocean
+for good. The mollusks controled the currents so that noone can find the
+location. They also control a sharklike creature called  krakanas, which
+have now been know as the guardian of the pearl. Fearing the increase of
+smugglers in town city officials agreed to declare the pearl, offlimits.
+failure to follow this ruling results in you being wanted on the planet.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    handbook~
+ExDesc       How to mine! So you want to mine ah? Well first let me tell you a bit about
+mining. The iron ore occurs in near - vertical fissures or lodes, ranging
+from a few inches to a few feet wide. Generally though, the productive
+lodes were about a foot wide. Shallow pits were dug to prove the locations
+of the lodes. Once found, adits were driven into the hillside following
+the lode. The ore is very soft and the miners would first rake out all the
+material in sight from the lode above them, generally for two metres or so
+- a method known as `hulking'. We prefer to use our ore carriers to carry
+most of the ore as it allows us to enter further into the mine.
+To read on look mine2
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    mine2~
+ExDesc       The miners blasted to create the mines, using mining droids to create the
+arched passageways that were braced with timers as in this picture. In
+order to blast the mountain, holes were drilled into the mountain and
+charges were placed within these holes. The charges in the center were
+blasted out first and then the charges around this center hole were
+blasted out until the large hole was blasted out.;Miners used ore carriers
+to go up and down to the depths of the mine. New miners, called "muckers",
+are teased (usually by being;tickled) in these Carriers.
+So you think you've heard enough background? type look mine3
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    mine3~
+ExDesc       To begin here you must get a security id and password form the local mine
+shop boss. This becomes rather tricky, since most Quarren work them, and
+it takes a little extra to sweaten the secretary to let you in to see the
+boss .  Once you enter the mine you can check out a shovel or pick (your
+preference) and a ore carrier (if one is available) and go to work.
+Digging random works the best. When you have finished a jobs work stop by
+the cargo haul and get paid. Payment is based on amount dug.   You are
+free to stop and work at anytime, just understand the ore dealer is only
+there for four hours.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6918
+Name     &G First of Mon Bank Lobby~
+Sector   underground~
+Flags    indoors bank~
+Desc     &g  This marble like surfaced bank allows for easy transactions between you
+and your currerncy. There is a large table in the center of the room to
+sign your life away along with, a counter towards the back where a very
+attractive (well for a quarren) clerk stands and counts the daily inflow
+of credits. On the top of the ceiling you can see a rather expensive
+security system tracking your everymove. The Quarren first bank of Mon's
+motto isn't "your money is safe with us for no reason."
+To make a bank transaction please type bank.
+~
+#EXIT
+Direction north~
+ToRoom    6899
+#ENDEXIT
+
+Reset M 0 6833 1 6918
+#ENDROOM
+
+#ROOM
+Vnum     6925
+Name     &Y Public Lobby~
+Sector   city~
+Flags    indoors~
+Desc     &Y The main lobby is a incredible site for tourists to visit. The floors
+are made of polished clam shells. giving off a silvery pink reflextion.
+The curved walls have pictures of former governors of this great city. The
+ceiling has a hand carved Quarren emblem made form rare yellow coral. In
+the middle of the room is a large sign with directions.
+~
+#EXIT
+Direction north~
+ToRoom    6926
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6927
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6891
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6928
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6926
+Name     &Y Mayor's Office~
+Sector   underground~
+Flags    indoors safe~
+Desc     You enter the office space of the mayor of this great city. He has a large
+Quarren flag framed behind his desk. The rest of the walls are left blank
+and are a smooth polished red The rest of the walls are left blank and are
+a smooth polished &R red coral.&w The main desk fills most of the space
+while two chairs for visitors sit on the opposite side. On the ceiling you
+can see a state-of-the-art &Bwater mister &w which was put in place to
+maintainthe right humidity in the space.
+~
+#EXIT
+Direction south~
+ToRoom    6925
+#ENDEXIT
+
+Reset M 0 6821 1 6926
+  Reset G 1 6842 1
+Reset O 0 6805 1 6926
+Reset O 0 6802 1 6926
+#EXDESC
+ExDescKey    flag~
+ExDesc       &R The multi colored flag shows the Quarren 3 elements. &B Water, &Y Salt
+&c Wind &w
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    water mister~
+ExDesc       &B This top of the line mister costs more then all of your prized
+posessions combined. &w another sign of your hard earned taxes put to good
+work.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6927
+Name     &Y Defense Office~
+Sector   underground~
+Flags    indoors~
+Desc     The Quarren military base was stationed here, but do to a very unfortunate
+accident with a modified blaster he is no longer with us The military are
+currently looking for a few good men to fill the positon. A sign on the
+door says contact Ackbar for further details.
+~
+#EXIT
+Direction west~
+ToRoom    6925
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6928
+Name     &Y Security Office~
+Sector   underground~
+Flags    indoors~
+Desc     &G You enter the main office of the Quarren Security. This room is
+slightly, less extravegant then the rest, and has more of a rough ocean
+bottom feel. The walls  are decorated with pictures of wanted men, and the
+floors are polished rock that imitates a marble look. In front of you is a
+large counter to which you se alot of people working behind. At the
+counter is a sign that says step up for assistance.
+~
+#EXIT
+Direction north~
+ToRoom    6929
+Key       6821
+Keywords  door~
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6925
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6944
+#ENDEXIT
+
+Reset M 0 6809 1 6928
+  Reset G 1 6821 1
+Reset D 0 6928 0 2
+#ENDROOM
+
+#ROOM
+Vnum     6929
+Name     &Y Security Corridor~
+Sector   underground~
+Flags    indoors~
+Desc     The Security Corridor is well guarded with cameras and wall lasers for
+automated firing. The dmap hallway is a dark grey with light grey flashes
+as you pass the cells Very little activity occurs here as most criminals
+can't escape and with over 20' of rock between them and the corridor you
+are sure not to hear any of them. There is a small sign placed on the
+door.
+~
+#EXIT
+Direction north~
+ToRoom    6930
+Key       6821
+Keywords  Cell door~
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6928
+Key       6821
+Keywords  block door~
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6933
+#ENDEXIT
+
+Reset O 0 6821 1 6929
+Reset D 0 6929 0 2
+Reset D 0 6929 2 0
+#EXDESC
+ExDescKey    sign~
+ExDesc       &z Tacebeca, Wookiee repair tech.
+&x
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6930
+Name     &Y Security Cell A~
+Sector   underground~
+Flags    dark indoors~
+Desc     The Quarren cells are small 8' by 8' cubes. The walls consist of solid rock
+carved roughly to leave jagged edges. It is rumored that the guards like
+to throw prisoners up against the walls if they get out of hand There is
+no window except for the small tray  hole the guards use to feed the
+prisoner. There is a dmap and musty smell, and cold temperature will make
+a non-quarren quite uncomfortable. There is no use screaming as the walls
+are over 20 ft thick.
+~
+#EXIT
+Direction south~
+ToRoom    6929
+Key       6821
+Desc      A cold grey door, over 5 ft thick.
+~
+Keywords  Cell door~
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+Reset M 0 6834 1 6930
+  Reset E 1 10311 1 0
+  Reset E 1 32269 1 12
+Reset O 0 21115 1 6930
+Reset O 0 21116 1 6930
+Reset D 0 6930 2 2
+#ENDROOM
+
+#ROOM
+Vnum     6931
+Name     &Y Security Cell B~
+Sector   underground~
+Flags    dark indoors~
+Desc     The Quarren cells are small 8' by 8' cubes. The walls consist of solid rock
+carved roughly to leave jagged edges. It is rumored that the guards like
+to throw prisoners up against the walls if they get out of hand There is
+no window except for the small tray  hole the guards use to feed the
+prisoner. There is a dmap and musty smell, and cold temperature will make
+a non-quarren quite uncomfortable. There is no use screaming as the walls
+are over 20 ft thick.
+~
+#EXIT
+Direction south~
+ToRoom    6933
+Key       6821
+Desc      A cold grey door, over 5 ft thick.
+~
+Keywords  Cell door~
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+Reset O 0 21115 1 6931
+Reset O 0 21116 1 6931
+Reset D 0 6931 2 2
+#ENDROOM
+
+#ROOM
+Vnum     6932
+Name     &Y Security Cell C~
+Sector   underground~
+Flags    dark indoors~
+Desc     &w The Quarren cells are small 8' by 8' cubes. The walls consist of solid
+rock carved roughly to leave jagged edges. It is rumored that the guards
+like to throw prisoners up against the walls if they get out of hand There
+is no window except for the small tray hole the guards use to feed the
+prisoner. There is a dmap and musty smell, and cold temperature will make
+a non-quarren quite uncomfortable. There is no use screaming as the walls
+are over 20 ft thick.
+~
+#EXIT
+Direction south~
+ToRoom    6934
+Key       6821
+Desc      A cold grey door, over 5 ft thick.
+~
+Keywords  Cell Door~
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+Reset O 0 21115 1 6932
+Reset O 0 21116 1 6932
+Reset D 0 6932 2 2
+#ENDROOM
+
+#ROOM
+Vnum     6933
+Name     &Y Security Corridor~
+Sector   underground~
+Flags    indoors~
+Desc     The Security Corridor is well guarded with cameras and wall lasers for
+automated firing. The dmap hallway is a dark grey with light grey flashes
+as you pass the cells Very little activity occurs here as most criminals
+can't escape and with over 20' of roc k between them and the corridor you
+are sure not to hear any of them. 
+~
+#EXIT
+Direction north~
+ToRoom    6931
+Key       6821
+Keywords  Cell door~
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6929
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6934
+#ENDEXIT
+
+Reset D 0 6933 0 2
+#ENDROOM
+
+#ROOM
+Vnum     6934
+Name     &Y Security Corridor~
+Sector   underground~
+Flags    indoors~
+Desc     The Security Corridor is well guarded with cameras and wall lasers for
+automated firing. The dmap hallway is a dark grey with light grey flashes
+as you pass the cells Very little activity occurs here as most criminals
+can't escape and with over 20' of rock between them and the corridor you
+are sure not to hear any of them.
+~
+#EXIT
+Direction north~
+ToRoom    6932
+Key       6821
+Keywords  Cell door~
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6933
+#ENDEXIT
+
+Reset M 0 6828 4 6934
+Reset D 0 6934 0 2
+#ENDROOM
+
+#ROOM
+Vnum     6935
+Name     &R West Entrance Customs~
+Sector   underground~
+Flags    indoors~
+Desc     &c This very busy customs area is both interior and exterior. There is a
+large shell protecting the turbo-lift from the water sprinklers. In front
+of the turbo-lift is a small path leading back to the main roads. There is
+very little Security here as it is belived you have already gone througha
+check by now. The ground is a rough rock material carved in by ore miners.
+As you look up you can see the clear dome glass allowing you to see a pure
+picture of the ocean.
+~
+#EXIT
+Direction east~
+ToRoom    6903
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6943
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6936
+Name     &B Mine Secritary's office~
+Sector   field~
+Flags    indoors~
+Desc     The interior of the mine office is barely decorated. Most of the room is
+covered with dust and dirt form miners with complaints. There is only one
+picture on the wall, which is of the first shovel taken form the ground at
+the nearby mine. There is a very attractive Quarren secretary wasting
+times at the desk. and you can hear mubling and screaming from the
+adjacent room. There is a bash proof door to the east, that has no handles
+and cannot be opened form this side, without a mechanicla button. Which is
+most likely attached tot he secretary's desk.
+~
+#EXIT
+Direction north~
+ToRoom    6896
+#ENDEXIT
+
+Reset M 0 6820 1 6936
+Reset M 0 6818 10 6936
+Reset O 0 6802 1 6936
+Reset O 0 6805 1 6936
+#ENDROOM
+
+#ROOM
+Vnum     6937
+Name     &B Mine Boss's office~
+Sector   field~
+Flags    safe~
+Desc     This large room is made of think rock walls A desk is placed in the corner
+with comlinks, datapads and all sorts of mine pieces  scatterd all over
+it. A heavy filing cabinet is to the left of a large pickax sculpture
+Several  photos of Quarren officials line the walls and a large plush
+straight chair with  it's back towards you has been  placed behind the
+desk.  The floor is covered with mine layouts and statistics of mine
+output and costs.
+~
+#EXIT
+Direction west~
+ToRoom    6936
+#ENDEXIT
+
+Reset M 0 6819 1 6937
+Reset O 0 6802 1 6937
+Reset O 0 6805 1 6937
+#ENDROOM
+
+#ROOM
+Vnum     6938
+Name     Miner's Interior~
+Sector   field~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6890
+#ENDEXIT
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - Not for Sale!
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6939
+Name     Miner Interior~
+Sector   underground~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6885
+#ENDEXIT
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost - Not for Sale!
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6940
+Name     Miner Interior~
+Sector   underground~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6894
+#ENDEXIT
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost not for Sale
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6941
+Name     Miner Interior~
+Sector   underground~
+Flags    indoors~
+Desc     This is a empty house for sale!
+~
+#EXIT
+Direction south~
+ToRoom    6897
+#ENDEXIT
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Cost 100,000 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6942
+Name     Security Doors~
+Sector   city~
+Flags    indoors~
+Desc     The large doors are guarded by an extremly tough guard making sure noone
+who doesn't belong enters the service entrance of the city.
+~
+#EXIT
+Direction north~
+ToRoom    6905
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6943
+#ENDEXIT
+
+Reset M 0 6831 1 6942
+#ENDROOM
+
+#ROOM
+Vnum     6943
+Name     Slide Shaft~
+Sector   city~
+Flags    nomob~
+Desc     This cold room leads around into a circle. There is nothing to look at
+except the small slide shaft in the middle of the room allowing you to
+slide down to what ever lies below. As you scan below you see nothing but
+darkness.  The walls are a shinny metals you swear you have seen before
+perhaps on a blaster of some kind. 
+~
+#EXIT
+Direction north~
+ToRoom    6905
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6935
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6944
+Name     Chief Security office~
+Sector   underground~
+Flags    indoors~
+Desc     The empty room is where the last top Security officer worked.
+Until he was blown away in an attack duringa peace mission.
+Apparently he wasn't cautious enough.
+ 
+The post on the door read:
+ 
+Help Wanted:  Security Chief -  Please talk to Ackbar if your interested in
+the job.
+~
+#EXIT
+Direction east~
+ToRoom    6928
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6945
+Name     Real Estate Agent~
+Sector   underground~
+Flags    indoors~
+Desc     &c Entering in the Real Estate agents office you notice that the place was
+left bare. Rumor has it ever since Ackbar was promoted he deserted his
+former retiring job. The walls are bare of decoration and the floor looks
+as if it see's very little traffic. There is a large sign in the center of
+the room with writing on it.
+~
+#EXIT
+Direction east~
+ToRoom    6901
+#ENDEXIT
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       Welcome, due to demanding bosses I can no longer work form here.
+I have since placed a price tag on all the shops and buildings throughout
+the city
+if they are for sale.
+Please stay for awile and enjoy.
+ 
+Type look cost      ( To see the price. )
+ 
+If you have the stats and enough money please mudmail or contact me to sign
+the contract.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    cost~
+ExDesc       Sorry not for sale!
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6946
+Name     Remote training Level - 5~
+Sector   city~
+Flags    indoors bank~
+Desc     This room is extremly large area that alows you to move around and dodge
+quite freely. It is mostly empty except for a remote launcher. The floors
+and walls are made up of carved out black gravel rock are covered in scuff
+marks. A sign warns that only one student may  use this room at a time.
+There is also a small Security camera used to analiyze your  skills. The
+Quarren are very cautious about who they train. And are curious why they
+want to be tougher.
+~
+#EXIT
+Direction west~
+ToRoom    6915
+#ENDEXIT
+
+Reset M 0 6826 1 6946
+#ENDROOM
+
+#ROOM
+Vnum     6947
+Name     Security Doors~
+Sector   city~
+Flags    nomob safe~
+Desc     The large doors are guarded by an extremly tough guard making sure noone
+who doesn't belong enters the service entrance of the city. 
+~
+#EXIT
+Direction west~
+ToRoom    6905
+#ENDEXIT
+
+Reset M 0 6832 1 6947
+#ENDROOM
+
+#ROOM
+Vnum     6989
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7000
+Name     Pick~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7200
+Name     Ackbar's building problems.~
+Sector   city~
+Flags    nomob~
+Desc     Make blasters not work underwater.
+ 
+Figure out how to set a button so it automatically pulls it back out after
+use.
+ 
+how do you set the vip and speach for MOn cal?   
+The program says mon  mon_cal or the spelled out versions are not
+recognized.
+ 
+Doors what am i doing wrong, they say closed but i cant seem to open still
+won't work
+check the security doors to the cells to see what i mean.
+ 
+Need to know how you make a portal or enterable object(turbo-lift)
+ 
+How do i add more then one mob spec tothe police and how do i get the jail
+spec to work.
+~
+#ENDROOM
+
+#ENDAREA

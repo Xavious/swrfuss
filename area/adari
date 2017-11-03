@@ -1,0 +1,2219 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Adari - Alfuh City~
+Author       Merth~
+Ranges       0 103 0 103
+Economy      0 31248680
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       29000
+Keywords   shopkeeper feiht krooc~
+Short      Feiht Krooc~
+Long       A shopkeeper, Feiht Krooc is here.
+~
+Desc       A young, but aged Adarian merchant.  He is short for an Adarian.  He
+is barely one meter tall.  His face is rough and scarred.  He is pathetic
+looking in and loathesome in every way.  Perhaps his value lies deeper
+within.  Or maybe he is just ugly.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     400 10 0 0 0 0
+Stats2     1 10 0
+Stats3     1 5 0
+Stats4     0 0 0 2 2
+Attribs    5 8 10 16 15 5 18 0
+Saves      0 0 0 0 0
+Speaks     common adarian~
+Speaking   common adarian~
+VIPFlags   adari~
+ShopData   19 17 0 0 0 120 0 0 23
+#MUDPROG
+Progtype  act_prog~
+Arglist   p rears back and slaps you cruelly for your stupidity.  OUCH!~
+Comlist   mpgoto 29015
+mptransfer $n
+mpechoat $n Feiht grabs hold of you, and tosses you into the street
+tell $n Dont came back unless you can act civilized...
+mpecho Feiht angrily turns around and storms back into his shop.
+mpgoto 29017
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   p looks at you.~
+Comlist   say TYPE list to see what I sell...
+emote shakes his head and mumbles something to himself.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   80~
+Comlist   emote greets you with a slight nod and weak smile.
+say Welcome to Alfuh...
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29001
+Keywords   worshipper citizen adarian~
+Short      a religous Adarian~
+Long       An Adarian worshipper meditates here.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     450 20 0 0 0 0
+Stats2     2 20 0
+Stats3     2 10 0
+Stats4     0 0 0 4 4
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   40~
+Comlist   mpecho An Adarian worshipper begins to meditate.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29002
+Keywords   yllib apa local law enforcement~
+Short      Yllib Apa~
+Long       The local law, Yllib Apa is on patrol here.
+~
+Desc       He is a large well built Adarian.  He does not look like a very
+tolerant nor forgiving individual.  It is best to stay on his good
+side.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_police_attack~
+Specfun2    spec_customs_weapons~
+Gender     male~
+Actflags   npc prototype~
+Stats1     500 75 0 -40 0 0
+Stats2     7 75 0
+Stats3     7 37 0
+Stats4     0 0 4 15 15
+Attribs    18 15 10 18 18 16 14 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#MUDPROG
+Progtype  hitprcnt_prog~
+Arglist   90~
+Comlist   mpechoaround $n is taken to jail on the charge of stupidity.
+mpgoto 29029
+mptransfer $n
+mpechoat $n Apa delivers you to the jail cell.
+mpgoto 29028
+mpechoaround Yllib Apa exits the Jail Cell.
+north
+east
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   p rears back and slaps you cruelly for your stupidity.  OUCH!~
+Comlist   glare $n
+say A trouble-maker huh? fine...
+say we got a place for trouble-makers...
+mpechoaround Apa grabs $n and hauls him away.
+mpgoto 29029
+mptransfer $n
+mpechoat $n Yllib Apa takes you to jail.
+mpgoto 29028
+mpechoaround Yllib Apa has arrives from the Jail.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   p looks at you.~
+Comlist   emote gives $n a stern, harsh look.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   1~
+Comlist   mpechoaround Yllib Apa intensely studies the surroundings.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   p pokes you in the ribs.~
+Comlist   glare $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   40~
+Comlist   mpechoat $n Yllib Apa carefully looks you over.
+mpechoaround Yllib Apa looks at $n.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29003
+Keywords   auditor aged adarian tUmOch~
+Short      tUmOch~
+Long       An aged Adarian auditor studies some documents.
+~
+Desc       An older looking Adarian who goes by the name tUmOch.  He is the city
+auditor.  tUmOch is responsible for Alfuh City finances. 
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel stayarea wimpy~
+Stats1     50 15 0 0 0 0
+Stats2     1 10 0
+Stats3     1 3 0
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#MUDPROG
+Progtype  time_prog~
+Arglist   4~
+Comlist   wake
+mpecho tUmOch awakens from a nap.
+stand
+say ok, back to work now...
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  time_prog~
+Arglist   20~
+Comlist   mpecho tUmOch begins to grow groggy.
+sit
+sleep
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   50~
+Comlist   mpecho tUmOch looks up from his desk.
+say Hello, can I help you with something?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29004
+Keywords   droid helpless defenseless~
+Short      a helpless droid~
+Long       A helpless, defenseless droid is here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel stayarea noassist droid~
+Stats1     0 1 0 80 1 0
+Stats2     1 1 0
+Stats3     1 1 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 29004 1
+mpecho A fresh droid is lowered in from above.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29005
+Keywords   droid war~
+Short      a war droid~
+Long       A War Droid pulsates in a corner here.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel stayarea droid~
+Stats1     0 5 0 0 0 0
+Stats2     1 5 0
+Stats3     1 3 0
+Stats4     0 0 0 1 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 29005 1
+mpecho A fresh War Droid is lowered in from above.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29006
+Keywords   Eral Tmat healer~
+Short      Eral Tmat~
+Long       An old and religous Adarian is here.
+~
+Desc       A very old looking fellow.  Things are not always what they seem. 
+Watch your step around this one.  He was once a great Jedi.  His
+powers have
+weakened, but are still strong.  He can heal you for 100
+credits.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc stayarea noassist~
+Stats1     800 50 0 0 10 0
+Stats2     5 50 0
+Stats3     5 30 0
+Stats4     0 0 5 10 10
+Attribs    15 13 17 17 15 13 15 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#MUDPROG
+Progtype  fight_prog~
+Arglist   5~
+Comlist   feel 'earthquake' $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   10~
+Comlist   feel lightning $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   100~
+Comlist   feel heal $n
+mpgoto 29030
+drop all
+mpgoto 29023
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29007
+Keywords   borcatu small scavenger~
+Short      a borcatu~
+Long       A scavenger rumages about here.
+~
+Desc       A small but fierce looking little beast.  It has a hard shell and
+sharp teeth.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc scavenger wimpy noassist nocorpse~
+Stats1     0 1 0 75 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+#ENDMOBILE
+
+#MOBILE
+Vnum       29008
+Keywords   officer customs lana~
+Short      LaNa~
+Long       LaNa, the customs officer inspects goods here.
+~
+Desc       He is a fairly young Adarian.  It is his job to make sure weapons,
+drugs and other items of contreband don't come into or leave Alfuh
+City. 
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_customs_weapons~
+Specfun2    spec_customs_smut~
+Gender     male~
+Actflags   npc sentinel scavenger stayarea guardian nokill~
+Stats1     0 15 0 0 0 0
+Stats2     1 15 0
+Stats3     2 7 0
+Stats4     0 0 1 3 3
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#MUDPROG
+Progtype  time_prog~
+Arglist   16~
+Comlist   mpecho LaNa leaves in a rush.
+mpgoto 29030
+drop all
+mpgoto 29005
+mpecho LaNa has returned to his post.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  hitprcnt_prog~
+Arglist   20~
+Comlist   feel heal me
+ 
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29009
+Keywords   deputy young~
+Short      a young deputy~
+Long       A deputy patrols the area.
+~
+Desc       A young Adarian deputy.  You can see it is his dream to enforce
+laws.  He is a decent and moral being.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_customs_alcohol~
+Specfun2    spec_police_attack~
+Gender     male~
+Actflags   npc stayarea prototype~
+Stats1     300 15 0 0 15 0
+Stats2     2 15 0
+Stats3     1 8 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#ENDMOBILE
+
+#MOBILE
+Vnum       29010
+Keywords   adarian townie~
+Short      a Townie~
+Long       An Adarian Townie wanders about here.
+~
+Desc       Not the brightest nor most beautiful Adarian.  This is one of the
+citizens of the town.  She lives day to day.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc stayarea noassist prototype~
+Stats1     -100 15 0 75 0 0
+Stats2     1 10 0
+Stats3     1 5 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#ENDMOBILE
+
+#MOBILE
+Vnum       29059
+Keywords   lasmob~
+Short      a newly created lasmob~
+Long       Some god abandoned a newly created lasmob here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     29000
+Keywords sign board message~
+Type     trash~
+Short    a sign is here~
+Long     A sign has been posted here.~
+Values   0 0 0 0 0 0
+Stats    1500 0 0 0 0
+#EXDESC
+ExDescKey    sign board message~
+ExDesc       East: Town of Alfuh
+-Adarian Religous Grounds-
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29001
+Keywords sign~
+Type     trash~
+Short    a sign.~
+Long     A sign has been posted here.
+
+~
+Values   0 0 0 0 0 0
+Stats    1500 0 0 0 0
+#EXDESC
+ExDescKey    sign message board holy~
+ExDesc       - Adarian Religous Grounds -
+Proverb 01:05
+  May you always be guide by Knowledge, Peace, and Harmony.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29002
+Keywords gresha~
+Type     food~
+Short    a piece of gresha~
+Long     A piece of gresha has been left here.
+
+~
+Flags    bless inventory small_size~
+WFlags   take~
+Values   24 0 0 0 0 0
+Stats    5 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29003
+Keywords tunma~
+Type     drinkcon~
+Short    a tunma jar~
+Long     A tunma jar has been left here.~
+Flags    inventory~
+WFlags   take~
+Values   12 0 0 0 0 0
+Stats    1 120 12 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29004
+Keywords robe garment religous~
+Type     armor~
+Short    a religous robe~
+Long     An Adarian religous garment has been left here.~
+WFlags   take about~
+Values   0 3 0 0 0 0
+Stats    5 300 30 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29005
+Keywords sign road~
+Type     trash~
+Short    a road sign~
+Long     A sign as been posted along the road here.~
+Values   0 0 0 0 0 0
+Stats    1500 0 0 0 0
+#EXDESC
+ExDescKey    sign~
+ExDesc       - NOTICE -
+ROAD CLOSED, TILL RE-OPENED
+- Alfuh City Council
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29006
+Keywords shirt protective~
+Type     armor~
+Short    a protective shirt~
+Long     An officer's protective shirt has been left here.~
+Flags    bless human_size~
+WFlags   take body about hold~
+Values   0 0 0 0 0 0
+Stats    5 2500 250 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29007
+Keywords trousers adarian pair~
+Type     armor~
+Short    a pair of Adarian trousers~
+Long     A pair of Adarian trousers have been left here.~
+WFlags   take legs hold~
+Values   0 0 0 0 0 0
+Stats    5 2500 250 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29008
+Keywords boots adarian~
+Type     armor~
+Short    a pair if Adarian boots~
+Long     A pair if Adarian boots have been dropped here.~
+WFlags   take feet hold~
+Values   0 0 0 0 0 0
+Stats    5 1000 250 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29009
+Keywords ac blaster rifle~
+Type     weapon~
+Short    an AC Blaster Rifle~
+Long     An AC Blaster Rifle has been left unguarded here.~
+WFlags   take wield hold~
+Values   7 3 7 6 0 0
+Stats    10 5500 550 0 0
+Affect       -1 -1 1 18 0
+Affect       -1 -1 1 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29010
+Keywords desk~
+Type     trash~
+Short    An old rock carved desk~
+Long     An old rock carved desk sits in the center of the room.~
+Values   0 0 0 0 0 0
+Stats    5000 300 30 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29011
+Keywords sign rock road~
+Type     trash~
+Short    a sign~
+Long     A sign has been tacked up on the rock here.~
+Values   0 0 0 0 0 0
+Stats    10000 0 0 0 0
+#EXDESC
+ExDescKey    sign rock road~
+ExDesc       Dead End - Alfuh City Academy
+This is a Dead End!  To the north is the local Academy.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29012
+Keywords sign help newbie~
+Type     trash~
+Short    a sign~
+Long     A sign has been posted here.~
+Values   0 0 0 0 0 0
+Stats    5000 0 0 0 0
+#EXDESC
+ExDescKey    sign help newbie~
+ExDesc       To attack a droid type 'kill droid'.  This droid is very weak, but
+be careful against other foes.  Be sure to rest when you get weak.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29013
+Keywords sandals ~
+Type     armor~
+Short    a pair of sandals~
+Long     A pair of sandals have been left here.~
+Flags    human_size~
+WFlags   take feet hold~
+Values   0 2 0 0 0 0
+Stats    5 5 0 0 0
+#EXDESC
+ExDescKey    sandals ~
+ExDesc       They are thong sandals, enough said!
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29014
+Keywords shorts~
+Type     armor~
+Short    a pair of shorts~
+Long     A pair of shorts have been left here.~
+Flags    small_size human_size~
+WFlags   take legs hold~
+Values   0 3 0 0 0 0
+Stats    3 5 0 0 0
+#EXDESC
+ExDescKey    shorts~
+ExDesc       A little on the short side, even for shorts.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29015
+Keywords club stick~
+Type     weapon~
+Short    a club~
+Long     A club is laying on the ground here.~
+Flags    contraband~
+WFlags   take wield hold~
+Values   0 1 3 0 0 0
+Stats    5 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29016
+Keywords robe healer~
+Type     armor~
+Short    a robe~
+Long     A robe has been left here.~
+WFlags   take body about hold~
+Values   0 7 0 0 0 0
+Stats    5 400 40 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     29017
+Keywords sign closed road~
+Type     trash~
+Short    a sign~
+Long     A sign has been posted here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    5000 0 0 0 0
+#EXDESC
+ExDescKey    sign closed road~
+ExDesc       This road has been closed temporarily.  Thanks!
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29018
+Keywords sign bustop ~
+Type     trash~
+Short    bus stop sign~
+Long     A bus stop sign is here.~
+Flags    glow~
+Values   0 0 0 0 0 0
+Stats    9000 0 0 0 0
+#EXDESC
+ExDescKey    sign bustop ~
+ExDesc       The Serin Pluogus (Public Shuttle) Stops
+Here.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29059
+Keywords lasmob~
+Type     trash~
+Short    a newly created lasmob~
+Long     Some god dropped a newly created lasmob here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     29000
+Name     Small Dark Cave~
+Sector   city~
+Flags    nomob~
+Desc     The dark cavernous walls gleam lightly as drops of moisture
+glides down softly into the dirt.  A small multi-colored
+carpet lies in the center of this small yet dull room.
+This apparently the dwelling of a dark, sullen, and religious
+jawa.
+~
+#EXIT
+Direction east~
+ToRoom    29001
+#ENDEXIT
+
+Reset M 0 29007 3 29000
+#ENDROOM
+
+#ROOM
+Vnum     29001
+Name     Barren Landing Facility~
+Sector   city~
+Flags    norecall nodrop~
+Desc     You are on a barren landing pad of some sort.  The ground
+is largely made up of thick, coarse, black sand.  The area
+is virtually devoid of any vegetation or undergrowth.  To the
+west is a large rock.  Upon closer observation you notice
+a small opening.  It appears to be a small cave.  To the north
+and south there isn't really anything special.  Just vast desert
+plains.  To the east is a thin and winding road.
+~
+#EXIT
+Direction north~
+ToRoom    29002
+Keywords  desert sands~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29004
+Keywords  path~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29003
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29000
+#ENDEXIT
+
+Reset O 0 29018 1 29001
+#ENDROOM
+
+#ROOM
+Vnum     29002
+Name     Desolate Desert Plains~
+Sector   city~
+Flags    bank norecall~
+Desc     Surrounded by a pale darkness.  The sky is a deep blue.
+It is also heavily overcast by the vastness of space.
+Virtually no clouds line the sky.  It is pale and clear.
+The air is cool and light.  Whisps of sand pick up from
+time to time.  The sand is unstable here.  With each
+step the ground beneath you shifts a great deal.  To
+continue on this path would be unwise.  It is impossible
+to know what lies to the north, east, and west.  It is too
+dark in those directions.  To the south you can see a barren
+plain.
+~
+#EXIT
+Direction south~
+ToRoom    29001
+Keywords  Plains landing zone~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29003
+Name     Surrounded by Rock~
+Sector   city~
+Desc     The darkness had shrouded the mountainously jagged rocks
+that have virtually surrounded.  The dark sky makes it
+impossible for you to determine how high the rocks go.
+Your field of vision has been significantly lessened by
+your current surroundings.  In any case it would seem that
+continuing in any direction other than north is unrealistic.
+~
+#EXIT
+Direction north~
+ToRoom    29001
+Keywords  plains~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29004
+Name     Narrow Roadway~
+Sector   city~
+Flags    dark~
+Desc     Beset on all sides by unknown peril, you push on.  Knowing
+not what the future holds for you here.  Jagged rocks bar
+your passage either north or south.  The pale gray-blue
+sky masks the height of the surrounding mountains.  At
+this time it appears your only options are to continue 
+east or west.  To the west you can see a broader space
+an opening of the path.  To the east, the path continues
+and does not look inviting.
+~
+#EXIT
+Direction east~
+ToRoom    29005
+Keywords  private dark~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29001
+Keywords  landing zone~
+#ENDEXIT
+
+Reset M 0 29007 3 29004
+#ENDROOM
+
+#ROOM
+Vnum     29005
+Name     Narrow Pathway~
+Sector   city~
+Desc     You are enclosed in darkness.  It is impossible to see
+your hand in front of your face.  As you move along you
+realize that your pathway to the north is blocked by
+mountainous rock.  There seems to be a small opening
+to the south.  I wouldn't try fitting landspeeder through
+these pathways.  Off to the east is a shallow light.
+It illuminates a sandy and barren plain.
+~
+#EXIT
+Direction east~
+ToRoom    29006
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29007
+Keywords  tunnel private~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29004
+Keywords  dark tunnel~
+#ENDEXIT
+
+Reset M 0 29008 1 29005
+  Reset E 1 29006 1 5
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+  Reset E 1 29009 1 16
+#ENDROOM
+
+#ROOM
+Vnum     29006
+Name     Lighted Landing Zone~
+Sector   city~
+Flags    norecall nodrop~
+Desc     A few ground bound lighting fixtures softly illuminate
+your surroundings.  Judging by the available evidence, this
+is a landing zone for small vessels.  It would take a skilled
+pilot in a ship he was well-acustomed to, to even attempt
+landing in this narrow and dangerous area.  Anything larger than
+a Z-95 HEADHUNTER or Tie Fighter would find it nearly
+impossible to navigate into this region.  The point being made
+here is this, it wouldn't appear that Imperials or Rebels have
+seriously developed the landscape.  That means one of two things.
+Either they have and their base is hidden or you are someplace
+really frickin remote and desolate.
+~
+#EXIT
+Direction west~
+ToRoom    29005
+Keywords  tunnel private solitary~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29007
+Name     Narrow Road~
+Sector   city~
+Flags    dark bank private~
+Desc     This planet leaves alot to be desired.  Whoever put this path
+here hardly made it wide enough for you to walk on.  It would
+be nearly impossible for other traffic to get through.  You are
+begining to make out a faint odor in the air about you.  It is
+tough to recognize initially, but you are almost sure that the
+smell is volcanic ash.  That figures.  The rock around you is
+actually old volcanic lava that has cooled and hardened.
+~
+#EXIT
+Direction north~
+ToRoom    29005
+Keywords  tunnel private~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29008
+#ENDEXIT
+
+Reset M 0 29007 5 29007
+Reset M 0 29007 5 29007
+#ENDROOM
+
+#ROOM
+Vnum     29008
+Name     Path O Sand~
+Sector   city~
+Flags    dark bank silence~
+Desc     The path is narrow and dirty.  Sand and dirt mingle in a unsettling
+fashion.  The air is thin and difficult to breath.  The east and west
+are both blocked from further passage.  Large mountainous rock stands as
+a forbidding factor before you.  You can more easily continue to the 
+north or south.
+~
+#EXIT
+Direction north~
+ToRoom    29007
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29009
+Name     Rocky Pathway~
+Sector   city~
+Flags    nomob bank~
+Desc     Large pieces of jagged rock portrude from the mountains beside you.
+The ground is slightly elevated here due to the amounts of rock
+beneath your feet.  The rocky ground is covered by a thin layer of
+volcanic ash and residue.  Particles of ash lay heavy in the air.
+Breathing is a chore at this altitude.  You can continue north
+or south.
+~
+#EXIT
+Direction north~
+ToRoom    29008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29010
+Name     Dirt Path~
+Sector   city~
+Flags    bank~
+Desc     Enormous mountains block your path to the east and west.  The
+mountians nearly block out all forms of natural light.  The ground
+beneath your feet is comprised of dirt, sand, and rock.  A thin
+air of volcanic ash floats about making breathing somewhat difficult.
+You can conitinue north or south from here.
+~
+#EXIT
+Direction north~
+ToRoom    29009
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29011
+#ENDEXIT
+
+Reset M 0 29007 6 29010
+#ENDROOM
+
+#ROOM
+Vnum     29011
+Name     Rocky intersection~
+Sector   city~
+Flags    nomob nomagic~
+Desc     The path leads in several directions from here.  It would seem that
+the mountianous rock has been chisled away from these parts.  The
+rock is still quite jagged and sharp in some places.  The ground
+beneath your feet is soft and dulled.  This area has been used to alot of
+traffic apprently.
+~
+#EXIT
+Direction north~
+ToRoom    29010
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29012
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29044
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29045
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29012
+Name     Edge of Alfuh~
+Sector   city~
+Flags    bank~
+Desc     Mountians, mountians everywhere.  The mountian you are on/in seriously
+limits your possible paths to travel.  You are just outside the a small
+town.  There is a sign nearby that can shed light on your location.  To
+the east is town.  To the west is an intersection.
+~
+#EXIT
+Direction east~
+ToRoom    29013
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29011
+#ENDEXIT
+
+Reset O 0 29000 1 29012
+Reset O 0 29000 1 29012
+#ENDROOM
+
+#ROOM
+Vnum     29013
+Name     Alfuh City Road~
+Sector   city~
+Desc     This is the outskirts of Alfuh.  To the east is more of town.  Alfuh
+is a religous city for the Adarian race.  From here, you can't really
+see that much of the city.  The road beneath your feet is made up of rock
+and is covered with volcanic ash.  You can continue in just about any
+direction.
+~
+#EXIT
+Direction north~
+ToRoom    29014
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29020
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29026
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29012
+#ENDEXIT
+
+Reset M 0 29001 2 29013
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29014
+Name     Alfuh City Road~
+Sector   city~
+Desc     The road beneath your feet is composed of rock dirt and volcanic
+ash.  To the east and west, your path is blocked by mountians.  To
+the north you can see some shops.  Well, buildings anyway.  To the
+south is an intersection.
+~
+#EXIT
+Direction north~
+ToRoom    29015
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29013
+#ENDEXIT
+
+Reset M 0 29007 7 29014
+#ENDROOM
+
+#ROOM
+Vnum     29015
+Name     Alfuh City Road~
+Sector   city~
+Flags    safe norecall~
+Desc     The cool air and soft climate can calm the nerves of even the most
+frazzled travellers.  You are near a sacred shrine of the Adarian
+population.  You can vaguely make it out to the north.  To the east is
+a small cave.  Someone took the time to carve out the rock - mountian.
+To the west is another of these cave cut outs.  The road continues
+to the north and south.
+~
+#EXIT
+Direction north~
+ToRoom    29016
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29018
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29014
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29017
+#ENDEXIT
+
+Reset M 0 29009 8 29015
+  Reset E 1 29008 1 8
+  Reset E 1 29007 1 7
+  Reset E 1 29006 1 5
+  Reset E 1 29009 1 16
+Reset M 0 29010 7 29015
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29016
+Name     Shrine Entrance~
+Sector   city~
+Flags    nomob nomagic safe~
+Desc     You are immediately south of an Adarian Shrine.  Each year Adarians
+from every part of the galaxy return to this.  Their homeworld.  They
+do so at least twice each year.  It is considered a religous pilgrimage.
+To the north is an old shrine that has been heavily visited through out the
+years.  Please be respectful of others.
+~
+#EXIT
+Direction north~
+ToRoom    29019
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29015
+#ENDEXIT
+
+Reset O 0 29001 1 29016
+Reset O 0 29001 1 29016
+#ENDROOM
+
+#ROOM
+Vnum     29017
+Name     Alfuh R & R~
+Sector   city~
+Flags    indoors nomagic safe norecall~
+Desc     This place was cut out of the side of a mountian.  The floor is made
+of rock and is covered in dirt.  This appears to be a restraunt.  Adarians
+who have travelled from far away galaxies can replinish themselves here.
+To the east is the store exit.
+~
+#EXIT
+Direction east~
+ToRoom    29015
+#ENDEXIT
+
+Reset M 0 29000 1 29017
+  Reset G 1 29002 1
+  Reset G 1 10313 1
+  Reset G 1 10314 1
+Reset M 0 29000 1 29017
+#ENDROOM
+
+#ROOM
+Vnum     29018
+Name     Alfuh Donation Grounds~
+Sector   city~
+Flags    indoors nomagic donation silence~
+Desc     This is a donation room.  Adarians make several pilgrimages to their 
+homeworld every year.  When they do, it is customary for them to leave
+one or two material items as a sign of thanks for their prosperty 
+and health.  They drop items here and then continue on to the shrine
+to meditate.  The items left in this room are free to the needy.  If
+you need something here, take it.  If you have something you don't plan
+to keep, leave it here.
+~
+#EXIT
+Direction west~
+ToRoom    29015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29019
+Name     Religous Shrine~
+Sector   city~
+Flags    indoors safe silence~
+Desc     There is a strong sense of peace in the air about you.  This is a safe
+place where Adarians worship.  This is a place great knowledge and
+wisdom.  It is forbidden to speak in here.  The tranquility and silence
+has not been broken in centuries.  Clarity is achieved through total and
+complete silence.
+~
+#EXIT
+Direction south~
+ToRoom    29016
+#ENDEXIT
+
+Reset M 0 29001 2 29019
+  Reset E 1 29004 1 12
+Reset M 0 29001 2 29019
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29020
+Name     Alfuh City Road~
+Sector   city~
+Flags    norecall~
+Stats    0 0 3
+Desc     Volcanic ash steadily descends from above.  This is the planet               
+Adari.  The Adarian race is built on technology and mining.  Sadly,
+they have mined their own planet and all asteroids in their galaxy.
+You can continue east or west from here.
+~
+#EXIT
+Direction east~
+ToRoom    29021
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29021
+Name     Alfuh City Road~
+Sector   city~
+Flags    norecall~
+Stats    0 0 4
+Desc     Alfuh City, on the wonderful planet of Adari.  Adarians are
+very religous by nature.  It is very important that they visit their
+homeworld at least once every year.  This city is a tourist trap
+though.  Watch yourself.  You can continue East or West from here.
+~
+#EXIT
+Direction east~
+ToRoom    29022
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29020
+#ENDEXIT
+
+Reset M 0 29007 9 29021
+Reset M 0 29010 8 29021
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29022
+Name     Alfuh City Road~
+Sector   city~
+Flags    norecall~
+Stats    0 0 2
+Desc     This place is in shambles.  This city was apparenlty cut out of a
+mountian.  Not just any mountian either.  It was cut out of a volcano.
+Volcanic ash steadily drops from the sky and lines the road.  You can
+continue east or west from here.
+~
+#EXIT
+Direction east~
+ToRoom    29023
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29021
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29023
+Name     Alfuh City Intersection~
+Sector   city~
+Flags    norecall~
+Stats    0 0 5
+Desc     You are at an intersection.  There are paths chisled out of the 
+rock to the north, east, south, and west.  The road seems to
+continue for quite a while in each direction.  If you can avoid
+all the active lava, you should be fine.  This planet is very
+volcanic in nature.
+~
+#EXIT
+Direction north~
+ToRoom    29032
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29024
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29038
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29022
+#ENDEXIT
+
+Reset M 0 29006 1 29023
+Reset M 0 29007 1 29023
+#ENDROOM
+
+#ROOM
+Vnum     29024
+Name     Alfuh City Road~
+Sector   city~
+Flags    norecall~
+Stats    0 0 3
+Desc     Alfuh City, was meant to be among the grand cities of the galaxy.
+Unfortunately, living on a planet that is an active vocano has its
+draw backs.  Worse than that, Adarians are deeply involved in the
+mining industry.  So they have raped Adari of all its natural resources.
+This could be a civilization on the downward spiral.  You can continue
+east or west from here.
+~
+#EXIT
+Direction east~
+ToRoom    29025
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29025
+Name     Alfuh City Road~
+Sector   city~
+Flags    norecall~
+Stats    0 0 3
+Desc     The road abrubtly ends to here.  It is impossible to continue to
+the east.  The only possible direction to go is west.  It appears
+that the path continued on in this direction at some point.  But,
+the road just disappeared.
+~
+#EXIT
+Direction west~
+ToRoom    29024
+#ENDEXIT
+
+Reset O 0 29005 1 29025
+#ENDROOM
+
+#ROOM
+Vnum     29026
+Name     Alfuh City Road~
+Sector   city~
+Flags    norecall~
+Stats    0 0 2
+Desc     Volcanic ash continues to drop in steady increments.  The ground
+is heavily laden in ash.  The mountian becomes particularly narrow
+here.  It would be difficult for more than two persons to attempt to
+fit through here.
+~
+#EXIT
+Direction north~
+ToRoom    29013
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29027
+Name     Alfuh City Road~
+Sector   city~
+Flags    nomagic norecall~
+Stats    0 0 4
+Desc     The ground is covered by a thin layer of ash.  A steady stream of ash
+continues to drop to the ground.  There are openings in the rock to the
+east and west.  You can continue in either direction.  This path also
+continues to the north and south.
+~
+#EXIT
+Direction north~
+ToRoom    29026
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29031
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29030
+Flags     isdoor closed locked~
+#ENDEXIT
+
+Reset D 0 29027 3 2
+Reset M 0 29009 7 29027
+  Reset E 1 29008 1 8
+  Reset E 1 29007 1 7
+  Reset E 1 29006 1 5
+  Reset E 1 29009 1 16
+Reset D 0 29027 3 2
+#ENDROOM
+
+#ROOM
+Vnum     29028
+Name     Alfuh City Road~
+Sector   city~
+Flags    nomagic norecall~
+Stats    0 0 4
+Desc     The road is wrought with peril and hardship.  The reason is a simple
+one.  Directly south of here is the town jail.  Anyone has broken the law
+faces jail time in -thee olde cell-.  It isn't a pretty site.
+~
+#EXIT
+Direction north~
+ToRoom    29027
+Keywords  celldoor door~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29029
+Flags     isdoor closed locked~
+#ENDEXIT
+
+Reset D 0 29028 2 2
+#ENDROOM
+
+#ROOM
+Vnum     29029
+Name     Alfuh City Jail~
+Sector   city~
+Flags    indoors nomagic norecall~
+Desc     A spacious cell large enough to accomodate several criminals at once.
+Seeing the inside of this cell is not good thing.  Tourists don't get this
+as a part of the tour.  But, you are probably here for a reason.  You will 
+be given a chance to think about your wrong doings.
+~
+#EXIT
+Direction north~
+ToRoom    29028
+Keywords  celldoor door~
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29030
+Name     Alfuh City Customs Office~
+Sector   city~
+Flags    nomagic norecall~
+Desc     This is the Alfuh City Customs Office.  Not much to it really.  There
+is a desk against the wall.  Some papers have been placed on the
+desk.  This is kind of the impound area.  Items confiscated from tourists,
+smugglers, or whoever end up here before being destroyed.  This area is
+often full of contraband articles such as dirty magazines, alcohol, and
+spices.
+~
+#EXIT
+Direction east~
+ToRoom    29027
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 29030 1 1
+#ENDROOM
+
+#ROOM
+Vnum     29031
+Name     Alfuh City Law Enforcement~
+Sector   city~
+Flags    indoors nomagic norecall~
+Desc     This is the office of the local law enforcement.  In the corner is a
+desk with some papers scattered about on it.  If you want to bail out a
+friend, this is the place to visit.  The ultra conservative city and well
+for that matter planet, have a low tolerance for what they percieve as
+crime.
+~
+#EXIT
+Direction west~
+ToRoom    29027
+#ENDEXIT
+
+Reset M 0 29002 1 29031
+  Reset E 1 29006 1 5
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+  Reset E 1 29009 1 16
+#ENDROOM
+
+#ROOM
+Vnum     29032
+Name     Alfuh City Road~
+Sector   city~
+Flags    bank norecall nodropall~
+Desc     The road is filthy.  The air is heavy with ash.  All around you is
+jagged rock.  This portion of the path is wide.  Much wider than some
+parts of town.  This seems like a more regal part of town than some
+of the other parts of Alfuh City.
+~
+#EXIT
+Direction north~
+ToRoom    29033
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29033
+Name     Alfuh City Intersection~
+Sector   city~
+Flags    nomagic bank norecall~
+Desc     This is an intersection of sorts.  There are small offices to the
+East and West.  It is unclear from here what are in those offices.
+They appear to be government offices of some kind.  You can  continue
+North, East, South, or West from here.
+~
+#EXIT
+Direction north~
+ToRoom    29036
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29035
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29032
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29034
+#ENDEXIT
+
+Reset M 0 29010 9 29033
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29034
+Name     Alfuh Auditors Office~
+Sector   city~
+Flags    indoors nomagic safe norecall~
+Desc     The walls of this room are comprised of smoothed rock.  It would be
+remiss not to mention the genuinely unique decore off you
+surroundings. The floor is comprised of rock, bevelled, sanded, and
+glossified. The walls bear photo images of historic sites around
+town.  Many of the images make town appear more beautiful and serene
+that is now the case
+~
+#EXIT
+Direction east~
+ToRoom    29033
+#ENDEXIT
+
+Reset M 0 29003 1 29034
+  Reset E 1 29006 1 5
+  Reset E 1 29008 1 8
+  Reset E 1 29007 1 7
+Reset O 0 29010 1 29034
+#ENDROOM
+
+#ROOM
+Vnum     29035
+Name     Alfuh City Office~
+Sector   city~
+Flags    dark indoors bank~
+Desc     A dank and stuffy office with little to appeal to the eye or nose.
+The walls are covered in dirt and filth.  Small pieces of ash
+continually drift in through cracks in the ceiling.  You can continue
+to the west.
+~
+#EXIT
+Direction west~
+ToRoom    29033
+#ENDEXIT
+
+Reset O 0 29010 1 29035
+#ENDROOM
+
+#ROOM
+Vnum     29036
+Name     Alfuh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The road is extremely wide and well taken care of.  Only thin layers
+of ash cover the road here.  This would seem to be the upper class
+part of town. To the north is an official looking meeting facility. 
+To the south the road continues.
+~
+#EXIT
+Direction north~
+ToRoom    29037
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29037
+Name     Alfuh City Governmental Chambers~
+Sector   city~
+Flags    indoors plr_home~
+Desc     This is an extremely grand meeting room.  It has a cathedral ceiling
+and is covered in late -TraM- art work.  The walls are finely
+decorated with old tapestries and classic art.  The floor is
+comprised of a thick blue marble substance.  In the center of the
+room is a large slab of sheet rock that serves as the conference
+table.  Small cushions line the ground around the table and serve as
+seating for the dignitaries.
+~
+#EXIT
+Direction south~
+ToRoom    29036
+#ENDEXIT
+
+Reset M 0 29010 10 29037
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29038
+Name     Outside the Alfuh City Homeless Shelter~
+Sector   city~
+Stats    0 0 3
+Desc     The sulfur covered ground makes breathing challenging from time to
+time. To the north is an intersection that can lead back to the main
+part of Alfuh City.  To the south is a rather large looking cave
+where visitors and tourists can rest their weary bones free of
+charge.  This is a service provided by the city.
+~
+#EXIT
+Direction north~
+ToRoom    29023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29039
+Name     Alfuh City Shelter~
+Sector   city~
+Flags    indoors~
+Stats    0 0 3
+Desc     The walls are composed of jagged rock.  Thin cracks in the wall
+allow for moisture to intrude.  The moisture adds to the humidity of
+the room. It seems very warm in here.  There is a lot of volcanic
+activity nearby, so be careful.  To the north is fresh air.  To the
+south the cave continues.
+~
+#EXIT
+Direction north~
+ToRoom    29038
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29041
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29042
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29040
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29040
+Name     Alfuh City Shelter~
+Sector   city~
+Flags    dark indoors silence hotel~
+Stats    0 0 2
+Desc     This looks like a nice place to rest your weary bones.  You are out
+of the main hallway.  A vent above you brings in freshing cool air.
+The space here is somewhat small.  It would be impossible for more
+than a couple people to rest here at the same time.  Be curtious to
+others who need rest and sleep.
+~
+#EXIT
+Direction east~
+ToRoom    29039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29041
+Name     Alfuh City Shelter~
+Sector   city~
+Flags    dark indoors silence hotel~
+Stats    0 0 2
+Desc     This looks like a nice place to rest your weary bones.  You are out
+of the main hallway.  A vent above you brings in freshing cool air.
+The space here is somewhat small.  It would be impossible for more
+than a couple people to rest here at the same time.  Be curtious to
+others who need rest and sleep.
+~
+#EXIT
+Direction west~
+ToRoom    29039
+#ENDEXIT
+
+Reset M 0 29010 12 29041
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29042
+Name     Alfuh City Shelter~
+Sector   city~
+Flags    dark indoors~
+Desc     It is incredibly warm here.  It is impossible not to have broken to
+a feverish sweat simply by walking through this section of the
+hallway.   The jagged rock walls contain the heat and turn this into
+a sauna.  You can continue north or south from here.
+~
+#EXIT
+Direction north~
+ToRoom    29039
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29043
+#ENDEXIT
+
+Reset M 0 29010 11 29042
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29043
+Name     Alfuh City Shelter~
+Sector   city~
+Flags    indoors hotel~
+Stats    0 0 2
+Desc     This looks like a nice place to rest your weary bones.  You are out
+of the main hallway.  A vent above you brings in freshing cool air.
+The space here is somewhat small.  It would be impossible for more
+than a couple people to rest here at the same time.  Be curtious to
+others who need rest and sleep.
+~
+#EXIT
+Direction north~
+ToRoom    29042
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29044
+Name     Dead End~
+Sector   city~
+Stats    0 0 2
+Desc     This at one time was a path that led out of and into Alfuh City.
+Over the years, lava flooded the path and has turned to molten rock.
+Due to limited funds and lack of interest, city officials have never
+bothered to have the road cleared.  You can continue to the north.
+~
+#EXIT
+Direction north~
+ToRoom    29011
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29045
+Name     Alfuh City Road~
+Sector   city~
+Flags    nomob nomagic norecall~
+Stats    0 0 1
+Desc     This is one narrow path.  It would be impossible for more than one
+being to come through here at any given moment.  Molten lava walls
+completely block off the north and south.  If you are careful you can
+continue to either the east or west.
+~
+#EXIT
+Direction east~
+ToRoom    29011
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29046
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29046
+Name     Alfuh City Road~
+Sector   city~
+Flags    nomob nomagic norecall~
+Stats    0 0 1
+Desc     This is an extremely narrow and dangerous path.  Be careful or you
+could seriously injure yourself on the jagged rocks.  It would be
+impossible for anymore than one being to slink through this passage
+at any given time. You can continue east or west.
+~
+#EXIT
+Direction east~
+ToRoom    29045
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29047
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29047
+Name     Alfuh City Road~
+Sector   city~
+Flags    nomagic norecall~
+Desc     The pathway is difficult at best.  Jagged rock portrudes from all
+angles and all sides.  It would be very easy to injury yourself on
+some of these rocks.  You can continue north, east, west, or south. 
+This is an intersection.  Proceed with caution.
+~
+#EXIT
+Direction north~
+ToRoom    29048
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29046
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29049
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29050
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29048
+Name     Alfuh City Dump~
+Sector   city~
+Flags    nomagic hotel~
+Desc     A foul stench invades your nostrils.  Further to the north, east and
+west large heaping mounds of garbage block your path.  This is where
+garbage is stored prior to being sent off to the recycling plant. 
+The aroma is horrid. Flee the area as quickly as you can!  Save your
+smelling glands!
+~
+#EXIT
+Direction south~
+ToRoom    29047
+#ENDEXIT
+
+Reset M 0 29007 9 29048
+Reset M 0 29007 9 29048
+#ENDROOM
+
+#ROOM
+Vnum     29049
+Name     Alfuh City Road~
+Sector   city~
+Flags    nomagic bank norecall prototype~
+Desc     You are just outside Alfuh City limits.  If you continue north you
+will enter the city.  If you continue south, you will be on a
+desolate and narrow pathway.  The east and west is blocked by large
+volcanic rock.  Continuing in either of those directions would be
+impossible.
+~
+#EXIT
+Direction north~
+ToRoom    29047
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29124
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29050
+Name     Alfuh City Road~
+Sector   city~
+Flags    nomagic norecall~
+Stats    0 0 3
+Desc     A ranks smell is coming from the north east.  Whatever it is died a
+long time ago.  As of if the smell of this planet wasn't enough to
+gag any non residents, this stench puts it over the top. The pathway
+continues to the east and west.  Your path to the north and south has
+been blocked by rock.
+~
+#EXIT
+Direction east~
+ToRoom    29047
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29051
+#ENDEXIT
+
+Reset M 0 29010 13 29050
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29051
+Name     Alfuh City Road~
+Sector   city~
+Flags    nomob nomagic norecall~
+Desc     You are at a fork in the road, kind of.  The road turnsm it doesn't
+really fork.  At one time it may have forked, but it doesn't fork
+anymore. To the way, way far east is the heart of Alfuh City.  To the
+west is a big rock.  To the north is the Alfuh City Academy.  Young
+Adarians practice their fighting skills there.
+~
+#EXIT
+Direction north~
+ToRoom    29052
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29050
+#ENDEXIT
+
+Reset O 0 29011 1 29051
+#ENDROOM
+
+#ROOM
+Vnum     29052
+Name     Alfuh Elementary Academy~
+Sector   city~
+Flags    nomob indoors nomagic norecall~
+Desc     Hand-made pictures hang on the walls.    The rock walls have been
+smoothed over so that the children will not poke an eye out or
+something.  This Academy was formed so that the children of the town
+could learn the basics to surviving. You can continue north or south
+from here.
+~
+#EXIT
+Direction north~
+ToRoom    29053
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29053
+Name     Alfuh Elementary Academy~
+Sector   city~
+Flags    indoors nomagic norecall~
+Desc     The ceiling is pretty low in here.  Watch yourself.  To the west is
+one of the training rooms.  You can practice your skills against a
+droid.  To the east is a small donation/equipment room.  You can also
+continue north or south from here.
+~
+#EXIT
+Direction north~
+ToRoom    29056
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29055
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29052
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29054
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29054
+Name     Alfuh Elementary Academy~
+Sector   city~
+Flags    indoors~
+Desc     Young and unexperienced members of Alfuh City come here to practice
+their skills of battle. The walls are stained from oil and droid
+parts line the walls of the room. There is a sign here too.  Look at
+the sign for more information. You can continue east from here.
+~
+#EXIT
+Direction east~
+ToRoom    29053
+#ENDEXIT
+
+Reset M 0 29004 1 29054
+Reset O 0 29012 1 29054
+#ENDROOM
+
+#ROOM
+Vnum     29055
+Name     Alfuh Elementary Academy~
+Sector   city~
+Flags    nomob indoors nomagic donation hotel~
+Desc     Welcome to the Alfuh City Academy!  This is the room in which youth
+members can get some free armor and equipment.  Well it isn't
+completely free, the town pays for it.  Be warned, this equipment is
+NOT high quality, it is only intended to get young players started. 
+To the west is more of the academy. If you have any equipment you
+would like to leave for others, you can do that too.
+~
+#EXIT
+Direction west~
+ToRoom    29053
+#ENDEXIT
+
+Reset O 0 29013 1 29055
+Reset O 0 29015 1 29055
+Reset O 0 29014 1 29055
+#ENDROOM
+
+#ROOM
+Vnum     29056
+Name     Alfuh Elementary Academy~
+Sector   city~
+Flags    indoors nomagic norecall~
+Desc     You are in a beautifully decorated hallway.  Many of the images
+displayed on the wall appear to have been made by children who attend
+this facility. Tacky may be a more appropriate word than beautiful. 
+You can continue north or south from here.
+~
+#EXIT
+Direction north~
+ToRoom    29057
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29053
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29057
+Name     Alfuh Elementary Academy~
+Sector   city~
+Flags    indoors norecall~
+Desc     This training room is the most difficult one available in this
+facility. Be careful!  The walls are stained with oil and various
+droid parts. You are not sure, but there seem to be some pools of
+blood in here too. This is a dangerous room, watch yourself. You can
+exit to the south.
+~
+#EXIT
+Direction south~
+ToRoom    29056
+#ENDEXIT
+
+Reset M 0 29005 1 29057
+#ENDROOM
+
+#ENDAREA

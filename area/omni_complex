@@ -1,0 +1,347 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Omnipresent Complex~
+Author       Kuran~
+Ranges       101 103 101 103
+Economy      0 31250000
+ResetMsg     A cool breeze blows down the ancient halls.~
+ResetFreq    15
+#ENDAREADATA
+
+#OBJECT
+Vnum     100
+Keywords terminal omnipresent monitor~
+Type     trash~
+Short    the Monitoring Terminal~
+Long     The Monitoring Terminal has been installed here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     101
+Keywords terminal omnipresent coding~
+Type     trash~
+Short    the Coding Terminal~
+Long     The Terminal of the Omnipresent Coders is here, leaking source code.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     102
+Keywords terminal quest galactic control blinking~
+Type     trash~
+Short    the Terminal for Galactic Control~
+Long     The Galactic Control Terminal is here, and it is blinking.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     103
+Keywords durgas hole wormhole little~
+Type     trash~
+Short    durgas wormhole~
+Long     &zDurgas Wormhole is here folding reality into new dimensions.&w~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     100
+Name     Omnipresent Being's Monitering Room~
+Sector   city~
+Flags    indoors hotel~
+Desc     You are in the center of the Omnipresent Being's domain.  From this;complex
+the all knowing, all powerful beings that control this galaxy;do their
+work. There is a computer terminal in the center of the room used to
+monitor happenings of the rest of the Galaxy. To the north lies the
+Galactic Control center, to the south is the Reality Control area, along
+with the Supreme Being's offices. Up is a one way passage to the Isolation
+Room, where misbehaving mortal beings are sent to cool off. To the east is
+an Omnipresent-to-Mortal conference room.
+~
+#EXIT
+Direction north~
+ToRoom    104
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    102
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    106
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    105
+#ENDEXIT
+
+Reset O 0 100 1 100
+#ENDROOM
+
+#ROOM
+Vnum     101
+Name     Exar's Office~
+Sector   city~
+Flags    nomob indoors plr_home hotel factory~
+Desc     You have entered the office of Exar, head Being for Galactic
+Continuity.  Nothing enters existance without his go-ahead first.  He
+also tinkers with his own creations here.  There is no furniture,
+except for a single stool which you can't use anyway as it exists
+only as a probability wave.  The only exit is up.
+~
+#ENDROOM
+
+#ROOM
+Vnum     102
+Name     The Omnipresent Being's Mortal Engagement Room~
+Sector   city~
+Flags    indoors hotel~
+Desc     You are in the conference room where the Omnipresent Beings engage
+the mortal beings in questioning, and occasionally punishment.  The
+room is bare and there are no apparent exits except the one to the
+west.
+~
+#EXIT
+Direction west~
+ToRoom    100
+#ENDEXIT
+
+Reset O 0 32201 1 102
+#ENDROOM
+
+#ROOM
+Vnum     103
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     104
+Name     Omnipresent Builders' Galactic Discourse Center~
+Sector   city~
+Flags    indoors~
+Desc     From this chamber, all major construction projects which take place in the
+galaxy are carefully planned and executed.  A terminal for the discourse
+of this topic has been carefully mounted in the far wall, and is blinking
+for some reason.  The only exit apparent to you is south.
+~
+#EXIT
+Direction south~
+ToRoom    100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     105
+Name     The Isolation Chamber~
+Sector   city~
+Flags    nomob indoors nomagic safe norecall silence logspeech plr_home~
+Desc     The Isolation Chamber is a dreary place.  There is a soft, diffuse light
+and soft grey walls.  It would be almost relaxing if it weren't so mind-
+numbingly boring.  If you have to stay in here much longer, you are sure
+to lose your sanity.
+~
+#ENDROOM
+
+#ROOM
+Vnum     106
+Name     Omnipresent Being's Office Complex~
+Sector   city~
+Flags    indoors~
+Desc     The air here is thick with the sounds of creation.  The Supreme Beings
+do much of their Galactic building in rooms adjoining this one.  In all,
+there are four seperate offices accessable from here, along with the
+Reality Control center, which is directly above this room.  North leads
+back to the hub of the complex.
+~
+#EXIT
+Direction north~
+ToRoom    100
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    107
+Keywords  door office~
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    109
+Keywords  door office~
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    111
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    110
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    101
+Keywords  trapdoor office~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    112
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    31898
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    108
+Keywords  wormhole hole durga worm~
+Flags     hidden can_enter auto~
+#ENDEXIT
+
+Reset O 0 103 1 106
+Reset D 0 106 1 0
+Reset D 0 106 2 0
+Reset D 0 106 4 0
+Reset D 0 106 5 1
+#ENDROOM
+
+#ROOM
+Vnum     107
+Name     Merth Inc. Cubicle~
+Sector   city~
+Flags    indoors hotel~
+Desc     This is a dank crappy little cubicle.  The walls are made of
+cardboard substitute.  The walls are a thin pastel color.  It
+hurts your eyes to look at it for more than a few seconds.
+Several metal folding chairs seem to be holding the walls up.
+~
+#EXIT
+Direction west~
+ToRoom    106
+Keywords  door~
+Flags     isdoor~
+#ENDEXIT
+
+Reset D 0 107 3 0
+#ENDROOM
+
+#ROOM
+Vnum     108
+Name     Durgas Wormhole~
+Sector   city~
+Flags    indoors plr_home hotel~
+Desc     You are slowly compressed over an infinity as time stretches out in all
+directions. The universe folds in upon itself exploding into new
+dimensions as the laws of physics rewrite themselves into a millenia of
+new realities.
+~
+#EXIT
+Direction down~
+ToRoom    110
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    100
+Flags     hidden can_leave~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     109
+Name     Ackbar's Humble Abode~
+Sector   city~
+Flags    indoors~
+Desc     Ackbar's Humble Abode
+   You stand in Admiral Ackbar's climate controlled office...
+sprinklers on the ceilings allow for his fish like body to receive
+a soft mist every so often....You stand in amazement at the awards
+and honors he has received..it starts to make you think what gives
+you the right to stand in here looking around...If fact Get out...
+this is sort of his place to get away from morts...and if your in here you 
+better have a good reason
+~
+#EXIT
+Direction north~
+ToRoom    106
+Keywords  door~
+Flags     isdoor~
+#ENDEXIT
+
+Reset D 0 109 0 0
+#ENDROOM
+
+#ROOM
+Vnum     110
+Name     The Omnipresent Mail Room~
+Sector   city~
+Flags    indoors~
+Desc     Well this room was feeling a little unused so it quit its old job and
+decided to become a mail room instead.
+~
+#EXIT
+Direction down~
+ToRoom    106
+#ENDEXIT
+
+Reset O 0 38 1 110
+#ENDROOM
+
+#ROOM
+Vnum     111
+Name     Thrawns Quarters~
+Sector   city~
+Flags    indoors plr_home hotel~
+Desc     You stop short, just inside the room, and look around in astonishment.
+The walls and domed ceiling are covered with flat paintings and
+planics, a few of them vaguely human-looking but most of distinct
+alien origin. Various sculptures are scattered around, some
+freestanding, others on pedestals. In the center of the room is a
+double circle of repeater displays, the outer ring  slightly higher
+than the inner ring. Both sets of displays, at from what little you
+can see, also seems to be devoted to pictures of artwork. And in the
+center of the double circle is a duplicate of an Admirals chair that
+would normaly be found on the ships bridge
+~
+#EXIT
+Direction east~
+ToRoom    106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     112
+Name     Bibs Place~
+Sector   city~
+Flags    plr_home prototype~
+#EXIT
+Direction northwest~
+ToRoom    106
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

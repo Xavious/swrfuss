@@ -1,0 +1,54 @@
+#SHIP
+Name         Star Destroyer Dark Hand~
+Filename     destroyer.0001~
+Description  ~
+Owner        ~
+Pilot        ~
+Copilot      ~
+Class        2
+Tractorbeam  150
+Shipyard     32050
+Hanger       600
+Turret1      698
+Turret2      697
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       10
+Missiles     50
+Maxmissiles  50
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      32050
+Firstroom    600
+Lastroom     699
+Shield       0
+Maxshield    1000
+Hull         15000
+Maxhull      15000
+Maxenergy    30000
+Hyperspeed   100
+Comm         1
+Chaff        0
+Maxchaff     0
+Sensor       200
+Astro_array  200
+Realspeed    10
+Type         2
+Cockpit      699
+Coseat       677
+Pilotseat    675
+Gunseat      674
+Navseat      673
+Engineroom   629
+Entrance     600
+Shipstate    0
+Missilestate 0
+Energy       30000
+Manuever     0
+Home         byss~
+End
+
+#END

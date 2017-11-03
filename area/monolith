@@ -1,0 +1,202 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Dark Asteroid~
+Author       Exar~
+Ranges       40 100 0 65
+Economy      0 9000000
+ResetMsg     ~
+ResetFreq    180
+Flags        nopkill~
+#ENDAREADATA
+
+#MOBILE
+Vnum       8900
+Keywords   exarstuff~
+Short      a newly created exarstuff~
+Long       Some god abandoned a newly created exarstuff here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       8999
+Keywords   exarstuff~
+Short      a newly created exarstuff~
+Long       Some god abandoned a newly created exarstuff here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     8900
+Keywords exarstuff~
+Type     trash~
+Short    a exarstuff~
+Long     A exarstuff is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8999
+Keywords exarstuff~
+Type     trash~
+Short    a exarstuff~
+Long     A exarstuff is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     8900
+Name     Primary Docking Bay~
+Sector   inside~
+Flags    dark indoors can_land~
+Desc     Debris and wreckage cover the inside of this docking bay, to the point of
+making it difficult to move around.  Obviously the bay has been in a state
+of disuse for some time, possibly since the addition of this base to the
+asteroid.  You can only see one exit, a ladder leading down into the main
+portion of the asteroid.
+~
+#EXIT
+Direction down~
+ToRoom    8901
+#ENDEXIT
+
+#EXDESC
+ExDescKey    junk garbage~
+ExDesc       All manner of things litter the floor, including hydrospanners and other useful equipment, but there is also a lot of melted equipment too far damaged for you to make out.~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   1~
+Comlist   mpecho Some equipment clatters loudly in the northern corner of the bay.~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     8901
+Name     A Descending Shaft~
+Sector   inside~
+Flags    dark indoors~
+Stats    0 0 1
+Desc     The ladder quickly enters a narrow shaft surrounded by the asteroid's rock
+itself, creating a very claustrophobic feel.  Only one person can fit
+through at a time, making you a blockage in this passageway.  The only
+available directions are up and down. 
+~
+#EXIT
+Direction up~
+ToRoom    8900
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    8902
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   15~
+Comlist   mpecho Light flickers briefly below you and then disappears so quickly you aren't sure it was ever there.~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     8902
+Name     An Intersection~
+Sector   inside~
+Flags    dark indoors no_drive~
+Desc     Here, at the bottom of the Docking Bay ladder, there is a four way intersection of passages.  Each seems to have been burned from the rock.  There are some strange symbols carved into the floor here, unlike any you have ever seen before.~
+#EXIT
+Direction up~
+ToRoom    8901
+#ENDEXIT
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   50~
+Comlist   mpechoat Something on the floor glitters.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     8903
+Name     A Slippery Passage~
+Sector   inside~
+Flags    dark nomob indoors~
+Stats    0 0 2
+#ENDROOM
+
+#ROOM
+Vnum     8904
+Name     A Freezing Passage~
+Sector   inside~
+Flags    dark nomob indoors~
+#MUDPROG
+Progtype  rand_prog~
+Arglist   25~
+Comlist   mpecho An icy wind blows out of nowhere and into your face.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     8905
+Name     A Windy Passage~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8906
+Name     A Watery Passage~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8999
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+Reset M 0 8999 1 8999
+Reset M 0 8900 1 8999
+Reset O 0 8900 1 8999
+Reset O 0 8999 1 8999
+#ENDROOM
+
+#ENDAREA

@@ -1,0 +1,423 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Cloning Station~
+Author       Durga~
+Ranges       0 103 0 103
+Economy      0 130045000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       10000
+Keywords   firstmob~
+Short      a newly created firstmob~
+Long       Some god abandoned a newly created firstmob here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10001
+Keywords   doctor Bnokkt~
+Short      Doctor Bnokkt~
+Long       Doctor Bnokkt is the head of the cloning facilities.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel nokill~
+Stats1     0 50 0 -25 1000 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10002
+Keywords   c-7hp64 personal assistant droid~
+Short      a c-7hp64 personal assistant droid~
+Long       A c-7hp64 personal assistant droid is here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel droid~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 5000
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 10003
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10003
+Keywords   facility guard~
+Short      a facility guard~
+Long       A Facility guard stands at attention.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10009
+Keywords   clerk~
+Short      a clerk~
+Long       A clerk is here to take your payment.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     10000
+Keywords bookend~
+Type     trash~
+Short    a newly created bookend~
+Long     Some god dropped a newly created bookend here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10001
+Keywords sparti cloning cylinder~
+Type     trash~
+Short    a sparti cloning cylinder~
+Long     A sparti cloning cylinder is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10002
+Keywords desc~
+Type     trash~
+Short    a newly created desc~
+Long     Some god dropped a newly created desc here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10003
+Keywords facility deed ~
+Type     government~
+Short    the deed~
+Long     OOooOOoo the deed to the cloning facilities is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10009
+Keywords sparti cloning cylinder~
+Type     trash~
+Short    a newly created sparti cloning cylinder~
+Long     Some god dropped a newly created sparti cloning cylinder here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     10000
+Name     Inside a Sparti Cloning Cylinder~
+Sector   city~
+Flags    nomob safe nodrop hotel~
+Desc     You wake up as if from a long sleep. Slowly your mind begins to fill with
+the memories of a life you never lived. At first they are distant
+memories. Foreign, unattached, but slowly their intensity increases
+overwhelming you with emotions from a life you never lived. Pain. Love.
+Sorrow. Joy. Tears swell up in your eyes as you begin to sob, overwhelemed
+by you existance and saddened by the love of a life you never lived.   
+ 
+Take a few moments to collect your thoughts. Then "leave" the cylinder and
+begin a new life.
+ 
+* Don't forget... the first thing you should do is go clone yourself
+again... you might regret it if you don't...
+ 
+~
+#EXIT
+Direction somewhere~
+ToRoom    10009
+Flags     hidden can_leave~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10001
+Name     Pay Counter~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     After the long wait you are finally here. Now all that is left to do is to
+pay the clerk, sign a few papers and give a tissue sample. (To do this
+type "clone")
+~
+#EXIT
+Direction west~
+ToRoom    10007
+#ENDEXIT
+
+Reset M 0 10009 1 10001
+#ENDROOM
+
+#ROOM
+Vnum     10002
+Name     In a Small Sterile Room~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     This small room smells of strongly of antiseptic. There is a large flat
+bench which is covered in removeable tissue. You assume that this is where
+blood and tissues samples are taken as well as where new clones are
+examined. There are several medical insterments lining the walls. Some you
+can't even imagine what the might be used for.
+~
+#EXIT
+Direction west~
+ToRoom    10003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10003
+Name     A Clinic Hallway~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     This small hallway leads from the lobby of the facilities to a set of
+locked blastdoors. To the east is a small docters office. To the west is a
+large room with lots of excercise equipment.
+~
+#EXIT
+Direction east~
+ToRoom    10002
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10007
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10004
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10004
+Name     Excercise Room~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     This room is filled with various excercise equipment used to help young
+clones get into shape as they first begin using their bodies after a long
+gestation and an accelerated growth period. All of the equipment has gages
+to monitor the progress and vital signs of the clones.
+~
+#EXIT
+Direction north~
+ToRoom    10005
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10003
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10005
+Name     Rest Area~
+Sector   city~
+Flags    nomob indoors safe hotel~
+Desc     This area of the comlex is set up as a small lounge. There are several
+couches and chairs scattered about the room along with a few low tables. A
+curtain at the back of the room hides a few cots to rest in. 
+ 
+You may quit and reenter the game from here.
+ 
+~
+#EXIT
+Direction south~
+ToRoom    10004
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10006
+Name     A Small Landing Area~
+Sector   city~
+Flags    nomob indoors can_land safe~
+Desc     You stand upon a small landing pad on a relatively unknown planet somewhere
+in the core worlds. The planet is mostly covered in jungle. It apears the
+only artificial structure is a small building to the north of here. 
+~
+#EXIT
+Direction north~
+ToRoom    10007
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    32297
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10007
+Name     The cloning Facilities~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     The visible part of this building is small and bunker like but there must
+be much more too it below ground - cloning takes alot of energy. The
+owners of this establishment have salvaged a couple of sparty cloning
+cylinders that were left over from the clone wars and have turned them
+into a small but very profitable business. They make money cloning people
+who believe that if their body lives on after their death than so do they.
+~
+#EXIT
+Direction north~
+ToRoom    10003
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10006
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10008
+Name     Standing in Line~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     You stand in a long line waiting for your turn to be cloned.
+There is nothing to do but stand here and wait.
+~
+#EXIT
+Direction west~
+ToRoom    10007
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpechoat $n You finally make it to the front of the line.
+mpechoaround $n $n Moves to the front of the line.
+mptransfer $n 10001
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10009
+Name     The Cloning Chamber~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     This large room contains contains the tops of some cloning cylinders but
+from what you have heard there must be more to them bellow this level.
+Aside from the cylinders which have many pipes and wires leading from them
+this room is empty. There seems to be no way into the cylinders other than
+going back and standing in line.
+~
+#EXIT
+Direction north~
+ToRoom    10004
+#ENDEXIT
+
+Reset O 0 10001 1 10009
+#ENDROOM
+
+#ROOM
+Vnum     10010
+Name     The Office~
+Sector   city~
+Desc     This large office contains a very fine wood desk as well as several
+expensive looking paintings. There is a small tree in one corner of the
+room and a large bookcase on one wall.
+~
+#EXIT
+Direction east~
+ToRoom    10007
+#ENDEXIT
+
+Reset M 0 10001 1 10010
+Reset M 0 10002 1 10010
+Reset M 0 10003 1 10010
+#ENDROOM
+
+#ENDAREA

@@ -1,0 +1,1922 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Coruscant - More of Government City~
+Author       Durga~
+Ranges       0 0 0 103
+Economy      0 31112383
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       10200
+Keywords   dud~
+Short      a newly created dud~
+Long       Some god abandoned a newly created dud here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10201
+Keywords   clerk~
+Short      a clerk~
+Long       A clerk sits at his desk.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel prototype~
+Affected   detect_invis~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  act_prog~
+Arglist   holovid~
+Comlist   if ovnuminv(10201) >= 1
+say Thank you, good work $n.
+mpwithdraw 100
+give 100 credits $n
+mpgain $n 4 1000
+else
+say hmm.. Thanks, but that wasn't quite what i was looking for.
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   engagement~
+Comlist   if ovnuminv(10203) >= 1
+say Thank you, good work $n.
+mpwithdraw 100
+give 100 credits $n
+mpgain $n 4 1000
+else
+say hmm.. Thanks, but that wasn't quite what i was looking for.
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10202
+Keywords   Loba Slo Ti~
+Short      Loba Slo Ti~
+Long       Loba Slo Ti is a middle aged verine woman.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10203
+Keywords   child kid~
+Short      a child~
+Long       A child is upset about something.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Stats1     0 2 0 95 0 0
+Stats2     0 10 20
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  act_prog~
+Arglist   lucky ~
+Comlist   get lucky
+if ovnuminv(10205) >= 1
+say Thank You!
+hug $n
+mpgain $n 5 50000
+else
+say I lost my luck penny in the pool
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   50~
+Comlist   snif
+say I drooped my lucky penny in the pool
+look $n
+say Could you get it for me?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10204
+Keywords   quarren life guard~
+Short      a quarren lifeguard~
+Long       A quarren life guard patrols the pool.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Affected   truesight~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  act_prog~
+Arglist   stunned,~
+Comlist   aid $n
+mprestore $n 200
+aid $n
+mpechoat $n A life guard gives you CPR and pulls you out of the water.
+mpechoaround $n A life guard gives $n CPR and pulls them out of the water.
+mptransfer $n 10229
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10205
+Keywords   weight trainer~
+Short      the weight trainer~
+Long       A weight trainer offeres advice on training.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel train prototype~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    20 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  rand_prog~
+Arglist   20~
+Comlist   say Don't give up $r.
+say Persistance and hard work pay off eventually.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10206
+Keywords   arobics trainer~
+Short      arobics trainer~
+Long       An arobics trainer watches over her class.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel train prototype~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 20 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10207
+Keywords   Mrs Kooos~
+Short      Mrs Kooos~
+Long       Mrs Kooos is looking for assistance.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Affected   detect_invis~
+Stats1     0 4 0 90 0 0
+Stats2     0 10 40
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   add hello hi~
+Comlist   say Hello, would you take me to the botanical gardens please?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   add yes sure~
+Comlist   say Are you talking to me?
+say My name is Mrs Kooos
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   add kooos kooos.~
+Comlist   say You will take me to the Gardens?
+say Oh, Thank You $n!
+follow $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   turnstile.~
+Comlist   mpwithdraw 5
+give 5 credits droid
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   turbocar.~
+Comlist   board turbocar
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   exits~
+Comlist   leave
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   if ovnumhere(10207) >= 1
+Say Thank you $r. I really apreciate your help.
+mpwithdraw 200
+give 200 credits $r
+mpgain $r 5 2000
+follow self
+mpecho Mrs Kooos enters the gardens.
+mpgoto 10239
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10208
+Keywords   retail droid~
+Short      a retail droid~
+Long       A retail droid is here to assist you with your purchaces.
+~
+Desc       The retail droid is similar in apearance to a standard proticol droid.
+It is fittened however with a crdit exchange terminal in its hip and
+is programmed to be an expert salesperson.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel droid prototype~
+Stats1     0 10 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    18 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       10209
+Keywords   a clerk~
+Short      a clerk~
+Long       A clerk sits at his desk.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel prototype~
+Affected   detect_hidden~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  act_prog~
+Arglist   Toodan.~
+Comlist   if ovnuminv(10212) >= 1
+nod $n
+say Good work. The syndicate will be most pleased.
+mpwithdraw 1000
+give 1000 credits $n
+mpgain $n 3 1000
+else
+say Thats not the corpse of Toodan!
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   Noktok.~
+Comlist   if ovnuminv(10213) >= 1
+nod $n
+say We are most pleased with your work.
+mpwithdraw 2000
+give 2000 credits $n
+mpgain $n 3 2000
+else
+say Thats not the corpse of Noktok!
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   Sleejat.~
+Comlist   if ovnuminv(10216) >= 1
+say Would have been worth much more alive than dead.
+say Take your credits and get lost.
+mpwithdraw 1000
+give 1000 credits $n
+mpgain $n 3 1000
+else
+say What do you take me for a fool!
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   Pleebo.~
+Comlist   say This one was wanted alive not dead!
+chuckle
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   Pleebo~
+Comlist   mpforce pleebo mpwithdraw 5000
+mpforce pleebo mpat 10299 drop 5000 credits
+mpat 10299 get credits
+drop 5000 credits
+say Excellent work!!
+mpforce pleebo mpgain $r 3 5000
+mppurge pleebo
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   Sleejat~
+Comlist   mpforce sleejat mpwithdraw 10000
+mpforce sleejat mpat 10299 drop 5000 credits
+mpat 10299 get credits
+drop 5000 credits
+say Excellent work!!
+mpforce sleejat mpgain $r 3 5000
+mppurge sleejat
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10299
+Keywords   dud~
+Short      a newly created dud~
+Long       Some god abandoned a newly created dud here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     10200
+Keywords dud~
+Type     trash~
+Short    a newly created dud~
+Long     Some god dropped a newly created dud here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10201
+Keywords holovid projector~
+Type     furniture~
+Short    a holovid projector~
+Long     A holovid projector is sitting on the floor.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    5 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10202
+Keywords list~
+Type     furniture~
+Short    a newly created list~
+Long     A list of repo jobs hangs on the wall.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    l li lis list~
+ExDesc       Currently wanted for reposession:
+ 
+1. A holovid projector (from: Drugaax Newhon who lives in an apartment one
+level down from here)
+ 
+2. An engagement ring (from Loba Slo Ti who lives in the same building as
+Drugaax)
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10203
+Keywords egagement ring~
+Type     armor~
+Short    an engagement ring~
+Long     Theres something shiney here.~
+WFlags   take finger~
+Values   0 0 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10204
+Keywords Personal Floatation Device~
+Type     armor~
+Short    a Personal Floatation Device~
+Long     A Personal Floatation Device could save you from drowning.~
+WFlags   take waist~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 2097152 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10205
+Keywords lucky coin~
+Type     treasure~
+Short    lucky coin~
+Long     Someone dropped their lucky coin here.~
+Flags    hidden~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 1 0 0 0
+Affect       -1 -1 1 31 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10206
+Keywords sign~
+Type     furniture~
+Short    a sign~
+Long     &RA sign hangs on the wall&w~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    s si sig sign~
+ExDesc       Unless you are a very strong swimmer or have the proper gear stay out of
+the water. Drowning is a horrible way to die.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10207
+Keywords climate control monitor~
+Type     furniture~
+Short    a monitor~
+Long     A climate control monitor is mounted on the wall here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10208
+Keywords package~
+Type     container~
+Short    a package~
+Long     This package is addressed to luke skywalker on Yavin IV.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10209
+Keywords scuba mask~
+Type     armor~
+Short    a scuba mask~
+Long     A scuba mask could help out in the ocean or a pool.~
+Flags    inventory~
+WFlags   take head~
+Values   0 0 0 10 0 0
+Stats    1 200 20 0 0
+Affect       -1 -1 -2147483648 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10210
+Keywords package to captain harlef~
+Type     container~
+Short    a package to captain harlef~
+Long     This package is addressed to Captain Harlef.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10211
+Keywords list of local bounties~
+Type     trash~
+Short    a list of local bounties~
+Long     A list of local bounties is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    l li lis list~
+ExDesc       Toodan      1000 credits
+Noktok      2000 credits
+Pleebo      5000 credits - no disintigrations
+Sleejat    10000 credits alive, 1000 dead
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10212
+Keywords the body of Toodan~
+Type     trash~
+Short    the corpse of Toodan~
+Long     The body of todan lies here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10213
+Keywords the body of Noktok~
+Type     trash~
+Short    the corpse of Noktok~
+Long     A the body of Noktok is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10214
+Keywords the corpse of Pleebo~
+Type     trash~
+Short    the corpse of Pleebo~
+Long     A the corpse of Pleebo is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10215
+Keywords the corpse of Pleebo~
+Type     trash~
+Short    ooops~
+Long     A the corpse of Pleebo is here.~
+Flags    prototype~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10216
+Keywords the corpse of Sleejat~
+Type     trash~
+Short    the corpse of Sleejat~
+Long     A the corpse of Sleejat is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10299
+Keywords dud~
+Type     trash~
+Short    a broken lightsaber~
+Long     Mordecai is looking really hard for this broken lightsaber.~
+Flags    hidden prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     10200
+Name     Spaceport Speeder Rentals~
+Sector   city~
+Flags    nomob~
+Desc     This small speeder rental lot looks like it looses alot more money than it
+makes. The security here is terrible. You could probably just hop into one
+of the speeders and drive off without anyone even noticing.
+~
+#EXIT
+Direction northwest~
+ToRoom    301
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10201
+Name     Empoyment Opertunities Building~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     This is the main entrance to the employment opertunities building. Inside
+many temp jobs are available for anyone whos willing to take them. They
+are all based solely on commission and payed when the work is completed.
+~
+#EXIT
+Direction north~
+ToRoom    304
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10202
+Name     Lobby~
+Sector   city~
+Flags    indoors prototype~
+Desc     The lobby of the building is relatively plain. There are several chairs and
+a few magazine racks at one side. An information desk is at the other. The
+computer terminal in the center of the room is a galactic empoyment
+terminal that allows job posting for positions in other locations. It also
+provides opertunity for prospective employees to post resumees.
+~
+#EXIT
+Direction north~
+ToRoom    10201
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10203
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10203
+Name     A Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     This hallway is plain consisting of a dull tiled floor and simple
+patterened walpaper. The glows panels on the ceiling are a little too
+bright causing you to feel a little on edge.
+~
+#EXIT
+Direction north~
+ToRoom    10202
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10204
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10206
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10204
+Name     A Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     This hallway is plain consisting of a dull tiled floor and simple
+patterened walpaper. The glows panels on the ceiling are a little too
+bright causing you to feel a little on edge.
+~
+#EXIT
+Direction north~
+ToRoom    10239
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10205
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10210
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10203
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10205
+Name     A Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     This hallway is plain consisting of a dull tiled floor and simple
+patterened walpaper. The glows panels on the ceiling are a little too
+bright causing you to feel a little on edge.
+~
+#EXIT
+Direction east~
+ToRoom    10209
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10241
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10204
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10206
+Name     A Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     This hallway is plain consisting of a dull tiled floor and simple
+patterened walpaper. The glows panels on the ceiling are a little too
+bright causing you to feel a little on edge.
+~
+#EXIT
+Direction north~
+ToRoom    10244
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10203
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10245
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10207
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10207
+Name     A Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     This hallway is plain consisting of a dull tiled floor and simple
+patterened walpaper. The glows panels on the ceiling are a little too
+bright causing you to feel a little on edge.
+~
+#EXIT
+Direction north~
+ToRoom    10247
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10206
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10246
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10208
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10208
+Name     A Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     This hallway is plain consisting of a dull tiled floor and simple
+patterened walpaper. The glows panels on the ceiling are a little too
+bright causing you to feel a little on edge.
+~
+#EXIT
+Direction north~
+ToRoom    10248
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10207
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10249
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10209
+Name     A Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     This hallway is plain consisting of a dull tiled floor and simple
+patterened walpaper. The glows panels on the ceiling are a little too
+bright causing you to feel a little on edge.
+~
+#EXIT
+Direction north~
+ToRoom    10243
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10242
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10205
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10210
+Name     Ruuahros Reposessions Inc~
+Sector   city~
+Flags    prototype~
+Desc     This office is a small contract repo company. The company hires freelance
+citizens to reposses items for their clients. If you don't have a job you
+might be able to make a few credits here. Look at the list to see what
+jobs are available. 
+~
+#EXIT
+Direction north~
+ToRoom    10204
+#ENDEXIT
+
+Reset M 0 10201 1 10210
+Reset O 0 10202 1 10210
+#ENDROOM
+
+#ROOM
+Vnum     10211
+Name     An Appartment Building~
+Sector   city~
+Flags    nomob prototype~
+Desc     The appartment building lobby is small and smells of tabacc and booze. The
+paint on the walls is slowly peeling off and the floor is stained. A
+tenent "list" on the wall shows who lives here.
+~
+#EXIT
+Direction northwest~
+ToRoom    10212
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    394
+#ENDEXIT
+
+#EXDESC
+ExDescKey    l li lis list~
+ExDesc       1. Druugaax Newhon
+2. Beena Todddd
+3. Treeg Treeg
+4. Loraaaaf
+5. Noon Im Nooga Lol
+6. Plubo Nu
+7.
+8. Loba Slo Ti
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     10212
+Name     A Hallway~
+Sector   city~
+Flags    prototype~
+Desc     This rundown appartment building is dirty and is filled with a foul stench.
+The walls are covered in grafitti. You can think of many nicer places to
+live.
+~
+#EXIT
+Direction north~
+ToRoom    10213
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10214
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10211
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10213
+Name     A Hallway~
+Sector   city~
+Flags    prototype~
+Desc     This rundown appartment building is dirty and is filled with a foul stench.
+The walls are covered in grafitti. You can think of many nicer places to
+live. 
+~
+#EXIT
+Direction north~
+ToRoom    10216
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10212
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10218
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10214
+Name     A Hallway~
+Sector   city~
+Flags    prototype~
+Desc     This rundown appartment building is dirty and is filled with a foul stench.
+The walls are covered in grafitti. You can think of many nicer places to
+live. 
+~
+#EXIT
+Direction east~
+ToRoom    10212
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10215
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10215
+Name     A Hallway~
+Sector   city~
+Flags    prototype~
+Desc     This rundown appartment building is dirty and is filled with a foul stench.
+The walls are covered in grafitti. You can think of many nicer places to
+live.
+~
+#EXIT
+Direction east~
+ToRoom    10214
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10217
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10216
+Name     A Hallway~
+Sector   city~
+Flags    prototype~
+Desc     This rundown appartment building is dirty and is filled with a foul stench.
+The walls are covered in grafitti. You can think of many nicer places to
+live. 
+~
+#EXIT
+Direction south~
+ToRoom    10213
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10217
+Name     A Small Appartment~
+Sector   city~
+Flags    prototype~
+Desc     This small messy appartment smells strongly of spice. It is cluttered with
+boxes and empty cartons. A large stack of unwashed dishes sits by the
+sink.
+~
+#EXIT
+Direction north~
+ToRoom    10215
+#ENDEXIT
+
+Reset O 0 10201 1 10217
+#ENDROOM
+
+#ROOM
+Vnum     10218
+Name     An Appartment~
+Sector   city~
+Flags    prototype~
+Desc     This small appartment is realatively well kept in contrast with the rest of
+the building. There is a faint smell of incense.
+~
+#EXIT
+Direction east~
+ToRoom    10213
+#ENDEXIT
+
+Reset M 0 10202 1 10218
+  Reset E 1 10203 1 1
+#ENDROOM
+
+#ROOM
+Vnum     10219
+Name     Gamaak Fitness Center~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     The gamaak fitness center is a nice building with high ceilings and and
+large windows in the front of the building showing city outside. The lobby
+is brightly lit with several plants. However the distinct smell of sweat
+and the mixed body odours of a hundred different races distracts greatly
+from the aura of the place. Unless, of course, you are one of the many
+Plutinaax who come here because they enjoy that sort of thing.
+~
+#EXIT
+Direction north~
+ToRoom    302
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10220
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10223
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10220
+Name     Lounge~
+Sector   city~
+Flags    indoors prototype~
+Desc     The lounge consists of several comfortable chairs and tables. There is a
+large window overlooking the pool bellow.
+~
+#EXIT
+Direction north~
+ToRoom    10219
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10221
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10229
+Flags     window~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10222
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10221
+Name     Pro-Shop~
+Sector   city~
+Flags    indoors prototype~
+Desc     The pro shop is stocked with a good assortment of sporting and fitness
+equipment. The room is arranged logicly by the season and main elements of
+the sport. There are also a few fitness books and magazines for sale.
+~
+#EXIT
+Direction west~
+ToRoom    10220
+#ENDEXIT
+
+Reset M 0 10208 1 10221
+  Reset G 1 10209 1
+#ENDROOM
+
+#ROOM
+Vnum     10222
+Name     Health Bar~
+Sector   city~
+Flags    indoors prototype~
+Desc     This small cafetery as the name would suggest sells healthy and nutriciuos
+food for humans and several other species. A few of the food or drink
+items also boast performance enhancing abilities. As to whether they
+actually work or not the priopriotors leave no comment.
+~
+#EXIT
+Direction east~
+ToRoom    10220
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10223
+Name     Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     The air down here smells trongly of sweat and is very moist from the pool
+and showers. The sounds of excersise equipment and the clanging of weights
+fill the hallway along with the grunts of hard work.
+~
+#EXIT
+Direction east~
+ToRoom    10224
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10226
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10225
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10219
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10224
+Name     Mens Locker Room~
+Sector   city~
+Flags    indoors prototype~
+Desc     The locker room is pretty standard fare for gyms on mostly human planets.
+Rows of lockers fill the walls while benches fill the center of the room.
+Public and private showers are located at the very end of the room as well
+as a small toilet room.
+~
+#EXIT
+Direction west~
+ToRoom    10223
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10225
+Name     Womens Locker Room~
+Sector   city~
+Flags    indoors prototype~
+Desc     The locker room is pretty standard fare for gyms on mostly human planets.
+Rows of lockers fill the walls while benches fill the center of the room.
+Public and private showers are located at the very end of the room as well
+as a small toilet room. 
+~
+#EXIT
+Direction east~
+ToRoom    10223
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10226
+Name     Hallway~
+Sector   city~
+Flags    indoors prototype~
+Desc     The air down here smells trongly of sweat and is very moist from the pool
+and showers. The sounds of excersise equipment and the clanging of weights
+fill the hallway along with the grunts of hard work.
+~
+#EXIT
+Direction north~
+ToRoom    10223
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10227
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10229
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10228
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10227
+Name     Weight Training Room~
+Sector   city~
+Flags    indoors prototype~
+Desc     This room is filled with weight training devices of all shapes and sizes.
+Most of witch look pretty straightforward but a few of them baffel your
+imigination. A few more just look frightening. 
+~
+#EXIT
+Direction west~
+ToRoom    10226
+#ENDEXIT
+
+Reset M 0 10205 1 10227
+#ENDROOM
+
+#ROOM
+Vnum     10228
+Name     Arobics Room And Track~
+Sector   city~
+Flags    indoors prototype~
+Desc     A long running track encircles this room. In the center a small group of
+people can often be seen doing various fitness routines. There is usually
+an instructor who is more than willing to add another to his or her class.
+~
+#EXIT
+Direction east~
+ToRoom    10226
+#ENDEXIT
+
+Reset M 0 10206 1 10228
+#ENDROOM
+
+#ROOM
+Vnum     10229
+Name     Swimming Pool Deck~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     What could be more refreshing and fun than a nice swim. Be careful though
+swimming is very tiring. If you aren't a good floater it would be
+advisable to stay in the shallow end of the pool or use a floatation
+device. If you wish to dive under water you might want to invest in some
+scuba gear.  
+~
+#EXIT
+Direction north~
+ToRoom    10226
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10232
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10230
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10233
+Keywords  pool~
+Flags     can_enter auto~
+#ENDEXIT
+
+Reset O 0 10206 1 10229
+Reset O 0 10204 1 10229
+#ENDROOM
+
+#ROOM
+Vnum     10230
+Name     Swimming Pool Deck~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     What could be more refreshing and fun than a nice swim. Be careful though
+swimming is very tiring. If you aren't a good floater it would be
+advisable to stay in the shallow end of the pool or use a floatation
+device. If you wish to dive under water you might want to invest in some
+scuba gear.   
+~
+#EXIT
+Direction northeast~
+ToRoom    10229
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10231
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10236
+Keywords  pool~
+Flags     can_enter auto~
+#ENDEXIT
+
+Reset M 0 10203 1 10230
+#ENDROOM
+
+#ROOM
+Vnum     10231
+Name     Swimming Pool Deck~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     What could be more refreshing and fun than a nice swim. Be careful though
+swimming is very tiring. If you aren't a good floater it would be
+advisable to stay in the shallow end of the pool or use a floatation
+device. If you wish to dive under water you might want to invest in some
+scuba gear.  
+~
+#EXIT
+Direction northeast~
+ToRoom    10232
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10230
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10234
+Keywords  pool~
+Flags     can_enter auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10232
+Name     Swimming Pool Deck~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     What could be more refreshing and fun than a nice swim. Be careful though
+swimming is very tiring. If you aren't a good floater it would be
+advisable to stay in the shallow end of the pool or use a floatation
+device. If you wish to dive under water you might want to invest in some
+scuba gear.   
+~
+#EXIT
+Direction northwest~
+ToRoom    10229
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10231
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10236
+Keywords  pool~
+Flags     can_enter auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10233
+Name     Shallow End of the Pool~
+Sector   city~
+Flags    indoors prototype~
+Desc     &BThis is the only part of the swimming pool where you can stand on the
+bottom with your head above the water. Unless you are a very strong
+swimmer or have a floatation device i wouldn't go any further into the
+pool. Although there are lifeguards they seem to spend more time flirting
+with some of the better looking patrons than paying attention to whats
+going on in the pool. &w
+~
+#EXIT
+Direction south~
+ToRoom    10236
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10229
+Keywords  deck~
+Flags     can_leave auto~
+#ENDEXIT
+
+Reset M 0 10204 3 10233
+Reset M 0 10204 3 10233
+Reset M 0 10204 3 10233
+#ENDROOM
+
+#ROOM
+Vnum     10234
+Name     Really Deep End Of The Pool~
+Sector   water swim~
+Flags    indoors prototype~
+Desc     &B Swimming can be very tiring be careful. If you wish to dive under water
+it is advised that you get a diving mask before you do so. If you feel
+yourself getting tired exit the pool quickly.   &w 
+~
+#EXIT
+Direction north~
+ToRoom    10236
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10235
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10231
+Keywords  deck~
+Flags     can_leave auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10235
+Name     Under Water~
+Sector   underwater~
+Flags    indoors prototype~
+Desc     &BBeing underwater is a wonderful thing (unless of course your drowning).&w
+~
+#EXIT
+Direction north~
+ToRoom    10237
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10234
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10238
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10236
+Name     Deep Part Of The Pool~
+Sector   water swim~
+Flags    indoors prototype~
+Desc     &BSwimming can be very tiring be careful. If you wish to dive under water
+it is advised that you get a diving mask before you do so. If you feel
+yourself getting tired exit the pool quickly. &w 
+~
+#EXIT
+Direction north~
+ToRoom    10233
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10234
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10237
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10230
+Keywords  deck~
+Flags     can_leave auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10237
+Name     Under Water~
+Sector   underwater~
+Flags    indoors prototype~
+Desc     &BBeing underwater is a wonderful thing (unless of course your drowning).&w
+~
+#EXIT
+Direction south~
+ToRoom    10235
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10236
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10238
+Name     Under Water~
+Sector   underwater~
+Flags    indoors prototype~
+Desc     &BBeing underwater is a wonderful thing (unless of course your drowning).&w
+~
+#EXIT
+Direction up~
+ToRoom    10235
+#ENDEXIT
+
+Reset O 0 10205 1 10238
+#ENDROOM
+
+#ROOM
+Vnum     10239
+Name     Loooen Escort Service~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     Clients come here to look for an escort. Often to show them around the city
+or take them somewhere specific. If you wish to to help one of them out
+talk to them and see what it is exactly they are asking for and then offer
+your help.
+~
+#EXIT
+Direction east~
+ToRoom    10240
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10204
+#ENDEXIT
+
+Reset M 0 10207 1 10239
+#ENDROOM
+
+#ROOM
+Vnum     10240
+Name     Loooen Escort Service~
+Sector   city~
+Flags    indoors prototype~
+Desc     Clients come here to look for an escort. Often to show them around the city
+or take them somewhere specific. If you wish to to help one of them out
+talk to them and see what it is exactly they are asking for and then offer
+your help.
+~
+#EXIT
+Direction west~
+ToRoom    10239
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10241
+Name     Lightspeed Courrier~
+Sector   city~
+Flags    indoors prototype~
+Desc     This currier service hires pilots to deliver packages for a fee. They are
+all COD so that any packages you take you will be paid for on their
+successful delivery. 
+~
+#EXIT
+Direction north~
+ToRoom    10205
+#ENDEXIT
+
+Reset O 0 10208 1 10241
+Reset O 0 10210 1 10241
+#ENDROOM
+
+#ROOM
+Vnum     10242
+Name     Step One Transportation~
+Sector   city~
+Flags    indoors prototype~
+#EXIT
+Direction north~
+ToRoom    10209
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10243
+Name     Rooodan Recovery Service~
+Sector   city~
+Flags    indoors prototype~
+#EXIT
+Direction south~
+ToRoom    10209
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10244
+Name     Coruscant Office of the Hunters Guild~
+Sector   city~
+Flags    indoors prototype~
+Desc     This small office offers local hunting jobs. To collect the bounty bring
+the offender back to the office or his corpse. If you wish to post a
+bounty you'll have to do so at the bounty hunters guild. (on Tatooine)
+~
+#EXIT
+Direction south~
+ToRoom    10206
+#ENDEXIT
+
+Reset M 0 10209 1 10244
+Reset O 0 10211 1 10244
+#ENDROOM
+
+#ROOM
+Vnum     10245
+Name     Bigger Bodyguards~
+Sector   city~
+Flags    indoors prototype~
+#EXIT
+Direction north~
+ToRoom    10206
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10246
+Name     Freelance Technicians Cooperative~
+Sector   city~
+Flags    indoors prototype~
+#EXIT
+Direction north~
+ToRoom    10207
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10247
+Name     Accounting Solutions~
+Sector   city~
+Flags    indoors prototype~
+#EXIT
+Direction south~
+ToRoom    10207
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10248
+Name     Riiice spy Service~
+Sector   city~
+Flags    indoors prototype~
+#EXIT
+Direction south~
+ToRoom    10208
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10249
+Name     Millenium Messenger Service~
+Sector   city~
+Flags    indoors prototype~
+#EXIT
+Direction north~
+ToRoom    10208
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10250
+Name     Entrance To SkYdome Botanical Gardens~
+Sector   city~
+Flags    nomob indoors prototype~
+Stats    0 0 2
+#EXIT
+Direction west~
+ToRoom    351
+#ENDEXIT
+
+Reset O 0 10207 1 10250
+#ENDROOM
+
+#ROOM
+Vnum     10251
+Name     Automated Bank Teller~
+Sector   city~
+Flags    nomob bank prototype~
+Desc     This small courner houses a couple wall mounted instant banking machines.
+They are hooked up via a semi-secure network to most if the galaxies major
+banks. To use them use the "bank" command. 
+~
+#EXIT
+Direction northeast~
+ToRoom    301
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10252
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10253
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10254
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10255
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10256
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10257
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10258
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10259
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10260
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10299
+Name     THIS ROOM IS USED BY A MOB PROG DO NOT REMOVE~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

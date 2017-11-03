@@ -1,0 +1,10 @@
+#PLANET
+Name         Tatooine~
+Filename     tatooine~
+BaseValue    50000
+Flags        0
+Starsystem   Tatooine System~
+Area         tatooine~
+End
+
+#END

@@ -1,0 +1,3479 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Star Destroyer - Dark Hand~
+Author       Durga~
+Ranges       30 103 0 103
+Economy      0 31196090
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       600
+Keywords   spot~
+Short      a newly created spot~
+Long       Some god abandoned a newly created spot here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       601
+Keywords   assault stormtrooper~
+Short      an assault stormtrooper~
+Long       An assault stormtrooper is preparing for a mission.
+~
+Desc       Dressed in white armored space suits over black body gloves the storm
+trooper is a sight well recognized throughout the galaxy. Known and
+feared. They are the Empires elite troopers. They are well trained
+and fearless. They have been conditioned with unquestioning loyalty
+to their superiors and will always execute their orders precisly and
+without question.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_stormtrooper~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     -500 60 0 -50 20 0
+Stats2     12 10 600
+Stats3     6 4 2
+Stats4     0 0 0 12 12
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       602
+Keywords   imperial stormtrooper~
+Short      a stormtrooper~
+Long       An imperial stormtrooper patrols the ship.
+~
+Desc       Dressed in white armored space suits over black body gloves the storm
+trooper is a sight well recognized throughout the galaxy. Known and
+feared. They are the Empires elite troopers. They are well trained
+and fearless. They have been conditioned with unquestioning loyalty
+to their superiors and will always execute their orders precisly and
+without question.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_stormtrooper~
+Gender     neuter~
+Actflags   npc~
+Stats1     -500 33 0 25 0 0
+Stats2     0 0 0
+Stats3     4 4 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       603
+Keywords   imperial stormtrooper~
+Short      a stormtrooper~
+Long       An imperial stormtrooper patrols the shipyard.
+~
+Desc       Dressed in white armored space suits over black body gloves the storm
+trooper is a sight well recognized throughout the galaxy. Known and
+feared. They are the Empires elite troopers. They are well trained
+and fearless. They have been conditioned with unquestioning loyalty
+to their superiors and will always execute their orders precisly and
+without question.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_stormtrooper~
+Gender     neuter~
+Actflags   npc~
+Stats1     -500 33 0 25 0 0
+Stats2     0 0 0
+Stats3     4 4 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       604
+Keywords   tie fighter pilot~
+Short      a TIE Fighter pilot~
+Long       A TIE Fighter pilot is preparing for flight.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 23 0 50 30 0
+Stats2     0 0 0
+Stats3     1 10 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       605
+Keywords   ancient sith spirit teacher sith9870~
+Short      an ancient sith spirit~
+Long       A faint image of a dark hooded figure sends shivers down your spine.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_dark_jedi~
+Gender     neuter~
+Actflags   npc sentinel practice~
+Stats1     0 105 0 -162 0 0
+Stats2     21 10 1050
+Stats3     10 4 2
+Stats4     0 0 0 21 21
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Attacks    r28 r30~
+Defenses   dodge r10~
+#MUDPROG
+Progtype  act_prog~
+Arglist   practices~
+Comlist   mpecho The image before you slowly fades away.
+mpgoto 7
+say ok purge me
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       606
+Keywords   binary load lifter~
+Short      a binary load lifter~
+Long       A binary load lifter methodicly goes about its work.
+~
+Desc       The binary load lifter is a big droid used mainly for lifting and
+moving large objects. Its very simple processing unit can only handle
+very simple commands as there is very little need for an intelligent
+droid laborer.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel mountable noassist droid~
+Stats1     0 20 0 50 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     droid~
+Speaking   droid~
+#ENDMOBILE
+
+#MOBILE
+Vnum       607
+Keywords   power droid~
+Short      a power droid~
+Long       A power droid is here.
+~
+Desc       The binary load lifter is a big droid used mainly for lifting and
+moving large objects. Its very simple processing unit can only handle
+very simple commands as there is very little need for an intelligent
+droid laborer.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel mountable noassist droid~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 100
+Stats3     0 0 0
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     droid~
+Speaking   droid~
+#ENDMOBILE
+
+#MOBILE
+Vnum       608
+Keywords   mouse droid mse~
+Short      a mouse droid~
+Long       An MSE droid wheels around the floor.
+~
+Desc       The MSE droid is a small black droid less than a foot in hight. It
+wheels around the floor rapidly and comunicates in high pitched
+beeps. This behavior along with the sound of its initials have easily
+led it to being more commonly known as a "mouse droid
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc wimpy noassist droid~
+Stats1     0 1 0 100 0 0
+Stats2     0 0 0
+Stats3     1 2 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     droid~
+Speaking   droid~
+#ENDMOBILE
+
+#MOBILE
+Vnum       609
+Keywords   the empire~
+Short      imperial royal guard~
+Long       An imperial royal guard stands at his post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_clan_guard~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 80 0 -100 500 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 16 16
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       610
+Keywords   the empire~
+Short      imperial royal guard~
+Long       An imperial royal guard stands at his post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_clan_guard~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 80 0 -100 500 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       611
+Keywords   the empire~
+Short      imperial royal guard~
+Long       An imperial royal guard stands at his post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_clan_guard~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 80 0 -100 500 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       612
+Keywords   the empire~
+Short      imperial royal guard~
+Long       An imperial royal guard stands at his post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_clan_guard~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 80 0 -100 500 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       613
+Keywords   captain Harlef~
+Short      Captain Harlef~
+Long       Captain Harlef stands supervising the bridge.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel nokill~
+Stats1     0 85 0 -112 600 0
+Stats2     17 10 850
+Stats3     8 4 2
+Stats4     0 0 0 17 17
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  act_prog~
+Arglist   package~
+Comlist   if ovnuminv(10210) >= 1
+say Thank you.
+mpwithdraw 2500
+give 2500 credits $n
+mpgain $n 5 100000
+else
+say hmm... Thanks, but this isn't adressed to me.
+drop all
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       614
+Keywords   pilot~
+Short      an imperial pilot~
+Long       An imperial pilot sits at his station.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 80 0 -100 0 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 16 16
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       615
+Keywords   copilot~
+Short      a copilot~
+Long       A copilot sits at his post.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 75 0 -87 0 0
+Stats2     15 10 750
+Stats3     7 4 2
+Stats4     0 0 0 15 15
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       616
+Keywords   gunner~
+Short      a gunner~
+Long       A gunner checks of the weaponsystems.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 70 0 -75 0 0
+Stats2     14 10 700
+Stats3     7 4 2
+Stats4     0 0 0 14 14
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       617
+Keywords   navigator~
+Short      a navigator~
+Long       A navigator is calculating a hyperjump.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 70 0 -75 0 0
+Stats2     14 10 700
+Stats3     7 4 2
+Stats4     0 0 0 14 14
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       618
+Keywords   the empire~
+Short      an imperial guard~
+Long       An imperial guard stands at attention.
+~
+Desc       The imperial guard stands at an unwaivering alert attention. He is
+dressed in the standard black imperial military uniform common to
+many imperial naval troopers. 
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_clan_guard~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     -500 40 0 0 15 0
+Stats2     8 10 400
+Stats3     4 4 2
+Stats4     0 0 0 8 8
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       619
+Keywords   An imperial Officer~
+Short      An imperial officer~
+Long       An imperial officer sits at the war table.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 70 0 -75 600 0
+Stats2     14 10 700
+Stats3     7 4 2
+Stats4     0 0 0 14 14
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       620
+Keywords   General Hanson~
+Short      General Hanson~
+Long       General Hanson sits at the war table.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel nokill~
+Stats1     0 90 0 -125 600 0
+Stats2     18 10 900
+Stats3     9 4 2
+Stats4     0 0 0 18 18
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       699
+Keywords   spot~
+Short      a newly created spot~
+Long       Some god abandoned a newly created spot here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     600
+Keywords an assault transport~
+Type     spacecraft~
+Short    an assault transport~
+Long     An assault transport is docked here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     601
+Keywords assault stormtrooper helmet as601~
+Type     armor~
+Short    an assault stormtrooper helmet~
+Long     A stormtrooper helmet was dropped here.~
+Flags    human_size~
+WFlags   take head~
+Values   0 9 0 0 0 0
+Stats    5 0 0 0 0
+Affect       -1 -1 -10 36 0
+Affect       -1 -1 -10 39 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   if clan($n) != The Empire
+mpechoat $n What do you think you are a stormtrooper?
+mpechoat $n Go join the empire if you want to wear that!
+mpechoaround $n $n thinks $ss a stormtrooper.
+mpforce $n remove as601 
+endif
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     602
+Keywords stormtrooper helmet s602~
+Type     armor~
+Short    a stormtrooper helmet~
+Long     A stormtrooper helmet was dropped here.~
+Flags    human_size~
+WFlags   take head~
+Values   0 6 0 0 0 0
+Stats    5 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     603
+Keywords Assault stormtrooper gloves s603~
+Type     armor~
+Short    assault stormtrooper gloves~
+Long     Stormtrooper gloves were dropped here.~
+Flags    human_size~
+WFlags   take hands~
+Values   0 4 0 0 0 0
+Stats    3 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     604
+Keywords Assault stormtrooper arm plates s604~
+Type     armor~
+Short    assault stormtrooper arm plates~
+Long     Some stormtrooper arm plates were left here.~
+Flags    human_size~
+WFlags   take arms~
+Values   0 7 0 0 0 0
+Stats    3 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     605
+Keywords Assault stormtrooper shoulder plates s605~
+Type     armor~
+Short    assault stormtrooper shoulder plates~
+Long     Stormtrooper shoulder plates were discarded here.~
+Flags    human_size~
+WFlags   take neck~
+Values   0 7 0 0 0 0
+Stats    3 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     606
+Keywords Assault stormtrooper hand plates s606~
+Type     armor~
+Short    assault stormtrooper hand plates~
+Long     Stormtrooper hand plates were discarded here.~
+Flags    human_size~
+WFlags   take wrist~
+Values   0 7 0 0 0 0
+Stats    3 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     607
+Keywords assault stormtrooper chest plate s607~
+Type     armor~
+Short    an assault stormtrooper chest plate~
+Long     A white stormtrooper chest plate was left here.~
+Flags    human_size~
+WFlags   take body~
+Values   0 7 0 0 0 0
+Stats    7 0 0 0 56
+#ENDOBJECT
+
+#OBJECT
+Vnum     608
+Keywords assault stormtrooper groin plate s608~
+Type     armor~
+Short    an assault stormtrooper groin plate~
+Long     A stormtrooper groin plate was left here.~
+Flags    human_size~
+WFlags   take waist~
+Values   0 6 0 0 0 0
+Stats    3 0 0 0 56
+#ENDOBJECT
+
+#OBJECT
+Vnum     609
+Keywords stormtrooper leg plates s609~
+Type     armor~
+Short    assault stormtrooper leg plates~
+Long     Some stormtrooper leg armor was left here.~
+Flags    human_size~
+WFlags   take legs~
+Values   0 7 0 0 0 0
+Stats    6 0 0 0 56
+#ENDOBJECT
+
+#OBJECT
+Vnum     610
+Keywords tie fighter~
+Type     spacecraft~
+Short    a tie fighter~
+Long     An Imperial Tie Fighter is docked here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     611
+Keywords listtttt~
+Type     furniture~
+Short    a list~
+Long     A list is on the wall here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     612
+Keywords portable oven~
+Type     oven~
+Short    a portable oven~
+Long     A portable oven is plugged into a wall socket.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    20 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     613
+Keywords ancient book sith teachings book123sith~
+Type     book~
+Short    an ancient book~
+Long     An ancient book holds many dark secrets.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  exa_prog~
+Arglist   100~
+Comlist   mpecho As the ancient book is examined you feel a presence. 
+mpecho that wasn't here before. It is old and strong with 
+mpecho the dark side of the force. 
+mpmload 605
+if ovnumroom(613) < 1
+mpforce $n drop $o
+endif
+mpecho The book crumbles into dust.
+mppurge book123sith
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     614
+Keywords The Imperial Terminal~
+Type     furniture~
+Short    The Imperial Terminal~
+Long     An Imperial Information Terminal is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     620
+Keywords assault stormtrooper boots~
+Type     armor~
+Short    assault stormtrooper boots~
+Long     Some white boots are here.~
+Flags    human_size~
+WFlags   take feet~
+Values   0 6 0 0 0 0
+Stats    3 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     621
+Keywords trash comapctor key~
+Type     key~
+Short    trash comapctor key~
+Long     Thank the force the trash compactor key is here.~
+Flags    hidden~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     622
+Keywords duraplast~
+Type     duraplast~
+Short    duraplast tubing~
+Long     A piece of duraplast tubing is here.~
+Flags    hidden~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     623
+Keywords a sculpture~
+Type     treasure~
+Short    a sculpture~
+Long     A small sculture depicts a strange batlike creature devouring a humaniod form.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 10000 1000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     624
+Keywords royal guards force pike~
+Type     weapon~
+Short    a royal guards force pike~
+Long     A royal guards force pike was left here.~
+WFlags   take wield~
+Values   0 5 8 11 0 0
+Stats    12 1500 150 0 0
+Affect       -1 -1 -1 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     695
+Keywords The Imperial Star Destroyer Darkhand~
+Type     spacecraft~
+Short    The Imperial Star Destroyer Darkhand~
+Long     A lift leading to The Imperial Star Destroyer Darkhand is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     696
+Keywords Battle Plans~
+Type     paper~
+Short    the battle plans~
+Long     Imperial battle plans were left here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     697
+Keywords the silver urchin key~
+Type     government~
+Short    a newly created the silver urchin key~
+Long     Some god dropped a newly created the silver urchin key here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     698
+Keywords the Dark hand key~
+Type     trash~
+Short    a newly created the Dark hand key~
+Long     Some god dropped a newly created the Dark hand key here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     699
+Keywords Dark hand key~
+Type     trash~
+Short    Dark hand key~
+Long     Dark hand key~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     600
+Name     Main Hanger of the Star Destroyer Dark Hand~
+Sector   city~
+Flags    spacecraft~
+Desc     The main hanger is an enormous hanger with areas sectioned off for all
+types of ships. In the middle of the hanger the floor is mechanicly
+designed to seperate and open up allowing large ships to enter and leave.
+There are also smaller launch tunnels that can be used by smaller ships.
+ 
+~
+#EXIT
+Direction up~
+ToRoom    601
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     601
+Name     Balcony Overlooking The Main Hanger~
+Sector   city~
+Flags    spacecraft~
+Desc     The main hanger is an enormous hanger with areas sectioned off for all
+types of ships. In the middle of the hanger the floor is mechanicly
+designed to seperate and open up allowing large ships to enter and leave.
+There are also smaller launch tunnels that can be used by smaller ships.
+~
+#EXIT
+Direction south~
+ToRoom    602
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    600
+#ENDEXIT
+
+Reset M 0 602 10 601
+  Reset E 1 32240 1 7
+  Reset E 1 32239 1 5
+  Reset E 1 32250 1 13
+  Reset E 1 32248 1 7
+  Reset E 1 32247 1 13
+  Reset E 1 32246 1 5
+  Reset E 1 32245 1 14
+  Reset E 1 32244 1 3
+  Reset E 1 32243 1 10
+  Reset E 1 32242 1 9
+  Reset E 1 32241 1 6
+  Reset E 1 50 1 16
+  Reset G 1 32254 1
+  Reset G 1 10488 1
+#ENDROOM
+
+#ROOM
+Vnum     602
+Name     A Corridor~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction north~
+ToRoom    601
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    603
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     603
+Name     A Corridor~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction north~
+ToRoom    602
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    604
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     604
+Name     A Corridor~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction north~
+ToRoom    603
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    609
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     605
+Name     Balcony Overlooking a Transport Hanger~
+Sector   city~
+Flags    spacecraft~
+Desc     The transport hanger is similar to the main hanger except that the ships
+exit through shield walls along the outermost wall of the hanger. Another
+main difference is that the ships are all of two types: assault transports
+designed to carry and deploy troopers and large vehicle transports used to
+carry ground assault vehicles. 
+~
+#EXIT
+Direction east~
+ToRoom    608
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    606
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     606
+Name     Transport Hanger~
+Sector   city~
+Flags    spacecraft~
+Desc     The transport hanger is similar to the main hanger except that the ships
+exit through shield walls along the outermost wall of the hanger. Another
+main difference is that the ships are all of two types: assault transports
+designed to carry and deploy troopers and large vehicle transports used to
+carry ground assault vehicles.  
+~
+#EXIT
+Direction up~
+ToRoom    605
+#ENDEXIT
+
+Reset M 0 601 4 606
+  Reset G 1 32254 1
+  Reset G 1 10488 1
+  Reset E 1 53 1 16
+  Reset E 1 32250 1 13
+  Reset E 1 609 1 7
+  Reset E 1 607 1 5
+  Reset E 1 606 1 15
+  Reset E 1 606 1 14
+  Reset E 1 605 1 3
+  Reset E 1 604 1 10
+  Reset E 1 603 1 9
+  Reset E 1 601 1 6
+Reset O 0 600 1 606
+#ENDROOM
+
+#ROOM
+Vnum     607
+Name     A Corridor~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    604
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    608
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     608
+Name     A Corridor~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    607
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    605
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     609
+Name     A Corridor~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    610
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    604
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     610
+Name     A Corridor~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    611
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    609
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     611
+Name     Balcony Overlooking A TIE Fighter Hanger~
+Sector   city~
+Flags    spacecraft~
+Desc     The tie fighter hanger is aranged differently than a standard hanger. The
+TIE Fighters are arranged in rows, suspended by thibk metal arms. When
+they are ready to launch they are lowered through airlocks below them and
+then released. 
+~
+#EXIT
+Direction west~
+ToRoom    610
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    612
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     612
+Name     TIE Fighter Hanger~
+Sector   city~
+Flags    spacecraft~
+Desc     The tie fighter hanger is aranged differently than a standard hanger. The
+TIE Fighters are arranged in rows, suspended by thibk metal arms. When
+they are ready to launch they are lowered through airlocks below them and
+then released.  
+~
+#EXIT
+Direction up~
+ToRoom    611
+#ENDEXIT
+
+Reset O 0 610 1 612
+Reset M 0 604 5 612
+#ENDROOM
+
+#ROOM
+Vnum     613
+Name     A Turbolift~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This turbolift is located near the rear of the ship enabling it to reach
+all levels of the destroyer. It is voice activated. Just say the level you
+want to be let off on. There is a small "list" of avalable levels on the
+wall. 
+~
+Reset O 0 611 1 613
+#EXDESC
+ExDescKey    list levels level note sign list. lists~
+ExDesc       Levels:
+ 
+1. Hanger
+2. Engineering
+3. Service
+4. Detention
+5. Barracks
+6. Medical
+7. Officers
+8. Royal
+9. Bridge
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hanger 1~
+Comlist   mpecho The turbolift quickly moves to the hanger level.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 604
+mpat 604 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mpechoat $n The turbolift door closes behind you.
+mpechoaround $n The doors open and close briefly letting $n in.
+mpecho An electonic voice says. "What level please."
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   engineering 2~
+Comlist   mpecho The turbolift quickly moves to the engineering level.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 615
+mpat 615 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   service 3 ~
+Comlist   mpecho The turbolift quickly moves to the service level.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 614
+mpat 614 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   detention 4 ~
+Comlist   mpecho The turbolift quickly moves to the detention level.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 616
+mpat 616 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   barracks 5 ~
+Comlist   mpecho The turbolift quickly moves to the barracks level.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 617
+mpat 617 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   medical 6 ~
+Comlist   mpecho The turbolift quickly moves to the medical level.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 620
+mpat 620 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   officer 7 ~
+Comlist   mpecho The turbolift quickly moves to the officer level.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 618
+mpat 618 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   royal 8 ~
+Comlist   mpecho The turbolift quickly moves to the royal chambers.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 619
+mpat 619 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bridge 9 ~
+Comlist   mpecho The turbolift quickly moves to the bridge.
+mpechoat $n The doors open and you step out.
+mpechoaround $n The doors open and $n step out before they reclose.
+mptransfer $n 621
+mpat 621 mpechoaround $n $n arrives from a turbolift.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     614
+Name     Service Level~
+Sector   city~
+Flags    spacecraft~
+Desc     The service level appears similar to all other levels of the ship. The
+floor is the same polished black and the walls are the same blue-grey that
+adorns the rest of the ship. The most recognisable difference is the
+nature of the sounds. The sounds of droids far outweighs the sound of
+humans on this part of the ship. 
+~
+#EXIT
+Direction north~
+ToRoom    696
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    693
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    695
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 614 3 1
+#ENDROOM
+
+#ROOM
+Vnum     615
+Name     Engineering Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The engineering deck is located around the ships main reactor. Catwalks are
+made of solid grating connect various computer consoles and other pieces
+of machinery. 
+~
+#EXIT
+Direction north~
+ToRoom    654
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    622
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    628
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     616
+Name     Detention Level~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This room contains a control desk for monitering the detention block. There
+are many automated defence guns positioned about the room as well as
+several cameras monitering the activity here. 
+~
+#EXIT
+Direction north~
+ToRoom    630
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    632
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    634
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     617
+Name     Barracks Level~
+Sector   city~
+Flags    spacecraft~
+Desc     The barracks area of imperial installations is an interesting mix of
+youthful energy and strict order. This is a strange combination of sweat
+and polish. The sounds of seargents shouting orders to the north mixes
+with the loud chatter of off duty trops to the west.
+~
+#EXIT
+Direction north~
+ToRoom    636
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    642
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    648
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     618
+Name     Officers Foyer~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The officers section of the darkhand contains the same uninspiring
+architecture as the rest of the ship. However the atmosphere is slightly
+lighter by the addition of a few personal touches added by the officers
+such as a small sculpture on a pedistal near the northern corridor.
+~
+#EXIT
+Direction north~
+ToRoom    670
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    668
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    669
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     619
+Name     The Royal Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This large wide hallway is dimly lit. The floor is polished black like the
+rest of the ship but the walls are quite different containing many
+carvings. The carvings seem to have been painstakingly carved out of the
+wall. The are all strange designs that look very beautiful yet at the same
+time very frightening. Staring at them sends shivers down your spine.
+~
+#EXIT
+Direction north~
+ToRoom    678
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+Reset M 0 609 1 619
+  Reset G 1 624 1
+#ENDROOM
+
+#ROOM
+Vnum     620
+Name     Medical Level~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The medical level smells of strongly of antiseptic. A sign on the wall
+saying "emergency" points to the west.  There are a few chairs along the
+wall to sit and wait in if the emergency room is full.
+~
+#EXIT
+Direction north~
+ToRoom    659
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    657
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     621
+Name     The Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The bridge of the star destroyer is a large room with several work stations
+around the perimeter and a raised command section in the center. It is
+wider than it is long and a large transparisteel view window covers the
+front wall. Several other large monitors give views from ship mounted
+cameras giving a complete view of whats outside the ship.
+~
+#EXIT
+Direction north~
+ToRoom    699
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    673
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    674
+#ENDEXIT
+
+Reset M 0 612 2 621
+Reset M 0 612 2 621
+#ENDROOM
+
+#ROOM
+Vnum     622
+Name     Engineering Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The engineering deck is located around the ships main reactor. Catwalks are
+made of solid grating connect various computer consoles and other pieces
+of machinery.  
+~
+#EXIT
+Direction south~
+ToRoom    623
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    615
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     623
+Name     Engineering Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The engineering deck is located around the ships main reactor. Catwalks are
+made of solid grating connect various computer consoles and other pieces
+of machinery.  
+~
+#EXIT
+Direction north~
+ToRoom    622
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    624
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     624
+Name     Engineering Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The engineering deck is located around the ships main reactor. Catwalks are
+made of solid grating connect various computer consoles and other pieces
+of machinery.  
+~
+#EXIT
+Direction north~
+ToRoom    623
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    625
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     625
+Name     Engineering Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The engineering deck is located around the ships main reactor. Catwalks are
+made of solid grating connect various computer consoles and other pieces
+of machinery.  
+~
+#EXIT
+Direction east~
+ToRoom    624
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    629
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    626
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     626
+Name     Engineering Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The engineering deck is located around the ships main reactor. Catwalks are
+made of solid grating connect various computer consoles and other pieces
+of machinery.  
+~
+#EXIT
+Direction north~
+ToRoom    627
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    625
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     627
+Name     Engineering Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The engineering deck is located around the ships main reactor. Catwalks are
+made of solid grating connect various computer consoles and other pieces
+of machinery.  
+~
+#EXIT
+Direction north~
+ToRoom    628
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    626
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     628
+Name     Engineering Deck~
+Sector   city~
+Flags    spacecraft~
+Desc     The engineering deck is located around the ships main reactor. Catwalks are
+made of solid grating connect various computer consoles and other pieces
+of machinery.  
+~
+#EXIT
+Direction east~
+ToRoom    615
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    627
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     629
+Name     Main Reactor Control~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The main reactor control is a large computer console containing the
+controls for the ships main reactor as well as for monitoring the
+functions of the rest of engineering. This would be an ideal location to
+cordinate the ships engineering efforts and you will often fiend the chief
+of engineering posted here. 
+~
+#EXIT
+Direction north~
+ToRoom    625
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     630
+Name     Detention Level Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridors walls and floors make a hexagonal shape. The ceiling is
+relatively low and there is very little room for manuevering around.
+Locked cell doors are spaced evenly out down the hall.
+~
+#EXIT
+Direction north~
+ToRoom    631
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    630
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    616
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    630
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset D 0 630 1 2
+Reset D 0 630 3 2
+#ENDROOM
+
+#ROOM
+Vnum     631
+Name     Detention Level Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridors walls and floors make a hexagonal shape. The ceiling is
+relatively low and there is very little room for manuevering around.
+Locked cell doors are spaced evenly out down the hall.
+~
+#EXIT
+Direction east~
+ToRoom    631
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    630
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    631
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset D 0 631 1 2
+Reset D 0 631 3 2
+#ENDROOM
+
+#ROOM
+Vnum     632
+Name     Detention Level Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridors walls and floors make a hexagonal shape. The ceiling is
+relatively low and there is very little room for manuevering around.
+Locked cell doors are spaced evenly out down the hall.
+~
+#EXIT
+Direction north~
+ToRoom    632
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    633
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    632
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    616
+#ENDEXIT
+
+Reset D 0 632 0 2
+Reset D 0 632 2 2
+#ENDROOM
+
+#ROOM
+Vnum     633
+Name     Detention Level Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridors walls and floors make a hexagonal shape. The ceiling is
+relatively low and there is very little room for manuevering around.
+Locked cell doors are spaced evenly out down the hall.
+~
+#EXIT
+Direction north~
+ToRoom    633
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    633
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    632
+#ENDEXIT
+
+Reset D 0 633 0 2
+Reset D 0 633 2 2
+#ENDROOM
+
+#ROOM
+Vnum     634
+Name     Detention Level Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridors walls and floors make a hexagonal shape. The ceiling is
+relatively low and there is very little room for manuevering around.
+Locked cell doors are spaced evenly out down the hall.
+~
+#EXIT
+Direction north~
+ToRoom    634
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    616
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    634
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    635
+#ENDEXIT
+
+Reset D 0 634 0 2
+Reset D 0 634 2 2
+#ENDROOM
+
+#ROOM
+Vnum     635
+Name     Detention Level Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridors walls and floors make a hexagonal shape. The ceiling is
+relatively low and there is very little room for manuevering around.
+Locked cell doors are spaced evenly out down the hall.
+~
+#EXIT
+Direction north~
+ToRoom    635
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    634
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    635
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset D 0 635 0 2
+Reset D 0 635 2 2
+#ENDROOM
+
+#ROOM
+Vnum     636
+Name     The Drill Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The drill hall is an enormous hall taking up a large portion of this deck.
+It is devided into several sections. A blaster range is used for target
+practice at the north east corner of the room. The south east section is
+taken up by an obsticle course containing climbing walls. The west section
+contains several types of artificial terrain used for combat simulation.
+The center of the room however is empty and used for the standard drills
+that take up many hours of the day.
+~
+#EXIT
+Direction north~
+ToRoom    637
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    638
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    617
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    639
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     637
+Name     The Drill Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The drill hall is an enormous hall taking up a large portion of this deck.
+It is devided into several sections. A blaster range is used for target
+practice at the north east corner of the room. The south east section is
+taken up by an obsticle course containing climbing walls. The west section
+contains several types of artificial terrain used for combat simulation.
+The center of the room however is empty and used for the standard drills
+that take up many hours of the day.
+~
+#EXIT
+Direction east~
+ToRoom    641
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    636
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    640
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     638
+Name     The Drill Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The drill hall is an enormous hall taking up a large portion of this deck.
+It is devided into several sections. A blaster range is used for target
+practice at the north east corner of the room. The south east section is
+taken up by an obsticle course containing climbing walls. The west section
+contains several types of artificial terrain used for combat simulation.
+The center of the room however is empty and used for the standard drills
+that take up many hours of the day.
+~
+#EXIT
+Direction north~
+ToRoom    641
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    636
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     639
+Name     The Drill Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The drill hall is an enormous hall taking up a large portion of this deck.
+It is devided into several sections. A blaster range is used for target
+practice at the north east corner of the room. The south east section is
+taken up by an obsticle course containing climbing walls. The west section
+contains several types of artificial terrain used for combat simulation.
+The center of the room however is empty and used for the standard drills
+that take up many hours of the day.
+~
+#EXIT
+Direction north~
+ToRoom    640
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    636
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     640
+Name     The Drill Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The drill hall is an enormous hall taking up a large portion of this deck.
+It is devided into several sections. A blaster range is used for target
+practice at the north east corner of the room. The south east section is
+taken up by an obsticle course containing climbing walls. The west section
+contains several types of artificial terrain used for combat simulation.
+The center of the room however is empty and used for the standard drills
+that take up many hours of the day.
+~
+#EXIT
+Direction east~
+ToRoom    637
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    639
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     641
+Name     The Drill Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The drill hall is an enormous hall taking up a large portion of this deck.
+It is devided into several sections. A blaster range is used for target
+practice at the north east corner of the room. The south east section is
+taken up by an obsticle course containing climbing walls. The west section
+contains several types of artificial terrain used for combat simulation.
+The center of the room however is empty and used for the standard drills
+that take up many hours of the day.
+~
+#EXIT
+Direction south~
+ToRoom    638
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    637
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     642
+Name     Barracks Hallway~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    643
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    646
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    617
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     643
+Name     The Mess Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     Neat rows of clean organized tables fill the room. Each table is
+rectangular in shape and seats exactly one dozen troopers. The room is
+filled with the talking but it is not over loud. There is a strong sense
+of disciplin even here. 
+~
+#EXIT
+Direction north~
+ToRoom    644
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    645
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    642
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     644
+Name     The Mess Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     Neat rows of clean organized tables fill the room. Each table is
+rectangular in shape and seats exactly one dozen troopers. The room is
+filled with the talking but it is not over loud. There is a strong sense
+of disciplin even here.  
+~
+#EXIT
+Direction south~
+ToRoom    643
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     645
+Name     Barracks Kitchen~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The barracks kitchen is a huge assembly line. There are many enormous ovens
+and stoves and several long prep tables. A row of large sinks spans the
+length of the longest wall. Troopers take shifts at kitchen duty. Extra
+hours are rarely given for infractions as they happen so very seldom.
+~
+#EXIT
+Direction north~
+ToRoom    643
+#ENDEXIT
+
+Reset O 0 612 1 645
+#ENDROOM
+
+#ROOM
+Vnum     646
+Name     Barrack Bunkroom~
+Sector   city~
+Flags    nomob hotel spacecraft~
+Desc     This is a standard looking miitary bunkroom. Rows of stacked beds line the
+walls. At the end of each bed is a foot locker. Small closets are on the
+walls inbetween the beds. The room is clean and very orderly. 
+~
+#EXIT
+Direction north~
+ToRoom    642
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    647
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     647
+Name     Barrack Bunkroom~
+Sector   city~
+Flags    nomob hotel spacecraft~
+Desc     This is a standard looking miitary bunkroom. Rows of stacked beds line the
+walls. At the end of each bed is a foot locker. Small closets are on the
+walls inbetween the beds. The room is clean and very orderly. 
+~
+#EXIT
+Direction north~
+ToRoom    646
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     648
+Name     Barracks Hallway~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    617
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    649
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    651
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     649
+Name     Barrack Bunkroom~
+Sector   city~
+Flags    nomob hotel spacecraft~
+Desc     This is a standard looking miitary bunkroom. Rows of stacked beds line the
+walls. At the end of each bed is a foot locker. Small closets are on the
+walls inbetween the beds. The room is clean and very orderly. 
+~
+#EXIT
+Direction north~
+ToRoom    648
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    650
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     650
+Name     Barrack Bunkroom~
+Sector   city~
+Flags    nomob hotel spacecraft~
+Desc     This is a standard looking miitary bunkroom. Rows of stacked beds line the
+walls. At the end of each bed is a foot locker. Small closets are on the
+walls inbetween the beds. The room is clean and very orderly. 
+~
+#EXIT
+Direction north~
+ToRoom    649
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     651
+Name     Barracks Lounge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The barracks lounge contains several off duty amusements for the troops.
+The is a large holovid at one end of the room. Several games tables are
+scattered about as well as an area for just sitting and chatting. There
+are a few skill testing games at one end of the rom as well. these
+generally involve throwing something at a small target or ricocheting
+small objects over a playing surface.
+~
+#EXIT
+Direction north~
+ToRoom    652
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    648
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    653
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     652
+Name     Barracks Lounge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     he barracks lounge contains several off duty amusements for the troops. The
+is a large holovid at one end of the room. Several games tables are
+scattered about as well as an area for just sitting and chatting. There
+are a few skill testing games at one end of the rom as well. these
+generally involve throwing something at a small target or ricocheting
+small objects over a playing surface.
+~
+#EXIT
+Direction south~
+ToRoom    651
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     653
+Name     Barracks Lounge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     he barracks lounge contains several off duty amusements for the troops. The
+is a large holovid at one end of the room. Several games tables are
+scattered about as well as an area for just sitting and chatting. There
+are a few skill testing games at one end of the rom as well. these
+generally involve throwing something at a small target or ricocheting
+small objects over a playing surface.
+~
+#EXIT
+Direction north~
+ToRoom    651
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     654
+Name     Hallway To Turrets~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    656
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    615
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    655
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     655
+Name     Hallway To Turrets~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    654
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    697
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     656
+Name     Hallway To Turrets~
+Sector   city~
+Flags    spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction east~
+ToRoom    698
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    654
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     657
+Name     Emergency~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This room is filled with several stretchers and a couple dozen chairs. The
+back of the room is section off by several curtains. A door to the north
+has a sign on it saying "Medical staff only"
+~
+#EXIT
+Direction north~
+ToRoom    658
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    620
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     658
+Name     Operating Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     There are several spaced apart beds in this room. Above each is a large
+spotlight. They are surrounded by surgical equipment and monitoring
+devices. 
+~
+#EXIT
+Direction east~
+ToRoom    659
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    657
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     659
+Name     A Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction north~
+ToRoom    661
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    660
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    620
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    658
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     660
+Name     Operating Room~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    659
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     661
+Name     A Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction north~
+ToRoom    664
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    662
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    659
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    663
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     662
+Name     A Recovery Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The recovery rooms are semi-pleasant decorated in a soft white. There are
+several beds devidable by curtains lining the walls. Each bed has some
+monitoring equipment beside it. The room has a very sterile smell.
+~
+#EXIT
+Direction west~
+ToRoom    661
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     663
+Name     A Recovery Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The recovery rooms are semi-pleasant decorated in a soft white. There are
+several beds devidable by curtains lining the walls. Each bed has some
+monitoring equipment beside it. The room has a very sterile smell.
+~
+#EXIT
+Direction east~
+ToRoom    661
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     664
+Name     Intensive Care~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The intensive care unit is for people who need constant monitoring. The are
+several beds here surrounded by medical equipment as well as an equal
+number of bacta tanks. 
+~
+#EXIT
+Direction north~
+ToRoom    665
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    666
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    661
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    667
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     665
+Name     A Bacta Tank~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     You are floating in a tank gelatnous red liquid. A small air hose is and
+mask available for you to breath through. There is not much to do here but
+rest and heal.    When you are done healing leave and let someone else
+have a turn.
+~
+#EXIT
+Direction south~
+ToRoom    664
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpechoat $n The healing warmth of the bacta spreads over your body.
+feel heal $n
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     666
+Name     A Bacta Tank~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     You are floating in a tank gelatnous red liquid. A small air hose is and
+mask available for you to breath through. There is not much to do here but
+rest and heal.    When you are done healing leave and let someone else
+have a turn. 
+~
+#EXIT
+Direction west~
+ToRoom    664
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpechoat $n The healing warmth of the bacta spreads over your body.
+feel heal $n
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     667
+Name     A Bacta Tank~
+Sector   city~
+Flags    nomob spacecraft~
+Stats    0 0 1
+Desc     You are floating in a tank gelatnous red liquid. A small air hose is and
+mask available for you to breath through. There is not much to do here but
+rest and heal.    When you are done healing leave and let someone else
+have a turn.
+~
+#EXIT
+Direction east~
+ToRoom    664
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpechoat $n The healing warmth of the bacta spreads over your body.
+feel heal $n
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     668
+Name     A Dining Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The dining area somewhat tasteful. There are several large tables
+throughout the room. Each is covered in a fine table cloth and set in a
+manner generally considered proper amongst most human worlds and
+especially on all imperial controlled worlds.
+~
+#EXIT
+Direction west~
+ToRoom    618
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     669
+Name     Officers Lounge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is a comfortable room with several couches. There are several game and
+card tables about the room. The games played at them are mostly strategy
+games designed to force competition between opponents at a high
+intellectual level.
+~
+#EXIT
+Direction east~
+ToRoom    618
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     670
+Name     A Hallway~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction north~
+ToRoom    671
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    670
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    618
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    670
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset D 0 670 1 2
+Reset D 0 670 3 2
+#ENDROOM
+
+#ROOM
+Vnum     671
+Name     A Hallway~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction north~
+ToRoom    672
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    671
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    670
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    671
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset D 0 671 1 2
+Reset D 0 671 3 2
+#ENDROOM
+
+#ROOM
+Vnum     672
+Name     A Hallway~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This corridor looks like just about every other corridor on the spaceship.
+Imperial designs aren't the most original but they do convey a strong
+message. The walls are standard imperial blue-grey and the floor is a
+polished jet black. 
+~
+#EXIT
+Direction north~
+ToRoom    689
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    672
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    671
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    672
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset D 0 672 1 2
+Reset D 0 672 3 2
+#ENDROOM
+
+#ROOM
+Vnum     673
+Name     Navigators Station~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The navigator station contains a large computer with several monitors used
+in comparing charts and maps and making complex calculations. Most of this
+is done by the computer and monitored by the navigator. 
+~
+#EXIT
+Direction north~
+ToRoom    675
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    699
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    621
+#ENDEXIT
+
+Reset M 0 617 1 673
+#ENDROOM
+
+#ROOM
+Vnum     674
+Name     Gunners Seat~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The gunners station contains controls for monitoring and manipulating the
+ships main lasers as well as the ships missile launchers torpedos and
+bombs. There are several turrets located around the ship however that are
+controlled from inside the turret and not from here. 
+~
+#EXIT
+Direction north~
+ToRoom    677
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    699
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    621
+#ENDEXIT
+
+Reset M 0 616 1 674
+#ENDROOM
+
+#ROOM
+Vnum     675
+Name     Pilots Chair~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The pilots job is heavily assisted by computer on larger ships thus the
+controls at this station resemble a large computer panel rather than being
+centered around a flight stick like in starfighters. There are dozens of
+minitors around the station giving smaller versions of the large wall
+mounted ones as well as dozens of others monitering different aspects of
+the ships flight.
+~
+#EXIT
+Direction south~
+ToRoom    673
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    676
+#ENDEXIT
+
+Reset M 0 614 1 675
+#ENDROOM
+
+#ROOM
+Vnum     676
+Name     The Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This part of the bridge contains a panel for controling several non
+critical ship systems. It is located right beneath the main view window
+thus it is nearly impossible to see whats going on outside the ship from
+here. 
+~
+#EXIT
+Direction east~
+ToRoom    675
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    699
+Keywords  Chairn~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    677
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     677
+Name     Co Pilots Chair~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The co pilot station contains controls for the ships defence systems. The
+most important controls being those for monitering and controlling the
+ships shields. 
+~
+#EXIT
+Direction east~
+ToRoom    676
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    674
+#ENDEXIT
+
+Reset M 0 615 1 677
+#ENDROOM
+
+#ROOM
+Vnum     678
+Name     The Royal Hall~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This large wide hallway is dimly lit. The floor is polished black like the
+rest of the ship but the walls are quite different containing many
+carvings. The carvings seem to have been painstakingly carved out of the
+wall. The are all strange designs that look very beautiful yet at the same
+time very frightening. Staring at them sends shivers down your spine.
+~
+#EXIT
+Direction north~
+ToRoom    679
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    619
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     679
+Name     Audience Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The audience chamber is a large long room. At the north end of the room a
+wide staircase leads up to a large throne that rests high above the rest
+of the room. 
+~
+#EXIT
+Direction east~
+ToRoom    680
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    678
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    681
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset M 0 610 1 679
+Reset D 0 679 1 1
+Reset D 0 679 3 1
+#ENDROOM
+
+#ROOM
+Vnum     680
+Name     The Royal Office~
+Sector   city~
+Flags    nomob private safe silence spacecraft~
+Desc     This small room is a safe quiet place that the current emporer uses to get
+work done that requires some concentration. It is also a good place to
+rest and contemplate. 
+~
+#EXIT
+Direction west~
+ToRoom    679
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 680 3 1
+#ENDROOM
+
+#ROOM
+Vnum     681
+Name     A Mirrored Hallway~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The mirrors in this hallway reflect against each other giving an illusion
+of a thousand hallways stacked in a row. The glass is crystal clear and
+gives an excellent reflectyion yet somehow the image seems wrong. Distored
+and twisted yet not quite visible to the naked eye. 
+~
+#EXIT
+Direction east~
+ToRoom    679
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    683
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    684
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    682
+Keywords  guard post~
+Flags     auto~
+#ENDEXIT
+
+Reset D 0 681 1 1
+Reset D 0 681 2 1
+Reset D 0 681 3 1
+#ENDROOM
+
+#ROOM
+Vnum     682
+Name     Guard Post~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This alcove is designed to give a good view of the hallway yet because of
+the mirrors make it difficult to locate. This gives the guard stationed
+here a good advantage in stopping anyone who has entered the area
+unauthorized, even though this is very unlikely to happen. 
+~
+#EXIT
+Direction south~
+ToRoom    681
+#ENDEXIT
+
+Reset M 0 611 1 682
+#ENDROOM
+
+#ROOM
+Vnum     683
+Name     A Closet~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The closet is very large. There are many shelves stacked along the edges as
+well many hangers for clothes. Maybe if you looked carefully you'd find
+something useful. 
+~
+#EXIT
+Direction north~
+ToRoom    681
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 683 0 1
+#ENDROOM
+
+#ROOM
+Vnum     684
+Name     The Living Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This room is very well decorated compared to the rest of the ship. The
+walls and floor are black but all of the furniture is made of colored
+crystal. There are many pieces of beautiful artwork placed about the room.
+It is quite a contrast to what you have seen outside the royal chambers.
+~
+#EXIT
+Direction north~
+ToRoom    685
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    681
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    686
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    687
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 684 1 1
+Reset D 0 684 2 1
+Reset D 0 684 3 1
+#ENDROOM
+
+#ROOM
+Vnum     685
+Name     The Dining Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The dining room is nicely decorated in a style similar to the living room.
+The large wooden table in the center of the room is trimmed with crystal
+designs as are the chairs. A large crystal chendelier hangs over the
+table. 
+~
+#EXIT
+Direction south~
+ToRoom    684
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     686
+Name     The Den~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This room is a small comfortable room. It is decrated in soft leathers and
+the artwork is simpler than that in the living area. It still however has
+a dark feeling to it. Thus although it looks comfortable you can't help
+feeling somewhat on edge. 
+~
+#EXIT
+Direction north~
+ToRoom    684
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    688
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset O 0 613 1 686
+Reset D 0 686 0 1
+Reset D 0 686 3 1
+#ENDROOM
+
+#ROOM
+Vnum     687
+Name     The Bedroom~
+Sector   city~
+Flags    nomob hotel spacecraft~
+Desc     The bedroom is a beautiful and frightening place. An enormous bed is the
+centerpiece of the room.  On the walls are terrifying pictures of that
+suggest pain and sex in very abstract yet obvious ways. 
+~
+#EXIT
+Direction east~
+ToRoom    684
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    688
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 687 1 1
+Reset D 0 687 2 1
+#ENDROOM
+
+#ROOM
+Vnum     688
+Name     The Bathroom~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This huge bathroom is beatiful. Everything in it shines. Everything is
+either a shiny polished black or a crystal clear glass. Light gleams of
+every surface reflecting all about the room. The bathtub is large and has
+many small water jets around its inside wall. 
+~
+#EXIT
+Direction north~
+ToRoom    687
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    686
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 688 0 1
+Reset D 0 688 1 1
+#ENDROOM
+
+#ROOM
+Vnum     689
+Name     Before The War Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This area of the Dark Hand is where officers meet and hold council. Every
+important thing the empire does is discussed in rooms like the one to the
+north of here. This area is strictly off limits to unauthorized persons.
+~
+#EXIT
+Direction north~
+ToRoom    690
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    691
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    672
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    692
+#ENDEXIT
+
+Reset M 0 618 2 689
+  Reset E 1 32200 1 16
+  Reset E 1 32206 1 6
+  Reset E 1 32205 1 8
+  Reset E 1 32204 1 13
+  Reset E 1 32203 1 7
+  Reset E 1 32202 1 5
+Reset M 0 618 2 689
+  Reset E 1 32200 1 16
+  Reset E 1 32206 1 6
+  Reset E 1 32205 1 8
+  Reset E 1 32204 1 13
+  Reset E 1 32203 1 7
+  Reset E 1 32202 1 5
+Reset D 0 689 0 1
+#ENDROOM
+
+#ROOM
+Vnum     690
+Name     The War room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This room is very simple in design. A large round table takes up most of
+the room. Around it are several chairs. The walls are sound proofed and
+electronic devices jam any attempts to record or electronicly snoop the
+discussions that take place here.
+~
+#EXIT
+Direction south~
+ToRoom    689
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset O 0 614 1 690
+Reset D 0 690 2 1
+#ENDROOM
+
+#ROOM
+Vnum     691
+Name     Computer Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The computer room is a small room with several terminals and a few extra
+chairs. The decore is simple and military yet considerably nicer than the
+rest of the ship. 
+~
+#EXIT
+Direction west~
+ToRoom    689
+#ENDEXIT
+
+Reset O 0 32201 1 691
+#ENDROOM
+
+#ROOM
+Vnum     692
+Name     Mail Room~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     The mail room is a small room with several terminals and a few extra
+chairs. The decore is simple and military yet considerably nicer than the
+rest of the ship.  
+~
+#EXIT
+Direction east~
+ToRoom    689
+#ENDEXIT
+
+Reset O 0 38 1 692
+#ENDROOM
+
+#ROOM
+Vnum     693
+Name     Droid Maintenance Room~
+Sector   city~
+Flags    spacecraft~
+Desc     As far as droid maintenance rooms go this one is very organized. The stacks
+of parts and equipment found in most technical areas do not exist. Instead
+anything not in use seems to be put away in one of hundreds of wall
+mounted drawers. Only very large machines are left out along with rows of
+droids either recharging or in a state of repair. Even these however are
+lined up in an organized maner giving a strong sense of order to the
+place.
+~
+#EXIT
+Direction west~
+ToRoom    614
+#ENDEXIT
+
+Reset M 0 607 1 693
+Reset M 0 608 1 693
+#ENDROOM
+
+#ROOM
+Vnum     694
+Name     A Drop Chute~
+Sector   city~
+Flags    nomob nofloor spacecraft~
+#EXIT
+Direction down~
+ToRoom    695
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     695
+Name     Trash Compactor~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     You can think of about 10 million other places youd rather be right now.
+The coom is filled with garbage and foul smeliing water. The door seems to
+be locked. To top it all off the walls are slowly closing in around you.
+~
+#EXIT
+Direction east~
+ToRoom    614
+Key       621
+Flags     isdoor closed locked~
+#ENDEXIT
+
+Reset O 0 621 1 695
+Reset D 0 695 1 2
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpecho You are slowly crushed as the walls close in around you.
+feel harm $n
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     696
+Name     Storage Closet~
+Sector   city~
+Flags    spacecraft~
+Desc     This room is very long. It consists of several rows of shelves stacked to
+the ceiling. Each shelf is filled with labelled boxes, crates or loose
+parts. Maybe searching through this room could produce something usefull.
+~
+#EXIT
+Direction south~
+ToRoom    614
+#ENDEXIT
+
+Reset M 0 606 1 696
+Reset O 0 622 1 696
+#ENDROOM
+
+#ROOM
+Vnum     697
+Name     Laser Turret~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This swivelling laser turret is located in a good position to cover most of
+the ships belly and side. The seat is gyroscopicly suspended and attached
+to the cannon so that they all swivel as a single unit enabling excellent
+target tracking. 
+~
+#EXIT
+Direction east~
+ToRoom    655
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     698
+Name     Laser Turret~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This swivelling laser turret is located in a good position to cover most of
+the ships belly and side. The seat is gyroscopicly suspended and attached
+to the cannon so that they all swivel as a single unit enabling excellent
+target tracking. 
+~
+#EXIT
+Direction west~
+ToRoom    656
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     699
+Name     The Captains Chair~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This chair is raised somewhat above the rest of the bridge. This not only
+gives the captain a good view of the rest of the bridge but makes the
+captain look more powerful. It is standard imperial practice that lower
+ranks should always have to look up at their superiors. There are very few
+controls located here as the captains job is mostly to issue orders to the
+rest of the crew.
+~
+#EXIT
+Direction north~
+ToRoom    676
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    673
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    621
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    674
+#ENDEXIT
+
+Reset M 0 613 1 699
+#ENDROOM
+
+#ENDAREA

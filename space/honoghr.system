@@ -1,0 +1,51 @@
+#SPACE
+Name         Honoghr System~
+Filename     honoghr.system~
+Planet1      Logru~
+Planet2      Honoghr~
+Planet3      Kuthul~
+Star1        Honoghr (Sun)~
+Star2        ~
+Location1a      ~
+Location1b      ~
+Location1c      ~
+Location2a       Nystao Port~
+Location2b      ~
+Location2c      ~
+Location3a      ~
+Location3b      ~
+Location3c      ~
+Doc1a          0
+Doc2a          1000
+Doc3a          0
+Doc1b          0
+Doc2b          0
+Doc3b          0
+Doc1c          0
+Doc2c          0
+Doc3c          0
+P1x          -534
+P1y          435
+P1z          668
+P2x          3943
+P2y          4782
+P2z          4419
+P3x          20091
+P3y          -22593
+P3z          -19957
+S1x          0
+S1y          0
+S1z          0
+S2x          0
+S2y          0
+S2z          0
+Gravitys1     200
+Gravitys2     0
+Gravityp1     100
+Gravityp2     0
+Gravityp3     0
+Xpos          -3177
+Ypos          1997
+End
+
+#END

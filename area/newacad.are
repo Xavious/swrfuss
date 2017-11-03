@@ -1,0 +1,2250 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Coruscant Academy~
+Author       Scarab/Durga~
+Ranges       1 2 0 2
+Economy      0 497782131
+ResetMsg     You hear the hum of repulsorlifts powering up in the distance~
+ResetFreq    3
+Flags        nopkill~
+#ENDAREADATA
+
+#MOBILE
+Vnum       10340
+Keywords   Domick Dom teacher~
+Short      Domick~
+Long       Domick, Lord of Knowledge, sits here reading, waiting for students.
+~
+Desc       Domick carries himself with a grace and confidence born from his
+long life and many experiences in these Realms. He is looked on
+with awe and unquestioned respect. That respect is well deserved.
+Do not attempt to kill him, for you shall surely die.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel practice~
+Affected   detect_invis detect_hidden sanctuary truesight~
+Stats1     1000 1 0 94 100 0
+Stats2     1 1 1000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 0 0
+Saves      0 0 0 0 37
+Speaks     jawa~
+Speaking   common jawa~
+Immune     sleep charm nonmagic magic~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   tell $n Are you ready for your lessons?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10342
+Keywords   academy student~
+Short      a student~
+Long       An acadamy student is here taking a break from his studies.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common wookiee twilek rodian hutt mon_calamari noghri ewok ithorian gotal devaronian droid spiritual magical gamorrean god ancient jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+Speaking   common wookiee twilek rodian hutt mon_calamari noghri ewok ithorian gotal devaronian droid spiritual magical gamorrean god ancient jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   no nope~
+Comlist   say You can have it anyways.
+give luke $n
+drop all
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes yep~
+Comlist   say Ok you can have it then.
+give luke $n
+drop all
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hi hello~
+Comlist   say Hello.
+Say I found this toy ... is it yours?
+mpat 10399 mpoload 10320
+mpecho A student shows you a Luke Skywalker Action Figure.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10343
+Keywords   kid child~
+Short      a small child~
+Long       A young child is sitting here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common wookiee twilek rodian hutt mon_calamari noghri ewok ithorian gotal devaronian droid spiritual magical gamorrean god ancient jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+Speaking   common wookiee twilek rodian hutt mon_calamari noghri ewok ithorian gotal devaronian droid spiritual magical gamorrean god ancient jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+#MUDPROG
+Progtype  act_prog~
+Arglist   p gives you a Luke Skywalker action figure.~
+Comlist   say thank you
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   snif
+say I lost my Luke Skywalker toy
+cry
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   key~
+Comlist   if ovnuminv (10320) >= 1
+say You want the key for this door?
+point north
+say here let me open it for you
+mpat 10399 mpoload 10423
+unlock north
+open north
+mpat 10399 drop all
+mpat 10399 purge
+else
+cry
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   door door? key?~
+Comlist   if ovnuminv (10320) >= 1
+say You want the key for this door?
+point north
+say here let me open it for you
+mpat 10399 mpoload 10423
+unlock north
+open north
+mpat 10399 drop all
+mpat 10399 purge
+else
+cry
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   door? north~
+Comlist   if ovnuminv (10320) >= 1
+say You want the key for this door?
+point north
+say here let me open it for you
+mpat 10399 mpoload 10423
+unlock north
+open north
+mpat 10399 drop all
+mpat 10399 purge
+else
+cry
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10345
+Keywords   chadoyn cage~
+Short      the chadoyn~
+Long       The chadoyn is straining its leash, attempting to attack you.
+~
+Desc       He looks back at you with his beady little eyes and a snarl on his face.
+You are pretty sure you can best him in regards to combat.
+~
+Race       r85~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 2 0 25 0 0
+Stats2     2 4 1
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 0 0
+Saves      0 0 0 0 44
+Speaks     jawa~
+Speaking   common jawa~
+Bodyparts  head arms~
+Immune     charm~
+#MUDPROG
+Progtype  death_prog~
+Arglist   85~
+Comlist   if level($n) >= 6
+if rand(50)
+mpechoat $n You feel an overwhelming desire for greater challenge.
+else
+mpechoat $n The chadoyn is far too easy for you to kill.
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10350
+Keywords   professor schoolmaster teacher headmaster~
+Short      the Schoolmaster~
+Long       The schoolmaster is here offering diplomas to academy graduates.
+~
+Desc       Domick carries himself with a grace and confidence born from his
+long life and many experiences in these Realms. He is looked on
+with awe and unquestioned respect. That respect is well deserved.
+Do not attempt to kill him, for you shall surely die.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_auth~
+Gender     male~
+Actflags   npc sentinel~
+Affected   detect_invis detect_hidden sanctuary truesight~
+Stats1     1000 1 0 94 100 0
+Stats2     1 1 1000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 0 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Immune     sleep charm nonmagic magic~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if level($n) == 1
+mpadvance $n 2
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10355
+Keywords   pilot~
+Short      a pilot~
+Long       A Mon Calamarian pilot is here ferrying academy graduates.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_newbie_pilot~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  act_prog~
+Arglist   p gives you a diploma.~
+Comlist   look diploma
+say Thank-you.
+give diploma $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   bow $n
+say May I see your diploma please.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10360
+Keywords   practice droid~
+Short      a practice droid~
+Long       A practice droid is here waiting for combat.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel droid~
+Stats1     0 1 0 100 10 0
+Stats2     1 4 5
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10365
+Keywords   service droid~
+Short      a service droid~
+Long       A service droid is here handing out canteens and rations.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel droid~
+Stats1     0 10 0 0 0 0
+Stats2     10 0 100
+Stats3     0 0 25
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   water canteen~
+Comlist   mpoload 10314 1
+give canteen $n
+drop all
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   food ration~
+Comlist   mpoload 10313 1
+give ration $n
+drop all
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10370
+Keywords   shopkeeper droid~
+Short      a shopkeeper~
+Long       A droid is here selling useful items to students.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel droid~
+Affected   detect_invis~
+Stats1     0 20 0 80 100 0
+Stats2     2 20 2
+Stats3     2 10 10
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common wookiee twilek hutt mon_calamari noghri ewok gamorrean jawa adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+Speaking   common wookiee twilek hutt mon_calamari noghri ewok gamorrean jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+ShopData   15 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       10394
+Keywords   Abbigayle language teacher~
+Short      abbigayle~
+Long       A beautiful lady stands here, waiting for her students.
+~
+Desc       This has to be one of the most beautiful women in these Realms, both inside
+and out. Her eyes have a sparkle of amusement and her face an easy smile.
+She knows you are admiring her, and she does not seem to mind. She is
+comfortable and confident that the picture she makes is breath taking. Her
+voice at last breaks the spell. Her voice is like satin, you can hardly
+wait for your lessons to begin. Any reason to hear her speak the tongues
+foreign to your ears.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel scholar~
+Affected   detect_invis detect_hidden sanctuary truesight~
+Stats1     0 5 16 5 50 0
+Stats2     1000 1 0
+Stats3     1 6 3
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common wookiee twilek rodian hutt mon_calamari noghri gamorrean jawa adarian~
+Speaking   common wookiee twilek rodian hutt mon_calamari noghri gamorrean jawa adarian~
+Bodyparts  head arms~
+Immune     sleep charm nonmagic magic~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+wink $n
+if level($n) < 20
+tell $n My lessons start when you reach level 20. Have fun until then.
+else
+tell $n I am ready to teach you, are you prepared for the lessons?
+endif
+grin $n
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say You know, I am really a lover, not a fighter ...
+mpslay $n
+mpat $n mpechoat $n But alas, killing me was a slaying offense.
+mpgoto 10399
+mpat 10306 mpmload 10394
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   p flees head over heels!~
+Comlist   mptrans 0.$n
+mpechoat $n Abbigayle says, 'You fled, so I shall spare your life!'
+mpgoto 10399
+mpat 10306 mpmload 10394
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10395
+Keywords   sad student~
+Short      a sad student~
+Long       A sad student leans against the wall.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common wookiee twilek rodian hutt mon_calamari noghri ewok ithorian gotal devaronian droid spiritual magical gamorrean god ancient jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+Speaking   common wookiee twilek rodian hutt mon_calamari noghri ewok ithorian gotal devaronian droid spiritual magical gamorrean god ancient jawa clan adarian verpine defel trandoshan chadra-fan quarren duinuogwuin~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   close north
+say Don't let it happen to you $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   25~
+Comlist   Say My brother is dead.
+Say Killed bt a stray blaster shot.
+Say Gone forever.
+snif
+say If only he had made a clone....
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       10499
+Keywords   final mob~
+Short      a newly created final mob~
+Long       Some god abandoned a newly created final mob here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     10300
+Keywords bracelet charm academy~
+Type     armor~
+Short    a charm bracelet~
+Long     A charm bracelet from the academy lies here~
+WFlags   take wrist~
+Values   2 2 0 0 0 0
+Stats    2 0 0 0 0
+Affect       -1 -1 1 31 0
+#EXDESC
+ExDescKey    bracelet charm~
+ExDesc       This is a bracelet that will bring you luck in your travels. It can
+be found at the Darkhaven Acamdemy
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  drop_prog~
+Arglist   100~
+Comlist   mpforce $n sac $o
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10301
+Keywords combat boots academy~
+Type     armor~
+Short    a pair of black combat boots~
+Long     A pair of black combat boots from the Academy lies here~
+WFlags   take feet~
+Values   3 3 0 0 0 0
+Stats    3 0 0 0 126
+Affect       -1 -1 100 14 0
+#EXDESC
+ExDescKey    combat boots~
+ExDesc       This boots are so comfortable and light, you feel you can walk a lot
+farther. The can be found at the Darkhaven Academy.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  drop_prog~
+Arglist   100~
+Comlist   mpforce $n sac $o
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10302
+Keywords belt leather academy~
+Type     armor~
+Short    a braided leather belt~
+Long     A braided leather belt from the Academy lies here~
+WFlags   take waist~
+Values   2 2 0 0 0 0
+Stats    2 0 0 0 0
+Affect       -1 -1 1 5 0
+#EXDESC
+ExDescKey    belt leather~
+ExDesc       This belt is made of a fine leather, braided for strength. You can get
+it at the Darkhaven Academy.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  drop_prog~
+Arglist   100~
+Comlist   mpforce $n sac $o
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10303
+Keywords pants trousers slacks leggings~
+Type     armor~
+Short    some leggings~
+Long     A pair of academy leggings is here.~
+WFlags   take legs~
+Values   2 2 0 0 0 0
+Stats    3 0 0 0 0
+#EXDESC
+ExDescKey    leggings~
+ExDesc       These leggings will offer good protection until you can get better. They
+can be found at the Darkhaven Academy.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10304
+Keywords academy cap~
+Type     armor~
+Short    an academy cap~
+Long     A Coruscant Academy cap is here.~
+WFlags   take head~
+Values   3 3 0 0 0 0
+Stats    2 0 0 0 0
+Affect       -1 -1 1 3 0
+#EXDESC
+ExDescKey    helmet iron~
+ExDesc       This is a helmet made of fine iron, from the Darkhaven Academy.  It will
+protect you until you can find better.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  drop_prog~
+Arglist   100~
+Comlist   mpforce $n sac $o
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10305
+Keywords cape brocade academy~
+Type     armor~
+Short    a black brocade cape~
+Long     A black brocade cape from the academy~
+WFlags   take about~
+Values   2 2 0 0 0 0
+Stats    3 0 0 0 0
+#EXDESC
+ExDescKey    cape brocade~
+ExDesc       This cape is made from a heavy brocade. It will offer you warmth and
+protection until you can find something better. You can find it at the
+Darkhave Academy.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  drop_prog~
+Arglist   100~
+Comlist   mpforce $n sac $o
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10306
+Keywords collar metal academy~
+Type     armor~
+Short    a strong metal collar~
+Long     A strong metal collar from the academy~
+WFlags   take neck~
+Values   3 2 0 0 0 0
+Stats    5 0 0 0 0
+#EXDESC
+ExDescKey    collar metal ~
+ExDesc       This collar fits closely around your neck. It is thick with spikes to
+protect you in battle. You can find it in the Darkhaven Academy
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  drop_prog~
+Arglist   100~
+Comlist   mpforce $n sac $o
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10307
+Keywords visor completion academy~
+Type     armor~
+Short    a visor of completion~
+Long     A visor of completion is here, emitting a faint glow.~
+Flags    magic~
+WFlags   take eyes~
+Values   2 0 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 1 4 0
+Affect       -1 -1 1 3 0
+#EXDESC
+ExDescKey    visor completion~
+ExDesc       Congratulations! You have completed the Darkhaven Academy and can now
+wear this visor with pride! It is magic too, type WEAR VISOR to use.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mpechoat $n As you wear this visor, you feel more intelligent and wise!
+mpechoaround $n As $n wears the visor of completion, $e looks more complete!
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10308
+Keywords academy vest~
+Type     armor~
+Short    an academy vest~
+Long     An academy vest was left here.~
+WFlags   take body~
+Values   2 2 0 0 0 0
+Stats    5 0 0 0 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10309
+Keywords sleeves tin academy~
+Type     armor~
+Short    lightweight tin sleeves~
+Long     Lightweight tin sleeves from the academy~
+WFlags   take arms~
+Values   3 3 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 1 1 0
+#EXDESC
+ExDescKey    sleeves tin~
+ExDesc       This sleeves will protect your arms until you can find something better.
+You can find them in the Darkhaven Academy.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  drop_prog~
+Arglist   100~
+Comlist   mpforce $n sac $o
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10310
+Keywords forceshield energyshield shields shield~
+Type     armor~
+Short    an energy shield~
+Long     An energy shield was dropped here.~
+WFlags   take shield~
+Values   2 2 0 0 0 0
+Stats    5 0 0 0 0
+#EXDESC
+ExDescKey    shield crest~
+ExDesc       This is your first shield, it will help keep you safe until you can
+find something better.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10311
+Keywords light glowrod glowstick~
+Type     light~
+Short    a glowrod~
+Long     A glowrod would make a good light source.~
+Flags    glow magic inventory~
+WFlags   take~
+Values   0 0 50 0 0 0
+Stats    1 5 0 0 0
+Affect       -1 -1 -1 24 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10312
+Keywords academy vibro blade knife dagger vibro-blade~
+Type     weapon~
+Short    a vibro-blade~
+Long     You see a finely honed vibro-blade here.~
+Flags    magic~
+WFlags   take wield~
+Values   12 5 4 2 1000 1000
+Stats    3 250 50 0 0
+Affect       -1 -1 -2 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10313
+Keywords ration standard packaged~
+Type     food~
+Short    a packaged ration~
+Long     A packaged ration is here, waiting to be eaten.~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    2 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10314
+Keywords canteen water grey stock~
+Type     drinkcon~
+Short    a canteen~
+Long     A small grey canteen has been drooped here.~
+WFlags   take~
+Values   40 40 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10315
+Keywords drinking fountain~
+Type     fountain~
+Short    a fountain~
+Long     A drinking fountain rests against the wall.~
+Values   1000 1000 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10316
+Keywords socks~
+Type     armor~
+Short    a pair of socks~
+Long     A pair of socks is in a ball on the floor.~
+Flags    inventory~
+WFlags   take feet~
+Values   0 1 0 0 0 0
+Stats    1 5 0 0 1
+#ENDOBJECT
+
+#OBJECT
+Vnum     10317
+Keywords academy backpack~
+Type     container~
+Short    a backpack~
+Long     An academy backpack was carelessly misplaced here.~
+WFlags   take about~
+Values   20 0 0 0 0 0
+Stats    1 5 0 0 128
+Affect       -1 -1 -5 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10318
+Keywords grey button~
+Type     button~
+Short    a button~
+Long     A small grey button seems out of place on the wall here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpoload 10316 1
+mpoload 10308 1
+mpoload 10303 1
+pull button
+drop all
+mpecho A small panel opens revealing several articles of clothing.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10319
+Keywords box~
+Type     container~
+Short    a box~
+Long     A small box .. I wonder whats inside, maybe you should open it.~
+WFlags   take~
+Values   10 1 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10320
+Keywords luke toy action figure doll~
+Type     trash~
+Short    a Luke Skywalker action figure~
+Long     A Luke Skywalker action figure was misplaced here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10321
+Keywords diploma academy coruscant graduation~
+Type     paper~
+Short    a diploma~
+Long     Someone dropped their coruscant academy graduation diploma here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10322
+Keywords academy shuttle~
+Type     trash~
+Short    a shuttle~
+Long     A small shuttle is docked here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10414
+Keywords student message terminal~
+Type     furniture~
+Short    a student message terminal~
+Long     A student message terminal is here for you to play with.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10420
+Keywords prototype blaster~
+Type     weapon~
+Short    prototype blaster~
+Long     A prototype blaster is here~
+WFlags   take wield~
+Values   0 0 0 6 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10421
+Keywords prototype saber lightsaber~
+Type     weapon~
+Short    a prototype lightsaber~
+Long     A prototype lightsaber shouldn't be here~
+WFlags   take wield~
+Values   0 0 0 3 0 0
+Stats    1 0 0 0 128
+#MUDPROG
+Progtype  use_prog~
+Arglist   100~
+Comlist   mpechoat $n Your lightsaber ignites with a soft hum and a bright glow.
+mpechoaround $n $n's lightsaber seemingly jumps into $s hand.
+mpechoaround $n &WIt ignites with a hum and a bright glow.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10422
+Keywords prototype vibro-blade~
+Type     weapon~
+Short    prototype vibro-blade~
+Long     A prototype vibro-blade shouldn't be here~
+WFlags   take wield~
+Values   0 0 0 2 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10423
+Keywords key~
+Type     key~
+Short    a key~
+Long     An old fashioned mechanical key was left on the ground here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10424
+Keywords comlink radio communicator~
+Type     comlink~
+Short    a comlink~
+Long     A small hand-held comlink.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10425
+Keywords prototype grenade~
+Type     grenade~
+Short    a newly created prototype grenade~
+Long     Some god dropped a newly created prototype grenade here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10426
+Keywords generic armor~
+Type     trash~
+Short    a newly created generic armor~
+Long     Some god dropped a newly created generic armor here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10427
+Keywords protoype landmine~
+Type     landmine~
+Short    a newly created protoype landmine~
+Long     Some god dropped a newly created protoype landmine here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10428
+Keywords prototype light~
+Type     light~
+Short    a newly created prototype light~
+Long     Some god dropped a newly created prototype light here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10429
+Keywords prototype shield~
+Type     armor~
+Short    a newly created prototype shield~
+Long     Some god dropped a newly created prototype shield here.~
+WFlags   take shield~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10430
+Keywords prototype comlink~
+Type     comlink~
+Short    a newly created prototype comlink~
+Long     Some god dropped a newly created prototype comlink here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10487
+Keywords carsanum spice~
+Type     spice~
+Short    some poorly refined carsanum~
+Long     Some carsanum was dropped here.~
+WFlags   take~
+Values   1 10 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10488
+Keywords ammo cell amunition cartridge~
+Type     ammo~
+Short    an ammunition cell~
+Long     An ammunition cell was carelessly left here.~
+Flags    inventory~
+WFlags   take hold~
+Values   500 500 0 0 0 0
+Stats    1 10 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10489
+Keywords lens~
+Type     lens~
+Short    a newly created lens~
+Long     Some god dropped a newly created lens here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10490
+Keywords test toolkit~
+Type     toolkit~
+Short    a newly created test toolkit~
+Long     Some god dropped a newly created test toolkit here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10491
+Keywords test durastuff~
+Type     duraplast~
+Short    a newly created test durastuff~
+Long     Some god dropped a newly created test durastuff here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10492
+Keywords test battery~
+Type     battery~
+Short    a newly created test battery~
+Long     Some god dropped a newly created test battery here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10493
+Keywords oven~
+Type     oven~
+Short    a newly created oven~
+Long     Some god dropped a newly created oven here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10494
+Keywords some scrap durasteel~
+Type     durasteel~
+Short    a newly created some scrap durasteel~
+Long     Some god dropped a newly created some scrap durasteel here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10495
+Keywords gem~
+Type     crystal~
+Short    a newly created gem~
+Long     Some god dropped a newly created gem here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10496
+Keywords mirror~
+Type     mirror~
+Short    a newly created mirror~
+Long     Some god dropped a newly created mirror here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10497
+Keywords circuit board~
+Type     circuit~
+Short    a newly created circuit board~
+Long     Some god dropped a newly created circuit board here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10498
+Keywords superconductor~
+Type     superconductor~
+Short    a newly created superconductor~
+Long     Some god dropped a newly created superconductor here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10499
+Keywords final object~
+Type     trash~
+Short    a newly created final object~
+Long     Some god dropped a newly created final object here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     10300
+Name     Coruscant Academy~
+Sector   inside~
+Flags    nomob indoors safe~
+Desc     You stand inside the Curuscant Academy, an establishment designed to teach
+the basics of survival within the galaxy.  Each room has a specific
+purpose and contains information on the various commands to maneuver
+around and interact with the players.  We recommend you explore the
+Academy in full, taking the time to read the instructions in each room.  
+Check out the bulletin board to the west by typing W then come back and
+explore the rest of the academy to the north.
+~
+#EXIT
+Direction north~
+ToRoom    10301
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10430
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10301
+Name     A Duraplast Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     To the west is the language lessons room. Lady Abbigalye is there
+to assist you in learning the languages of the galaxy.  To the east
+is where Domick will assist you in practicing your weapons, skills
+and spells.  When you are finished with your lessons, come back
+here and continue north through the Academy.
+~
+#EXIT
+Direction north~
+ToRoom    10304
+Desc      Reading Room
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10303
+Desc      The Laboratory of Skills.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10300
+Desc      Entrance to Darkhaven Academy
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10306
+Desc      Abbigayle's Language Lessons.
+~
+#ENDEXIT
+
+#MUDPROG
+Progtype  leave_prog~
+Arglist   100~
+Comlist   if isimmort($n)
+else
+  mpforce $n vis
+endif
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10302
+Name     Somewhere~
+Sector   inside~
+Flags    nomob indoors~
+Desc     You did it! You are an excellent student! To continue your education,
+please leave north. That will return you to the Reading room.
+~
+#EXIT
+Direction north~
+ToRoom    10304
+Desc      The Reading Room
+~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10303
+Name     The Laboratory of Skills~
+Sector   inside~
+Flags    indoors safe~
+Desc     This is where you will practice your arsenal of weapons, spells and powers.
+Type PRACTICE to get a list of these currently available to you.  Everyone
+will have sections listing skills, weapons and languages.  You will also
+have an additional section for force powers, although not everyone will be
+able to use these.  Although it is possible to learn the theories behind
+how the force works, not everyon has the ability to use it. To practice a
+force ability, skill or weapons style,
+type PRACTICE <full name of power, skill or weapon style>.
+
+For instance, to practice dual wield, you would type PRAC DUAL WIELD.
+When practicing, you start at 0% and one practice will earn you between
+15% and 20% proficieny.  Additional knowledge is gained through usage of
+the skill or spell until adept, which is a maximum of 30% - 95%.
+
+To get see information using powers, skills or weapons, type HELP CAST or
+HELP <spell, skill or weapon style>.  For general questions on practicing,
+type HELP PRACTICE.  The number of practice sessions you may gain at each
+level is determined by the amount of wisdom you have when you level.
+~
+#EXIT
+Direction west~
+ToRoom    10301
+Desc      A Stone Corridor
+~
+#ENDEXIT
+
+Reset M 0 10340 1 10303
+#ENDROOM
+
+#ROOM
+Vnum     10304
+Name     The Reading Room~
+Sector   inside~
+Flags    indoors silence~
+Desc     This is a silent room, which means while here you will not see any of the
+channels. In fact, you can only use socials, emotes and group tell here.
+The room was created to give you a quiet place to read our help files.
+You can reduce your own screen scroll by reducing the number of channels 
+you receive. You can get a full list of channels by typing CHAN. You may 
+turn off a channel by type CHAN -<channel> and reactive a channel by 
+typing CHAN +<channel>. For example, you can turn off auction channel by 
+type CHAN -AUCTION and you can turn it back on by typing CHAN +AUCTION. 
+You can also turn off ALL your channels by typing CHAN -ALL and turn them 
+all on again by typing CHAN +ALL. Once you have finished reading, you are
+ready to test your ability to negotiate your way around.
+Going west will take you into another part of the Academy. The test is to
+follow all the room descriptions until you can find your way back to this 
+point. If at any time you become lost, type U to return to this room. Once 
+you have successfully returned here, please continue to the north to
+explore the rest of the Academy.
+~
+#EXIT
+Direction north~
+ToRoom    10314
+Desc      A Marble Corridor
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10301
+Desc      A Stone Corridor
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10307
+Desc      Wandering the Academy
+~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10305
+Name     Chamber of Trials for Rangers~
+Sector   inside~
+Flags    nomob indoors safe~
+Desc     Here you will experience your first full combat against MOBILES, also known
+as MOBS. Mobile is the name used for monsters and the like in the game.
+All exits, except down, lead to a CAGE mob. Some of these cage mobs may be
+aggressive and will attack you upon entering their room. As you kill them, 
+you will gain experience, as well as academy equipment and gold. Once you 
+have defeated a mob, type GET ALL CORPSE to loot the coins and equipment.
+You may also type CONFIG +AUTOLOOT or CONFIG +AUTOGOLD. Autoloot will take
+everything from the corpse when you kill it. Autogold will take only the
+gold from the corpse. When you loot a corpse of equipment, the items are
+transferred to your inventory. You may suffer injury during the battle, so 
+return here and type REST or SLEEP. This will speed your healing process. 
+When you are finished healing, type WAKE or STAND to continue.
+~
+#ENDROOM
+
+#ROOM
+Vnum     10306
+Name     Abbigayle's Language Lessons~
+Sector   inside~
+Flags    indoors safe~
+Desc     This is where you LEARN your LANGUAGES.  Languages are learned differently
+than spells, skills and weapons, as you must be adept ata language before
+you may use it.  To see a list of the languages available to you, simply
+type PRACTICE.  You do not need to learn the TONGUE of your race nor the
+common language, as they both come naturally to you.  To learn a language,
+type LANGUAGE LEARN <language type>.
+ 
+For more information on how to learn a language, type HELP LANGUAGES.  To
+learn how to use languages, type HELP SPEAK and HELP TONGUE.  It will cost
+a few practice sessions each time you wish to increase your fluency in a
+language.  Those who are intelligent, wise and lucky will find it takes
+fewer practice sessions to become adept at a language.
+~
+#EXIT
+Direction east~
+ToRoom    10301
+Desc      A Stone Corridor
+~
+#ENDEXIT
+
+Reset M 0 10394 1 10306
+#ENDROOM
+
+#ROOM
+Vnum     10307
+Name     Wandering the Academy~
+Sector   inside~
+Flags    indoors~
+Desc     Each player has a menu of items that the game controls automatically once
+it has been configured. To get a list of this menu, type CONFIG. For this
+part of your schooling, it is suggested you type CONFIG +AUTOEXIT. This
+will have the mud show you all obvious exits available to you. When you
+are moving around the game, EXIT is a very important command. When you
+type EXIT, it shows you the room names each exit shown under obvious exits.
+You can use this command to get hints of dangers and death traps that might
+be close by. You may also try to LOOK in adjoining rooms. You do this by
+typing LOOK <direction>. Your next move is to the west, to see what you
+are walking into, try typing EXIT and L W. 
+~
+#EXIT
+Direction east~
+ToRoom    10304
+Desc      The Reading Room
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10309
+Desc      Wandering Darkhaven Academy, it looks safe
+~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10304
+Desc      Back to the beginning
+~
+#ENDEXIT
+
+#EXDESC
+ExDescKey    Door~
+ExDesc       You see a solid oak door.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     10308
+Name     A Dank Pit~
+Sector   inside~
+Flags    indoors~
+Desc     Here stands a Chadoyn.  He was captured trying to slaughter the students
+of the Academy, and the Immortals decided to spare his life and throw him
+in chains for use as a teaching aid.  With him you can practice attacking
+and fleeing, but hopefully not dying.  You will also want to make use of
+the 'consider' command.  This command compares your level and hitpoints
+to that of the creature.  To use here, type 'con chadoyn'.
+ 
+To use the consider command elsewhere, type CON <MOBNAME>.  It is wise to
+ALWAYS consider a mob before fighting it the first time.  This will many
+times save your life, as mobs are often a lot more difficult then they
+outwardly appear.  Be careful and enjoy your fight.
+~
+#EXIT
+Direction west~
+ToRoom    10316
+Desc      A Dank Pit
+~
+#ENDEXIT
+
+Reset M 0 10345 1 10308
+#ENDROOM
+
+#ROOM
+Vnum     10309
+Name     Wandering Coruscant Academy~
+Sector   inside~
+Flags    indoors~
+Desc     This is where you will start learning about exits not listed under "Exits".
+Doors are not seen on the game. You must read room description and LOOK
+<direction> to find them. Another method of finding a door is to "bump" into
+the walls. Type N. OUCH! You ran into the door. You want to be careful not
+to be affected with the pass door spell while using the bump method, as you
+may end up in a room you would rather not visit. Now, type OPEN N or OPEN
+DOOR. Next type EXIT, you will now see the north exit listed under "Exits".
+Type HELP OPEN to find out more information on doors.
+~
+#EXIT
+Direction north~
+ToRoom    10310
+Desc      An Enclosed Room
+~
+Keywords  door~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10307
+Desc      Wandering the Academy
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10311
+Desc      Lost in Darkhaven Academy
+~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10304
+Desc      Back to the beginning
+~
+#ENDEXIT
+
+Reset D 0 10309 0 1
+#EXDESC
+ExDescKey    door~
+ExDesc       You see a solid oak door.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     10310
+Name     An Enclosed Room~
+Sector   inside~
+Flags    indoors~
+Desc     You did it! Well done. You will find many rooms such as this all over the
+game. Some are easy to find because of hints in the room descriptions.
+Some are very hard to find, as the clues could be rooms away. However, you
+are now armed with the tools to locate them. You know how to use "look", 
+bump, and "exit". Many classes also get a spell called "scry". This spell
+will allow the person affected by it to see the into the adjoining rooms.
+It is used like "look", but gives you more detailed information. To see if
+you gain the scry spell at a later level, type SLIST. This will give you a
+list of all spells, skills and weapon types you may practice. Slist also
+gives you information on what level you may practice each, to what percent
+you are currently practiced in each, and what the maximum percent that you
+may practice each.
+~
+#EXIT
+Direction south~
+ToRoom    10309
+Desc      Wandering Darkhaven Academy
+~
+Keywords  door~
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 10310 2 1
+#ENDROOM
+
+#ROOM
+Vnum     10311
+Name     Lost in Coruscant Academy~
+Sector   inside~
+Flags    indoors~
+Desc     There are several special exit types that you may encounter in your travels.
+You have experienced open exits and closed doors to this point. There are
+also hidden doors. The hidden door can not be found with the "bump" method.
+Often they will not show up with the "look" method either. These exits are
+found by reading room descriptions, mobiles descriptions and looking at
+objects. You are looking for words that stand out, those words will be the
+door name. You will also find doors that are locked. You may get past some
+locked doors with the pass door spell, the pick door skill or bash door skill.
+Some doors may only be passed by using the matching key. Other exits you
+may find require you to be skilled in climb or affected by the fly spell.
+All exits are in real directions that can be abbreviated to the following:
+N, E, W, S, NE, NW, SE, SW, U, or D. There are also SOMEWHERE exits that
+use "leave", "climb", "enter", or just a word to use. To the north you
+will experience a hidden exit, use the room description to find the door name.
+~
+#EXIT
+Direction north~
+ToRoom    10312
+Desc      Lost in Darkhaven Academy
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10309
+Desc      Wandering Darkhaven Academy
+~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10304
+Desc      Back to the beginning
+~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10312
+Name     Lost in Coruscant Academy~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a richly decorated room. A large oak table surrounded
+by twelve chairs dominates a large portion of the area. Crystal globes with
+continual light spells cast on them hover about the room, providing a soft
+comfortable light. The walls are adorned with tapestries of the finest
+quality. The tapestry on the west wall draws your attention more so than
+the others. Now, you have many clues on the possible exit. Try to find the
+right word by typing LOOK <word>. For example, try LOOK GLOBES. Sometimes
+looking at other things in the rooms description will lead you to the word
+that will open the exit. 
+~
+#EXIT
+Direction south~
+ToRoom    10311
+Desc      Lost in Darkhaven Academy
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10313
+Desc      door
+~
+Keywords  tapestry door~
+Flags     isdoor closed secret~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10304
+Desc      Back to the beginning
+~
+#ENDEXIT
+
+Reset D 0 10312 3 1
+#EXDESC
+ExDescKey    tapestry~
+ExDesc       Upon closer inspection you realise that this is not even a tapestry, but
+a cunningly camouflaged wall! You can see the outline of a door as you
+look closer.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    west~
+ExDesc       You see a tapestry on the wall here, something just isn't right about it.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    w~
+ExDesc       You see a tapestry on the wall.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    door~
+ExDesc       You see a cleverly disguised door.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    Crystal globes~
+ExDesc       This globes cast shadows in the corners. The shadows on the west
+tapestry almost appears to be an opening.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     10313
+Name     A Secret Alcove~
+Sector   inside~
+Flags    nomob indoors~
+Desc     Well Done! You have found this secret room. Sometimes these secret rooms
+will contain valuable items or will lead to other parts of the area you
+are exploring. Always pay close attention to room descriptions, mobiles
+descriptions and items, this will many times bring profitable results.
+This is a where you will experience a Somewhere exit. To find your way
+out, try looking at the picture on the wall. If you can not figure it out, 
+you may leave by the up exit. Good luck!
+~
+#EXIT
+Direction east~
+ToRoom    10312
+Desc      Lost in Darkhaven Academy
+~
+Keywords  door~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10304
+Desc      Back to the beginning
+~
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10302
+Keywords  crack~
+Flags     hidden auto~
+#ENDEXIT
+
+Reset D 0 10313 1 1
+#EXDESC
+ExDescKey    door~
+ExDesc       You see an oak door.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    picture~
+ExDesc       This is a picture of fresh cut flowers in a glass vase. It seems to
+be hanging here just to cover a huge crack. That crack is so large, you
+can probably squeeze through it! Perhaps you should look closer at the
+crack. HINT: type CRACK. 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    crack~
+ExDesc       This is a huge CRACK, you could probably squeeze through it. 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    wall~
+ExDesc       This is a picture of fresh cut flowers in a glass vase. It seems to
+be hanging here just to cover a huge crack. That crack is so large, you
+can probably squeeze through it! Perhaps you should look closer at the
+crack. HINT: type CRACK.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     10314
+Name     A Marble Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This room will teach you several commands to check your statistics and 
+character health. These commands are SCORE, EQUIPMENT, INVENTORY, and
+LEVEL. Score is used by typing SC, it tells you all the basic statistics
+about your character. Equipment is used by typing EQ, this shows you all 
+the items you are currently wearing. Inventory is used by typing I, and 
+shows you all items you are carrying other than your worn equipment.
+Level is used by typing LEVEL, it show your current level, your current
+experience points, and the experience needed for the next few levels.
+Use the help menu to get more information on the topics covered here,
+type HELP <subject>.
+~
+#EXIT
+Direction north~
+ToRoom    10315
+Desc      Preparing for combat
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10304
+Desc      The Reading Room
+~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10315
+Name     Preparing for combat~
+Sector   inside~
+Flags    indoors~
+Desc     The time is drawing near to experience combat.  Directly below you now is
+the Chadoyn Pit, the home of a creature which will assist you in learning
+how to initiate combat.  The Chadoyn is not aggressive, which means you
+must begin the fight.  There are many ways to start a fight, the quickest
+way is to type KILL <mob>.  As you gain skills and spells, you may find
+many of them are also capable of initiating combat.
+ 
+Some of the more popular spells used to start an attack are DISPEL MAGIC,
+SLEEP, CHARM PERSON, BLINDNESS, WEAKEN, CURSE, and FAERIE FIRE.  Some of
+the most popular skills used to begin an attack are STEAL and BACKSTAB.
+  ** These skills and spells WILL also begin an attack on a player **
+ 
+Wands, staves and scrolls may also be used to start fights. 
+~
+#EXIT
+Direction north~
+ToRoom    10317
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10314
+Desc      A Marble Corridor
+~
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10316
+Desc      A Dank Pit
+~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10316
+Name     A Dank Pit~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This room explains about WIMPY, FLEE, and RECALL as a way to leave from
+combat. Wimpy is an automatic withdrawal from a fight when your hitpoints
+reach a set minimum. To set your wimpy, type WIMPY or WIMPY <number>. The
+number being the amount of hitpoints you want remaining when you leave the
+battle. You will lose experience for wimpying out of a fight, but the amount
+of experience lost will generally be less then the amount lost from death.
+You may also manually withdraw from a fight with flee. To use flee, just
+type FLEE. You may flee out of the fight at any amount of hitpoints. Fleeing
+will cost you loss of experience. You may also "recall" from a fight. This
+is done with the spell "word of recall" or reciting a recall scroll. You 
+lose more experience when you recall from a fight then when you use wimpy
+or flee. Recall should be used as a last resort.
+~
+#EXIT
+Direction east~
+ToRoom    10308
+Desc      A Dank Pit
+~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10315
+Desc      Preparing for combat
+~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10317
+Name     Time To Take A Break~
+Sector   city~
+Flags    indoors safe~
+Desc     After a long fight or even a long walk you character may need to rest.
+The safest way to do this is to type REST. You may also SLEEP but only do
+that in safe places as you will be more open to being attacked or
+robbed when you are sleeping. When you are done sleeping type WAKE, and
+when you are done resting type STAND.
+
+You may find that occasionaly your character begins to get hungry or
+thirsty as you travel around in Star Wars Reality. The droid in this
+room will give you food or a canteen if you ask it nicely. To use them
+type EAT <whatever> or DRINK <watever>. If you are really hungry you
+might have to do this twice. There is also a fountain here you may drink
+out of or use to fill your canteen. (try: fill canteen fountain)
+~
+#EXIT
+Direction north~
+ToRoom    10327
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10315
+#ENDEXIT
+
+Reset O 0 10315 1 10317
+Reset M 0 10365 1 10317
+#ENDROOM
+
+#ROOM
+Vnum     10318
+Name     A Useless Item?~
+Sector   city~
+Flags    indoors safe~
+Desc     Sometimes an item may apear useless at first. There are many junk items that
+are worthless but some might just come in handy. Try making small talk with
+this student. He seems to have found something that might proove useful to
+you.
+ 
+Sometimes one item may be found inside another. To look into an object that
+is a container use: LOOK IN <container>. To get an item from a
+container use: GET <item> FROM <container>. To put an item in a container
+use: PUT <item> IN <container>. Sometimes you will also need to OPEN
+<container> as well.
+ 
+Hint: say hello
+~
+#EXIT
+Direction up~
+ToRoom    10322
+#ENDEXIT
+
+Reset M 0 10342 1 10318
+#ENDROOM
+
+#ROOM
+Vnum     10319
+Name     Up in a Small Loft~
+Sector   city~
+Flags    indoors~
+Desc     Sometimes items can be obtained by manipulating other items. Some classes
+can make items from other ones using skills such as MAKEBLASTER, MAKESPICE,
+or MAKELIGHTSABER. Other times it is as simple as opening a box or pushing
+a button as is the case in this room.
+~
+#EXIT
+Direction down~
+ToRoom    10322
+#ENDEXIT
+
+Reset O 0 10318 1 10319
+#ENDROOM
+
+#ROOM
+Vnum     10320
+Name     Looting Your Kills~
+Sector   city~
+Flags    indoors~
+Desc     The most common way in most muds to gain equipment is by looting the
+corpses of dead mobiles(monsters etc). After you kill this droid use
+EXAMINE CORPSE to see what it was carrying. Then use GET ALL FROM CORPSE
+to get the goodies from it. To automaticly loot corpses when you kill
+something you can set CONFIG +AUTOLOOT or CONFIG +AUTOCRED for just
+credits.
+~
+#EXIT
+Direction west~
+ToRoom    10322
+#ENDEXIT
+
+Reset M 0 10360 1 10320
+  Reset E 1 10301 1 8
+  Reset E 1 10302 1 13
+  Reset G 1 10304 1
+#ENDROOM
+
+#ROOM
+Vnum     10321
+Name     Academy Store~
+Sector   city~
+Flags    indoors safe~
+Desc     Shops are a great way of aquiring equipment and getting rid of extras.
+To get a list of what a shopkeeper is selling type LIST. To buy an item
+type BUY <objectname>. If you have extra equipment or have found something
+that you want to sell type SELL <object>. To find out how much a shopkeeper
+will buy something for type VALUE <object>.
+ 
+One of the more useful items in this shop is the backpack. Once you have
+bought one you can put any extra items you have in it for safe keeping.
+You may also wear it. If you don't have enough credits to buy anything try
+getting some from the droid a couple of rooms to the east.
+~
+#EXIT
+Direction east~
+ToRoom    10322
+#ENDEXIT
+
+Reset M 0 10370 1 10321
+  Reset G 1 10317 1
+  Reset G 1 10311 1
+#ENDROOM
+
+#ROOM
+Vnum     10322
+Name     Getting More Useful Items~
+Sector   city~
+Flags    indoors~
+Desc     One of the major goals you will have playing the mud is finding better
+equipment to make you characters life safer and easier. There are several
+ways of doing this. Two that you need to remember but won't yet be able
+to do until you learn the skills are SEARCHing and DIGging.
+STEALing is also a way to get items but only criminal characters who
+practice steal are able to do this. ( Be warned even if your not a criminal
+this is a good way to lose eq 
+ 
+The rooms to the east and west, as well as the ones up amd down from here
+exibit different ways of getting items. After exploring these four rooms
+and getting everything you need you may move on to the next room to the north.
+~
+#EXIT
+Direction north~
+ToRoom    10323
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10320
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10327
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10321
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10319
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10318
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10323
+Name     The Last Challange~
+Sector   city~
+Flags    indoors safe~
+Desc     Congradulations you're almost done. The graduation hall is just to the
+north. Only one problem though. The doors locked. Maybe this kid
+knows where the key is. If only he'd stop crying long enough for you
+to ask.        
+ 
+hint: find his doll
+hint: give doll child
+hint: say where's the key
+~
+#EXIT
+Direction north~
+ToRoom    10324
+Key       10423
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10322
+#ENDEXIT
+
+Reset M 0 10343 1 10323
+Reset D 0 10323 0 2
+#ENDROOM
+
+#ROOM
+Vnum     10324
+Name     Graduating from the Academy~
+Sector   city~
+Desc     Congradulations you did it .. line up and get your diploma.   You are in a
+long wide hallway. The floor is covered in a plush red carpet. The walls
+are made of a tansparent duraplast and come together to form dome over
+your head. Looking out the window you notice that the hallway in fact a
+catwalk connecting the academy to a small landing platform at the end. You
+can't look much more than 20 or 30 levels into the city depths below as
+many walkways criss-cross between the buildings obscuring your view of the
+lower levels. Looking up you see several cloudcars slowly navigating
+coruscants many skyscrapers. A stairway at the end of the hall slopes up
+towards the docking bay. It is the only exit other than the door behind
+you, back into the academy. 
+~
+#EXIT
+Direction south~
+ToRoom    10323
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10325
+#ENDEXIT
+
+Reset M 0 10350 1 10324
+Reset O 0 10414 1 10324
+Reset D 0 10324 2 0
+#ENDROOM
+
+#ROOM
+Vnum     10325
+Name     Academy Docking Bay~
+Sector   city~
+Desc     Detached from the rest of the Academy to leave room for ships to manuever,
+this docking bay is large enough to hold four or five shuttles. The space
+above is clear and you can see the clouds above you. Anyone launching
+a shuttle from here would have to fly straight though as several larger
+buildings box in the sides of the docking bay no less 30 feet out on each
+side. The noise of the city is blends together forming a loud pulsing hum
+pushing in from all directions. There is a slight and very rare breeze
+blowing down beetween the buildings and across the pad. It is an odd
+feeling in such a boxed in environment.
+ 
+There is a small shuttle here waiting to take you home. To board it type
+ENTER.
+~
+#EXIT
+Direction down~
+ToRoom    10324
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    10326
+Flags     hidden can_enter~
+#ENDEXIT
+
+Reset O 0 10322 1 10325
+#ENDROOM
+
+#ROOM
+Vnum     10326
+Name     The Shuttle home~
+Sector   city~
+Flags    nomob~
+Desc     You are in a small single compartment shuttle. The passenger seats are
+directly behind the pilots chair and slightly raised to give you a
+nice view for your journey. The seats recline back into a sleeping
+position in case you get tired. A small pantry and a restroom are at
+the back of the cabin.   The purpose of this shuttle is to take the
+newly graduated students home. Its a bit of a luxury compared to the
+rest of your stay at the academy. It must be as much for apearances
+as it is to honor the graduates. You will need to give your diploma
+to the driver before he will launch... Wouldn't want to spend this
+much money on drop outs. If you don't have a diploma yet type LEAVE,
+and then go look for the schoolmaster. 
+~
+#EXIT
+Direction somewhere~
+ToRoom    10325
+Flags     hidden can_leave~
+#ENDEXIT
+
+Reset M 0 10355 1 10326
+#ENDROOM
+
+#ROOM
+Vnum     10327
+Name     Some Important Words of Advice~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     A very important thing to learn about early is cloning. Death is permanent.
+When you die you loose everything. However... somewhere deep in the core
+worlds is a place that creates and stores the clones of those who are
+willing to pay a small fee. Having a clone makes a back up of your
+character at the moment of cloning that can be used in the event of an
+untimely death. My advice is to find the cloning facilities as soon as
+possible and make a new clone at least every five levels. Death is a lot
+less painful when you loose 5 levels as opposed to having to start over
+from the beginning.
+~
+#EXIT
+Direction north~
+ToRoom    10322
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10317
+#ENDEXIT
+
+Reset M 0 10395 1 10327
+Reset D 0 10327 0 1
+#ENDROOM
+
+#ROOM
+Vnum     10399
+Name     This Room is used by a Mob program do not delete.~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     10400
+Name     A test workshop~
+Sector   city~
+Flags    nomob factory~
+#ENDROOM
+
+#ROOM
+Vnum     10401
+Name     a quiet place~
+Sector   city~
+Flags    nomob safe silence~
+#ENDROOM
+
+#ROOM
+Vnum     10429
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10430
+Name     Student Lounge~
+Sector   inside~
+Flags    nomob safe~
+Desc     You stand in the player lounge the last safe zone in the galexy....
+relax and have a cool new drink as this will be your last time
+you can let your guard down and not be marked for death....
+ 
+A student message terminal is here for you to practice reading and
+writing messages. Use NOTE LIST to get a list of the messages and
+NOTE READ <msgnum> to read a specific message. Type HELP NOTE
+for more commands.
+~
+#EXIT
+Direction east~
+ToRoom    10300
+#ENDEXIT
+
+Reset O 0 10414 1 10430
+#ENDROOM
+
+#ENDAREA

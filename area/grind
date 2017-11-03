@@ -1,0 +1,1 @@
+valgrind -v --leak-check=yes --track-fds=yes --db-attach=yes --show-reachable=no --num-callers=10 ../src/swreality 4848

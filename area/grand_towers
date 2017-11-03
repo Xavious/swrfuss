@@ -1,0 +1,2050 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Grand Towers Appartments~
+Author       Durga~
+Ranges       0 103 0 103
+Economy      0 130050000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       5000
+Keywords   dummy~
+Short      a newly created dummy~
+Long       Some god abandoned a newly created dummy here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5099
+Keywords   dummy~
+Short      a newly created dummy~
+Long       Some god abandoned a newly created dummy here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     5000
+Keywords dummy~
+Type     trash~
+Short    a newly created dummy~
+Long     Some god dropped a newly created dummy here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5099
+Keywords plant~
+Type     trash~
+Short    a plant~
+Long     A plant sits in the corner.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     5000
+Name     The Guest Room~
+Sector   city~
+Flags    nomob indoors safe hotel~
+#EXIT
+Direction north~
+ToRoom    5001
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5001
+Name     The Lobby~
+Sector   city~
+Flags    nomob indoors safe~
+#EXIT
+Direction north~
+ToRoom    5002
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    361
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5011
+#ENDEXIT
+
+Reset O 0 5099 1 5001
+#ENDROOM
+
+#ROOM
+Vnum     5002
+Name     A Turbolift: Main Lobby~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction south~
+ToRoom    5001
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5003
+Name     A Turbolift: Floor 100~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction south~
+ToRoom    5016
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5004
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5002
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5004
+Name     A Turbolift: Floor 200~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction south~
+ToRoom    5021
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5005
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5005
+Name     A Turbolift: Floor 300~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction south~
+ToRoom    5026
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5006
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5004
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5006
+Name     A Turbolift: Floor 400~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction south~
+ToRoom    5031
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5007
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5005
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5007
+Name     A Turbolift: Floor 500~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction south~
+ToRoom    5036
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5008
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5006
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5008
+Name     A Turbolift: Floor 600~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction south~
+ToRoom    5099
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5007
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5009
+Name     A Turbolift: Floor 700~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction up~
+ToRoom    5010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5010
+Name     A Turbolift: Floor 800~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction down~
+ToRoom    5009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5011
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5040
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5001
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5041
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5012
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5043
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5011
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5042
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5013
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5045
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5012
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5044
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5014
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5014
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5047
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5013
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5046
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5015
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5049
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5014
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5048
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5098
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5016
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5003
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5096
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5017
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5017
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5051
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5016
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5050
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5018
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5052
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5017
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5053
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5019
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5055
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5018
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5054
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5020
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5020
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5057
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5019
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5056
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5097
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5021
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5004
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5094
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5022
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5022
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5059
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5021
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5058
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5023
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5061
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5022
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5060
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5024
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5063
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5062
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5025
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5065
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5024
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5064
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5095
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5026
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5005
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5092
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5027
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5067
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5026
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5066
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5028
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5028
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5069
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5027
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5068
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5029
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5071
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5028
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5070
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5030
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5073
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5029
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5072
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5093
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5031
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5006
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5090
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5032
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5032
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5074
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5031
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5075
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5033
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5077
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5032
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5076
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5034
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5079
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5033
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5078
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5035
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5081
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5034
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5080
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5091
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5036
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5007
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5089
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5037
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5037
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5083
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5036
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5082
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5038
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5085
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5037
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5084
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5039
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The hallway seems to stretch forever. It is brightly lit and cheerfully 
+decorated. The walls are a redish wood and a plush brown carpet lines the
+floor. The doors are spaced evenly apart and are all numbered.
+~
+#EXIT
+Direction north~
+ToRoom    5086
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5038
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5087
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5088
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5040
+Name     Home of Miriam~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5011
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5041
+Name     A small office~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5011
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5042
+Name     Klen's Home~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5043
+Name     DarkWing Lair~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5044
+Name     Relkin's Home~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5045
+Name     The New Home of Miriam~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5046
+Name     Crimson's House~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5014
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5047
+Name     &RJarik's Domain~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5014
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5048
+Name     &zA dark place&W.~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5049
+Name     Stormie's Apartment~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5050
+Name     Tash's home~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5017
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5051
+Name     WyrmsLair~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5017
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5052
+Name     Era's Lovely Suite~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5053
+Name     Sho's home~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5054
+Name     Hidden Smackdom~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5055
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors safe empty_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5056
+Name     Palleon's Command Bunker~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5020
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5057
+Name     &RV's domain~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5020
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5058
+Name     &rhell~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5022
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5059
+Name     &z Dark &P Room~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5022
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5060
+Name     A Dark Cave~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5061
+Name     &PThe B&glade&Pm&gasters &PRoom&G~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5062
+Name     Zinth's Pad~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5063
+Name     Palim's Place~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5064
+Name     &GCag&ggi&Gn&g'&Gs &GSh&gac&Gk&w~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5065
+Name     &bThe &BCourts &bof &bChaos&w~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5066
+Name     Andross's Humble abode~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5067
+Name     Esok's Getaway~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5068
+Name     the dark palace~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5028
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5069
+Name     HENS HUMBLE BATCHELOR PAD~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5028
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5070
+Name     This Room is For Sale~
+Sector   city~
+Flags    indoors safe empty_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5071
+Name     Moo, tastes like chicken~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5072
+Name     This Room is For Sale~
+Sector   city~
+Flags    indoors safe empty_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5073
+Name     Simon's Corp. Office~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5074
+Name     Altian's Quarters~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5032
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5075
+Name     &BG&boraxe's &zGeTaWaY &W~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5032
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5076
+Name     Shuruga's Den of Solitude~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5077
+Name     Gorags Den~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5078
+Name     &cThe Office of Jae K'Sunis&w~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5079
+Name     Zorgos' Chambers~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5080
+Name     Jade Incorp.~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5081
+Name     &rA Portal to Hell~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5082
+Name     An Imperial Soldier's Home~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5037
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5083
+Name     Raichle's G-Spot~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5037
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5084
+Name     Hadin's little refuge~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5085
+Name     Phycos Party palace and reflection chamber~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5086
+Name     &pZerack's Sanctuary ~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction south~
+ToRoom    5039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5087
+Name     Phaeton's Palace~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5088
+Name     Roquepertuse's Abode~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction east~
+ToRoom    5039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5089
+Name     Elden's Sanctum~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5036
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5090
+Name     &RJ&rarik's &RD&romain~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5031
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5091
+Name     &bAcer's &gTwinky &OHouse&G~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction east~
+ToRoom    5035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5092
+Name     Simon's Bus. Office~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5093
+Name     The Humble Den of "Spawn"~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction east~
+ToRoom    5030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5094
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors safe empty_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5021
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5095
+Name     &BK&biahlin&B'&bs &BK&beep&w~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction east~
+ToRoom    5025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5096
+Name     The Wanderer's Den~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5016
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5097
+Name     An Engineer's Shop~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction east~
+ToRoom    5020
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5098
+Name     A Hunters Hideout~
+Sector   city~
+Flags    indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction east~
+ToRoom    5015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5099
+Name     &RK&rtang &BG&brenade &YH&yold~
+Sector   city~
+Flags    nomob indoors safe plr_home hotel~
+Desc     This is a small but comfortable room. However it could use a few personal
+touches to make it feel more like home and less like a hotel room.
+~
+#EXIT
+Direction north~
+ToRoom    5008
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

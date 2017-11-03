@@ -1,0 +1,3697 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         nar.shadda~
+Author       Skeesh~
+Ranges       0 0 0 0
+Economy      0 6268585
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       500
+Keywords   Auctioner~
+Short      a newly created Auctioner~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       501
+Keywords   A Gotal bouncers is standing here not allowing any droids to enter~
+Short      a newly created A Gotal bouncers is standing here not allowing any droids to enter~
+Long       Some god abandoned a newly created A Gotal bouncers is standing here not allowing any droids to enter here.~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       502
+Keywords   A Talz is standing here waiting for someone to serve~
+Short      A talz~
+Long       A talz bartender is ready to serve you~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc stayarea~
+Stats1     0 35 0 12 500 0
+Stats2     7 10 350
+Stats3     3 4 2
+Stats4     0 0 2 7 7
+Attribs    20 2 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       503
+Keywords   Chubb Scutt~
+Short      a newly created Chubb Scutt~
+Long       A nonhumanoid citizen marches around looking for something~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       504
+Keywords   A small rodent~
+Short      A rodent~
+Long       A large rodent is looking for some food is being shoved around~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc scavenger wimpy~
+Stats1     0 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    2 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       505
+Keywords   Binary load~
+Short      A binary load~
+Long       A binary load is working hard~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       506
+Keywords   A protocal droid is waiting here to help you out~
+Short      a newly created A protocal droid is waiting here to help you out~
+Long       A protocal droid is waiting here to help you ~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc droid~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       507
+Keywords   Superviser~
+Short      A superviser~
+Long       A Superviser is obviously supervising everyone~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    13 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       508
+Keywords   A human~
+Short      A human~
+Long       A human is standing here waiting for the shuttle~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc stayarea~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       509
+Keywords   A secretary~
+Short      a newly created A secretary~
+Long       A secretary is standing behind a counter~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       510
+Keywords   Hutt citizen~
+Short      a newly created Hutt citizen~
+Long       A Hutt citizen is wandering around~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     2 10 0 75 100 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    11 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Bodyparts  tail~
+#ENDMOBILE
+
+#MOBILE
+Vnum       511
+Keywords   smuggler~
+Short      A smuggler~
+Long       A suspicious looking man~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc stayarea~
+Stats1     -20 50 0 -25 350 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       512
+Keywords   Hutt~
+Short      A hutt~
+Long       A hutt is hovering the cash register~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc stayarea~
+Stats1     0 80 0 5 0 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 17 15
+Attribs    16 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       513
+Keywords   A worker~
+Short      a newly created A worker~
+Long       A worker is trying to make something~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       514
+Keywords   A human expert craftswoman~
+Short      Human craftsmen~
+Long       A human expert craftsmen~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       515
+Keywords   Doctor~
+Short      A doctor~
+Long       A doctor is looking at his patients~
+Race       Rodian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 35 0 12 0 0
+Stats2     7 10 350
+Stats3     3 4 2
+Stats4     0 0 0 7 7
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common rodian~
+Speaking   rodian~
+#ENDMOBILE
+
+#MOBILE
+Vnum       516
+Keywords   A tourist~
+Short      A tourist~
+Long       A tourist is looking through the travel guides~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc stayarea~
+Stats1     10 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    8 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     ithorian~
+Speaking   ithorian~
+#ENDMOBILE
+
+#MOBILE
+Vnum       517
+Keywords   A traffic officer~
+Short      A traffic officer~
+Long       A traffic officer is montering a screen~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     5 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    11 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       521
+Keywords   A vendin droid~
+Short      a newly created A vendin droid~
+Long       A vending droid~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       522
+Keywords   A Chubb Scutt is drinking at incredible speed~
+Short      Chubb~
+Long       A Chubb Scutt is drinking at incredible speed~
+Race       r90~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     10 10 0 75 5 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       523
+Keywords   A large hutt~
+Short      A large hutt~
+Long       A large hutt~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     -2 12 0 70 0 0
+Stats2     2 10 120
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       524
+Keywords   A deveronian information broker~
+Short      Devaronian~
+Long       A devaronian information broker ~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 20 0 50 350 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       525
+Keywords   A Cycy Loctob is selling contraband items to whoever is interested~
+Short      A Cycy Loctob~
+Long       A Cycy Loctob is selling contraband items to whoever is interested~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     -3 12 0 70 0 0
+Stats2     2 10 120
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       526
+Keywords   A human citizen~
+Short      A human citizen~
+Long       A human citizen~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 10 0 75 50 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       527
+Keywords   A Shistavanen Wolfman~
+Short      A Shistavanen Wolfman~
+Long       A Shistavanen Wolfman~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 30 0 25 10 0
+Stats2     6 10 300
+Stats3     3 4 2
+Stats4     0 0 0 6 6
+Attribs    13 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Attacks    punch~
+#ENDMOBILE
+
+#MOBILE
+Vnum       528
+Keywords   A twi'lek is looking for someone~
+Short      A twi'lek~
+Long       A twi'lek is looking for someone~
+Race       Twi'lek~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     -2 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common twilek~
+Speaking   twilek~
+Bodyparts  tentacles~
+#ENDMOBILE
+
+#MOBILE
+Vnum       529
+Keywords   A old man is trying to walk up the catwalk~
+Short      A old man is trying to walk up the catwalk~
+Long       A old man is trying to walk up the catwalk~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc stayarea~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       530
+Keywords   A Gamorean is easily walking up the catwalk~
+Short      A Gamorrean ~
+Long       A Gamorrean is easily walking up the catwalk~
+Race       Gamorrean~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc stayarea~
+Stats1     0 35 0 12 0 0
+Stats2     7 10 350
+Stats3     3 4 2
+Stats4     0 0 0 7 7
+Attribs    14 8 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     gamorrean~
+Speaking   gamorrean~
+#ENDMOBILE
+
+#MOBILE
+Vnum       531
+Keywords   A chadra-fran ~
+Short      A chadra-fan~
+Long       A chadra-fan is waiting for a shuttle~
+Race       Chadra-Fan~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       532
+Keywords   A hutt hostess~
+Short      A hutt hostess~
+Long       A hutt hostess~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common hutt~
+Speaking   hutt~
+#ENDMOBILE
+
+#MOBILE
+Vnum       534
+Keywords   A rodian is waiting in line for a room~
+Short      A rodian~
+Long       A rodian is waiting in line for a room~
+Race       Rodian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     rodian~
+Speaking   rodian~
+#ENDMOBILE
+
+#MOBILE
+Vnum       535
+Keywords   A diagona~
+Short      A diagona~
+Long       A diagona is going through the trash~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc aggressive stayarea~
+Stats1     0 75 0 -87 0 0
+Stats2     15 10 750
+Stats3     7 4 2
+Stats4     0 0 3 15 15
+Attribs    13 5 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Bodyparts  eye tentacles tail~
+#ENDMOBILE
+
+#MOBILE
+Vnum       536
+Keywords   A extremely large diagona~
+Short      A very large diagona~
+Long       A extremely large diagona~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc aggressive~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 4 20 20
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Bodyparts  tentacles~
+Immune     poison~
+#ENDMOBILE
+
+#MOBILE
+Vnum       537
+Keywords   A Askajian is walking toward the music~
+Short      a newly created A Askajian is walking toward the music~
+Long       A Askajian is walking toward the music~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc stayarea~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       538
+Keywords   A local citizen is waiting for something good to bid on~
+Short      a newly created A local citizen is waiting for something good to bid on~
+Long       A local citizen is waiting for something good to bid on ~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    9 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       539
+Keywords   A small time bounty hunter~
+Short      A bounty hunter~
+Long       A small time bounty hunter~
+Race       Noghri~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 45 0 -12 0 0
+Stats2     9 10 450
+Stats3     4 4 2
+Stats4     0 0 0 9 9
+Attribs    11 10 7 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       540
+Keywords   Landing pad guard~
+Short      guard~
+Long       Landing pad guard~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 70 0 -75 0 0
+Stats2     14 10 700
+Stats3     7 4 2
+Stats4     0 0 0 14 14
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       541
+Keywords   A hutt is really pigging out on food~
+Short      A hutt~
+Long       A hutt is really pigging out on food ~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       542
+Keywords   The hutt's wife is looking at her husband devouring food in seconds~
+Short      A hutt~
+Long       The hutt's wife is looking at her husband devouring food in seconds~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc stayarea~
+Stats1     0 16 0 60 0 0
+Stats2     3 10 160
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       543
+Keywords   A bith is slowly taking a bite out of his sandwich~
+Short      A bith~
+Long       A bith is slowly taking a bite out of his sandwich~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc stayarea~
+Stats1     0 13 0 67 0 0
+Stats2     2 10 130
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       544
+Keywords   Pot belly human is hardly awake~
+Short      a newly created Pot belly human is hardly awake~
+Long       A pot belly human is hardly awake~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 45 0 -12 0 0
+Stats2     9 10 450
+Stats3     4 4 2
+Stats4     0 0 0 9 9
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       545
+Keywords   A small bug is crawling beneath tables and picking up whatever it can~
+Short      A small bug~
+Long       A small bug is crawling beneath tables and picking up whatever it can~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc scavenger stayarea~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Immune     poison~
+#ENDMOBILE
+
+#MOBILE
+Vnum       546
+Keywords   A large man is barely awake~
+Short      A fat man~
+Long       A fat man is barely awake~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       547
+Keywords   A smuggler is looking around for refuge~
+Short      A smuggler~
+Long       A smuggler is looking around for refuge~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       548
+Keywords   A strongly built quarren is easily lifting bags~
+Short      A strongly built quarren~
+Long       A strongly built quarren is easily lifting bags~
+Race       Quarren~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc stayarea~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common mon_calamari~
+Speaking   mon_calamari~
+#ENDMOBILE
+
+#MOBILE
+Vnum       549
+Keywords   A ithorian citizen~
+Short      A ithorian~
+Long       A ithorian citizen~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       550
+Keywords   A large man is storing up boxes~
+Short      A large man~
+Long       A large man is storing up boxes~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 22 0 45 0 0
+Stats2     4 10 220
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 5 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       551
+Keywords   A smuggler is waiting inside the turbo-lift~
+Short      A smuggler~
+Long       A smuggler is waiting inside the turbo-lift~
+Race       Noghri~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc stayarea~
+Stats1     0 35 0 12 0 0
+Stats2     7 10 350
+Stats3     3 4 2
+Stats4     0 0 0 7 7
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common noghri~
+Speaking   noghri~
+#ENDMOBILE
+
+#MOBILE
+Vnum       552
+Keywords   A small alien is looking curiously about~
+Short      a newly created A small alien is looking curiously about~
+Long       A small alien is looking curiously about~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc stayarea~
+Stats1     0 7 0 82 0 0
+Stats2     1 10 70
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       553
+Keywords   A large wookiee is hauling large crates~
+Short      a newly created A large wookiee is hauling large crates~
+Long       A large wookiee is hauling large crates~
+Race       Wookiee~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 32 0 20 0 0
+Stats2     6 10 320
+Stats3     3 4 2
+Stats4     0 0 0 6 6
+Attribs    12 7 10 10 10 7 10 0
+Saves      0 0 0 0 0
+Speaks     wookiee~
+Speaking   wookiee~
+#ENDMOBILE
+
+#MOBILE
+Vnum       554
+Keywords   A smaller alien is aiding his wookiee friend~
+Short      a newly created A smaller alien is aiding his wookiee friend~
+Long       A smaller alien is aiding his wookiee friend~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 8 0 80 0 0
+Stats2     1 10 80
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       555
+Keywords   A human is running like crazy around here~
+Short      human~
+Long       A human is running like crazy around~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 12 0 70 0 0
+Stats2     2 10 120
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       556
+Keywords   A kubaz is walking around~
+Short      a newly created A kubaz is walking around~
+Long       A kubaz is walking around not knowing what to do~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 14 0 65 0 0
+Stats2     2 10 140
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       557
+Keywords   A droid is gibbering out anything~
+Short      a newly created A droid is gibbering out anything~
+Long       A droid is gibbering out anything~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       558
+Keywords   A rodian is carefully handling cargo~
+Short      A rodian~
+Long       A rodian is carefully handling cargo~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 22 0 45 0 0
+Stats2     4 10 220
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       559
+Keywords   A small smuggler is waiting for someone to land~
+Short      smuggler~
+Long       A small smuggler is waiting for someone to land ~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 21 0 47 0 0
+Stats2     4 10 210
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       560
+Keywords   A beautiful women is, standing beside her husband~
+Short      a newly created A beautiful women is, standing beside her husband~
+Long       A beautiful woman is, standing beside her husband~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 26 0 35 0 0
+Stats2     5 10 260
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       561
+Keywords   A handsome man is standing beside her wife, also waiting for someone~
+Short      a newly created A handsome man is standing beside her wife, also waiting for someone~
+Long       A handsome man is standing beside her wife, also waiting for someone~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       562
+Keywords   A experienced smuggler is just hanging around~
+Short      A experienced smuggler~
+Long       A experienced smuggler is just hanging around ~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       563
+Keywords   A information broker~
+Short      a newly created A information broker~
+Long       A information broker~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc stayarea~
+Stats1     0 24 0 40 0 0
+Stats2     4 10 240
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       564
+Keywords   A human bounty hunter is wearing unsual armor~
+Short      a newly created A human bounty hunter is wearing unsual armor~
+Long       Some god abandoned a newly created A human bounty hunter is wearing unsual armor here.~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       565
+Keywords   The bith band leader is playing the fizz~
+Short      a newly created The bith band leader is playing the fizz~
+Long       The bith band leader is playing the fizz~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 32 0 20 0 0
+Stats2     6 10 320
+Stats3     3 4 2
+Stats4     0 0 0 6 6
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       566
+Keywords   A bith is playing a weird type of keyboard~
+Short      a newly created A bith is playing a weird type of keyboard~
+Long       A bith is playing a weird type of keyboard~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 13 0 67 0 0
+Stats2     2 10 130
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       567
+Keywords   A hutt is listening attentively to the band~
+Short      A hutt~
+Long       A hutt is listening attentively to the band ~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 9 0 77 0 0
+Stats2     1 10 90
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     hutt~
+Speaking   hutt~
+#ENDMOBILE
+
+#MOBILE
+Vnum       568
+Keywords   A hutt is patiently waiting for his caravel to come~
+Short      A hutt~
+Long       A hutt is patiently waiting for his caravel~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc stayarea~
+Stats1     0 50 0 -25 700 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common hutt~
+Speaking   hutt~
+#ENDMOBILE
+
+#MOBILE
+Vnum       569
+Keywords   A defel assasin is swaying in the shadows, barely noticed by some people~
+Short      Defel~
+Long       A defel assasin is swaying in the shadows, barely noticed by some people~
+Race       Defel~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 44 0 -10 0 0
+Stats2     8 10 440
+Stats3     4 4 2
+Stats4     0 0 0 8 8
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     defel~
+Speaking   defel~
+#ENDMOBILE
+
+#MOBILE
+Vnum       570
+Keywords   A Gank bodyguard is watching your every mouvement~
+Short      Gank bodyguard~
+Long       A Gank bodyguard is watching your every mouvement~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 44 0 -10 0 0
+Stats2     8 10 440
+Stats3     4 4 2
+Stats4     0 0 0 8 8
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       571
+Keywords   A protocal droid is following his master everywhere~
+Short      A protocal droid~
+Long       A protocal droid is following his master and translating languages~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc droid~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       572
+Keywords   A gank has lost his master~
+Short      a newly created A gank has lost his master~
+Long       A gank bodyguard has lost his master and is looking for him~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 33 0 17 0 0
+Stats2     6 10 330
+Stats3     3 4 2
+Stats4     0 0 0 6 6
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#MOBILE
+Vnum       573
+Keywords   A tourist is waiting for his luggages~
+Short      A tourist~
+Long       A tourist is waiting for his luggages~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     500
+Keywords Booth~
+Type     trash~
+Short    a Booth~
+Long     A Booth is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     501
+Keywords Large oak podium~
+Type     trash~
+Short    a Large oak podium~
+Long     A polished oak podium stands here solidely.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     502
+Keywords A slug thrower pistol~
+Type     weapon~
+Short    a A slug thrower pistol~
+Long     A A slug thrower pistol is here.~
+Flags    antijedi antisith~
+WFlags   take wield~
+Values   0 2 2 6 5 5
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     503
+Keywords Prax Arms Stealth-2VX Palm Shooter~
+Type     weapon~
+Short    Prax Arms Stealth-2VX Palm Shooter~
+Long     A Prax Arms Stealth-2VX Palm Shooter is here.~
+Flags    contraband~
+WFlags   take wield~
+Values   0 2 10 9 10 10
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     504
+Keywords Darts~
+Type     bolt~
+Short    a Darts~
+Long     A Darts is here.~
+WFlags   take hold~
+Values   3 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     505
+Keywords Drearian Defense Conglomerate Defender Blaster~
+Type     weapon~
+Short    a Drearian Defense Conglomerate Defender Blaster~
+Long     A Drearian Defense Conglomerate Defender Blaster is here.~
+WFlags   take wield~
+Values   0 1 2 6 1000 1000
+Stats    1 2500 250 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     506
+Keywords Oversize coat~
+Type     armor~
+Short    a Oversize coat~
+Long     A Oversize coat is here.~
+Flags    hutt_size~
+WFlags   take body about~
+Values   0 25 0 0 0 0
+Stats    4 0 0 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     507
+Keywords Chair~
+Type     trash~
+Short    a Chair~
+Long     A Chair is here.~
+Values   0 0 0 0 0 0
+Stats    50 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     509
+Keywords Large trench coat~
+Type     armor~
+Short    a Large trench coat~
+Long     A Large trench coat is here.~
+Flags    antisith human_size~
+WFlags   take body about~
+Values   0 2 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     510
+Keywords Small Briefcase~
+Type     container~
+Short    a Small Briefcase~
+Long     A Small Briefcase is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     511
+Keywords Dirty glass~
+Type     trash~
+Short    a Dirty glass~
+Long     A Dirty glass is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     512
+Keywords Cyborg leg~
+Type     armor~
+Short    a Cyborg leg~
+Long     A Cyborg leg is here.~
+WFlags   take legs~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 10 1 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     513
+Keywords briefcase~
+Type     container~
+Short    a briefcase~
+Long     A briefcase is here.~
+WFlags   take~
+Values   10 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     514
+Keywords Klatooine patty frog~
+Type     food~
+Short    a Klatooine patty frogs~
+Long     Klatooine patty frog~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     517
+Keywords Dark Jedi Cape~
+Type     armor~
+Short    A Dark Jedi Cape~
+Long     A Dark Jedi Cape~
+Flags    magic human_size~
+WFlags   take about~
+Values   0 9 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     518
+Keywords BlasTech DH-17 blaster pistol~
+Type     trash~
+Short    a BlasTech DH-17 blaster pistol~
+Long     A BlasTech DH-17 blaster pistol is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     520
+Keywords A guide~
+Type     trash~
+Short    A guide~
+Long     A A guide is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     522
+Keywords A black robe~
+Type     armor~
+Short    a A black robe~
+Long     A A black robe is here.~
+Flags    antijedi antisith human_size~
+WFlags   take about~
+Values   0 0 0 0 0 0
+Stats    5 10 1 0 32
+#ENDOBJECT
+
+#OBJECT
+Vnum     523
+Keywords A large black cape~
+Type     armor~
+Short    A long black cape~
+Long     A A large black cape is here.~
+WFlags   take neck~
+Values   0 0 0 0 0 0
+Stats    6 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     524
+Keywords A dirty old shirt~
+Type     armor~
+Short    dirty old shirt~
+Long     A A dirty old shirt is here.~
+WFlags   take body~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     525
+Keywords A black one peice suit~
+Type     armor~
+Short    a A black one peice suit~
+Long     A A black one peice suit is here.~
+WFlags   take body~
+Values   0 2 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     526
+Keywords A small shirt~
+Type     armor~
+Short    Small shirt~
+Long     Small shirt~
+WFlags   take body~
+Values   0 5 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     527
+Keywords A large bag~
+Type     trash~
+Short    a A large bag~
+Long     Large bag filled with someone's possesions~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     528
+Keywords A large oak desc~
+Type     furniture~
+Short    A nicely polished oak desc~
+Long     A A large oak desc is here.~
+Values   0 0 0 0 0 0
+Stats    100 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     529
+Keywords A rancor skin jacket~
+Type     armor~
+Short    A rancor skin jacket~
+Long     A A rancor skin jacket is here.~
+WFlags   take body~
+Values   0 4 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     530
+Keywords A small legal vibro blade~
+Type     weapon~
+Short    A vibro blade~
+Long     A A small legal vibro blade is here.~
+WFlags   wield~
+Values   0 0 0 2 99 99
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     531
+Keywords A large box~
+Type     furniture~
+Short    a A large box~
+Long     A A large box is here.~
+Values   0 0 0 0 0 0
+Stats    1000 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     532
+Keywords Blastech sporting blaster~
+Type     weapon~
+Short    a Blastech sporting blaster~
+Long     A Blastech sporting blaster is here.~
+WFlags   take wield~
+Values   0 0 0 6 1000 1000
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     533
+Keywords A blue parka~
+Type     armor~
+Short    Blue parka~
+Long     Blue parka~
+WFlags   take body~
+Values   0 6 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     535
+Keywords fizz~
+Type     trash~
+Short    a fizz~
+Long     A fizz is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     536
+Keywords Fingerless gloves~
+Type     armor~
+Short    a A fingerless glove~
+Long     Fingerless gloves~
+Flags    hutt_size~
+WFlags   take hands~
+Values   0 2 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     537
+Keywords small dagger~
+Type     weapon~
+Short    a small dagger~
+Long     A small dagger is here.~
+Flags    anticitizen~
+WFlags   take wield~
+Values   0 0 0 2 0 0
+Stats    2 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     538
+Keywords pair of glaces~
+Type     lens~
+Short    A unusual pair of glaces~
+Long     A pair of glaces look incredibly weird.  They seem to be all red.~
+WFlags   take eyes~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     539
+Keywords A large monitor~
+Type     furniture~
+Short    monitor~
+Long     A Monitor is hanging on the wall~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     540
+Keywords a pair of speakers~
+Type     furniture~
+Short    a a pair of speakers~
+Long     A pair of speakers~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     541
+Keywords control panel~
+Type     button~
+Short    a control panel~
+Long     A control panel is here.~
+Values   -1 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     500
+Name     Spaceport Bravo-Beta~
+Sector   city~
+Flags    indoors~
+Desc     Welcome to Nar Shadda, spaceport moon of the famous Nal Hutta. It isconsidered "Smugglers Paradise" to incoming people. Spaceport Bravo-Betais one of the many spaceports in Nar Shadda.  This spaceport is punycompared to the most larger ones.  The spaceport is always busy, filledwith people. A large sheet of transparesteel lies above your head.  Youcan see incoming ships of all types.  You must watch your step to survivein Nar Shadda.  It's a tough life here in Nar Shadda.~
+#EXIT
+Direction north~
+ToRoom    506
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    516
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    572
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    502
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    501
+#ENDEXIT
+
+Reset M 0 510 1 500
+  Reset E 1 32258 1 13
+  Reset G 1 514 1
+Reset M 0 528 1 500
+  Reset E 1 21061 1 8
+  Reset E 1 522 1 12
+#ENDROOM
+
+#ROOM
+Vnum     501
+Name     Spaceport Bravo-Beta Bistro entrance~
+Sector   city~
+Flags    indoors~
+Desc     A large sign hangs in front of the entrance way.  It says Bravo-Betabistro. Music trails of from the middle of the bistro. The entrance isvery large, large enough for a hutt to fit through. The hight of theentrance is very high since some hutts have trouble crawling in, so theyuse repulsor sleds. The bistro is open for everyone.~
+#EXIT
+Direction north~
+ToRoom    503
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    500
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     502
+Name     Lost and Found of Spaceport Bravo-Beta~
+Sector   city~
+Flags    indoors~
+Desc     You enter a large room.  The walls are painted white. It's a very plainroom with absolutely no decorations.  Little money was spent for this roomand it was only made because the public wanted one. It's very dusty, andwould make anyone sneeze.  A large, bright lamp hangs over your head.White light pours from the lamp right on you.  The room is filled withdirty boxes filled with people's posessions. ~
+#EXIT
+Direction northwest~
+ToRoom    500
+#ENDEXIT
+
+Reset M 0 506 1 502
+#ENDROOM
+
+#ROOM
+Vnum     503
+Name     Bravo-Beta bistro~
+Sector   city~
+Flags    indoors~
+Desc     A large number of people and aliens are stationed here.  It is amazing howmany people there are. There are many booths, but most of them are used.  A band is playing a familiar song but can't seem to recall the name.  Manyaliens are selling information while others are just hanging around.  Abar is also stationed on the east side of you.  Make sure to visiteverything in the bistro.~
+#EXIT
+Direction east~
+ToRoom    504
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    501
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    505
+#ENDEXIT
+
+Reset M 0 523 1 503
+  Reset E 1 10312 1 16
+Reset M 0 524 1 503
+  Reset E 1 56 1 16
+#ENDROOM
+
+#ROOM
+Vnum     504
+Name     Bistro bar~
+Sector   city~
+Flags    indoors~
+Desc     A large booth is lying in front of you.  A large Talz, is cleaning out thedirt out of a dirty glass.  You conclude that it must be the bartender. Many shelfs are stuck into the wall.  You notice various forms of liquorand drinks.  Many red stool a laid out for people to sit on.  A largewhole is in between every two stools.  It's for the large hutts that needsomething to drink.  Besides how would a hutt fit on one of those punystools?~
+#EXIT
+Direction west~
+ToRoom    503
+#ENDEXIT
+
+Reset M 0 502 1 504
+  Reset E 1 511 1 17
+  Reset G 1 511 1
+Reset M 0 522 1 504
+#ENDROOM
+
+#ROOM
+Vnum     505
+Name     Large Booth~
+Sector   city~
+Flags    indoors~
+Desc     It is very likely for you to find a booth so don't fell lucky.  The seat isvery large and is capable of seating up to 5 people. It is empty though.The seat is blood red but is very comfortable.  There are many holes inthe seats with pading coming out of it . Some holes are taped up orstapled together.  Hey sit back and relax.~
+#EXIT
+Direction east~
+ToRoom    503
+#ENDEXIT
+
+Reset M 0 527 1 505
+#ENDROOM
+
+#ROOM
+Vnum     506
+Name     Spaceport Terminal~
+Sector   city~
+Flags    indoors~
+Desc     You now stand in the terminal of Spaceport Bravo-Beta.  You look aroundsanning your surronding and you see that they're a lot of people walkingabout minding their own buisness. The room slits of into many directionsbut there is no sign to tell you where to go.  Someone could get lost insuch a large spaceport. Luckily a monitor hangs above your head to tellyou the flight of Nar Shadda.  The monitor is in several languages soalmost every type of race can read it.  Most of the flights go to NalHutta.Which way will you go?~
+#EXIT
+Direction north~
+ToRoom    510
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    507
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    500
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    508
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    517
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    533
+#ENDEXIT
+
+Reset M 0 511 1 506
+  Reset G 1 504 1
+  Reset E 1 509 1 5
+  Reset E 1 503 1 16
+  Reset E 1 32228 1 13
+Reset M 0 549 1 506
+  Reset E 1 530 1 16
+Reset M 0 562 1 506
+  Reset E 1 532 1 16
+  Reset E 1 533 1 5
+Reset O 0 539 1 506
+#ENDROOM
+
+#ROOM
+Vnum     507
+Name     Shuttle stop~
+Sector   city~
+Flags    indoors~
+Desc     Everyone is waiting for a shuttle to bring them somewhere.  This shuttlebrings you to one of Nar Shadda's closest cities. Many people are in lignto board onto the shuttle.  A large uneasy lign is formed.  It is mostlikely that you won't be able to make the next shuttle.   Patience is thekey!~
+#EXIT
+Direction west~
+ToRoom    506
+#ENDEXIT
+
+Reset M 0 508 1 507
+  Reset G 1 513 1
+  Reset E 1 510 1 17
+  Reset E 1 505 1 16
+Reset M 0 531 1 507
+#ENDROOM
+
+#ROOM
+Vnum     508
+Name     Spaceport hotel lobby~
+Sector   city~
+Flags    indoors~
+Desc     You stand in the Spaceport hotel lobby of Bravo-Beta.  Not many people arestaying at this hotel since people are leaving to Nar Shadda's manycities.  It is still open for everyone.  The hotel is very convenientbecause it leads straight of into the Spaceport.  It is great for quickdepatures and quick visits.~
+#EXIT
+Direction east~
+ToRoom    506
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    509
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    568
+#ENDEXIT
+
+Reset O 0 32208 1 508
+#ENDROOM
+
+#ROOM
+Vnum     509
+Name     Reception desc~
+Sector   city~
+Flags    indoors~
+Desc     A large booth is here.  Behind the large booth is a large hutt hostess. The reason for the reception desk is because you may find a room with abacta tank.  Ifyou will pay here a amount of money. Several large clocksare hanged behind here and showing the times of many other planets. Thedesk is made of oak and his been recently polshed.  A small lign is formedbehind you as other people wait for their turn.~
+#EXIT
+Direction east~
+ToRoom    508
+#ENDEXIT
+
+Reset M 0 532 1 509
+Reset M 0 534 1 509
+  Reset E 1 45 1 17
+  Reset E 1 316 1 16
+  Reset E 1 529 1 5
+Reset O 0 528 1 509
+#ENDROOM
+
+#ROOM
+Vnum     510
+Name     Spaceport terminal~
+Sector   city~
+Flags    indoors~
+Desc     The spaceport terminal is very large.  A large monitor hangs above yourhead and displays the various flights. Beside the monitor is a pair ofspeakers which announce's flights.  The spaceport terminal splits of inalmost every direction. ~
+#EXIT
+Direction north~
+ToRoom    515
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    511
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    506
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    513
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    514
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    518
+#ENDEXIT
+
+Reset M 0 505 2 510
+Reset M 0 539 1 510
+  Reset E 1 32238 1 20
+  Reset E 1 54 1 16
+Reset O 0 540 1 510
+#ENDROOM
+
+#ROOM
+Vnum     511
+Name     Entrance to landing pads~
+Sector   city~
+Flags    indoors~
+Desc     A huge gate blocks your way to the landings pads.  It has been rusted andabused sveral times.  Two security guards stand beside the gate, waitingfor unauthorized people to try to enter. You can hear the ROAR of enginestaking of into space.  You can smell engine fuel as the sound getssmaller. Just ask the guards to open the door and maybe they shall do it. If they don't a little bribing won't hurt .~
+#EXIT
+Direction north~
+ToRoom    512
+Keywords  Gate~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    510
+#ENDEXIT
+
+Reset D 0 511 0 1
+#ENDROOM
+
+#ROOM
+Vnum     512
+Name     Landing pad 101~
+Sector   city~
+Desc     You stand on a HUGE platform.  It is filled with atleast fix to ten ships. Most of them a refueling and some of them or getting ready to launch. Thebreeze of fresh air passes by, but then you get the smell of burnt powerpacks and smoke form blown up power converters.  Some people are loadingthings into their ships but it is unknown to what they are loading.  Theplatform is not even guarded one bit except for a couple of trafficofficers directing incoming ships.~
+#EXIT
+Direction east~
+ToRoom    521
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    511
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset D 0 512 2 0
+#ENDROOM
+
+#ROOM
+Vnum     513
+Name     Spaceport Bravo-Beta Hutt caravel launching bay entrance~
+Sector   city~
+Desc     A large door stands in front of you which is large enough for a hutt to fitthrough.  Many hutts slide through the automatic door in front of you,trailing behind them a slime trail.  Following the hutts are their"Minions and goons" to accompany them to Nal Hutta.  On top of the door isa large scanner, scanning for weapons.  It is very noticeable so if youare smart enough, you'd put it away. ~
+#EXIT
+Direction east~
+ToRoom    510
+#ENDEXIT
+
+Reset M 0 568 1 513
+Reset M 0 570 1 513
+Reset M 0 571 1 513
+#ENDROOM
+
+#ROOM
+Vnum     514
+Name     Spaceport store~
+Sector   city~
+Flags    indoors~
+Desc     You stand in a small room containing: key chains, ammo cells and moreaccesories.  It is large enough to fit a couple of hutts but can get tocrowded.  It is not crowded now and you only notice a small child readingout of the magazine area.  A large fan cools you down as it spins in onedirection   A large cashier stand in front of a large hutt. He seems toknow what he is doing.   It may not seem to have much security but youwill never know.~
+#EXIT
+Direction north~
+ToRoom    526
+Keywords  workshop~
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    510
+#ENDEXIT
+
+Reset M 0 512 1 514
+  Reset E 1 506 1 5
+Reset M 0 310 3 514
+Reset D 0 514 0 0
+#ENDROOM
+
+#ROOM
+Vnum     515
+Name     Turbo-lift:Level 1~
+Sector   city~
+Flags    nomob indoors~
+Stats    0 0 2
+Desc     It is very crampy in the Turbo-lift.  As many people try to squeeze theirway in but get pushed back out.  A speaker is stuck right into the walland is playing soothing and relaxing music. The walls are white and thefloor is tiled black. ~
+#EXIT
+Direction north~
+ToRoom    553
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    510
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    528
+#ENDEXIT
+
+Reset M 0 551 1 515
+#ENDROOM
+
+#ROOM
+Vnum     516
+Name     Auctioning room~
+Sector   city~
+Flags    nomob indoors auction~
+Desc     You now stand in a pretty large room.  A large podium is stationed at thefar end of the room. Many chairs are set out for people to sit down. Surrounded by many glass cases filled with neat objects, you discover thatthe room is quite neat.~
+#EXIT
+Direction north~
+ToRoom    500
+#ENDEXIT
+
+Reset M 0 538 1 516
+Reset O 0 501 1 516
+#ENDROOM
+
+#ROOM
+Vnum     517
+Name     Stairway~
+Sector   city~
+Flags    nomob~
+Desc     You head your way down the staircase.  A large railing is stuck firmly tothe wall to help people go down. The stairs are kind of slippery becausethere are already washed.  Not many people follow you down into thedarkness of the stairway.  A light hangs from the side of the wall andprovides the only light.~
+#EXIT
+Direction up~
+ToRoom    506
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    523
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     518
+Name     Shaft car~
+Sector   city~
+Flags    nomob indoors~
+Desc     A platform slowly moves upwards toward the roof.  You can see the edges ofthe shaft from the bottom.  Nothing really to see.  The shaft car makes afunny kind of nois as it creaks up to it's destination. It is a very slowride and it seems practicaly forever to reach the top.  Patience is avirtue. ~
+#EXIT
+Direction up~
+ToRoom    519
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    510
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     519
+Name     Shaft car~
+Sector   city~
+Flags    nomob indoors~
+Desc     THe car suddenly stops.  Atlast after a long ride you have reached the top.The shaft car rumbles for a minute then dies.  You can hear the creaks inthe spokes of the shaft car.  You can now see a large catwalk laid outbefore you. ~
+#EXIT
+Direction north~
+ToRoom    520
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    518
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     520
+Name     Before the catwalk~
+Sector   city~
+Flags    nomob indoors~
+Desc     You stand infront a large catwalk overlooking the whole spaceport.  You cansee all the way down to the other end of the catwalk.  Beside you is aswitch for the shaft car going up or down.  It isn't a very large area soif there is a lot of people standing here, some of them would get pushedonto the catwalk. Luckly there is hardly anyone standing in this area.~
+#EXIT
+Direction north~
+ToRoom    527
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    519
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     521
+Name     Bridge~
+Sector   city~
+Flags    nomob~
+Desc     A large bridge is linked together between two landing pads.  It is wideenough for many people and can also support many tons of weight. Engineexaust fills the air as you smell the gas right in your face.  A lot ofships start landing a refueling their ships.    The width of the bridge isvery wide and could fit many hutts standing side by side.  It is very busyand is crossed many times. ~
+#EXIT
+Direction east~
+ToRoom    522
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    512
+#ENDEXIT
+
+Reset M 0 559 1 521
+#ENDROOM
+
+#ROOM
+Vnum     522
+Name     Landing pad 102~
+Sector   city~
+Flags    nomob can_land can_fly~
+Desc     You now stand on a even larger platform than before.  You can smell theengine exaust.   Many large freighters start landing on the platform. Their repulsor lifts, lift some of your hair on your head.  Many peopleare on the platform waiting for arrivals but most of them are standingback because the don't want to get blown away by the incoming ships~
+#EXIT
+Direction west~
+ToRoom    521
+#ENDEXIT
+
+Reset M 0 560 1 522
+Reset M 0 561 1 522
+#ENDROOM
+
+#ROOM
+Vnum     523
+Name     Stairway~
+Sector   city~
+Flags    nomob~
+Desc     You continue down the dark stairway.  It doesn't seem very hard for you toclimb down, but going up is going to take some effort. The staircasesplits of to the left and then to the right.  A long gloomy hallwaycontinues down as you turn to the left.  The staircase is very wide somany people can go down. The staircase continues further down.~
+#EXIT
+Direction east~
+ToRoom    524
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    546
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    517
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    558
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     524
+Name     Hallway to the Medical bay~
+Sector   city~
+Desc     The roof is shaped roundly around your head and is quite high up.   Itleads further down to room but you can't make it out completely. You hearcries of agony from the Medical bay as it trails of.    A large whitelight hangs above your head, as you notice a bit more further down thehallway. You conitnue down the hallway until it meets up to the medicalbay.~
+#EXIT
+Direction east~
+ToRoom    525
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    523
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     525
+Name     Medical bay~
+Sector   city~
+Flags    nomob~
+Desc     A large desc sits in front of you and behind it, is a Verpine secretary.  A large stack of papers are piled up.   Behind the desc, a large doorstands firm.  It sudenly swings open and you get a glimpse of a largeBacta tank containing a bunch of people.  ~
+#EXIT
+Direction west~
+ToRoom    524
+#ENDEXIT
+
+Reset M 0 515 1 525
+Reset O 0 32231 1 525
+#ENDROOM
+
+#ROOM
+Vnum     526
+Name     Bravo-Beta shop work room~
+Sector   city~
+Flags    indoors factory~
+Desc     You now stand in a large workshop filled with people creating new things. Some creative some not so creative. Everyone is the room seems extremelybusy working on something.  Many large tables are set out for people towork on.   Maybe you should start making or build something creative. This place is only for the skilled so take your time working.  A largesign hangs on the wall just left of you. ~
+#EXIT
+Direction south~
+ToRoom    514
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset M 0 513 1 526
+Reset M 0 514 1 526
+Reset O 0 507 1 526
+Reset D 0 526 2 0
+#ENDROOM
+
+#ROOM
+Vnum     527
+Name     Catwalk~
+Sector   city~
+Desc     You now stand on a large catwalk.  You can get a great view of the You nowstand on a large catwalk.  You can get a great view of the spaceportnorthern section.  You look down and you see many people walking towardstheir destination. It is very wide, but you could still easily fall downsince there is no railing on the sides.  Many people have complainedaboutthis but nothing has changed. The catwalk leads way further down.~
+#EXIT
+Direction north~
+ToRoom    540
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    529
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    520
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    531
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     528
+Name     Turbo-lift:Level 2~
+Sector   city~
+Flags    nodrop~
+Stats    0 0 2
+Desc     The turbo-lift goes down and a terrifying speed, then stops abruptly.  Youlurch foward as it stops.  A large speaker announces "Level 2 of SpaceportBravo-Beta". The door opens for you to step out.~
+#EXIT
+Direction north~
+ToRoom    534
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    515
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    538
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     529
+Name     Of ledge...~
+Sector   city~
+Flags    nomob nofloor~
+Desc     Looks like you made a wrong turn.  You slip and start to fall down towardsthe ground.  Maybe you should have though before walking in thisdirection.~
+#EXIT
+Direction down~
+ToRoom    532
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     530
+Name     Spaceport terminal~
+Sector   city~
+Flags    nomob indoors~
+Desc     The terminal seems extremely large and someone could get lost in such alarge spaceport.  There is no one to help you and asking for help would bestupid.  Everyone is in a rush one way or another.  Many binary loadsstart working here with their large claws.  The spaceport splits off in acouple of directions and there is actually a sign to direct you the way.~
+#EXIT
+Direction east~
+ToRoom    532
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    533
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    579
+#ENDEXIT
+
+Reset M 0 572 1 530
+#EXDESC
+ExDescKey    sign~
+ExDesc       Welcome to Spaceport Bravo-Beta. Here you will find many things, includinglanding pads, stores and much much more.  To exit the spaceport is simple.All you have to do is find the hallway and you are on your way out. Thankyou for visiting Spaceport Bravo-Beta.~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     531
+Name     Of ledge...~
+Sector   city~
+Flags    nomob~
+Desc     You suddenly drop at a terrying speed.  You will probably die of breaksomething as the ground gets closer to your view.  Watch your steop nexttime.~
+#ENDROOM
+
+#ROOM
+Vnum     532
+Name     Spaceport Terminal Nothern side~
+Sector   city~
+Flags    nomob~
+Desc     You step into the nothern side of the spaceport terminal.  It is verysimilar to the rest of the rooms but is a bit larger. You look over yourhead and see a large catwalk. A large group of people surrond you as youcontinue your way into the spaceport.~
+#EXIT
+Direction north~
+ToRoom    554
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    552
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    553
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    530
+#ENDEXIT
+
+Reset M 0 526 1 532
+  Reset E 1 318 1 7
+Reset M 0 504 1 532
+#ENDROOM
+
+#ROOM
+Vnum     533
+Name     Spaceport Terminal Eastern side~
+Sector   city~
+Desc     You now stand in a large terminal but is the same size as the rest of theterminals.   It is almost as busy as the other spaceports but peoplequickly leave the eastern side of the spaceport.   Many large windows aset out so you can see out of them.  It is very busy outside but theredoesn't seem to be an exit to outside.  I guess you have to find anotherway.~
+#EXIT
+Direction north~
+ToRoom    530
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    506
+#ENDEXIT
+
+Reset M 0 547 1 533
+  Reset E 1 526 1 5
+  Reset G 1 32230 1
+#ENDROOM
+
+#ROOM
+Vnum     534
+Name     The control room of the garbage compacter~
+Sector   city~
+Desc     Many monitors surrond you.  Many of them just are just black or white.  Thescreen doesn't have many commands but a simple letter on each one.  Thereare many doors leading to a seperate garbage room.  The garbage room isused for maintaining the spacepo  ort nice and clean.  Many janitor droidsare busy dumping garbage they have collected. The room has a very badodour as you struggle to clamp your noise shut. EWWW!  You notice a panelinfront of the entrance of each door.~
+#EXIT
+Direction north~
+ToRoom    537
+Keywords  Compacter~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    535
+Keywords  Compacter~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    528
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    536
+Keywords  Compacter~
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 534 0 1
+Reset D 0 534 1 1
+Reset D 0 534 3 1
+#ENDROOM
+
+#ROOM
+Vnum     535
+Name     Garbage compacter~
+Sector   city~
+Desc     Your foot suddenly sinks into the smelly filled compacter as you step intoit.  The odor invades your noise as you desperately try to cover it.  Manyscraps of metal have been crushed into a very nice square. The more iswarm and is yellow.  The compacter is very disgusting and so far no onehas volunteered to clean it up.~
+#EXIT
+Direction west~
+ToRoom    534
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset M 0 535 1 535
+#ENDROOM
+
+#ROOM
+Vnum     536
+Name     Garbage compacter~
+Sector   city~
+Flags    nomob~
+Desc     Your foot suddenly sinks into the smelly filled compacter as you step intoit.  The odor invades your noise as you desperately try to cover it.  Manyscraps of metal have been crushed into a very nice square. The more iswarm and is yellow.  The compacter is very disgusting and so far no onehas volunteered to clean it up.~
+#EXIT
+Direction east~
+ToRoom    534
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset M 0 535 2 536
+#ENDROOM
+
+#ROOM
+Vnum     537
+Name     A large garbage compacter~
+Sector   city~
+Flags    nomob~
+Desc     The smell gets even worse.  You trip over some wires but quickly bringyourself back up.  This is the largest garbage compacter.  The yellowishgreen water is up to waist level on most humans.  No one has dared youcome in.  Once you've stepped out, your you're trapped until someone opensthe door for you.~
+Reset M 0 536 1 537
+#ENDROOM
+
+#ROOM
+Vnum     538
+Name     Turbo-lift:Level 3~
+Sector   city~
+Stats    0 0 2
+Desc     The turbo-lift suddenly stops at it's destination.  The music stops as youget in or out. A very bad smell comes from the south, even the workershave to take a break and get some fresh air after a while.~
+#EXIT
+Direction south~
+ToRoom    539
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    528
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    577
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     539
+Name     Storage room~
+Sector   city~
+Desc     Many large boxes are placed foward everywhere. A whole bunch of aliens andhumanoids are working hard lifting heavy boxes.  The room is very bright,but the light is partially covered by the boxes stacked up on together.Aiding the humans and aliens are large binary loads lifting up with theirhuge claws. ~
+#EXIT
+Direction north~
+ToRoom    538
+#ENDEXIT
+
+Reset M 0 550 1 539
+Reset M 0 553 1 539
+Reset M 0 554 1 539
+Reset O 0 531 1 539
+#ENDROOM
+
+#ROOM
+Vnum     540
+Name     Catwalk~
+Sector   city~
+Flags    nomob~
+Desc     The catwalk is farely large.  It can support many people and their is asign to prove it.  Even though the sign tells you it is safe, do becareful.  Not many people patrol on this catwalk for their is no supportfor anyone.  Once you have fallen, it's a long way down my friend.  Youmay bend over to take a look down below but it can be very risky.  Noaccidents have occured....yet.~
+#EXIT
+Direction north~
+ToRoom    573
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    541
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    527
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    544
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     541
+Name     Off ledge~
+Sector   city~
+Flags    nomob nofloor~
+Desc     A long way down! ~
+#EXIT
+Direction west~
+ToRoom    540
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    542
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     542
+Name     Falling down~
+Sector   city~
+Flags    nomob nofloor~
+Desc     You fall extremely fast, as you desperately try to find something to grabonto. Your blood rushed to your head.. FAST!! Everything is happening veryfast.  Just hope you will survive this fall.~
+#EXIT
+Direction down~
+ToRoom    543
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     543
+Name     DOWN...~
+Sector   city~
+Flags    nofloor~
+Desc     You continue to fall down into the darkness.~
+#EXIT
+Direction down~
+ToRoom    545
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     544
+Name     Of ledge~
+Sector   city~
+Desc     You suddenly slip and fall down. A long way down!~
+#EXIT
+Direction east~
+ToRoom    540
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     545
+Name     A small platform~
+Sector   city~
+Desc     You now stand on a large platform.  It is very thin and you can easily falldown.  You are surrounded by darkness as you can barely see anything. Notmany people linger here, but a couple of citizens are in sight.  Theplatform continues down and as you look up you see the catwalk.  A largedoor is front of you, but that is all you can see.~
+#EXIT
+Direction north~
+ToRoom    547
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     546
+Name     Gift shop~
+Sector   city~
+Desc     You are surrond by interssing artifacts.  Shelves and shelves of nice itemsjust waiting for people to buy them. A droid is waiting for people to comein, and is obviously operating 24hrs a day.   The gift shop is not verylarge but can contain several people.  You notice that the entrance dooris extremely larga and makes a funny noise once you walk in. It is quiteinteresting.~
+#EXIT
+Direction north~
+ToRoom    550
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    523
+#ENDEXIT
+
+Reset M 0 516 1 546
+  Reset G 1 520 1
+#ENDROOM
+
+#ROOM
+Vnum     547
+Name     Small platform~
+Sector   city~
+Desc     The platform is plain white as you bend over to look at it.  The darknesssurrounds you look a large blanket.  Luckily there is a sign of lightcoming from the wall of the platform. You hear noises from the north.  Youlook straight up to find any signs of the clear blue sky but find nothingbut black. You continue your way on the platform, who knows what you canfind.~
+#EXIT
+Direction north~
+ToRoom    548
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    545
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     548
+Name     Small platform~
+Sector   city~
+Desc     You stand in front a large stiped yellow door. It is clamp shut butautomatically stays open when you open it. You are still engulfed indarkness but light shines through the crack of the door. ~
+#EXIT
+Direction north~
+ToRoom    549
+Keywords  Door~
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    547
+#ENDEXIT
+
+Reset D 0 548 0 0
+#ENDROOM
+
+#ROOM
+Vnum     549
+Name     Inside the Spaceport~
+Sector   city~
+Desc     Light litteraly blinds you as you open the door.  It takes a little whileto adjust to the light but you will get use to it. It is extremely crowdedin the shipyard, amazing how many people surround you. You can smellperfum, tabac and ale all in one.  It is very loud as everyone begins totalk at the same time indulging in conversations.~
+#EXIT
+Direction east~
+ToRoom    559
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    548
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     550
+Name     Behind the counter~
+Sector   city~
+Flags    indoors~
+Desc     You manage to get behind the counter of the gift shop.  The droid does notappreciate it.  Stuck on the wall is a large defense turret in case ofrobberies like the one you are trying to make.  A large cash register islaid out on the counter in front of you.  Behind your head, is a wholestack of goods and other items to buy.  Be careful, not everyoneappreciates someone behind the counter of their store.~
+#EXIT
+Direction north~
+ToRoom    551
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    546
+#ENDEXIT
+
+Reset M 0 310 4 550
+Reset M 0 521 1 550
+Reset D 0 550 0 1
+#ENDROOM
+
+#ROOM
+Vnum     551
+Name     In the large safe~
+Sector   city~
+Desc     You somehow get in the large safe of the gift shop.  Not much is in hereand the safe is actually not needed.  The room is made out of puredurasteel and can deflect several high powered blaster bolts.  A largelamp hangs violently over your head.  You feel the credits under you feet. This room is highly secured.~
+#EXIT
+Direction south~
+ToRoom    550
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset D 0 551 2 0
+#ENDROOM
+
+#ROOM
+Vnum     552
+Name     Spaceport food court~
+Sector   city~
+Desc     The food court of the spaceport is very very large. They're aren't anyseats avaible because everyone is in one.  You might have to share a seatwith someone. It smells like klatooine patty frogs, one of Nal Hutta's andNar Shadda's best delicase. Many aliens are carrying trays full of foodwhile others are just lounging in theire chairs.  Maids, and workers arebusy cleaning up tables for other people to sit in.~
+#EXIT
+Direction west~
+ToRoom    532
+#ENDEXIT
+
+Reset M 0 541 1 552
+Reset M 0 542 1 552
+Reset M 0 543 1 552
+  Reset G 1 201 1
+  Reset E 1 525 1 5
+Reset M 0 545 1 552
+#ENDROOM
+
+#ROOM
+Vnum     553
+Name     Back of the turbo-lift~
+Sector   city~
+Desc     You push your way through into the back of the turbo-lfit.  Another door isfaced in your direction.  It leades to the nothern side of the spaceport.~
+#EXIT
+Direction north~
+ToRoom    532
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    515
+#ENDEXIT
+
+Reset M 0 552 1 553
+#ENDROOM
+
+#ROOM
+Vnum     554
+Name     Spaceport terminal~
+Sector   city~
+Desc     You can now see the exit for the spaceport.  Many people are gatheringaround, trying to find people that hve just arrived.  Also, taxi driversare waiting for customers holding up a sign.  Light pours in from thewindows above your head.  This time there is no speakers or monitors. Youmay exit the spaceport further up.~
+#EXIT
+Direction north~
+ToRoom    557
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    555
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    532
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    556
+#ENDEXIT
+
+Reset M 0 556 1 554
+#ENDROOM
+
+#ROOM
+Vnum     555
+Name     Taxi service~
+Sector   city~
+Flags    nomob~
+Desc     A large counter is set in front of you.  The room is very small and stuffy. A large lign up is started in front of you.   You may get a taxi ride, ifyou pay the service droid the amount he wants.  The taxi comes in everycouple times, and is 24hrs a day.   The taxi is said to be very large, andcan fit lots of people.  Quickly board the taxi when it comes.~
+#EXIT
+Direction west~
+ToRoom    554
+#ENDEXIT
+
+Reset M 0 546 1 555
+#ENDROOM
+
+#ROOM
+Vnum     556
+Name     Rental~
+Sector   city~
+Desc     Many speeders are in front of you.  You now are in the spaceport rentalshop for speeders. You may rent speeders for a large or small amount oftime.  A droid is ready to serve you all day long.  The security is quitetight around here, but not to tight.  You may not buy the speeders andover due time will cost you money. Type LIST for a large variety ofspeeders you can rent. ~
+#EXIT
+Direction east~
+ToRoom    554
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     557
+Name     Exit the spaceport~
+Sector   city~
+Desc     As the door opens automaticly, you intake a small breath of fresh air. Ahhhh!  How great it is to go outside. At last you may go outside. You canhear speeders rush by, and people scurrying about the city streets. Several people enter and exit the spaceport every now and then.  NarShadda is a large place and someone could get lost easily.  Be careful outthere.~
+#EXIT
+Direction north~
+ToRoom    576
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    554
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     558
+Name     Stairway~
+Sector   city~
+Desc     The stairway is not getting any brighter.  The rail is here for yoursupport so you don't fall down but no one has actually fell down. Not manypeople are here, because most of them don't know where this stairway leadsto.    You hear many cries, but can't pin point where it is.~
+#EXIT
+Direction up~
+ToRoom    523
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    559
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     559
+Name     Inside the spaceport~
+Sector   city~
+Desc     You are now standin inside the spaceport.  This is the second floor of thespaceport. The spaceport consists of 2 floors, or so it is said to be. Astaircase leads up back to the first floor. It is very large and filled upwith people and large crates filled with personal things. Not many workersare here to help people out.  Who said this place had to be nice?~
+#EXIT
+Direction east~
+ToRoom    561
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    549
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    558
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    583
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    560
+#ENDEXIT
+
+Reset M 0 557 1 559
+#ENDROOM
+
+#ROOM
+Vnum     560
+Name     Spaceport lounge~
+Sector   city~
+Flags    safe nodropall silence nodrop hotel~
+Desc     A large quiet lounge is here for people to rest.  Some people are a sleep. This is a place to recover after a long journey. It is kept silent and notword is a loud.  Littering is prohibted as a signs tells you. You can stayhere for as long as you want to.~
+#EXIT
+Direction southwest~
+ToRoom    559
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     561
+Name     Inside the spaceport~
+Sector   city~
+Desc     Many directions slip of together now.  You can see many things.  In frontof you is a large slanted catwalk going upwards. It get's more and morebusy as you keep on going. Even more people are now in the spaceport.  Youget pushed around like a rag doll, and it takes you a while to get throughthis crowd.~
+#EXIT
+Direction north~
+ToRoom    562
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    574
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    559
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     562
+Name     On the slanted catwalk~
+Sector   city~
+Desc     You step onto the large slanted catwalk and quickly loose your stepping. You regather yourself back up and continue. It is not that hard to walk upthe catwalk, but takes a little time. You try to look up diagonaly but allyou see is the catwalk.  The catwalk ends onto a small two wayintersection, the splits of in another direction.~
+#EXIT
+Direction south~
+ToRoom    561
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    563
+#ENDEXIT
+
+Reset M 0 505 2 562
+#ENDROOM
+
+#ROOM
+Vnum     563
+Name     Slanted catwalk~
+Sector   city~
+Desc     The catwalk gets very hard now.  It takes a lot of time and effort to getup.  You think to yourself, how can hutts get up here? You can look downat the people below, as you see tiny bald spots on their heads. Thecatwalk continues further up, then splits off in the other direction.~
+#EXIT
+Direction up~
+ToRoom    564
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    562
+#ENDEXIT
+
+Reset M 0 530 1 563
+  Reset E 1 28020 1 16
+  Reset E 1 28120 1 3
+  Reset E 1 21059 1 6
+  Reset E 1 28017 1 14
+  Reset E 1 28011 1 13
+#ENDROOM
+
+#ROOM
+Vnum     564
+Name     Up the catwalk~
+Sector   city~
+Desc     You made it up the catwalk.  Or atleast half of it.  There more on the eastside.  You find out that there is nothing here on the end of this catwalk.You can look down below and see people.  Compared to you, they look likelittle myrmins (insectes).  It you were to fall, it would hurt a lot. Luckily there is railing here. ~
+#EXIT
+Direction up~
+ToRoom    572
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    563
+#ENDEXIT
+
+Reset M 0 529 1 564
+  Reset E 1 524 1 5
+#ENDROOM
+
+#ROOM
+Vnum     565
+Name     Higher part of the catwalk~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     566
+Name     A time share~
+Sector   city~
+Flags    empty_home~
+Desc     This room is for sale for anyone who wants one.  It is large, comfy and isnicely decorated. The time share comes with a kitchen, pation, and a smallliving room.  It has a extremely small holo projector and a built incomlink for communication.~
+#EXIT
+Direction southwest~
+ToRoom    567
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     567
+Name     Hotel intersection~
+Sector   city~
+Desc     You stand inside the spaceport hotel.  It is a large intersection leadingto rooms, suites and time shares.  There is no one to tell you the way butonly numbers in all type of languages on the wall. If you were listening,you will know which number you are staying in. If you are just visitingthen have fun.  A small signs directs you to the small indoor pool.~
+#EXIT
+Direction down~
+ToRoom    568
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    566
+Keywords  Door~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    569
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    570
+Keywords  Door~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    571
+Keywords  Door~
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 567 6 1
+Reset D 0 567 7 1
+Reset D 0 567 8 1
+Reset D 0 567 9 1
+#ENDROOM
+
+#ROOM
+Vnum     568
+Name     Stairs~
+Sector   city~
+Stats    0 0 1
+Desc     You climb up the stairs of the hotel room.  The stairs in width are verysmall.  You would have to squish if you met someone on the way up or down.Fortunately there is no one in sight.  The stair leads to the rooms andsuites and other several places.  Large lamps are secured tighly onto thewall. They're aren't very many stairs to go up.~
+#EXIT
+Direction up~
+ToRoom    567
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    508
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     569
+Name     Hotel room~
+Sector   city~
+Flags    hotel~
+Stats    0 0 1
+Desc     A large hotel room it is...compared to some other.  A large king size bedis waiting for someone to sleep on.  The room is nice smelling andrecently cleaned.  You may settle in a stay here for the night.  You mayQUIT here. The room can only contain one person tho.~
+#EXIT
+Direction southeast~
+ToRoom    567
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     570
+Name     Hotel room~
+Sector   city~
+Stats    0 0 1
+Desc     A large hotel room it is...compared to some other.  A large king size bedis waiting for someone to sleep on.  The room is nice smelling andrecently cleaned.  You may settle in a stay here for the night.  You mayQUIT here. Only one person can stay in here.~
+#EXIT
+Direction northwest~
+ToRoom    567
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     571
+Name     Hotel room~
+Sector   city~
+Stats    0 0 1
+Desc     A large hotel room it is...compared to some other.  A large king size bedis waiting for someone to sleep on.  The room is nice smelling andrecently cleaned.  You may settle in a stay here for the night.  You mayQUIT here.~
+#EXIT
+Direction northeast~
+ToRoom    567
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     572
+Name     Catwalk~
+Sector   city~
+Desc     The catwalk gets harder and harder, even comming down. The catwalk goesvery high up and you can't see the end of it.  Your almost there.  Comeon! If there where to be more than one person, you would get pushed of. Continue your way up or down.~
+#EXIT
+Direction up~
+ToRoom    500
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    564
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     573
+Name     End of the catwalk~
+Sector   city~
+Desc     You finally make it through the large catwalk.  They're starting to build arailing here so you won't fall down. There is nothing really to see hereexcept for the people below you.  The sun is shining bright through thewindow or the moon. Might as well go back.~
+#EXIT
+Direction south~
+ToRoom    540
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     574
+Name     Traffic control room~
+Sector   city~
+Flags    indoors~
+Desc     A large group of people are sitting in front of computer screens.  Some areanswering people on the comlinks. This place is the traffic control.  Theyassist you and tell you where to land.  Of course everyone is too busy tonotice you.  The room is bathed it red and green. The light source comesfrom the computer screens itself. A staircase leads up, as a little bit oflight shines down. ~
+#EXIT
+Direction west~
+ToRoom    561
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    575
+#ENDEXIT
+
+Reset M 0 517 1 574
+  Reset E 1 32228 1 13
+#ENDROOM
+
+#ROOM
+Vnum     575
+Name     Observation deck~
+Sector   city~
+Desc     The room is filled with transparasteel.  Light pours in from everydirection.  It is a very beautiful sight.  You can see vertical city ofNar Shadda.  Large factories produce large quantities of smog. In the airyou see many star ships and freighters orbiting Nar Shadda spaceportlisntening for directions. Not many people are aloud in here but everyoneis to busy working than to notice you. It's an amazing sight isn't it?~
+#EXIT
+Direction down~
+ToRoom    574
+#ENDEXIT
+
+Reset M 0 507 1 575
+#ENDROOM
+
+#ROOM
+Vnum     576
+Name     City street~
+Sector   city~
+Desc     The city streets are very crowded. Speeders pass by you with incrediblespeed. Nar Shadda is a very busy place and also very big. The Bravo-Betaspaceport is south of where you are standing.  Many towers and buildingsare every where you look.~
+#EXIT
+Direction north~
+ToRoom    584
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    557
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     577
+Name     Turbo-lift:Level 4~
+Sector   city~
+Desc     Level 4 is where most of the cargo and baggage go.  The turbo-lift stops atthis level then goes back up for other people waiting to use it.~
+#EXIT
+Direction south~
+ToRoom    578
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    538
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     578
+Name     Cargo area~
+Sector   city~
+Desc     Precious cargo a being carefully handled by the workers.  They wouldn'twant an angry costumer.  The room is filled with boxes bags, and othertypes of cargo. A large machine is carrying a whole stack load of bags,then ships it of to be carried to the baggage claim.  The baggage claim isonly for people taking the shuttles.~
+#EXIT
+Direction north~
+ToRoom    577
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    581
+#ENDEXIT
+
+Reset M 0 558 1 578
+#ENDROOM
+
+#ROOM
+Vnum     579
+Name     Baggage claim~
+Sector   city~
+Flags    indoors~
+Desc     A large conveyer belt is here bringing up baggage.  Not many people arehere since mostly everyone has a ship of their own.  This place is onlyfor people riding on shuttles and transports. Bags are being token of thebelt.  A large pile of bag and boxes are here, probably forgotten.~
+#EXIT
+Direction east~
+ToRoom    530
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    582
+#ENDEXIT
+
+Reset M 0 548 1 579
+Reset M 0 573 1 579
+#ENDROOM
+
+#ROOM
+Vnum     580
+Name     Outdoor landing pad~
+Sector   city~
+Flags    can_land can_fly~
+Desc     Large transports and shuttles land here.  ONLY the transports and shuttles. This place is very busy unloading the belongings of people aboard theseships. The landing pard is farely large.  Enough to have a couple ofshuttles on at the same time.  People are get off their shuttles then walktoward the spaceport. You can smell the engine fuel, as smog fills theair.  This place also a refueling station for the shuttles .~
+#EXIT
+Direction north~
+ToRoom    581
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     581
+Name     Unloading area~
+Sector   city~
+Desc     This part is where people unload their bags and go to the baggage claim.  Alarge conveyer belt is here so the workerscan put the bags on.  A redbutton and a green button a secured onto the wall, of course the controlsfor the belt. This part is only for workers. Why would anyone want to comehere? ~
+#EXIT
+Direction north~
+ToRoom    578
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    580
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    582
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     582
+Name     The conveyer belt~
+Sector   city~
+Stats    0 0 1
+Desc     Why did you get on the belt.  The metal under you is hard and cold.  Manybags and boxes are in front and in the back of you.  You manage to squishyour way through the tunnel.  This is brutal .~
+#EXIT
+Direction up~
+ToRoom    579
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    581
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     583
+Name     Stairway~
+Sector   city~
+Flags    nomob~
+Desc     The stairway leads down down down, into the darkness.  There hardly anypeople comming down the stairs.  The stairways leads down to the deepestcatacombs of vertical city. Leading up is the spaceport Bravo-Beta.  Youare pretty much outside of the spaceport. Luckily, there is a glowrodsbuilt into the wall.~
+#EXIT
+Direction up~
+ToRoom    559
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     584
+Name     City streets of vertical city~
+Sector   city~
+Desc     Many towers forms a circle around you.  Vertical city is extremely busy. Almost everyone here is carrying a weapon for safety.  Some concealingtheir weapons while others leave it in the open. The road is busy andfilled with speeders.  They're aren't any police patroling around so itisn't very safe around here.~
+#EXIT
+Direction north~
+ToRoom    587
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    576
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    585
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    586
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     585
+Name     Vertical city~
+Sector   city~
+Desc     Large shadows linger above you.  Cloud cars, and repulsor lifts flysteadily toward their destination.  Also the towers cover your view as youtry to find the sun. Many people are begging for money, trying to get justa few credits from someone.  It is heard that Shug Ninx, the famousmechanic lives here.  Maybe you should visit him on buying some ships andparts. ~
+#EXIT
+Direction southwest~
+ToRoom    584
+#ENDEXIT
+
+Reset M 0 525 1 585
+  Reset E 1 538 1 20
+#ENDROOM
+
+#ROOM
+Vnum     586
+Name     Vertical city~
+Sector   city~
+Desc     The towers stand tall.  Their shadows invades you.  This is what it is likein Nar Shadda smuggler's moon.  The planet is filled with smugglersstopping by.   Speeders pass you so fast that you can barely make out thecolor of the speeder.~
+#EXIT
+Direction southeast~
+ToRoom    584
+#ENDEXIT
+
+Reset M 0 569 1 586
+  Reset E 1 537 1 16
+#ENDROOM
+
+#ROOM
+Vnum     587
+Name     Vertical city~
+Sector   city~
+Desc     You can hear music playing from one of the buildings but you can't just putfinger on it. Vertical city is very large, and has many towers.  It seemsthat a large crowd is walking toward the music.  Where could the music becomming from.~
+#EXIT
+Direction north~
+ToRoom    588
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    584
+#ENDEXIT
+
+Reset M 0 537 1 587
+#ENDROOM
+
+#ROOM
+Vnum     588
+Name     Vertical city~
+Sector   city~
+Desc     A very loud music trails of north from where you are standing.  Now a lotof people are walking toward the music with a determined face. Speedersrush past you, also going toward the music.   The towers are still here. It seems that the whole city is filled with large towers. Most towers arevery large but some are pretty small. A large sign is put up on one of thetowers.  It is an avertissment of Klatooine patty frogs.  You should bewalking toward the music since everyone else is.~
+#EXIT
+Direction north~
+ToRoom    589
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    587
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     589
+Name     Entrance to the Cantina~
+Sector   city~
+Desc     You now stand in front of the famous "Vertical City Cantina".  There areother cantina's  in vertical city but none are as good as this one. Themusic is very loud but it seems that most people like it.  A large numberof people are entering the cantina. The cantina is a great place to findout information and hire spies and assasins.  Many hutt crime lords comeinto the cantina. That is why the door is so large.  They're two bouncerswhich guard the place.  The seems to be at ease. Somehow droids areallowed inside the cantina.  Well atleast you think so.  They're aren'tany droid detectors.~
+#EXIT
+Direction north~
+ToRoom    590
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    588
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     590
+Name     Inside the cantina~
+Sector   city~
+Desc     The music is now playing very loud.  You can see the band playing somesorte of music.  The audience seems to like it a lot. The cantina is verylarge compared to most others.  It's got many posters of advertissments.Booths are every where you look, in every direction.  You can't seem tofind the bar. The cantina has many aliens and humanoids but the mostcommon is hutts. ~
+#EXIT
+Direction north~
+ToRoom    593
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    591
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    589
+#ENDEXIT
+
+Reset M 0 563 1 590
+#ENDROOM
+
+#ROOM
+Vnum     591
+Name     Cantina~
+Sector   city~
+Desc     It is extremely crowded inside here.  A large shadow hangs over oneparticular conrer of the cantina.  Large lights bathe the room green andwhite.    Hutt seems to be the dominant species around Nar Shadda andespiecally this cantina.  The cantina is not one bit quiet as you hearmany people talking mixed with the music.~
+#EXIT
+Direction east~
+ToRoom    592
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    590
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     592
+Name     Booth~
+Sector   city~
+Flags    nomob~
+Desc     The padding is very nice and comfortable.  It is a very large booth with asmall coffey table in the middle.   The seat is farely large and can fit alarge hutt.   You are very lucky that you actually found a booth in thecantina. The table is dirty and has not been cleaned yet.  You canactually see the band from where you are sitting.~
+#EXIT
+Direction west~
+ToRoom    591
+#ENDEXIT
+
+Reset M 0 564 1 592
+#ENDROOM
+
+#ROOM
+Vnum     593
+Name     Cantina~
+Sector   city~
+Desc     You stand with a large group of people.  You get a glimpse of the bar.  Upon the stage is a jizz band of Bith. Most people are trying to find abooth.  You can buy information here and most likely weapons of any sort. They don't serve any food, but only booze.  Some aliens are drunk. Theband seems to be draw stares from the crowd.~
+#EXIT
+Direction south~
+ToRoom    590
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    594
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    596
+#ENDEXIT
+
+Reset M 0 567 1 593
+  Reset E 1 536 1 9
+#ENDROOM
+
+#ROOM
+Vnum     594
+Name     Up on the stage~
+Sector   city~
+Flags    nomob~
+Desc     If you were standing from the cantina floor you now notice that they're alot of people.  The crowd begins to "Boo" at you.    A band of Bith areplaying some sorte of music but is very amuzing to the ear. The floor ismade out of tiles.  You get a glimpse of the side of the stage and see acurtin. ~
+#EXIT
+Direction north~
+ToRoom    595
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    593
+#ENDEXIT
+
+Reset M 0 565 1 594
+  Reset E 1 535 1 17
+Reset M 0 566 1 594
+#ENDROOM
+
+#ROOM
+Vnum     595
+Name     Back of the Stage~
+Sector   city~
+Flags    nomob~
+Desc     You now stand in the back of the stage where no one can actually see you.The music is pretty loud and nice.  It is very stuffy in the back of thestage and also very dusty.  Large group of boxes are piled up onto eachother.  Nothing really here in the back of the stage.~
+#EXIT
+Direction south~
+ToRoom    594
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     596
+Name     Bar~
+Sector   city~
+Desc     Many large red stools are laid out in front, firmly stuck into the ground. A large bartender waits your order as he cleans a cup. It is extremelycrowded around the bar, since everyone want something to drink. They servea large vareity of whisky and acohol.  There are a lot of drunk alienshanging around the bar. Most of the stools are filled with heavily drunkpeople as they desperately try to keep themselves up.~
+#EXIT
+Direction northeast~
+ToRoom    597
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    593
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     597
+Name     Behind the bar~
+Sector   city~
+Desc     You now stand behind the bar.  You are not wanted behind the bar and thebartender will most likely kick you out.  You see large shelves of boozeand some sorte of acohol. The table is very wet.  Under you, locatedaround your knees are a couple of cupboards also filled with acohol.~
+#EXIT
+Direction southwest~
+ToRoom    596
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     599
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

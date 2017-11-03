@@ -1,0 +1,1255 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Sorosuub Spacecraft~
+Author       Durga~
+Ranges       0 0 0 103
+Economy      0 31250000
+ResetFreq    15
+#ENDAREADATA
+
+#OBJECT
+Vnum     6000
+Keywords The Raider~
+Type     spacecraft~
+Short    The Raider~
+Long     The Raider is good in hit and run operations.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6001
+Keywords Slave I~
+Type     spacecraft~
+Short    Slave I~
+Long     The Slave I is a strange looking spacecraft.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6002
+Keywords slave II~
+Type     trash~
+Short    Slave II~
+Long     Slave II is a ship feared by many.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6003
+Keywords CF-90 Barricade Runner~
+Type     trash~
+Short    the CF-90 Barricade Runner~
+Long     The CF-90 Barricade Runner is a fairly large warship.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6004
+Keywords YV-2400~
+Type     trash~
+Short    YV-2400~
+Long     YV-2400 is a newer model corellian transport.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6010
+Keywords z-100 Centurion z6010~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6011
+Keywords z-100 Centurion z6011~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6012
+Keywords z-100 Centurion z6012~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6013
+Keywords z-100 Centurion z6013~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6014
+Keywords z-100 Centurion z6014~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6015
+Keywords z-100 Centurion z6015~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6016
+Keywords z-100 Centurion z6016~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6017
+Keywords z-100 Centurion z6017~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6018
+Keywords z-100 Centurion z6018~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6019
+Keywords z-100 Centurion z6019~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6020
+Keywords z-100 Centurion z6020~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6021
+Keywords z-100 Centurion z6021~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6022
+Keywords z-100 Centurion z6022~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6023
+Keywords z-100 Centurion z6023~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6024
+Keywords z-100 Centurion z6024~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6025
+Keywords z-100 Centurion z6025~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6026
+Keywords z-100 Centurion z6026~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6027
+Keywords z-100 Centurion z6027~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6028
+Keywords z-100 Centurion z6028~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6029
+Keywords z-100 Centurion z6029~
+Type     trash~
+Short    a Z-100 Centurion~
+Long     A Z-100 Centurion.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6030
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6031
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6032
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6033
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6034
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6035
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6036
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6037
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6038
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6039
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6040
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6041
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6042
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6043
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6044
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6045
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6046
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6047
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6048
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6049
+Keywords sorosuub system hopper~
+Type     spacecraft~
+Short    a sorosuub system hopper~
+Long     A sorosuub system hopper is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6099
+Keywords dud~
+Type     trash~
+Short    a newly created dud~
+Long     Some god dropped a newly created dud here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6000
+Name     The Raider~
+Sector   city~
+Flags    nomob~
+Desc     The cockpit of the ship is not very roomy, this ship was designed to be
+fast and deadly, rather than luxurious like others. It is an extremely
+formidable ship, capable of taking on even the most well armormed fighters
+and light mid-ships.
+~
+#ENDROOM
+
+#ROOM
+Vnum     6010
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and . Incoms X-wings making it a
+versitile fighter.four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6011
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6012
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6013
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6014
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6015
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6016
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6017
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6018
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6019
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6020
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6021
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6022
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6023
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6024
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6025
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6026
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6027
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6028
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6029
+Name     Z-100 Centurion ~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     An upgrade on the old z-95's the z-100 or  century fighter  as it is
+betterknown, is alot more powerfull than it elder counterpart. It is
+basically  a cross of the older z-95 and Incoms X-wings making it a
+versitile fighter. Four forward  firing lasers combined with its torpedo
+launcher make it quite a powerfull fighter and it's compact size makes it
+easy to stow in the hangers of larger capital ships 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6030
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat.
+~
+#ENDROOM
+
+#ROOM
+Vnum     6031
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6032
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6033
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat.
+~
+#ENDROOM
+
+#ROOM
+Vnum     6034
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat.
+~
+#ENDROOM
+
+#ROOM
+Vnum     6035
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6036
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6037
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6038
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6039
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6040
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6041
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6042
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6043
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6044
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6045
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6046
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat.
+~
+#ENDROOM
+
+#ROOM
+Vnum     6047
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6048
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6049
+Name     Sorosuub System Hopper~
+Sector   city~
+Flags    nomob indoors spacecraft prototype~
+Desc     The sorosuub system hopper is a small shuttle designed for short voyages.
+It is equiped with a hyperdrive but long journeys could get tiresome in
+such a confined space. The hoppers only defence is some weak shielding
+suitable for protection against small bits of debris but pretty much
+useless in combat. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6050
+Name     Cockpit of Prototype Z-120 Pheonix~
+Sector   city~
+Flags    nomob spacecraft prototype~
+Stats    0 0 1
+Desc     This brand new decendent of the z-95 is the smallest, fastest, and most
+manueverable yet. The cockpit is small and cramped but has excellent
+visibility. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     6051
+Name     Skipray Cockpit~
+Sector   city~
+Flags    spacecraft prototype~
+Desc     The skipray blastboat was originally made for imperial use as a scout craft
+but was dropped in the early planning stages. Several were made anyways
+and were put up for public sale. Although a fairly small craft the
+blastboat is equiped with a very powerful arsenal. Probably one of the
+best armed midships currently available. 
+~
+#EXIT
+Direction east~
+ToRoom    6052
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6054
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6053
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6052
+Name     Co Pilots Seat~
+Sector   city~
+Flags    spacecraft prototype~
+Desc     The weapons pannel is quite impressive. Taking this ship into battle will
+be a real treat
+~
+#EXIT
+Direction west~
+ToRoom    6051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6053
+Name     Pilots Seat~
+Sector   city~
+Flags    spacecraft prototype~
+Desc     A standard flight panel is here.
+~
+#EXIT
+Direction east~
+ToRoom    6051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6054
+Name     Metal Hallway~
+Sector   city~
+Flags    spacecraft prototype~
+Desc     The no thrills hallway has a bumpy metal floor and curved walls that are
+divided with metalic beams.
+~
+#EXIT
+Direction north~
+ToRoom    6051
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6055
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6056
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6055
+Name     Metal Hallway~
+Sector   city~
+Flags    spacecraft prototype~
+Desc     The no thrills hallway has a bumpy metal floor and curved walls that are
+divided with metalic beams.
+~
+#EXIT
+Direction north~
+ToRoom    6054
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6057
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6059
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6058
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6056
+Name     Entrance Ramp~
+Sector   city~
+Flags    spacecraft prototype~
+#EXIT
+Direction up~
+ToRoom    6054
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6057
+Name     Crew Lounge~
+Sector   city~
+Flags    spacecraft prototype~
+Desc     A small couch and a couple of game tables offer some time out in the
+lounge. There is a small vending macjine here as well.
+~
+#EXIT
+Direction west~
+ToRoom    6055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6058
+Name     Crew Quarters~
+Sector   city~
+Flags    hotel spacecraft prototype~
+Desc     This simple bunkroom contains for bunks stacked against the walls and a
+couple of small lockers. 
+~
+#EXIT
+Direction east~
+ToRoom    6055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6059
+Name     Rear Turret~
+Sector   city~
+Flags    spacecraft prototype~
+Desc     This turret is mounted gyroscopycaly to giving it an excellent targetting
+arc.
+~
+#EXIT
+Direction north~
+ToRoom    6055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6098
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+Reset O 0 6099 1 6098
+#ENDROOM
+
+#ENDAREA

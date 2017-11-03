@@ -1,0 +1,20 @@
+#CLAN
+Name         The Corperate Authority~
+Filename     corperate.clan~
+Description  ~
+NumberOne    ~
+NumberTwo    ~
+MDeaths      0
+Type         0
+Board        0
+Storeroom    32179
+GuardOne     0
+GuardTwo     0
+PatrolOne    0
+PatrolTwo    0
+TrooperOne   0
+TrooperTwo   0
+Jail         0
+End
+
+#END

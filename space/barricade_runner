@@ -1,0 +1,54 @@
+#SHIP
+Name         CF-90 Barricade Runner~
+Filename     barricade_runner~
+Description  ~
+Owner        ~
+Pilot        ~
+Copilot      ~
+Class        2
+Tractorbeam  0
+Shipyard     31843
+Hanger       6407
+Turret1      6458
+Turret2      6459
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       8
+Missiles     20
+Maxmissiles  20
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      31843
+Firstroom    6407
+Lastroom     6460
+Shield       0
+Maxshield    800
+Hull         5000
+Maxhull      5000
+Maxenergy    20000
+Hyperspeed   175
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       0
+Astro_array  0
+Realspeed    30
+Type         0
+Cockpit      6422
+Coseat       6421
+Pilotseat    6424
+Gunseat      6421
+Navseat      6422
+Engineroom   6425
+Entrance     6407
+Shipstate    0
+Missilestate 0
+Energy       20000
+Manuever     20
+Home         corperate~
+End
+
+#END

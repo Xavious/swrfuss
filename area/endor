@@ -1,0 +1,2767 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Endor~
+Author       Thrawn~
+Ranges       2 100 2 100
+Economy      0 31250251
+ResetMsg     You hear the calls of the forest birds being carried through the Forest air.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       3000
+Keywords   ewok female~
+Short      An ewok female~
+Long       An Ewok female is tending to the young here.
+~
+Race       Ewok~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc~
+Stats1     0 3 0 100 0 0
+Stats2     1 4 10
+Stats3     1 2 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     ewok~
+Speaking   ewok~
+VIPFlags   endor~
+#ENDMOBILE
+
+#MOBILE
+Vnum       3001
+Keywords   gorax ~
+Short      a gorax~
+Long       A Giant Gorax is thundering through the trees.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc aggressive deadly~
+Stats1     0 101 0 -120 0 0
+Stats2     11 20 1500
+Stats3     7 10 0
+Stats4     0 0 0 25 20
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     ewok~
+Speaking   ewok~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   if race($n) == ewok
+smile
+cack
+'mmmm dinner!
+evil
+mpkill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       3002
+Keywords   male ewok~
+Short      an ewok male~
+Long       A male Ewok is going about his business.
+~
+Race       Ewok~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc~
+Stats1     0 3 0 92 0 0
+Stats2     0 10 30
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     ewok~
+Speaking   ewok~
+VIPFlags   endor~
+#ENDMOBILE
+
+#MOBILE
+Vnum       3003
+Keywords   ewok child~
+Short      an ewok child~
+Long       An ewok child is playing here.
+~
+Race       Gamorrean~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc wimpy~
+Stats1     0 1 0 0 0 0
+Stats2     1 1 30
+Stats3     1 3 3
+Stats4     0 0 1 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     ewok~
+Speaking   ewok~
+#ENDMOBILE
+
+#MOBILE
+Vnum       3004
+Keywords   Wicket~
+Short      Wicket~
+Long       Wicket Leader of the Ewok people stands here spear in hand.
+~
+Race       Wookiee~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 12 0 70 20 0
+Stats2     2 10 120
+Stats3     1 4 2
+Stats4     0 0 0 3 5
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     ewok~
+Speaking   ewok~
+#ENDMOBILE
+
+#MOBILE
+Vnum       3005
+Keywords   supply keeper~
+Short      ewok supply keeper~
+Long       An ewok is here, keeping watch over the supplies.
+~
+Race       Ewok~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 3 0 100 0 0
+Stats2     1 4 10
+Stats3     1 2 2
+Stats4     0 0 0 0 0
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     ewok~
+Speaking   ewok~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#OBJECT
+Vnum     3000
+Keywords leather hood~
+Type     armor~
+Short    a leather hood~
+Long     A small hood has been dropped here.~
+Flags    small_size~
+WFlags   take head~
+Values   5 5 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     3001
+Keywords spear~
+Type     weapon~
+Short    a spear~
+Long     A spear lies here in the dirt.~
+Flags    small_size~
+WFlags   take wield~
+Values   12 1 4 11 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     3002
+Keywords feathered head dress~
+Type     armor~
+Short    feathered head dress~
+Long     A feathered head dress lies here.~
+Flags    small_size~
+WFlags   take head~
+Values   2 2 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     3003
+Keywords leather wrist guards~
+Type     armor~
+Short    leather wrist guard~
+Long     A feathered head dress lies here.~
+Flags    small_size~
+WFlags   take wrist~
+Values   2 2 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     3004
+Keywords bone necklace~
+Type     armor~
+Short    a bone necklace~
+Long     A small pile of bones lie here.~
+Flags    small_size~
+WFlags   take neck~
+Values   2 2 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     3005
+Keywords a wooden shield~
+Type     armor~
+Short    a wooden shield~
+Long     A wooden shield is collecting dust~
+Flags    small_size~
+WFlags   take shield~
+Values   5 5 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     3006
+Keywords fruit~
+Type     food~
+Short    some dried fruit~
+Long     Some dried fruit should last for a long time without going bad.~
+WFlags   take~
+Values   10 0 0 0 0 0
+Stats    1 8 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     3007
+Keywords fresh vegitables~
+Type     food~
+Short    fresh vegitables~
+Long     Some vegitables are attracting flies here.~
+WFlags   take~
+Values   10 0 0 0 0 0
+Stats    1 9 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     3008
+Keywords small canteen~
+Type     drinkcon~
+Short    a small canteen~
+Long     A belt sized canteen was dropped here.~
+WFlags   take~
+Values   10 10 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     3000
+Name     Ewok Nursery House~
+Sector   city~
+Flags    nomob~
+Desc     You stand in the middle of a room filled with little ewok children they
+range  in size from very tiny and crawling on fur blankets to the near
+adolecents playing with toy bows arrows and spears. The room is littered
+with an abundant amount of  toys for the children to play with. Its a
+rather room for ewok standards and has been put to use from what you can
+guess to be a very very long time. There are few females here tending to
+the young as well as the cries of the new born infants.
+~
+#EXIT
+Direction north~
+ToRoom    3008
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3006
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3004
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3002
+#ENDEXIT
+
+Reset M 0 3000 1 3000
+Reset M 0 3000 1 3000
+Reset M 0 3003 15 3000
+#MUDPROG
+Progtype  rand_prog~
+Arglist   40~
+Comlist   mpecho The children scream with excitement.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     3001
+Name     Walkway Around the Nursery~
+Sector   city~
+Desc     The walkway is made from some very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of the pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their village, so quite naturaly they are a little 
+cautious when it comes to new people here, but they do eventualy 
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+carnivors that inhabit the planet with the ewok people. The most feared
+beast is the humanoid behemoth Gorax, who are the main reason for the 
+village being so high off the ground.
+~
+#EXIT
+Direction east~
+ToRoom    3008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3002
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3002
+Name     Walkway Around the Nursery~
+Sector   city~
+Desc     The walkway is made from some very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of the pressure
+get visitors to their village, so quite naturaly they are a little 
+cautious when it comes to new people here, but they do eventualy 
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+carnivors that inhabit the planet with the ewok people. The most feared
+beast is the humanoid behemoth Gorax, who are the main reason for the 
+village being so high off the ground.
+~
+#EXIT
+Direction north~
+ToRoom    3001
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3000
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3003
+Name     Walkway Around the Nursery~
+Sector   city~
+Desc     The walkway is made from some very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of the pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their village, so quite naturaly they are a little 
+cautious when it comes to new people here, but they do eventualy 
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+carnivors that inhabit the planet with the ewok people. The most feared
+beast is the humanoid behemoth Gorax, who are the main reason for the 
+village being so high off the ground.
+~
+#EXIT
+Direction north~
+ToRoom    3002
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3004
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3004
+Name     Walkway Around the Nursery~
+Sector   city~
+Desc     The walkway is made from some very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of the pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their village, so quite naturaly they are a little 
+cautious when it comes to new people here, but they do eventualy 
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+carnivors that inhabit the planet with the ewok people. The most feared
+beast is the humanoid behemoth Gorax, who are the main reason for the 
+village being so high off the ground.
+~
+#EXIT
+Direction north~
+ToRoom    3000
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3003
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3005
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3005
+Name     Walkway Around the Nursery~
+Sector   city~
+Flags    nomob~
+Desc     The walkway is made from some very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of the pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their village, so quite naturaly they are a little 
+cautious when it comes to new people here, but they do eventualy 
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+carnivors that inhabit the planet with the ewok people. The most feared
+beast is the humanoid behemoth Gorax, who are the main reason for the 
+village being so high off the ground.
+~
+#EXIT
+Direction north~
+ToRoom    3006
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3004
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    3009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3006
+Name     Walkway Around the Nursery~
+Sector   city~
+Flags    nomob~
+Desc     The walkway is made from some very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of the pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their village, so quite naturaly they are a little 
+cautious when it comes to new people here, but they do eventualy 
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+carnivors that inhabit the planet with the ewok people. The most feared
+beast is the humanoid behemoth Gorax, who are the main reason for the 
+village being so high off the ground.
+~
+#EXIT
+Direction north~
+ToRoom    3007
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3005
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3000
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3007
+Name     Walkway Around the Nursery~
+Sector   city~
+Flags    nomob~
+Desc     The walkway is made from some very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of the pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their village, so quite naturaly they are a little 
+cautious when it comes to new people here, but they do eventualy 
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+carnivors that inhabit the planet with the ewok people. The most feared
+village being so high off the ground.
+~
+#EXIT
+Direction south~
+ToRoom    3006
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3008
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3008
+Name     Walkway Around the Nursery~
+Sector   city~
+Desc     The walkway is made from some very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of the pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their village, so quite naturaly they are a little 
+cautious when it comes to new people here, but they do eventualy 
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+carnivors that inhabit the planet with the ewok people. The most feared
+beast is the humanoid behemoth Gorax, who are the main reason for the 
+village being so high off the ground.
+~
+#EXIT
+Direction east~
+ToRoom    3007
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3000
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3001
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3009
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction northwest~
+ToRoom    3005
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    3010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3010
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction northwest~
+ToRoom    3009
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    3011
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3011
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction northwest~
+ToRoom    3010
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    3012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3012
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction east~
+ToRoom    3013
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3019
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    3011
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3013
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction east~
+ToRoom    3014
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3044
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3012
+#ENDEXIT
+
+Reset M 0 3002 20 3013
+Reset M 0 3000 20 3013
+#ENDROOM
+
+#ROOM
+Vnum     3014
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction south~
+ToRoom    3015
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3015
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3014
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3016
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3045
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3016
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3015
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3017
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3017
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3047
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3016
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3020
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3018
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3019
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3017
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3019
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3012
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3046
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3020
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction north~
+ToRoom    3017
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3022
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3021
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction east~
+ToRoom    3022
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3022
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3020
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3048
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3021
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3023
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction south~
+ToRoom    3028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3022
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3024
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3021
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3059
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3025
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3024
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3026
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3050
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3027
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3027
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3028
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3027
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3049
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3029
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction northeast~
+ToRoom    3030
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3030
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction northeast~
+ToRoom    3031
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3031
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction east~
+ToRoom    3032
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3032
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction north~
+ToRoom    3060
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3033
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3031
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3033
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction west~
+ToRoom    3032
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3034
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction northeast~
+ToRoom    3035
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3035
+Name     Rope Bridge~
+Sector   city~
+Desc     The bridge is suppported buy a very sturdy rope that has large 
+wooden planks for easy walking and balance. Strangly enough the
+bridge seems to be rather ridged and barely sways under a stronge 
+gust of wind. The native ewoks don't even seem to notice any swaying
+at all as some run past you and others just walk past paying no 
+attention to your presence.
+~
+#EXIT
+Direction northeast~
+ToRoom    3036
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3036
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3037
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3043
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3037
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3038
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3055
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3036
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3038
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction east~
+ToRoom    3039
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3037
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3039
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction east~
+ToRoom    3040
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3052
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3040
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction south~
+ToRoom    3041
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3041
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3040
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    3042
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3053
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3042
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3041
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3043
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3043
+Name     Walkway~
+Sector   city~
+Desc     The walkway is made from very sturdy planks of wood that seem to
+be able to withstand alot of weight as well as alot of pressure
+the forest elements have (and can) throw at it. The ewoks very rarely
+get visitors to their villages, so quite naturaly they are a little
+cautious when it comes to new people here, but they do eventually
+accept your presence and let you in on the village celebrations.
+The walkways are very high up from the ground, this is due to the
+beast is the humanoid behemoth Gorax, who are the main reson for the 
+village being so high up in the Endor Trees.
+~
+#EXIT
+Direction north~
+ToRoom    3054
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    3042
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3036
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3044
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction north~
+ToRoom    3013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3045
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction east~
+ToRoom    3015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3046
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction west~
+ToRoom    3019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3047
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction south~
+ToRoom    3017
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3048
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction north~
+ToRoom    3022
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3049
+Name     Ewoks Guest House~
+Sector   city~
+Flags    hotel~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction east~
+ToRoom    3028
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3050
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction south~
+ToRoom    3026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3051
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction west~
+ToRoom    3024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3052
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction north~
+ToRoom    3039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3053
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction east~
+ToRoom    3041
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3054
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction south~
+ToRoom    3043
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3055
+Name     Ewoke House Hold~
+Sector   city~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction west~
+ToRoom    3037
+#ENDEXIT
+
+Reset M 0 3004 0 3055
+  Reset E 1 3000 1 6
+  Reset E 1 3001 1 16
+  Reset E 1 3004 1 3
+  Reset E 1 3005 1 11
+  Reset E 1 3003 1 14
+  Reset E 1 3003 1 15
+#ENDROOM
+
+#ROOM
+Vnum     3056
+Name     Ewoke House Hold~
+Sector   city~
+Flags    nomob~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#ENDROOM
+
+#ROOM
+Vnum     3057
+Name     Ewoke House Hold~
+Sector   city~
+Flags    nomob~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#ENDROOM
+
+#ROOM
+Vnum     3058
+Name     Ewoke House Hold~
+Sector   city~
+Flags    nomob~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#ENDROOM
+
+#ROOM
+Vnum     3059
+Name     Ewok Food Supplies~
+Sector   city~
+Flags    nomob~
+Desc     The houses of the ewoks are littered with feathers pieces of leather
+spear and arrow heads as well as shatfs for the weapons. You also 
+see the odd insect scurrying around picking up crumbs from the 
+morning breakfast and then scampering off into the shadows to eat
+their new found dinner. From the outside you here the cries of the
+birds deep in the forest as well as the territorial disputes between
+rival preditors battling for more territory and mates. The ewoks
+on the other hand sound as though they are planning for the morning
+hunt as well as their everyday chores the do to make their living 
+area more sutable for themselves and their young.
+~
+#EXIT
+Direction west~
+ToRoom    3024
+#ENDEXIT
+
+Reset M 0 3005 1 3059
+  Reset G 1 3006 1
+  Reset G 1 3007 1
+  Reset G 1 3008 1
+#ENDROOM
+
+#ROOM
+Vnum     3060
+Name     Landing Area~
+Sector   city~
+Flags    nomob~
+Desc     Strangly enough, even though the ewok people do not get many 
+visitors they seemed to have keep the now very old landing area the 
+republic built in its days of rebellion, and have kept it in very good 
+with a few minor problems though, such as the decorations strune around
+to make the place look pretty but covering some fairly important 
+instruments vital to safe landings and such. other then thoese few flaws
+the places appears to be in good condition.
+~
+#EXIT
+Direction south~
+ToRoom    3032
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    3061
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3061
+Name     Jungle Trail~
+Sector   city~
+Flags    nomob~
+Desc     The path is over grown with vegitation and looks as though it hasn't
+been used in avery long time. The Ewoks it seems have developed a new form
+of hunting the doesn't really need them to venture into the jungle to far
+as well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction up~
+ToRoom    3062
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    3060
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3062
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't
+been used in avery long time. The Ewoks it seems have developed a new form
+of hunting the doesn't really need them to venture into the jungle to far
+as well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction down~
+ToRoom    3061
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3063
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3063
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't
+been used in avery long time. The Ewoks it seems have developed a new form
+of hunting the doesn't really need them to venture into the jungle to far
+as well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction down~
+ToRoom    3064
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3062
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3064
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't
+been used in avery long time. The Ewoks it seems have developed a new form
+of hunting the doesn't really need them to venture into the jungle to far
+as well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3065
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    3063
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3065
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner. You can also make
+out what looks to be remains of an old imperial base to the west.
+~
+#EXIT
+Direction south~
+ToRoom    3064
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3066
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3067
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3066
+Name     Destoried Impierial Shield Genorator~
+Sector   city~
+Flags    nomob~
+Desc     The Base was once the main shield generator for the Death Star that was
+destoryed so many years ago by the now New Republic. It has now over
+grown with many different types of vegitation as well it has become the 
+home for many insects and other vermin who do not wish to be seen in the
+light of day.
+~
+#EXIT
+Direction east~
+ToRoom    3065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3067
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3068
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3068
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction south~
+ToRoom    3067
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    3069
+#ENDEXIT
+
+Reset M 0 3001 1 3068
+Reset M 0 3001 1 3068
+#ENDROOM
+
+#ROOM
+Vnum     3069
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction up~
+ToRoom    3068
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3070
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3070
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3075
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3071
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3069
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3099
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3071
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction east~
+ToRoom    3070
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3072
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3072
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction south~
+ToRoom    3073
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3071
+#ENDEXIT
+
+Reset M 0 3001 3 3072
+#ENDROOM
+
+#ROOM
+Vnum     3073
+Name     Jungle Trail~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3072
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3074
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3074
+Name     Historical Funeral Pyre~
+Sector   city~
+Flags    silence~
+Desc     You stand before a very historical spot. The vegetation has not grown back
+and you can feel a cold creeping darkness running through you veins
+sending shivers up and down your spine. This is the place where Luke
+Skywalker burned the reamins of his fathers body. You can still make out
+the burned ground as well as see melted bits of Vaders body armor
+scattered about. There are no insects here and the sounds of the forest
+does not seem to be able to penetrate the dark aura the funeral pyre
+radiates. The place also seems to cause interference with your comlink,
+strange.
+~
+#EXIT
+Direction southwest~
+ToRoom    3073
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3075
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction south~
+ToRoom    3070
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    3076
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3076
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction east~
+ToRoom    3077
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    3075
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3077
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3078
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3076
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3078
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction south~
+ToRoom    3077
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3079
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3079
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction down~
+ToRoom    3080
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3078
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3080
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction up~
+ToRoom    3079
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    3081
+#ENDEXIT
+
+Reset M 0 3001 2 3080
+#ENDROOM
+
+#ROOM
+Vnum     3081
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3082
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    3080
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3082
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction south~
+ToRoom    3081
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3083
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3083
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner. 
+~
+#EXIT
+Direction south~
+ToRoom    3084
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3082
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3084
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3083
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    3085
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3085
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction up~
+ToRoom    3084
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    3086
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3086
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction west~
+ToRoom    3087
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    3085
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3087
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction east~
+ToRoom    3086
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    3088
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3088
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner. 
+~
+#EXIT
+Direction south~
+ToRoom    3089
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3087
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3089
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3088
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    3090
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3090
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction up~
+ToRoom    3091
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    3089
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3091
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3092
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    3090
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3092
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction south~
+ToRoom    3091
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3093
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3093
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction east~
+ToRoom    3092
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    3094
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3094
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction east~
+ToRoom    3095
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    3093
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3095
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction west~
+ToRoom    3024
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    3096
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3096
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction east~
+ToRoom    3097
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    3095
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3097
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction north~
+ToRoom    3098
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    3096
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3098
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction south~
+ToRoom    3097
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    3099
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     3099
+Name     Jungle Path~
+Sector   city~
+Desc     The path is over grown with vegitation and looks as though it hasn't been
+used in avery long time. The Ewoks it seems have developed a new form of
+hunting the doesn't really need them to venture into the jungle to far as
+well as the fear of the ravinous jnugle preditors the roam around here
+looking for stray ewoks or anything else in that manner.
+~
+#EXIT
+Direction down~
+ToRoom    3098
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    3070
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

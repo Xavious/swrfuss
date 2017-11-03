@@ -1,0 +1,14 @@
+#PLANET
+Name         byss~
+Filename     byss~
+BaseValue    200000
+Flags        1
+PopSupport   0.000000
+Starsystem   Byss System~
+GovernedBy   The Empire~
+Area         a.byss.city~
+Area         throne.city~
+Area         byss.jail~
+End
+
+#END

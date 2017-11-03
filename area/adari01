@@ -1,0 +1,2930 @@
+#FUSSAREA
+#AREADATA
+Version      1
+Name         Adari - Baituh City~
+Author       Merth~
+Ranges       10 30 0 103
+Economy      0 5000206
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       29060
+Keywords   officer customs smotsuk~
+Short      Smotsuk~
+Long       Smotsuk, a customs officer is here.
+~
+Desc       He is a big burly Adarian.  His only intention is to keep weapons
+from being imported or exported from Adari.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_customs_spice~
+Specfun2    spec_police_jail~
+Gender     male~
+Actflags   npc sentinel stayarea~
+Stats1     350 40 0 0 0 0
+Stats2     4 40 0
+Stats3     4 20 0
+Stats4     0 0 0 8 8
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#MUDPROG
+Progtype  time_prog~
+Arglist   12~
+Comlist   mpecho A deputy leaves in a rush.
+mpgoto 29030
+drop all
+mpgoto 29065
+mpecho A deputy has arrived.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29061
+Keywords   shop keeper shopkeeper baszturd~
+Short      Baszturd~
+Long       A shop keeper works here.
+~
+Desc       He is an elderly Adarian shop keeper. 
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel stayarea noassist~
+Stats1     -400 20 0 0 0 0
+Stats2     2 20 0
+Stats3     2 10 0
+Stats4     0 0 0 4 4
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       29062
+Keywords   scholar old saavy professor sumaretie~
+Short      Professor Sumaretie~
+Long       A saavy, old scholar studies here.
+~
+Desc       This old Adarian may not know a great deal about fighting, but he
+knows many languages and other academic fields.  He might be able to
+help you learn another language. 
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel stayarea scholar nokill~
+Stats1     450 20 0 60 0 0
+Stats2     2 20 0
+Stats3     2 10 0
+Stats4     0 0 0 4 4
+Attribs    13 18 18 13 13 18 13 0
+Saves      0 0 0 0 0
+Speaks     wookiee twilek noghri gotal gamorrean adarian verpine~
+Speaking   common wookiee twilek noghri gotal gamorrean adarian verpine~
+VIPFlags   adari~
+#ENDMOBILE
+
+#MOBILE
+Vnum       29063
+Keywords   droid innkeeper keeper r2 unit~
+Short      An Innkeeper Droid~
+Long       An Innkeeper Droid idles here.
+~
+Desc       A red astromech R2 unit idles here waiting to help you.  If you would
+like  to rent a room for the evening, give 50 credits to this R2
+unit. 
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel stayarea noassist droid~
+Stats1     -400 30 0 0 0 0
+Stats2     3 30 0
+Stats3     3 15 0
+Stats4     0 0 0 6 6
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   adarian~
+VIPFlags   adari~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   75~
+Comlist   mpecho A little red R2 Unit whistles happily towards you.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   18~
+Comlist   mpgoto 29110
+mptransfer $n
+mpechoat $n The R2 Unit escorts you to a room.
+east
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29064
+Keywords   bartender hutt puttzu~
+Short      Puttzu~
+Long       A Hutt Bartender works here.
+~
+Race       Hutt~
+Position   aggressive~
+DefPos     aggressive~
+Gender     male~
+Actflags   npc sentinel nokill~
+Stats1     -500 50 0 0 0 0
+Stats2     5 50 0
+Stats3     5 25 0
+Stats4     0 0 0 10 10
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common hutt adarian~
+Speaking   adarian~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       29065
+Keywords   droid astromech bouncer~
+Short      An Astromech Droid~
+Long       An Astromech Droid acts as a bouncer here.
+~
+Desc       This Astromech Droid is acting as a bouncer to the bar south of here.
+Only 'adults' can enter.  If you would like to enter the bar, tell
+the droid 'hutts rule!'. 
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel stayarea droid~
+Stats1     -500 65 0 0 0 0
+Stats2     7 65 0
+Stats3     6 37 0
+Stats4     0 0 0 13 13
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common adarian~
+Speaking   common~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p hutts rule!~
+Comlist   mpgoto puttzu
+mptransfer $n
+mpechoat $n The Droid ushers you into the bar.
+mpecho $n is ushered into the bar.
+mpgoto 29081
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29066
+Keywords   bailjfk boxjfk~
+Short      a bail box~
+Long       A Bail Box has been installed in the wall here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc~
+Stats1     0 50 0 -100 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 10 10
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   30~
+Comlist   mpechoaround $n $n exits the jail.
+mpgoto 29103
+mptransfer $n
+mpechoat $n The doors opens and you are released.
+mpechoaround $n $n exits the jail.
+mpgoto 29108
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29067
+Keywords   deputy snopaew~
+Short      Deputy Snopaew~
+Long       A deputy partols the area.
+~
+Desc       Deputy Snopaew is a tall and gangly looking Adarian.  It is his job to
+keep weapons out of the city.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_customs_weapons~
+Specfun2    spec_police_jail~
+Gender     male~
+Actflags   npc stayarea nokill~
+Stats1     300 30 0 0 0 0
+Stats2     3 30 0
+Stats3     3 15 0
+Stats4     0 0 0 6 6
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#MUDPROG
+Progtype  entry_prog~
+Arglist   50~
+Comlist   mpecho Deputy Snopaew surveys the area.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   75~
+Comlist   glare $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29068
+Keywords   deputy young~
+Short      a young deputy~
+Long       A deputy patrols the area.
+~
+Desc       A young Adarian deputy.  You can see it is his dream to enforce
+laws.  He is a decent and moral being.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Specfun    spec_customs_alcohol~
+Specfun2    spec_police_attack~
+Gender     male~
+Actflags   npc stayarea~
+Stats1     300 15 0 0 15 0
+Stats2     2 15 0
+Stats3     1 8 0
+Stats4     0 0 0 3 3
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#ENDMOBILE
+
+#MOBILE
+Vnum       29069
+Keywords   adarian townie~
+Short      a Townie~
+Long       An Adarian Townie wanders about here.
+~
+Desc       Not the brightest nor most beautiful Adarian.  This is one of the
+citizens of the town.  She lives day to day.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     female~
+Actflags   npc stayarea noassist~
+Stats1     -100 15 0 75 0 0
+Stats2     1 10 0
+Stats3     1 5 0
+Stats4     0 0 0 2 2
+Attribs    13 13 13 13 13 13 13 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+VIPFlags   adari~
+#ENDMOBILE
+
+#MOBILE
+Vnum       29070
+Keywords   draagax crazed omnivore~
+Short      a Draagax~
+Long       A crazed omnivore sniffs about.
+~
+Desc       Ears similar to a rabbit, eyes of a fly, teeth of a lion, body of an
+ape. This can be a very frightening beast to stumble upon.
+~
+Race       Adarian~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc scavenger stayarea mountable nokill~
+Stats1     -100 22 0 65 0 0
+Stats2     2 22 0
+Stats3     2 12 0
+Stats4     0 0 0 4 4
+Attribs    13 5 13 18 13 13 18 0
+Saves      0 0 0 0 0
+Speaks     adarian~
+Speaking   adarian~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   75~
+Comlist   if ispc($n) 
+if level($n) >= 15 
+mpkill $n 
+endif 
+else 
+mpecho A Draagax snorts loudly.
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29071
+Keywords   dirty old man~
+Short      Dirty old man ~
+Long       A man dressed in an old overcoat.
+~
+Desc       This guy looks alot like bleeds.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc sentinel~
+Stats1     0 70 0 -75 0 0
+Stats2     14 10 3000
+Stats3     7 4 2
+Stats4     0 0 3 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+Attacks    r9~
+Defenses   dodge disarm~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   scream
+gasp
+' ya got me
+mpoload 7316
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       29158
+Keywords   bookend~
+Short      a newly created bookend~
+Long       Some god abandoned a newly created bookend here.
+~
+Race       Human~
+Position   aggressive~
+DefPos     aggressive~
+Gender     neuter~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10 0
+Saves      0 0 0 0 0
+Speaks     common~
+Speaking   common~
+#ENDMOBILE
+
+#OBJECT
+Vnum     29060
+Keywords sign welcome~
+Type     trash~
+Short    a sign~
+Long     A Large sign has been posted here.~
+Values   0 0 0 0 0 0
+Stats    5000 1 0 0 0
+#EXDESC
+ExDescKey    sign welcome~
+ExDesc       -  Welcome to Baituh City  -
+Please follow our laws:
+1. No Weapons Permitted
+2. No Drugs Permitted
+3. No "Adult Entertainment"
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29061
+Keywords bail box~
+Type     container~
+Short    a Bail Box~
+Long     A Bail Box has been built into the wall.~
+Flags    glow~
+Values   500 0 0 0 0 0
+Stats    5000 0 0 0 0
+#EXDESC
+ExDescKey    bail box~
+ExDesc       To be released from jail you must apologize for your crimes.  Hint,
+say 'sorry' to be released. 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    bail box~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   sorry~
+Comlist   mpgoto 29103
+mptransfer $n
+mpechoat $n The doors opens and you are released.
+mpecho $n exits the jail.
+mpgoto 29108
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   30~
+Comlist   mpgoto 29103
+mptransfer $n
+mpechoat $n The doors opens and you are released.
+mpecho $n exits the jail.
+mpgoto 29108
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     29062
+Keywords whiskey bottle~
+Type     drinkcon~
+Short    a bottle of whiskey~
+Long     A bottle of whiskey spills drops on the ground.~
+Flags    inventory~
+WFlags   take hold~
+Values   10 10 5 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29063
+Keywords beer bottle~
+Type     drinkcon~
+Short    a bottle of beer~
+Long     A small bottle, tipped on its side, drips on the ground.~
+Flags    inventory~
+WFlags   take hold~
+Values   5 5 1 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29064
+Keywords mug ale~
+Type     drinkcon~
+Short    a mug of ale~
+Long     A large mug of ale sits here.~
+Flags    inventory~
+WFlags   take hold~
+Values   12 12 4 0 0 0
+Stats    1 75 7 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     29065
+Keywords playhutt trashy magazine~
+Type     smut~
+Short    a copy of PlayHutt magazine~
+Long     A copy of PlayHutt magazine has been left here.~
+Flags    contraband~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    2 50 5 0 0
+#EXDESC
+ExDescKey    playhutt trashy magazine~
+ExDesc       Be careful! You might go blind looking at such filth!
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#ROOM
+Vnum     29060
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     29061
+Name     Baituh City Road~
+Sector   city~
+Flags    nomob nomagic norecall~
+Desc     This is the northern most entrance and exit of Baituh City.  Jagged
+rocks prevent your travel in most directions.  The air is thick and
+full of dirt and soil.  You can continue to either the north or the
+south from here.
+~
+#EXIT
+Direction north~
+ToRoom    29112
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29062
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29062
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     Baituh City is known all over Adari for its city design.  Baituh
+City is completely unique in its city structure.  When the city was
+founded, they did not have proper equipment to remove some of the
+thicker rock.  As a result, Large pieces of mountain and volcano
+still stand in the center of each city block.  You can continue
+north, east or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29061
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29064
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29063
+#ENDEXIT
+
+Reset M 0 29069 1 29062
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29063
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is fairly wide here.  The black soil is soft and moist
+beneath you.  Baituh City seems pretty desolate and devoid of
+intelligent life.  This once thriving city fell on hard times shortly
+after the fall of the Empire. It has been a struggle to keep most
+cities on this planet alive.  You can continue east or south from
+here.
+~
+#EXIT
+Direction east~
+ToRoom    29062
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29066
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29064
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is fairly wide here.  The black soil is soft and moist
+beneath you.  Baituh City seems pretty desolate and devoid of
+intelligent life.  This once thriving city fell on hard times shortly
+after the fall of the Empire. It has been a struggle to keep most
+cities on this planet alive.  You can continue west or south from
+here.
+~
+#EXIT
+Direction south~
+ToRoom    29067
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29062
+#ENDEXIT
+
+Reset M 0 29007 10 29064
+#ENDROOM
+
+#ROOM
+Vnum     29065
+Name     Baituh City Landing Strip~
+Sector   city~
+Flags    nomob can_land nodrop~
+Desc     This barren little area is used for private space vessels to come
+and go.  This is not a nice or well kept facility, but it does serve
+a very useful purpose for the cities inhabitants.  This is not a bus
+stop. Commercial transportation does not and cannot dock here.  You
+can continue east from here.
+~
+#EXIT
+Direction east~
+ToRoom    29066
+#ENDEXIT
+
+Reset M 0 29060 1 29065
+  Reset E 1 29008 1 8
+  Reset E 1 29007 1 7
+  Reset E 1 29009 1 16
+  Reset E 1 29006 1 5
+Reset O 0 29060 1 29065
+#ENDROOM
+
+#ROOM
+Vnum     29066
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is very wide here.  It would be possible for small vehicles
+to easily pass one another here.  Baituh City is now largely
+inhabited by vermin and rodents.  The intelligent beings who reside
+here are scoundrels and thugs primarily.  You can continue north,
+south, or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29063
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29069
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29065
+#ENDEXIT
+
+Reset M 0 29067 1 29066
+  Reset E 1 29009 1 16
+  Reset E 1 29006 1 5
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+#ENDROOM
+
+#ROOM
+Vnum     29067
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is very wide here.  It would be possible for small vehicles
+to easily pass one another here.  Baituh City is now largely
+inhabited by vermin and rodents.  The intelligent beings who reside
+here are scoundrels and thugs primarily.  You can continue north,
+south, or east from here.
+~
+#EXIT
+Direction north~
+ToRoom    29064
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29068
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29071
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29068
+Name     Baituh City Cafeteria~
+Sector   city~
+Flags    indoors safe norecall~
+Desc     You are just inside a cave.  The room is very well lit and well
+kept. Whoever runs the shop is very clean and meticulous.  The floor
+is made up of smoothed marble like rock and has very little dirt on
+it. You can exit to the west.
+~
+#EXIT
+Direction west~
+ToRoom    29067
+#ENDEXIT
+
+Reset M 0 29061 1 29068
+  Reset G 1 29002 1
+  Reset G 1 10313 1
+  Reset G 1 10314 1
+  Reset G 1 10317 1
+#ENDROOM
+
+#ROOM
+Vnum     29069
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     There is thick volcanic ash beneath you.  It black and grainy.  The
+ash seems to stick to everything and gets onto all of your clothes. 
+Be careful not to breathe in too much of this ash saturated  air. 
+You can continue north or east from here.
+~
+#EXIT
+Direction north~
+ToRoom    29066
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29070
+#ENDEXIT
+
+Reset M 0 29068 1 29069
+  Reset E 1 29006 1 5
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+  Reset E 1 29009 1 16
+#ENDROOM
+
+#ROOM
+Vnum     29070
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     Baituh City is known all over Adari for its city design.  Baituh
+City is completely unique in its city structure.  When the city was
+founded, they did not have proper equipment to remove some of the
+thicker rock.  As a result, Large pieces of mountain and volcano
+still stand in the center of each city block.  You can continue
+south, east or west from here.
+~
+#EXIT
+Direction east~
+ToRoom    29071
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29072
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29069
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29071
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     There is thick volcanic ash beneath you.  It black and grainy.  The
+ash seems to stick to everything and gets onto all of your clothes. 
+Be careful not to breathe in too much of this ash saturated  air. 
+You can continue north or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29067
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29070
+#ENDEXIT
+
+Reset M 0 29069 2 29071
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29072
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     This road is covered in thick black volcanic ash.  The ash is heavy
+and very clingy.  Ash floats through the air and attaches its self to
+your clothing and other belonings. You can continue north or south
+from here.
+~
+#EXIT
+Direction north~
+ToRoom    29070
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29073
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29073
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     This is the main intersection for Baituh City.  There are city
+blocks in all directions from here.  Each direction leads to
+something completely different than the other three.  Feel free to
+look around.
+~
+#EXIT
+Direction north~
+ToRoom    29072
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29086
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29098
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29074
+#ENDEXIT
+
+Reset M 0 29069 4 29073
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29074
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     This road is covered in thick black volcanic ash.  The ash is heavy
+and very clingy.  Ash floats through the air and attaches its self to
+your clothing and other belonings. You can continue east or west from
+here.
+~
+#EXIT
+Direction east~
+ToRoom    29073
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29075
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29075
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is very wide here.  It would be possible for small vehicles
+to easily pass one another here.  Baituh City is now largely
+inhabited by vermin and rodents.  The intelligent beings who reside
+here are scoundrels and thugs primarily.  You can continue north,
+south, or east from here.
+~
+#EXIT
+Direction north~
+ToRoom    29076
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29074
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29082
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29076
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is fairly wide here.  The black soil is soft and moist
+beneath you.  Baituh City seems pretty desolate and devoid of
+intelligent life.  This once thriving city fell on hard times shortly
+after the fall of the Empire. It has been a struggle to keep most
+cities on this planet alive.  You can continue west or south from
+here.
+~
+#EXIT
+Direction south~
+ToRoom    29075
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29077
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29077
+Name     Baituh City Road~
+Sector   city~
+Flags    nomagic norecall~
+Desc     Baituh City is known all over Adari for its city design.  Baituh
+City is completely unique in its city structure.  When the city was
+founded, they did not have proper equipment to remove some of the
+thicker rock.  As a result, Large pieces of mountain and volcano
+still stand in the center of each city block.  You can continue
+north, east or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29083
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29076
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29078
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29078
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is fairly wide here.  The black soil is soft and moist
+beneath you.  Baituh City seems pretty desolate and devoid of
+intelligent life.  This once thriving city fell on hard times shortly
+after the fall of the Empire. It has been a struggle to keep most
+cities on this planet alive.  You can continue east or south from
+here.
+~
+#EXIT
+Direction east~
+ToRoom    29077
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29079
+#ENDEXIT
+
+Reset M 0 29068 2 29078
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+  Reset E 1 29006 1 5
+  Reset E 1 29009 1 16
+#ENDROOM
+
+#ROOM
+Vnum     29079
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is very wide here.  It would be possible for small vehicles
+to easily pass one another here.  Baituh City is now largely
+inhabited by vermin and rodents.  The intelligent beings who reside
+here are scoundrels and thugs primarily.  You can continue north,
+south, or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29078
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29080
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29084
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29080
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     There is thick volcanic ash beneath you.  It black and grainy.  The
+ash seems to stick to everything and gets onto all of your clothes. 
+Be careful not to breathe in too much of this ash saturated  air. 
+You can continue north or east from here.
+~
+#EXIT
+Direction north~
+ToRoom    29079
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29081
+#ENDEXIT
+
+Reset M 0 29069 3 29080
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29081
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     Baituh City is known all over Adari for its city design.  Baituh City
+is completely unique in its city structure.  When the city was
+founded, they did not have proper equipment to remove some of the
+thicker rock.  As a result, Large pieces of mountain and volcano
+still stand in the center of each city block.  You can continue
+south, east or west from here. To the south is a 'bar'.
+~
+#EXIT
+Direction east~
+ToRoom    29082
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29085
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29080
+#ENDEXIT
+
+Reset M 0 29065 1 29081
+Reset D 0 29081 2 2
+#ENDROOM
+
+#ROOM
+Vnum     29082
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     There is thick volcanic ash beneath you.  It black and grainy.  The
+ash seems to stick to everything and gets onto all of your clothes. 
+Be careful not to breathe in too much of this ash saturated  air. 
+You can continue north or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29075
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29081
+#ENDEXIT
+
+Reset M 0 29007 12 29082
+#ENDROOM
+
+#ROOM
+Vnum     29083
+Name     Baituh City Academia~
+Sector   city~
+Flags    indoors~
+Desc     At one time Baituh City produced the best and brightest Adarians in
+their state of the art academy.  Since the planet and town have hit
+hard times, things have changed.  Now students must travel to Alfuh
+to work on their fighting skills. Most of the faculty from the old
+school have also left.  This lone room now acts as a tutoring
+facility for the one remaining faculty member.
+~
+#EXIT
+Direction south~
+ToRoom    29077
+#ENDEXIT
+
+Reset M 0 29062 1 29083
+#ENDROOM
+
+#ROOM
+Vnum     29084
+Name     Baituh City Inn~
+Sector   city~
+Flags    nomagic safe norecall nodropall~
+Desc     Welcome to the Baituh City Inn.  Those who need to rest and such
+can do so here.  But, you have to purchase a room of course.  This is
+not the largest hotel on the planet by any means.  But if you need to
+rest, this place is as good as any other.  You can exit to the east.
+~
+#EXIT
+Direction east~
+ToRoom    29079
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29110
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+Reset M 0 29063 1 29084
+Reset D 0 29084 3 2
+#ENDROOM
+
+#ROOM
+Vnum     29085
+Name     Baituh City Bar~
+Sector   city~
+Flags    indoors norecall~
+Desc     This dank fouls smelling hole in the ground is one of the few
+businesses able to survive these times of hardship.  It is a bar. 
+Beings come here to forget about how miserable their lives are.  Feel
+free to join them.  But watch your step.  You can exit to the north.
+~
+#EXIT
+Direction north~
+ToRoom    29081
+Flags     isdoor~
+#ENDEXIT
+
+Reset M 0 29064 1 29085
+  Reset G 1 32230 1
+  Reset G 1 10487 1
+  Reset G 1 29065 1
+  Reset G 1 29063 1
+  Reset G 1 29062 1
+  Reset G 1 29064 1
+Reset M 0 29071 1 29085
+  Reset E 1 50 1 16
+Reset D 0 29085 0 0
+#ENDROOM
+
+#ROOM
+Vnum     29086
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     This road is covered in thick black volcanic ash.  The ash is heavy
+and very clingy.  Ash floats through the air and attaches its self to
+your clothing and other belonings. You can continue east or west from
+here.
+~
+#EXIT
+Direction east~
+ToRoom    29087
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29073
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29087
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is very wide here.  It would be possible for small vehicles
+to easily pass one another here.  Baituh City is now largely
+inhabited by vermin and rodents.  The intelligent beings who reside
+here are scoundrels and thugs primarily.  You can continue north,
+south, or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29088
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29094
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29086
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29088
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is fairly wide here.  The black soil is soft and moist
+beneath you.  Baituh City seems pretty desolate and devoid of
+intelligent life.  This once thriving city fell on hard times shortly
+after the fall of the Empire. It has been a struggle to keep most
+cities on this planet alive.  You can continue east or south from
+here.
+~
+#EXIT
+Direction east~
+ToRoom    29089
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29087
+#ENDEXIT
+
+Reset M 0 29007 11 29088
+#ENDROOM
+
+#ROOM
+Vnum     29089
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     Baituh City is known all over Adari for its city design.  Baituh
+City is completely unique in its city structure.  When the city was
+founded, they did not have proper equipment to remove some of the
+thicker rock.  As a result, Large pieces of mountain and volcano
+still stand in the center of each city block.  You can continue
+north, east or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29095
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29090
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29088
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29090
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is fairly wide here.  The black soil is soft and moist
+beneath you.  Baituh City seems pretty desolate and devoid of
+intelligent life.  This once thriving city fell on hard times shortly
+after the fall of the Empire. It has been a struggle to keep most
+cities on this planet alive.  You can continue west or south from
+here.
+~
+#EXIT
+Direction south~
+ToRoom    29091
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29089
+#ENDEXIT
+
+Reset M 0 29068 3 29090
+  Reset E 1 29006 1 5
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+  Reset E 1 29009 1 16
+#ENDROOM
+
+#ROOM
+Vnum     29091
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is very wide here.  It would be possible for small vehicles
+to easily pass one another here.  Baituh City is now largely
+inhabited by vermin and rodents.  The intelligent beings who reside
+here are scoundrels and thugs primarily.  You can continue north,
+south, or east from here.
+~
+#EXIT
+Direction north~
+ToRoom    29090
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29096
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29092
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29092
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     There is thick volcanic ash beneath you.  It black and grainy.  The
+ash seems to stick to everything and gets onto all of your clothes. 
+Be careful not to breathe in too much of this ash saturated  air. 
+You can continue north or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29091
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29093
+#ENDEXIT
+
+Reset M 0 29069 5 29092
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29093
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     Baituh City is known all over Adari for its city design.  Baituh
+City is completely unique in its city structure.  When the city was
+founded, they did not have proper equipment to remove some of the
+thicker rock.  As a result, Large pieces of mountain and volcano
+still stand in the center of each city block.  You can continue
+south, east or west from here.
+~
+#EXIT
+Direction east~
+ToRoom    29092
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29097
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29094
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29094
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     There is thick volcanic ash beneath you.  It black and grainy.  The
+ash seems to stick to everything and gets onto all of your clothes. 
+Be careful not to breathe in too much of this ash saturated  air. 
+You can continue north or east from here.
+~
+#EXIT
+Direction north~
+ToRoom    29087
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29093
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29095
+Name     Baituh City Governmental Offices~
+Sector   city~
+Flags    indoors norecall~
+Desc     This is not quite as elegant as one would expect of a government.
+ It would seem the government has been struggling a lot too during
+this time of hardship for the planet.  The room is well lit.  The
+walls are covered in dirt and filth, the floor is even worse.  You
+can escape to the south.
+~
+#EXIT
+Direction south~
+ToRoom    29089
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29096
+Name     Baituh City Post Office~
+Sector   city~
+Flags    norecall~
+Desc     Baituh City is still capable of communicating with other cities and
+planets. This was once a thriving postal service serving Baituh City
+and its the suburbs. Today, no one oversees the post office.  It is
+all done electronically.  You can exit to the west.
+~
+#EXIT
+Direction west~
+ToRoom    29091
+#ENDEXIT
+
+Reset O 0 38 1 29096
+#ENDROOM
+
+#ROOM
+Vnum     29097
+Name     Lava Resevoir~
+Sector   city~
+Flags    safe norecall~
+Desc     It is extremely warm here.  There is a large pool of lava
+directly south of here.  To continue south would almost certainly be
+instant death.  It would be best to get as far away from here as
+possible.  This is not a safe area.  Go north if you cherish life.
+~
+#EXIT
+Direction north~
+ToRoom    29093
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29111
+Desc      If you go south, you will surely die!
+~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29098
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     This road is covered in thick black volcanic ash.  The ash is heavy
+and very clingy.  Ash floats through the air and attaches its self to
+your clothing and other belonings. You can continue north or south
+from here.
+~
+#EXIT
+Direction north~
+ToRoom    29073
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29099
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29099
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     Baituh City is known all over Adari for its city design.  Baituh
+City is completely unique in its city structure.  When the city was
+founded, they did not have proper equipment to remove some of the
+thicker rock.  As a result, Large pieces of mountain and volcano
+still stand in the center of each city block.  You can continue
+north, east or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29098
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29101
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29100
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is fairly wide here.  The black soil is soft and moist
+beneath you.  Baituh City seems pretty desolate and devoid of
+intelligent life.  This once thriving city fell on hard times shortly
+after the fall of the Empire. It has been a struggle to keep most
+cities on this planet alive.  You can continue east or south from
+here.
+~
+#EXIT
+Direction east~
+ToRoom    29099
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29102
+#ENDEXIT
+
+Reset M 0 29068 4 29100
+  Reset E 1 29006 1 5
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+  Reset E 1 29009 1 16
+#ENDROOM
+
+#ROOM
+Vnum     29101
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is fairly wide here.  The black soil is soft and moist
+beneath you.  Baituh City seems pretty desolate and devoid of
+intelligent life.  This once thriving city fell on hard times shortly
+after the fall of the Empire. It has been a struggle to keep most
+cities on this planet alive.  You can continue west or south from
+here.
+~
+#EXIT
+Direction south~
+ToRoom    29103
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29099
+#ENDEXIT
+
+Reset M 0 29007 13 29101
+#ENDROOM
+
+#ROOM
+Vnum     29102
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is very wide here.  It would be possible for small vehicles
+to easily pass one another here.  Baituh City is now largely
+inhabited by vermin and rodents.  The intelligent beings who reside
+here are scoundrels and thugs primarily.  You can continue north,
+south, or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29100
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29104
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29107
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29103
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     The path is very wide here.  It would be possible for small vehicles
+to easily pass one another here.  Baituh City is now largely
+inhabited by vermin and rodents.  The intelligent beings who reside
+here are scoundrels and thugs primarily.  You can continue north,
+south, or east from here.
+~
+#EXIT
+Direction north~
+ToRoom    29101
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29108
+Flags     isdoor closed locked nopassdoor bashproof can_look~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29104
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     There is thick volcanic ash beneath you.  It black and grainy.  The
+ash seems to stick to everything and gets onto all of your clothes. 
+Be careful not to breathe in too much of this ash saturated  air. 
+You can continue north or east from here.
+~
+#EXIT
+Direction north~
+ToRoom    29102
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29105
+#ENDEXIT
+
+Reset M 0 29069 6 29104
+  Reset E 1 29004 1 12
+#ENDROOM
+
+#ROOM
+Vnum     29105
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     Baituh City is known all over Adari for its city design.  Baituh
+City is completely unique in its city structure.  When the city was
+founded, they did not have proper equipment to remove some of the
+thicker rock.  As a result, Large pieces of mountain and volcano
+still stand in the center of each city block.  You can continue
+south, east or west from here.
+~
+#EXIT
+Direction east~
+ToRoom    29106
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29109
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29104
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29106
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     There is thick volcanic ash beneath you.  It black and grainy.  The
+ash seems to stick to everything and gets onto all of your clothes. 
+Be careful not to breathe in too much of this ash saturated  air. 
+You can continue north or west from here.
+~
+#EXIT
+Direction north~
+ToRoom    29103
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29105
+#ENDEXIT
+
+Reset M 0 29068 5 29106
+  Reset E 1 29006 1 5
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+  Reset E 1 29009 1 16
+#ENDROOM
+
+#ROOM
+Vnum     29107
+Name     Baituh City Police Station~
+Sector   city~
+Desc     This is the Baituh City Police Station.  A large marble desk sits in
+the corner of the room.  The floor is covered in dirt and volcanic
+ash. Several communication terminals have been built into the walls
+around you.
+~
+#EXIT
+Direction east~
+ToRoom    29102
+#ENDEXIT
+
+Reset M 0 29068 6 29107
+  Reset E 1 29006 1 5
+  Reset E 1 29007 1 7
+  Reset E 1 29008 1 8
+  Reset E 1 29009 1 16
+#ENDROOM
+
+#ROOM
+Vnum     29108
+Name     Baituh City Jail~
+Sector   city~
+Flags    indoors no_drive norecall nodropall~
+Desc     This is a dank foul smelling armpit of a cell.  To be locked in this
+room means you must have broken the law.  Thick rocks make up the
+walls and ceiling. 
+~
+#EXIT
+Direction west~
+ToRoom    29103
+Flags     isdoor closed locked nopassdoor bashproof can_look~
+#ENDEXIT
+
+Reset M 0 29066 1 29108
+Reset D 0 29108 3 2
+#EXDESC
+ExDescKey    bail box~
+ExDesc       This is a bail box.  To bereleased from jail, you must give 30 credits
+worth of bail to the box.  You will promptly be freed if you pay the
+30credit fine. 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     29109
+Name     Baituh City Road~
+Sector   city~
+Flags    norecall~
+Desc     This road is very wide and seems to be in fairly decent condition. 
+However, a large rock-like boulder blocks you from continuing any
+further south. 
+~
+#EXIT
+Direction north~
+ToRoom    29105
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29110
+Name     Baituh City Hotel~
+Sector   city~
+Flags    norecall hotel~
+Desc     This is where you can safely sleep and exit the game.  When you
+reenter the game, this is the room you will start in.  Be sure to
+thank the hotel staff for putting up with you.  Enjoy your stay.  You
+can exit to the east. 
+~
+#EXIT
+Direction east~
+ToRoom    29084
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29111
+Name     Lava Lake~
+Sector   city~
+Flags    reserved nomob norecall silence~
+Desc     It is unbelievably hot here.  You are in a lake of lava.  To be
+here is  almost certainly suicide.  If you can still escape to the
+north, do so! 
+~
+#EXIT
+Direction north~
+ToRoom    29097
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29112
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.  To the south is Baituh
+City.
+~
+#EXIT
+Direction east~
+ToRoom    29158
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29061
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29113
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29113
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29112
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29114
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29114
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction north~
+ToRoom    29115
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29113
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29115
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction north~
+ToRoom    29116
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29114
+#ENDEXIT
+
+Reset M 0 29070 17 29115
+#ENDROOM
+
+#ROOM
+Vnum     29116
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29117
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29115
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29117
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction north~
+ToRoom    29118
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29116
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29118
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction north~
+ToRoom    29119
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29117
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29119
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29120
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29118
+#ENDEXIT
+
+Reset M 0 29070 18 29119
+#ENDROOM
+
+#ROOM
+Vnum     29120
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29121
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29119
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29121
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29122
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29122
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29123
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29121
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29123
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29124
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29125
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29122
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29124
+Name     Outskirts of Alfuh City~
+Sector   city~
+Flags    nomob norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29049
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29123
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29125
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here. 
+~
+#EXIT
+Direction east~
+ToRoom    29126
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29123
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29126
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29127
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29125
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29127
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29130
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29128
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29126
+#ENDEXIT
+
+Reset M 0 29070 1 29127
+#ENDROOM
+
+#ROOM
+Vnum     29128
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29127
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29129
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29129
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29128
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29130
+#ENDEXIT
+
+Reset M 0 29070 2 29129
+#ENDROOM
+
+#ROOM
+Vnum     29130
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29129
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29131
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29131
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29130
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29132
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29138
+#ENDEXIT
+
+Reset M 0 29070 3 29131
+#ENDROOM
+
+#ROOM
+Vnum     29132
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29131
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29133
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29128
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29133
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29134
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29132
+#ENDEXIT
+
+Reset M 0 29070 4 29133
+#ENDROOM
+
+#ROOM
+Vnum     29134
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29140
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29135
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29128
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29133
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29135
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29136
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29134
+#ENDEXIT
+
+Reset M 0 29070 5 29135
+#ENDROOM
+
+#ROOM
+Vnum     29136
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29143
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29131
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29137
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29135
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29137
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction north~
+ToRoom    29136
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29132
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29138
+#ENDEXIT
+
+Reset M 0 29070 6 29137
+#ENDROOM
+
+#ROOM
+Vnum     29138
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29137
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29139
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29139
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29138
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29140
+#ENDEXIT
+
+Reset M 0 29070 7 29139
+#ENDROOM
+
+#ROOM
+Vnum     29140
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29139
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29136
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29141
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29141
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29140
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29142
+#ENDEXIT
+
+Reset M 0 29070 8 29141
+#ENDROOM
+
+#ROOM
+Vnum     29142
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29141
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29143
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29136
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29143
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction north~
+ToRoom    29142
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29139
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29144
+#ENDEXIT
+
+Reset M 0 29070 9 29143
+#ENDROOM
+
+#ROOM
+Vnum     29144
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29143
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29145
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29145
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction north~
+ToRoom    29146
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29144
+#ENDEXIT
+
+Reset M 0 29070 10 29145
+#ENDROOM
+
+#ROOM
+Vnum     29146
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29147
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29145
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29147
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29148
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29146
+#ENDEXIT
+
+Reset M 0 29070 11 29147
+#ENDROOM
+
+#ROOM
+Vnum     29148
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29151
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29149
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29147
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29149
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29139
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29150
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29148
+#ENDEXIT
+
+Reset M 0 29070 12 29149
+#ENDROOM
+
+#ROOM
+Vnum     29150
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29149
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29151
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29151
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction south~
+ToRoom    29152
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29150
+#ENDEXIT
+
+Reset M 0 29070 13 29151
+#ENDROOM
+
+#ROOM
+Vnum     29152
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29151
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29147
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29153
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29153
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction east~
+ToRoom    29152
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29154
+#ENDEXIT
+
+Reset M 0 29070 14 29153
+#ENDROOM
+
+#ROOM
+Vnum     29154
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction north~
+ToRoom    29155
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29153
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29155
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction south~
+ToRoom    29154
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29156
+#ENDEXIT
+
+Reset M 0 29070 15 29155
+#ENDROOM
+
+#ROOM
+Vnum     29156
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29155
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    29157
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     29157
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     The road is covered in thick ash.  You are surrounded by mountains
+and jagged rocks.  It is difficult to know exactly where you are.  It
+would be pretty easy to get lost out here.
+~
+#EXIT
+Direction north~
+ToRoom    29156
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    29147
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29158
+#ENDEXIT
+
+Reset M 0 29070 16 29157
+#ENDROOM
+
+#ROOM
+Vnum     29158
+Name     Enclosed Dirt Path~
+Sector   city~
+Flags    norecall silence nodrop~
+Desc     It would be pretty easy to get lost out here on this ash  covered
+pathway.  You are surrounded by mountains  and jagged rocks.  It is
+difficult to know exactly where you are.   
+~
+#EXIT
+Direction east~
+ToRoom    29157
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    29112
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

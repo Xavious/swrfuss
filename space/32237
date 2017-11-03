@@ -1,0 +1,54 @@
+#SHIP
+Name         shuttle 32237~
+Filename     32237~
+Description  ~
+Owner        ~
+Pilot        ~
+Copilot      ~
+Class        0
+Tractorbeam  0
+Shipyard     1000
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       2
+Missiles     0
+Maxmissiles  0
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      1000
+Firstroom    32237
+Lastroom     32239
+Shield       0
+Maxshield    100
+Hull         250
+Maxhull      250
+Maxenergy    2000
+Hyperspeed   100
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       0
+Astro_array  0
+Realspeed    65
+Type         0
+Cockpit      32237
+Coseat       32237
+Pilotseat    32237
+Gunseat      32237
+Navseat      32237
+Engineroom   0
+Entrance     32238
+Shipstate    0
+Missilestate 0
+Energy       2000
+Manuever     35
+Home         corperate~
+End
+
+#END
