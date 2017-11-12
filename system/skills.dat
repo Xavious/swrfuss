@@ -1666,6 +1666,19 @@ Minlevel     2
 End
 
 #SKILL
+Name         flurry~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        0
+Code         do_flurry
+Dammsg       ~
+Wearoff      !Flurry!~
+Teachers     32012 32011 412~
+Minlevel     100
+End
+
+#SKILL
 Name         focus strength~
 Type         Skill
 Flags        0
@@ -2861,6 +2874,16 @@ Code         spell_null
 Dammsg       ~
 Wearoff      !Wookiee!~
 Minlevel     1
+End
+
+#SKILL
+Name         flurry~
+Type         unknown
+Flags        0
+Guild        0
+Code         (null)
+Dammsg       ~
+Minlevel     0
 End
 
 #END

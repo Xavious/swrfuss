@@ -991,6 +991,14 @@ Log         1
 End
 
 #COMMAND
+Name        flurry~
+Code        do_flurry
+Position    0
+Level       105
+Log         0
+End
+
+#COMMAND
 Name        get~
 Code        do_get
 Position    5

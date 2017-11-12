@@ -45,7 +45,7 @@ void do_score( CHAR_DATA * ch, const char *argument )
 {
    char buf[MAX_STRING_LENGTH];
    AFFECT_DATA *paf;
-   int iLang, drug;
+   int drug;
 
    if( IS_NPC( ch ) )
    {
@@ -54,59 +54,54 @@ void do_score( CHAR_DATA * ch, const char *argument )
    }
    set_char_color( AT_SCORE, ch );
 
-   ch_printf( ch, "\r\nScore for %s the %s.\r\n", ch->name, ch->pcdata->title );
+   ch_printf( ch, "\r\n&zScore for %s\r\n", ch->pcdata->title );
    set_char_color( AT_SCORE, ch );
    if( get_trust( ch ) != ch->top_level )
       ch_printf( ch, "You are trusted at level %d.\r\n", get_trust( ch ) );
 
-   send_to_char( "----------------------------------------------------------------------------\r\n", ch );
-
-   ch_printf( ch, "Race: %3d year old %-10.10s                Log In:  %s\r",
-              get_age( ch ), capitalize( get_race( ch ) ), ctime( &( ch->logon ) ) );
-
-   ch_printf( ch, "Hitroll: %-2.2d  Damroll: %-2.2d   Armor: %-4d        Saved:  %s\r",
-              GET_HITROLL( ch ), GET_DAMROLL( ch ), GET_AC( ch ), ch->save_time ? ctime( &( ch->save_time ) ) : "no\n" );
-
-   ch_printf( ch, "Align: %-5d    Wimpy: %-3d                    Time:   %s\r",
-              ch->alignment, ch->wimpy, ctime( &current_time ) );
+   send_to_char( "&z----------------------------------------------------------------------------\r\n", ch );
+   ch_printf( ch, "&zGiven Name: &C%s\r\n", ch->name);
+   ch_printf( ch, "&zRace: &C%s\r\n", capitalize( get_race( ch ) ));
+   ch_printf( ch, "&zHitroll: &Y%-2.2d  &zDamroll: &Y%-2.2d  &zArmor: &Y%-4d\r", GET_HITROLL( ch ), GET_DAMROLL( ch ), GET_AC( ch ) );
+   ch_printf( ch, "&zAlign: &Y%-5d  &zWimpy: &Y%-3d\r\n", ch->alignment, ch->wimpy);
 
    if( ch->skill_level[FORCE_ABILITY] > 1 || IS_IMMORTAL( ch ) )
-      ch_printf( ch, "Hit Points: %d of %d     Move: %d of %d     Force: %d of %d\r\n",
+      ch_printf( ch, "&zHit Points: &R%d &zof &R%d     &zMove: &Y%d &zof &Y%d     &zForce: &p%d &zof &p%d\r\n",
                  ch->hit, ch->max_hit, ch->move, ch->max_move, ch->mana, ch->max_mana );
    else
-      ch_printf( ch, "Hit Points: %d of %d     Move: %d of %d\r\n", ch->hit, ch->max_hit, ch->move, ch->max_move );
+      ch_printf( ch, "&zHit Points: &R%d &zof &R%d     &zMove: &Y%d &zof &Y%d\r\n", ch->hit, ch->max_hit, ch->move, ch->max_move );
 
-   ch_printf( ch, "Str: %2d  Dex: %2d  Con: %2d  Int: %2d  Wis: %2d  Cha: %2d  Lck: ??  Frc: ??\r\n",
+   ch_printf( ch, "&zStr: &C%2d  &zDex: &C%2d  &zCon: &C%2d  &zInt: &C%2d  &zWis: &C%2d  &zCha: &C%2d  &zLck: &C??  &zFrc: &C??\r\n",
               get_curr_str( ch ), get_curr_dex( ch ), get_curr_con( ch ), get_curr_int( ch ), get_curr_wis( ch ),
               get_curr_cha( ch ) );
 
 
-   send_to_char( "----------------------------------------------------------------------------\r\n", ch );
+   send_to_char( "&z----------------------------------------------------------------------------\r\n", ch );
 
    {
       int ability;
 
       for( ability = 0; ability < MAX_ABILITY; ability++ )
          if( ability != FORCE_ABILITY || ch->skill_level[FORCE_ABILITY] > 1 )
-            ch_printf( ch, "%-15s   Level: %-3d   Max: %-3d   Exp: %-10ld   Next: %-10ld\r\n",
+            ch_printf( ch, "&C%-15s   &zLevel: &G%-3d&z/&G%-3d   &zExp: &O%-10ld   &zNext: &O%-10ld\r\n",
                        ability_name[ability], ch->skill_level[ability], max_level( ch, ability ), ch->experience[ability],
                        exp_level( ch->skill_level[ability] + 1 ) );
          else
-            ch_printf( ch, "%-15s   Level: %-3d   Max: ???   Exp: ???          Next: ???\r\n",
+            ch_printf( ch, "&C%-15s   &zLevel: &G%-3d&z/&G???   &zExp: &O???          &zNext: &O???\r\n",
                        ability_name[ability], ch->skill_level[ability], ch->experience[ability] );
    }
 
-   send_to_char( "----------------------------------------------------------------------------\r\n", ch );
+   send_to_char( "&z----------------------------------------------------------------------------\r\n", ch );
 
 
 
-   ch_printf( ch, "CREDITS: %-10d   BANK: %-10d    Pkills: %-5.5d   Mkills: %-5.5d\r\n",
+   ch_printf( ch, "&zCREDITS: &Y%-10d   &zBANK: &Y%-10d    &zPkills: &R%-5.5d   &zMkills: &R%-5.5d\r\n",
               ch->gold, ch->pcdata->bank, ch->pcdata->pkills, ch->pcdata->mkills );
 
-   ch_printf( ch, "Weight: %5.5d (max %7.7d)    Items: %5.5d (max %5.5d)\r\n",
+   ch_printf( ch, "&zWeight: &C%5.5d &z(max &C%7.7d&z)    Items: &C%5.5d &z(max &C%5.5d)\r\n",
               ch->carry_weight, can_carry_w( ch ), ch->carry_number, can_carry_n( ch ) );
 
-   ch_printf( ch, "Pager: (%c) %3d   AutoExit(%c)  AutoLoot(%c)  Autosac(%c)\r\n",
+   ch_printf( ch, "&zPager: (&G%c&z) &G%3d   &zAutoExit(&G%c&z)  AutoLoot(&G%c&z)  Autosac(&G%c&z)\r\n",
               IS_SET( ch->pcdata->flags, PCFLAG_PAGERON ) ? 'X' : ' ',
               ch->pcdata->pagerlen, IS_SET( ch->act, PLR_AUTOEXIT ) ? 'X' : ' ',
               IS_SET( ch->act, PLR_AUTOLOOT ) ? 'X' : ' ', IS_SET( ch->act, PLR_AUTOSAC ) ? 'X' : ' ' );
@@ -150,11 +145,11 @@ void do_score( CHAR_DATA * ch, const char *argument )
    send_to_char( buf, ch );
 
    if( !IS_NPC( ch ) && ch->pcdata->condition[COND_DRUNK] > 10 )
-      send_to_char( "You are drunk.\r\n", ch );
+      send_to_char( "&CYou are drunk.\r\n", ch );
    if( !IS_NPC( ch ) && ch->pcdata->condition[COND_THIRST] == 0 )
-      send_to_char( "You are in danger of dehydrating.\r\n", ch );
+      send_to_char( "&CYou are in danger of dehydrating.\r\n", ch );
    if( !IS_NPC( ch ) && ch->pcdata->condition[COND_FULL] == 0 )
-      send_to_char( "You are starving to death.\r\n", ch );
+      send_to_char( "&CYou are starving to death.\r\n", ch );
    if( ch->position != POS_SLEEPING )
       switch ( ch->mental_state / 10 )
       {
@@ -226,53 +221,47 @@ void do_score( CHAR_DATA * ch, const char *argument )
             break;
       }
    else if( ch->mental_state > 45 )
-      send_to_char( "Your sleep is filled with strange and vivid dreams.\r\n", ch );
+      send_to_char( "&CYour sleep is filled with strange and vivid dreams.\r\n", ch );
    else if( ch->mental_state > 25 )
-      send_to_char( "Your sleep is uneasy.\r\n", ch );
+      send_to_char( "&CYour sleep is uneasy.\r\n", ch );
    else if( ch->mental_state < -35 )
-      send_to_char( "You are deep in a much needed sleep.\r\n", ch );
+      send_to_char( "&CYou are deep in a much needed sleep.\r\n", ch );
    else if( ch->mental_state < -25 )
-      send_to_char( "You are in deep slumber.\r\n", ch );
-   send_to_char( "SPICE Level/Addiction: ", ch );
+      send_to_char( "&CYou are in deep slumber.\r\n", ch );
+   send_to_char( "&zSPICE Level/Addiction: ", ch );
    for( drug = 0; drug <= 9; drug++ )
       if( ch->pcdata->drug_level[drug] > 0 || ch->pcdata->drug_level[drug] > 0 )
       {
-         ch_printf( ch, "%s(%d/%d) ", spice_table[drug], ch->pcdata->drug_level[drug], ch->pcdata->addiction[drug] );
+         ch_printf( ch, "&O%s&z(&Y%d&z/&Y%d&z) ", spice_table[drug], ch->pcdata->drug_level[drug], ch->pcdata->addiction[drug] );
       }
-   send_to_char( "\r\nLanguages: ", ch );
-   for( iLang = 0; lang_array[iLang] != LANG_UNKNOWN; iLang++ )
-      if( knows_language( ch, lang_array[iLang], ch ) || ( IS_NPC( ch ) && ch->speaks == 0 ) )
-      {
-         if( lang_array[iLang] & ch->speaking || ( IS_NPC( ch ) && !ch->speaking ) )
-            set_char_color( AT_RED, ch );
-         send_to_char( lang_names[iLang], ch );
-         send_to_char( " ", ch );
-         set_char_color( AT_SCORE, ch );
-      }
+   //ch_printf( "\r\n&zSpeaking: &R%s", lang_names[ch->speaking] );
+   send_to_char("\r\n&zSpeaking: ", ch);
+   set_char_color( AT_RED, ch);
+   send_to_char(lang_names[ch->speaking], ch);
 
    send_to_char( "\r\n", ch );
-   ch_printf( ch, "WANTED ON: %s\r\n", flag_string( ch->pcdata->wanted_flags, planet_flags ) );
+   ch_printf( ch, "&zWANTED ON: &R%s\r\n", flag_string( ch->pcdata->wanted_flags, planet_flags ) );
 
    if( ch->pcdata->bestowments && ch->pcdata->bestowments[0] != '\0' )
-      ch_printf( ch, "You are bestowed with the command(s): %s.\r\n", ch->pcdata->bestowments );
+      ch_printf( ch, "&zYou are bestowed with the command(s): &R%s.\r\n", ch->pcdata->bestowments );
 
    if( ch->pcdata->clan )
    {
-      send_to_char( "----------------------------------------------------------------------------\r\n", ch );
-      ch_printf( ch, "ORGANIZATION: %-35s Pkills/Deaths: %3.3d/%3.3d",
+      send_to_char( "&z----------------------------------------------------------------------------\r\n", ch );
+      ch_printf( ch, "&zORGANIZATION: &C%-35s &zPkills/Deaths: &R%3.3d&z/&R%3.3d",
                  ch->pcdata->clan->name, ch->pcdata->clan->pkills, ch->pcdata->clan->pdeaths );
       send_to_char( "\r\n", ch );
    }
    if( IS_IMMORTAL( ch ) )
    {
-      send_to_char( "----------------------------------------------------------------------------\r\n", ch );
+      send_to_char( "&z----------------------------------------------------------------------------\r\n", ch );
 
-      ch_printf( ch, "IMMORTAL DATA:  Wizinvis [%s]  Wizlevel (%d)\r\n",
+      ch_printf( ch, "&zIMMORTAL DATA:  &CWizinvis &z[&R%s&z]  &CWizlevel &z(&R%d&z)\r\n",
                  IS_SET( ch->act, PLR_WIZINVIS ) ? "X" : " ", ch->pcdata->wizinvis );
 
-      ch_printf( ch, "Bamfin:  %s\r\n", ( ch->pcdata->bamfin[0] != '\0' )
+      ch_printf( ch, "&zBamfin:  %s\r\n", ( ch->pcdata->bamfin[0] != '\0' )
                  ? ch->pcdata->bamfin : "%s appears in a swirling mist.", ch->name );
-      ch_printf( ch, "Bamfout: %s\r\n", ( ch->pcdata->bamfout[0] != '\0' )
+      ch_printf( ch, "&zBamfout: %s\r\n", ( ch->pcdata->bamfout[0] != '\0' )
                  ? ch->pcdata->bamfout : "%s leaves in a swirling mist.", ch->name );
 
 
@@ -281,11 +270,11 @@ void do_score( CHAR_DATA * ch, const char *argument )
        */
       if( ch->pcdata->area )
       {
-         ch_printf( ch, "Vnums:   Room (%-5.5d - %-5.5d)   Object (%-5.5d - %-5.5d)   Mob (%-5.5d - %-5.5d)\r\n",
+         ch_printf( ch, "&zVnums:   Room (&Y%-5.5d &z- &Y%-5.5d&z)   Object (&Y%-5.5d &z- &Y%-5.5d&z)   Mob (&Y%-5.5d &z- &Y%-5.5d)\r\n",
                     ch->pcdata->area->low_r_vnum, ch->pcdata->area->hi_r_vnum,
                     ch->pcdata->area->low_o_vnum, ch->pcdata->area->hi_o_vnum,
                     ch->pcdata->area->low_m_vnum, ch->pcdata->area->hi_m_vnum );
-         ch_printf( ch, "Area Loaded [%s]\r\n", ( IS_SET( ch->pcdata->area->status, AREA_LOADED ) ) ? "yes" : "no" );
+         ch_printf( ch, "&zArea Loaded [&R%s&z]\r\n", ( IS_SET( ch->pcdata->area->status, AREA_LOADED ) ) ? "yes" : "no" );
       }
    }
    if( ch->first_affect )
@@ -294,15 +283,15 @@ void do_score( CHAR_DATA * ch, const char *argument )
       SKILLTYPE *sktmp;
 
       i = 0;
-      send_to_char( "----------------------------------------------------------------------------\r\n", ch );
-      send_to_char( "AFFECT DATA:                            ", ch );
+      send_to_char( "&z----------------------------------------------------------------------------\r\n", ch );
+      send_to_char( "&zAFFECT DATA:                            ", ch );
       for( paf = ch->first_affect; paf; paf = paf->next )
       {
          if( ( sktmp = get_skilltype( paf->type ) ) == NULL )
             continue;
          if( ch->top_level < 20 )
          {
-            ch_printf( ch, "[%-34.34s]    ", sktmp->name );
+            ch_printf( ch, "&z[&R%-34.34s&z]    ", sktmp->name );
             if( i == 0 )
                i = 1;
             if( ( ++i % 3 ) == 0 )
@@ -311,12 +300,12 @@ void do_score( CHAR_DATA * ch, const char *argument )
          else
          {
             if( paf->modifier == 0 )
-               ch_printf( ch, "[%-24.24s;%5d rds]    ", sktmp->name, paf->duration );
+               ch_printf( ch, "&z[&R%-24.24s;%5d rds&z]    ", sktmp->name, paf->duration );
             else if( paf->modifier > 999 )
-               ch_printf( ch, "[%-15.15s; %7.7s;%5d rds]    ",
+               ch_printf( ch, "&z[&R%-15.15s; %7.7s;%5d rds&z]    ",
                           sktmp->name, tiny_affect_loc_name( paf->location ), paf->duration );
             else
-               ch_printf( ch, "[%-11.11s;%+-3.3d %7.7s;%5d rds]    ",
+               ch_printf( ch, "&z[&R%-11.11s;%+-3.3d %7.7s;%5d rds&z]    ",
                           sktmp->name, paf->modifier, tiny_affect_loc_name( paf->location ), paf->duration );
             if( i == 0 )
                i = 1;

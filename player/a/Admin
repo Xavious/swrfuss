@@ -4,66 +4,222 @@ Name         Admin~
 Sex          0
 Race         0
 MainAbility  0
-Languages    -1 -262145
+Languages    -1 1
 Toplevel     105
-Played       17903
-Room         32148
-HpManaMove   1000 1000 0 0 1000 1000
+Played       150538
+Room         100
+HpManaMove   131 500 0 0 1000 1000
 Force        0 0 0 0
-Gold         0
+Gold         100294
 Bank         0
-Ability        0 1 0
-Ability        1 1 0
-Ability        2 1 0
-Ability        3 1 0
-Ability        4 1 0
-Ability        5 1 0
-Ability        6 1 0
-Ability        7 1 0
-Act          570426952
-Position     5
+Ability        0 100 4900500
+Ability        1 200 19800500
+Ability        2 200 19800500
+Ability        3 200 19800500
+Ability        4 200 19800500
+Ability        5 200 19800500
+Ability        6 200 19800500
+Ability        7 200 19800500
+Act          570439240
+Position     8
 SavingThrows 0 0 0 0 0
-Alignment    0
+Alignment    300
 Glory        0
 MGlory       0
 Hitroll      0
 Damroll      0
 Armor        100
 Deaf         312055
-Mentalstate  0
+Mentalstate  -18
 Password     9c3a88f26d3623fcf0a4aa881518170c70f5e1d62e0d9f9fa7e9b3f07fa299b7~
-Lastplayed   1509323376
-Title         Admin the Human~
+Lastplayed   1510520162
+Rank         Admin~
+Title        &RX&ravious &zthe &Ymagnificent~
 AuthedBy     Admin~
 Addiction    0 0 0 0 0 0 0 0 0 0
 Druglevel    0 0 0 0 0 0 0 0 0 0
 WizInvis     105
 Flags        0
-MKills       0
+MKills       13
 MDeaths      0
 AttrPerm     13 16 13 13 13 13 8
 AttrMod      0 0 0 0 0 0 0
-Condition    0 48 48 10
-Site         (Link-Dead)
+Condition    0 48 48 115
+Site         192.168.1.124
+Spell        100 'affect mind'
+Spell        100 'alertness'
+Spell        100 'armor'
+Spell        100 'beauty'
+Spell        100 'blindness'
+Spell        100 'choke'
+Spell        100 'create fire'
+Spell        100 'cure blindness'
+Spell        100 'cure critical'
+Spell        100 'cure light'
+Spell        100 'cure poison'
+Spell        100 'cure serious'
+Spell        100 'detect darkness'
+Spell        100 'detect force'
+Spell        100 'detect intent'
+Spell        100 'detect masking'
+Spell        100 'detect poison'
+Spell        100 'detect traps'
+Spell        100 'dispel dark'
+Spell        100 'dispel force'
+Spell        100 'drain essence'
+Spell        100 'dream'
+Spell        100 'earthquake'
+Spell        100 'farsight'
+Spell        100 'fatigue'
+Spell        100 'feebleness'
+Spell        100 'fireball'
+Spell        100 'flamestrike'
+Spell        100 'float'
+Spell        100 'force blast wrath'
+Spell        100 'force bolt'
+Spell        100 'force bubble'
+Spell        100 'force funnel'
+Spell        100 'force lightning'
+Spell        100 'force shield'
+Spell        100 'force sight'
+Spell        100 'force spray'
+Spell        100 'forethought'
+Spell        100 'good fortune'
+Spell        100 'group masking'
+Spell        100 'hand of Darkness'
+Spell        100 'harm'
+Spell        100 'heal'
+Spell        100 'heightened awareness'
+Spell        100 'illuminate'
+Spell        100 'inner fortress'
+Spell        100 'invade essence'
+Spell        100 'know essence'
+Spell        100 'mask'
+Spell        100 'poison'
+Spell        100 'possess'
+Spell        100 'protection from darkness'
+Spell        100 'refresh'
+Spell        100 'remove masking'
+Spell        100 'remove trap'
+Spell        100 'restoration'
+Spell        100 'sanctuary'
+Spell        100 'scorching surge'
+Spell        100 'shield'
+Spell        100 'shocking grasp'
+Spell        100 'shockshield'
+Spell        100 'sleep'
+Spell        100 'slink'
+Spell        100 'true sight'
+Spell        100 'unravel defense'
+Spell        100 'ventriloquate'
+Spell        100 'weaken'
+Skill        100 'acute_awarness'
+Skill        100 'acute_damage'
+Skill        100 'add_patrol'
+Skill        100 'aid'
+Skill        100 'backstab'
+Skill        100 'bash'
+Skill        100 'beg'
+Skill        100 'berserk'
+Skill        100 'bribe'
+Skill        100 'capital ships'
+Skill        100 'circle'
+Skill        100 'climb'
+Skill        100 'detrap'
+Skill        100 'dig'
+Skill        100 'disarm'
+Skill        100 'disguise'
+Skill        100 'dodge'
+Skill        100 'dominate'
+Skill        100 'doorbash'
+Skill        100 'dual wield'
+Skill        100 'elite_guard'
+Skill        100 'enhanced damage'
+Skill        100 'first aid'
+Skill        100 'flurry'
+Skill        100 'focus strength'
+Skill        100 'gather_intelligence'
+Skill        100 'gemcutting'
+Skill        100 'gouge'
+Skill        100 'grenades'
+Skill        100 'grip'
+Skill        100 'heightened accuracy'
+Skill        100 'hide'
+Skill        100 'hijack'
+Skill        100 'hitall'
+Skill        100 'inner strength'
+Skill        100 'jail'
+Skill        100 'kick'
+Skill        100 'lightsaber crafting'
+Skill        100 'limber'
+Skill        100 'makearmor'
+Skill        100 'makeblade'
+Skill        100 'makeblaster'
+Skill        100 'makecomlink'
+Skill        100 'makecontainer'
+Skill        100 'makeflashlight'
+Skill        100 'makegrenade'
+Skill        100 'makejewelry'
+Skill        100 'makelandmine'
+Skill        100 'makeshield'
+Skill        100 'mass_propeganda'
+Skill        100 'meditate'
+Skill        100 'midships'
+Skill        100 'mine'
+Skill        100 'mount'
+Skill        100 'navigation'
+Skill        100 'parry'
+Skill        100 'peek'
+Skill        100 'pick lock'
+Skill        100 'pick ship lock'
+Skill        100 'poison weapon'
+Skill        100 'post guard'
+Skill        100 'propeganda'
+Skill        100 'punch'
+Skill        100 'reinforcements'
+Skill        100 'rescue'
+Skill        100 'scan'
+Skill        100 'search'
+Skill        100 'second attack'
+Skill        100 'seduce'
+Skill        100 'see masking'
+Skill        100 'ship maintenance'
+Skill        100 'ship systems'
+Skill        100 'smalltalk'
+Skill        100 'sneak'
+Skill        100 'snipe'
+Skill        100 'space combat 1'
+Skill        100 'space combat 2'
+Skill        100 'space combat 3'
+Skill        100 'special_forces'
+Skill        100 'spice refining'
+Skill        100 'starfighters'
+Skill        100 'steal'
+Skill        100 'third attack'
+Skill        100 'throw'
+Skill        100 'torture'
+Skill        100 'track'
+Skill        100 'tractor beams'
+Skill        100 'trance'
+Skill        100 'weapon systems'
+Weapon       100 'blasters'
+Weapon       100 'bowcasters'
+Weapon       100 'force pikes'
+Weapon       100 'lightsabers'
+Weapon       100 'vibro-blades'
 Tongue       100 'common'
+Killed       32026 1
+Killed       32027 1
+Killed       32028 1
+Killed       32021 1
+Killed       32040 1
+Killed       32001 1
+Killed       323 2
+Killed       406 5
 MaxColors    115
 Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 7 7 14 14 14 15 15 11 11 9 46 40 12 7 7 10 6 11 9 10 1 15 11 15 11 10 13 12 10 11 12 10 3 12 9 15 11 15 14 2 5 15 9 7 2 9 12 10 2 10 15 7 7 15 12 12 12 10 14 14 14 10 10 10 13 2 10 14 10 10 2 6 1 9 2 10 10 10 10 10 10 10 10 
 IMCPerm      5
 IMCFlags     256
-End
-
-#OBJECT
-Vnum         54
-ItemType     8
-Level        105
-Values       12 10 40 6 2000 2000
-End
-
-#OBJECT
-Count        5
-Vnum         54
-Level        105
-Values       12 10 40 6 2000 2000
 End
 
 #END

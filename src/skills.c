@@ -3578,3 +3578,29 @@ void do_scan( CHAR_DATA * ch, const char *argument )
 void do_slice( CHAR_DATA * ch, const char *argument )
 {
 }
+
+void do_flurry( CHAR_DATA * ch, const char *argument)
+{
+  CHAR_DATA *victim;
+
+  if( ( victim = who_fighting( ch ) ) == NULL )
+  {
+     send_to_char( "You must be in a fight to unleash a flurry of attacks.\r\n", ch );
+     return;
+  }
+
+  if( ch->move < 500 )
+  {
+    send_to_char("You're too tired to do that right now.\r\n", ch);
+    return;
+  }
+
+  send_to_char( "You unleashe a flurry of attacks!\r\n", ch );
+  multi_hit(ch, victim, TYPE_UNDEFINED);
+  multi_hit(ch, victim, TYPE_UNDEFINED);
+  send_to_char( "You finish your flurry.\r\n", ch );
+  ch->move -= 500; 
+  WAIT_STATE( ch, PULSE_VIOLENCE );
+
+  return; 
+}

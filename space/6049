@@ -21,7 +21,7 @@ Rockets     0
 Maxrockets  0
 Torpedos     0
 Maxtorpedos  0
-Lastdoc      32050
+Lastdoc      203
 Firstroom    6049
 Lastroom     6049
 Shield       0
@@ -48,7 +48,7 @@ Shipstate    0
 Missilestate 0
 Energy       2000
 Manuever     35
-Home         Byss System~
+Home         corperate~
 End
 
 #END

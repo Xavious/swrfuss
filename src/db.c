@@ -173,6 +173,7 @@ short gsn_bashdoor;
 short gsn_grip;
 short gsn_berserk;
 short gsn_hitall;
+short gsn_flurry;
 
 /* vampire */
 short gsn_feed;
@@ -592,6 +593,7 @@ void boot_db( bool fCopyOver )
       ASSIGN_GSN( gsn_second_attack, "second attack" );
       ASSIGN_GSN( gsn_third_attack, "third attack" );
       ASSIGN_GSN( gsn_dual_wield, "dual wield" );
+      ASSIGN_GSN( gsn_flurry, "flurry");
       ASSIGN_GSN( gsn_punch, "punch" );
       ASSIGN_GSN( gsn_bash, "bash" );
       ASSIGN_GSN( gsn_stun, "stun" );

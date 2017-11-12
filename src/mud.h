@@ -2696,6 +2696,7 @@ extern short gsn_rescue;
 extern short gsn_second_attack;
 extern short gsn_third_attack;
 extern short gsn_dual_wield;
+extern short gsn_flurry;
 
 
 extern short gsn_aid;
@@ -3473,6 +3474,7 @@ DECLARE_DO_FUN( do_feed );
 DECLARE_DO_FUN( do_fill );
 DECLARE_DO_FUN( do_fixchar );
 DECLARE_DO_FUN( do_flee );
+DECLARE_DO_FUN( do_flurry );
 DECLARE_DO_FUN( do_foldarea );
 DECLARE_DO_FUN( do_follow );
 DECLARE_DO_FUN( do_for );

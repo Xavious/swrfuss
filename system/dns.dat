@@ -1,13 +1,13 @@
 #CACHE
-IP		127.0.0.1~
-Name		localhost.localdomain~
-Time		1509153064
+IP		24.27.96.239~
+Name		cpe-24-27-96-239.tx.res.rr.com~
+Time		1509719792
 End
 
 #CACHE
 IP		192.168.1.124~
 Name		192.168.1.124~
-Time		1509153618
+Time		1510375290
 End
 
 #END
