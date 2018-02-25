@@ -1,4 +1,4 @@
-# New Document# SWR FUSS (Star Wars Reality) (Fixed Up Smaug Source)
+# SWR FUSS (Star Wars Reality) (Fixed Up Smaug Source)
 
 ## Introduction
 SWR is a Star Wars themed MUD (Multi User Dungeon) codebase that  descends from SMAUG, which in turn descends from ROM and DIKU. The original source code was found on the [Smaug Muds](https://www.smaugmuds.org) website. To the uninitiated, MUDs are text based games traditionally played via telnet. The DIKU codebase is where the majority of these games are descended from; a now ancient codebase that was originally written in C.
